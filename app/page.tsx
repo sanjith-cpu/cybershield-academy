@@ -147,6 +147,11 @@ export default function Home() {
   		href="/feedback"
 	    />
 	    <FeatureCard
+  		title="Project Roadmap"
+  		description="CyberShield Academy tracks completed features, current improvements, future ideas, and version goals."
+  		href="/roadmap"
+	    />
+	    <FeatureCard
   		title="Activities Hub"
   		description="Students can access all interactive CyberShield activities, including quizzes, scam practice, and password 		safety labs."
   		href="/activities"

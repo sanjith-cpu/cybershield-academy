@@ -40,6 +40,10 @@ export default function Navbar() {
           Feedback
         </Link>
 
+        <Link href="/roadmap" className="hover:text-white transition">
+          Roadmap
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
