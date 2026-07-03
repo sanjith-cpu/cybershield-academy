@@ -106,6 +106,11 @@ export default function Home() {
               title="Career Explorer"
               description="Discover cybersecurity careers, skills, and certification paths."
             />
+	    <FeatureCard
+  		title="Cyber Safety Quiz"
+  		description="Students can test their knowledge with an interactive cybersecurity safety quiz."
+                href="/quiz"
+	    />
           </div>
         </div>
       </section>

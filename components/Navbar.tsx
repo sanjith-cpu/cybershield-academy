@@ -24,6 +24,10 @@ export default function Navbar() {
           High School
         </Link>
 
+        <Link href="/quiz" className="hover:text-white transition">
+          Quiz
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
