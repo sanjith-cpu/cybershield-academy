@@ -12,16 +12,8 @@ export default function Navbar() {
           Home
         </Link>
 
-        <Link href="/kids" className="hover:text-white transition">
-          Kids
-        </Link>
-
-        <Link href="/junior" className="hover:text-white transition">
-          Junior
-        </Link>
-
-        <Link href="/high-school" className="hover:text-white transition">
-          High School
+        <Link href="/lessons" className="hover:text-white transition">
+          Lessons
         </Link>
 
         <Link href="/activities" className="hover:text-white transition">

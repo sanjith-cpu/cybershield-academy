@@ -151,6 +151,11 @@ export default function Home() {
   		description="Students can access all interactive CyberShield activities, including quizzes, scam practice, and password 		safety labs."
   		href="/activities"
 	    />
+	    <FeatureCard
+  		title="Lesson Hub"
+  		description="Students can choose CyberShield Kids, Junior, or High School lessons from one organized learning hub."
+  		href="/lessons"
+ 	    />
           </div>
         </div>
       </section>
