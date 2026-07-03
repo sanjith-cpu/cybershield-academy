@@ -146,6 +146,11 @@ export default function Home() {
   		description="Students, parents, teachers, and volunteers can preview a feedback form to help improve CyberShield Academy."
   		href="/feedback"
 	    />
+	    <FeatureCard
+  		title="Activities Hub"
+  		description="Students can access all interactive CyberShield activities, including quizzes, scam practice, and password 		safety labs."
+  		href="/activities"
+	    />
           </div>
         </div>
       </section>

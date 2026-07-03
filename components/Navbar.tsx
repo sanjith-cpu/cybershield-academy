@@ -24,16 +24,8 @@ export default function Navbar() {
           High School
         </Link>
 
-        <Link href="/quiz" className="hover:text-white transition">
-          Quiz
-        </Link>
-
-        <Link href="/spot-the-scam" className="hover:text-white transition">
-          Spot the Scam
-        </Link>
-
-        <Link href="/password-lab" className="hover:text-white transition">
-          Password Lab
+        <Link href="/activities" className="hover:text-white transition">
+          Activities
         </Link>
 
         <Link href="/resources" className="hover:text-white transition">
