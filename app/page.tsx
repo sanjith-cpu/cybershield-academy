@@ -1,24 +1,9 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      {/* Navigation Bar */}
-      <nav className="flex items-center justify-between px-8 py-6 border-b border-slate-800">
-        <div className="text-2xl font-bold tracking-tight">
-          CyberShield Academy
-        </div>
-
-        <div className="hidden md:flex gap-6 text-sm text-slate-300">
-          <a href="#tracks" className="hover:text-white">
-            Learning Tracks
-          </a>
-          <a href="#features" className="hover:text-white">
-            Features
-          </a>
-          <a href="#mission" className="hover:text-white">
-            Mission
-          </a>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="px-8 py-24 text-center max-w-5xl mx-auto">
@@ -145,9 +130,7 @@ export default function Home() {
       {/* Mission Section */}
       <section id="mission" className="px-8 py-16 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Our Mission
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
 
           <p className="text-lg text-slate-300 leading-relaxed">
             CyberShield Academy exists to make cybersecurity education
@@ -159,11 +142,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-8 py-6 text-center text-sm text-slate-500 border-t border-slate-800">
-        © 2026 CyberShield Academy. Built as a student-led cybersecurity
-        literacy initiative.
-      </footer>
+      <Footer />
     </main>
   );
 }
