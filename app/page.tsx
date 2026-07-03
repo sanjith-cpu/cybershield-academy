@@ -126,6 +126,11 @@ export default function Home() {
   		description="Students, parents, and teachers can review cybersecurity vocabulary, safety checklists, and scam warning 			signs."
   		href="/resources"
 	    />
+	    <FeatureCard
+  		title="Certificate Pathways"
+  		description="Students can preview future CyberShield certificates for Kids, Junior, and High School learning paths."
+  		href="/certificates"
+	    />
           </div>
         </div>
       </section>

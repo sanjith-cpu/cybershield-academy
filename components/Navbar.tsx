@@ -40,6 +40,10 @@ export default function Navbar() {
           Resources
         </Link>
 
+        <Link href="/certificates" className="hover:text-white transition">
+          Certificates
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
