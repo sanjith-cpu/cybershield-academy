@@ -116,6 +116,11 @@ export default function Home() {
  		description="Students can practice identifying suspicious messages, scam warning signs, and online red flags."
   		href="/spot-the-scam"
 	    />
+	    <FeatureCard
+  		title="Password Safety Lab"
+  		description="Students can test sample passwords and learn what makes passwords stronger."
+  		href="/password-lab"
+	    />
           </div>
         </div>
       </section>

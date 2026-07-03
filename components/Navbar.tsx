@@ -32,6 +32,10 @@ export default function Navbar() {
           Spot the Scam
         </Link>
 
+        <Link href="/password-lab" className="hover:text-white transition">
+          Password Lab
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
