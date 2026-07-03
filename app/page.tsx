@@ -1,5 +1,8 @@
+﻿import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import FeatureCard from "@/components/FeatureCard";
+import TrackCard from "@/components/TrackCard";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -52,38 +55,26 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-2xl font-bold mb-3 text-cyan-400">
-                CyberShield Kids
-              </h3>
-              <p className="text-slate-300 mb-4">
-                For elementary students learning internet safety, kindness
-                online, privacy, and trusted adult reporting.
-              </p>
-              <p className="text-sm text-slate-400">Grades 3–5</p>
-            </div>
+            <TrackCard
+              title="CyberShield Kids"
+              grades="Grades 3-5"
+              description="For elementary students learning internet safety, kindness online, privacy, and trusted adult reporting."
+              href="/kids"
+            />
 
-            <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-2xl font-bold mb-3 text-cyan-400">
-                CyberShield Junior
-              </h3>
-              <p className="text-slate-300 mb-4">
-                For middle school students learning passwords, scams, digital
-                citizenship, and personal information protection.
-              </p>
-              <p className="text-sm text-slate-400">Grades 6–8</p>
-            </div>
+            <TrackCard
+              title="CyberShield Junior"
+              grades="Grades 6-8"
+              description="For middle school students learning passwords, scams, digital citizenship, and personal information protection."
+              href="/junior"
+            />
 
-            <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-              <h3 className="text-2xl font-bold mb-3 text-cyan-400">
-                CyberShield High School
-              </h3>
-              <p className="text-slate-300 mb-4">
-                For high school students exploring cybersecurity fundamentals,
-                technical concepts, careers, and certifications.
-              </p>
-              <p className="text-sm text-slate-400">Grades 9–12</p>
-            </div>
+            <TrackCard
+              title="CyberShield High School"
+              grades="Grades 9-12"
+              description="For high school students exploring cybersecurity fundamentals, technical concepts, careers, and certifications."
+              href="/high-school"
+            />
           </div>
         </div>
       </section>
@@ -96,33 +87,25 @@ export default function Home() {
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="rounded-xl border border-slate-800 p-5 bg-slate-900">
-              <h3 className="font-bold mb-2">Interactive Lessons</h3>
-              <p className="text-sm text-slate-300">
-                Structured cybersecurity lessons for different age levels.
-              </p>
-            </div>
+            <FeatureCard
+              title="Interactive Lessons"
+              description="Structured cybersecurity lessons for different age levels."
+            />
 
-            <div className="rounded-xl border border-slate-800 p-5 bg-slate-900">
-              <h3 className="font-bold mb-2">Phishing Simulator</h3>
-              <p className="text-sm text-slate-300">
-                Practice spotting suspicious emails and online red flags.
-              </p>
-            </div>
+            <FeatureCard
+              title="Phishing Simulator"
+              description="Practice spotting suspicious emails and online red flags."
+            />
 
-            <div className="rounded-xl border border-slate-800 p-5 bg-slate-900">
-              <h3 className="font-bold mb-2">Cyber Assessments</h3>
-              <p className="text-sm text-slate-300">
-                Measure cybersecurity awareness and receive recommendations.
-              </p>
-            </div>
+            <FeatureCard
+              title="Cyber Assessments"
+              description="Measure cybersecurity awareness and receive recommendations."
+            />
 
-            <div className="rounded-xl border border-slate-800 p-5 bg-slate-900">
-              <h3 className="font-bold mb-2">Career Explorer</h3>
-              <p className="text-sm text-slate-300">
-                Discover cybersecurity careers, skills, and certification paths.
-              </p>
-            </div>
+            <FeatureCard
+              title="Career Explorer"
+              description="Discover cybersecurity careers, skills, and certification paths."
+            />
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -8,16 +8,16 @@ export default function Navbar() {
       </Link>
 
       <div className="hidden md:flex gap-6 text-sm text-slate-300">
-        <Link href="/#tracks" className="hover:text-white transition">
-          Learning Tracks
+        <Link href="/kids" className="hover:text-white transition">
+          Kids
         </Link>
 
-        <Link href="/#features" className="hover:text-white transition">
-          Features
+        <Link href="/junior" className="hover:text-white transition">
+          Junior
         </Link>
 
-        <Link href="/#mission" className="hover:text-white transition">
-          Mission
+        <Link href="/high-school" className="hover:text-white transition">
+          High School
         </Link>
 
         <Link href="/about" className="hover:text-white transition">
