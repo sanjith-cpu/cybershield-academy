@@ -137,6 +137,11 @@ export default function Home() {
   		href="/outreach"
 	    />
 	    <FeatureCard
+  		title="Teacher Toolkit"
+  		description="Teachers can access classroom lesson ideas, discussion prompts, worksheet placeholders, and safe teaching 			guidelines."
+  		href="/teacher-toolkit"
+	    />
+	    <FeatureCard
   		title="Impact Tracker"
   		description="CyberShield Academy tracks outreach goals, schools contacted, sessions completed, students reached, and 			feedback collected."
   		href="/impact"

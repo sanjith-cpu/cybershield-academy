@@ -24,6 +24,10 @@ export default function Navbar() {
           Resources
         </Link>
 
+        <Link href="/teacher-toolkit" className="hover:text-white transition">
+          Teacher Toolkit
+        </Link>
+
         <Link href="/certificates" className="hover:text-white transition">
           Certificates
         </Link>
