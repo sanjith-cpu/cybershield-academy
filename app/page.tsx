@@ -141,6 +141,11 @@ export default function Home() {
   		description="CyberShield Academy tracks outreach goals, schools contacted, sessions completed, students reached, and 			feedback collected."
   		href="/impact"
 	    />
+	    <FeatureCard
+  		title="Feedback Center"
+  		description="Students, parents, teachers, and volunteers can preview a feedback form to help improve CyberShield Academy."
+  		href="/feedback"
+	    />
           </div>
         </div>
       </section>

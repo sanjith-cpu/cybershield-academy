@@ -52,6 +52,10 @@ export default function Navbar() {
           Impact
         </Link>
 
+        <Link href="/feedback" className="hover:text-white transition">
+          Feedback
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
