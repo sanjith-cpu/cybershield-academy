@@ -8,6 +8,10 @@ export default function Navbar() {
       </Link>
 
       <div className="hidden md:flex gap-6 text-sm text-slate-300">
+        <Link href="/" className="hover:text-white transition">
+          Home
+        </Link>
+
         <Link href="/kids" className="hover:text-white transition">
           Kids
         </Link>
