@@ -36,6 +36,10 @@ export default function Navbar() {
           Password Lab
         </Link>
 
+        <Link href="/resources" className="hover:text-white transition">
+          Resources
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>

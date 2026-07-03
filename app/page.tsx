@@ -121,6 +121,11 @@ export default function Home() {
   		description="Students can test sample passwords and learn what makes passwords stronger."
   		href="/password-lab"
 	    />
+	    <FeatureCard
+  		title="Student Resources"
+  		description="Students, parents, and teachers can review cybersecurity vocabulary, safety checklists, and scam warning 			signs."
+  		href="/resources"
+	    />
           </div>
         </div>
       </section>
