@@ -136,6 +136,11 @@ export default function Home() {
   		description="CyberShield Academy supports classroom presentations, student workshops, and real-world cybersecurity 			education outreach."
   		href="/outreach"
 	    />
+	    <FeatureCard
+  		title="Impact Tracker"
+  		description="CyberShield Academy tracks outreach goals, schools contacted, sessions completed, students reached, and 			feedback collected."
+  		href="/impact"
+	    />
           </div>
         </div>
       </section>
