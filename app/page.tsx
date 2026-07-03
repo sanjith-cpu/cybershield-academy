@@ -111,6 +111,11 @@ export default function Home() {
   		description="Students can test their knowledge with an interactive cybersecurity safety quiz."
                 href="/quiz"
 	    />
+	    <FeatureCard
+  		title="Spot the Scam"
+ 		description="Students can practice identifying suspicious messages, scam warning signs, and online red flags."
+  		href="/spot-the-scam"
+	    />
           </div>
         </div>
       </section>

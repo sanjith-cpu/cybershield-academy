@@ -28,6 +28,10 @@ export default function Navbar() {
           Quiz
         </Link>
 
+        <Link href="/spot-the-scam" className="hover:text-white transition">
+          Spot the Scam
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>
