@@ -44,6 +44,10 @@ export default function Navbar() {
           Certificates
         </Link>
 
+        <Link href="/outreach" className="hover:text-white transition">
+          Outreach
+        </Link>
+
         <Link href="/about" className="hover:text-white transition">
           About
         </Link>

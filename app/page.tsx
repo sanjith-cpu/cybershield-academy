@@ -131,6 +131,11 @@ export default function Home() {
   		description="Students can preview future CyberShield certificates for Kids, Junior, and High School learning paths."
   		href="/certificates"
 	    />
+	    <FeatureCard
+  		title="School Outreach"
+  		description="CyberShield Academy supports classroom presentations, student workshops, and real-world cybersecurity 			education outreach."
+  		href="/outreach"
+	    />
           </div>
         </div>
       </section>
