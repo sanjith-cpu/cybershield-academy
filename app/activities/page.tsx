@@ -1,158 +1,217 @@
 import Link from "next/link";
-import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const activities = [
   {
     title: "Cyber Safety Quiz",
-    href: "/quiz",
+    type: "Quiz",
     description:
-      "Test your knowledge of online safety, passwords, scams, privacy, and responsible internet use.",
-    skills: [
-      "Online safety",
-      "Password basics",
-      "Scam awareness",
-      "Trusted adult decision-making",
-    ],
+      "Answer questions about passwords, scams, privacy, digital citizenship, safe browsing, ethics, and defensive cybersecurity.",
+    skills: ["Passwords", "Scams", "Privacy", "Digital Citizenship"],
+    href: "/quiz",
   },
   {
     title: "Spot the Scam",
-    href: "/spot-the-scam",
+    type: "Scenario Activity",
     description:
-      "Practice identifying suspicious messages, fake offers, scam warning signs, and online red flags.",
-    skills: [
-      "Phishing awareness",
-      "Suspicious link recognition",
-      "Urgency and fear tactics",
-      "Safe decision-making",
-    ],
+      "Practice identifying suspicious messages that use fake prizes, urgency, fear, secrecy, password requests, and suspicious links.",
+    skills: ["Scam Awareness", "Red Flags", "Safe Reporting"],
+    href: "/spot-the-scam",
   },
   {
     title: "Password Safety Lab",
-    href: "/password-lab",
+    type: "Interactive Lab",
     description:
-      "Type fake sample passwords and learn what makes passwords stronger, safer, and harder to guess.",
-    skills: [
-      "Password length",
-      "Character variety",
-      "Avoiding common passwords",
-      "Multi-factor authentication",
-    ],
+      "Use fake practice passwords to learn about length, uniqueness, character variety, myths, and safer account habits.",
+    skills: ["Password Strength", "MFA", "Account Safety"],
+    href: "/password-lab",
   },
+  {
+    title: "Safe Browsing Challenge",
+    type: "Challenge",
+    description:
+      "Practice checking website addresses, fake pop-ups, suspicious download buttons, and urgent account warnings.",
+    skills: ["Safe Browsing", "Suspicious Links", "Fake Downloads"],
+    href: "/safe-browsing",
+  },
+];
+
+const classroomUses = [
+  "Use one activity as a 10–15 minute classroom warm-up.",
+  "Pair an activity with a short lesson from the Resources page.",
+  "Have students explain the red flags or safety habit after each activity.",
+  "Use activities during school outreach sessions or cybersecurity club meetings.",
+];
+
+const safetyReminders = [
+  "Use fake examples only.",
+  "Do not enter real passwords.",
+  "Do not click real suspicious links to test them.",
+  "Ask a trusted adult, teacher, or school technology staff member if something online feels suspicious.",
 ];
 
 export default function ActivitiesPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <>
       <Navbar />
 
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-400 font-semibold">
-          Interactive Learning
-        </p>
+      <main className="min-h-screen bg-slate-950 text-white">
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            CyberShield Activities
+          </p>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          CyberShield Activities Hub
-        </h1>
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Practice cybersecurity skills with safe interactive activities.
+          </h1>
 
-        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
-          The Activities Hub brings CyberShield Academy&apos;s interactive tools
-          into one place. Students can practice cyber safety skills through
-          quizzes, scam examples, and password safety labs.
-        </p>
-      </section>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            These activities help students practice online safety, scam
+            awareness, password security, safe browsing, privacy, and ethical
+            defensive cybersecurity using age-appropriate examples.
+          </p>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-          {activities.map((activity) => (
-            <Link
-              key={activity.title}
-              href={activity.href}
-              className="rounded-2xl bg-slate-950 border border-slate-800 p-6 hover:border-cyan-500 hover:-translate-y-1 transition"
-            >
-              <h2 className="text-2xl font-bold text-cyan-400 mb-4">
-                {activity.title}
+          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+            Safety reminder: These activities are for learning only. Do not use
+            real passwords, private information, or real suspicious links.
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-6 md:grid-cols-2">
+            {activities.map((activity) => (
+              <Link
+                key={activity.href}
+                href={activity.href}
+                className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 transition hover:border-cyan-300 hover:bg-slate-900"
+              >
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                    {activity.type}
+                  </span>
+
+                  <span className="text-sm font-semibold text-cyan-300">
+                    Open →
+                  </span>
+                </div>
+
+                <h2 className="mt-5 text-2xl font-bold text-white">
+                  {activity.title}
+                </h2>
+
+                <p className="mt-3 text-sm leading-6 text-slate-300">
+                  {activity.description}
+                </p>
+
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {activity.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-slate-700 px-3 py-1 text-xs font-semibold text-slate-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+              <h2 className="text-3xl font-bold text-cyan-200">
+                Classroom Use Ideas
               </h2>
 
-              <p className="text-slate-300 leading-relaxed mb-6">
-                {activity.description}
+              <p className="mt-3 leading-7 text-slate-300">
+                Teachers, club leaders, and outreach volunteers can use these
+                activities as short practice sections during lessons.
               </p>
 
-              <h3 className="font-bold mb-3">Skills Practiced:</h3>
-
-              <div className="space-y-3">
-                {activity.skills.map((skill) => (
+              <div className="mt-6 grid gap-3">
+                {classroomUses.map((item) => (
                   <div
-                    key={skill}
-                    className="rounded-xl border border-slate-800 bg-slate-900 p-3 text-sm text-slate-300"
+                    key={item}
+                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
                   >
-                    {skill}
+                    {item}
                   </div>
                 ))}
               </div>
+            </div>
 
-              <div className="mt-6 rounded-xl bg-cyan-500 px-4 py-3 text-center font-semibold text-slate-950">
-                Start Activity
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+            <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
+              <h2 className="text-3xl font-bold text-yellow-100">
+                Activity Safety Reminders
+              </h2>
 
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-4">
-              Why interactive activities matter
-            </h2>
+              <p className="mt-3 leading-7 text-yellow-50/90">
+                CyberShield activities should always stay safe, defensive, and
+                privacy-aware.
+              </p>
 
-            <p className="text-slate-300 leading-relaxed">
-              Students learn cybersecurity better when they can practice making
-              decisions. These activities help students apply cyber safety ideas
-              instead of only reading about them.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-4">
-              Future activity ideas
-            </h2>
-
-            <div className="space-y-3">
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Safe Browsing Challenge
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Digital Footprint Reflection
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Cyber Ethics Scenario Game
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Privacy Settings Checklist
+              <div className="mt-6 grid gap-3">
+                {safetyReminders.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Practice builds cyber confidence.
-          </h2>
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Continue Learning
+            </h2>
 
-          <p className="text-slate-300 leading-relaxed">
-            CyberShield Academy activities are designed to be safe, educational,
-            and focused on responsible defensive cybersecurity habits.
-          </p>
-        </div>
-      </section>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Activities work best when students also review lessons, resources,
+              and safety reminders.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-4">
+              <Link
+                href="/lessons"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                View Lessons
+              </Link>
+
+              <Link
+                href="/resources"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Review Resources
+              </Link>
+
+              <Link
+                href="/teacher-toolkit"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Teacher Toolkit
+              </Link>
+
+              <Link
+                href="/safety"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Safety & Privacy
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
