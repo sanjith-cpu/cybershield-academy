@@ -1,262 +1,406 @@
-import Footer from "@/components/Footer";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const lessonPlans = [
   {
-    title: "Online Safety Introduction",
-    audience: "Grades 3-5",
-    time: "20-30 minutes",
-    objective:
-      "Students will understand basic online safety habits, including asking a trusted adult before sharing information.",
-    activity:
-      "Use the CyberShield Kids page and complete a Safe or Unsafe discussion.",
+    title: "Lesson 1: Scam Red Flags",
+    grade: "Elementary / Middle School",
+    time: "20–30 minutes",
+    goal:
+      "Students learn how to recognize suspicious messages that use prizes, fear, urgency, secrecy, or strange links.",
+    steps: [
+      "Start with a short discussion about messages students see online.",
+      "Show safe fake examples of suspicious and normal messages.",
+      "Have students identify red flags in each example.",
+      "Use the Spot the Scam activity for practice.",
+      "End with one safety rule students can remember.",
+    ],
   },
   {
-    title: "Spotting Scams and Red Flags",
-    audience: "Grades 6-8",
-    time: "30-40 minutes",
-    objective:
-      "Students will learn how to recognize suspicious messages, strange links, urgency, and fake offers.",
-    activity:
-      "Use the Spot the Scam activity and discuss why each example is safe or suspicious.",
+    title: "Lesson 2: Password Safety",
+    grade: "Middle / High School",
+    time: "25–35 minutes",
+    goal:
+      "Students learn why strong, unique passwords and multi-factor authentication help protect accounts.",
+    steps: [
+      "Ask students what makes a password easy or hard to guess.",
+      "Explain length, uniqueness, and avoiding personal details.",
+      "Use the Password Safety Lab with fake examples only.",
+      "Discuss password myths vs facts.",
+      "End with a checklist students can use for future accounts.",
+    ],
   },
   {
-    title: "Password Safety and Account Protection",
-    audience: "Grades 6-12",
-    time: "30-45 minutes",
-    objective:
-      "Students will understand why strong, unique passwords and multi-factor authentication matter.",
-    activity:
-      "Use the Password Safety Lab with fake sample passwords only.",
+    title: "Lesson 3: Digital Footprint",
+    grade: "Middle / High School",
+    time: "25–40 minutes",
+    goal:
+      "Students understand how posts, usernames, photos, comments, and profiles can shape their digital footprint.",
+    steps: [
+      "Ask students what information a stranger might learn from a public profile.",
+      "Discuss privacy settings and oversharing.",
+      "Give students reflection questions about online choices.",
+      "Connect the topic to school, college, jobs, and personal safety.",
+      "End with one habit students can improve this week.",
+    ],
   },
   {
-    title: "Cybersecurity Careers",
-    audience: "Grades 9-12",
-    time: "40-50 minutes",
-    objective:
-      "Students will explore cybersecurity career pathways and understand ethical defensive security.",
-    activity:
-      "Use the High School page and have students choose one career path to research further.",
+    title: "Lesson 4: Defensive Cybersecurity Ethics",
+    grade: "High School",
+    time: "30–45 minutes",
+    goal:
+      "Students learn the difference between ethical defensive learning and harmful misuse of cybersecurity skills.",
+    steps: [
+      "Define defensive cybersecurity in student-friendly language.",
+      "Discuss permission, privacy, safety, and responsibility.",
+      "Review safe examples of helping others online.",
+      "Use discussion prompts from the High School track.",
+      "End with an ethical cybersecurity pledge or reflection.",
+    ],
   },
 ];
 
-const discussionPrompts = [
-  "Why should students be careful before clicking unknown links?",
-  "What information should never be shared with strangers online?",
-  "Why is reusing the same password risky?",
-  "How can someone tell if a message might be a scam?",
-  "What does it mean to be kind and responsible online?",
-  "Why should cybersecurity be used to protect people, not harm them?",
+const timingBreakdown = [
+  {
+    part: "Warm-up",
+    time: "3–5 minutes",
+    detail:
+      "Ask a quick question to activate prior knowledge and connect the lesson to student experiences.",
+  },
+  {
+    part: "Mini Lesson",
+    time: "7–10 minutes",
+    detail:
+      "Teach the main idea using simple examples, classroom discussion, and safe language.",
+  },
+  {
+    part: "Activity",
+    time: "10–20 minutes",
+    detail:
+      "Use a CyberShield activity, worksheet, or scenario discussion to let students practice.",
+  },
+  {
+    part: "Reflection",
+    time: "5 minutes",
+    detail:
+      "Students answer an exit ticket or share one safety habit they will remember.",
+  },
+];
+
+const warmUpQuestions = [
+  "What is one online message that would make you pause before clicking?",
+  "Why do you think scammers try to make people feel rushed?",
+  "What information should students avoid sharing publicly online?",
+  "Why is it important to ask permission before posting someone else’s photo?",
+  "What should someone do if they accidentally click a suspicious link?",
+];
+
+const exitTickets = [
+  "Name one scam red flag you learned today.",
+  "Write one rule for creating a safer password.",
+  "What is one thing you should keep private online?",
+  "What should you do if a suspicious message asks for your password?",
+  "Explain the difference between defensive cybersecurity and harmful misuse.",
 ];
 
 const worksheetIdeas = [
-  "Safe or Unsafe online situation worksheet",
-  "Scam red flag checklist",
-  "Password safety reflection sheet",
-  "Digital footprint reflection activity",
-  "Cybersecurity vocabulary matching worksheet",
-  "Career pathway research worksheet",
+  {
+    title: "Scam Red Flags Worksheet",
+    detail:
+      "Students read fake message examples and circle warning signs like urgency, fear, prizes, secrecy, or suspicious links.",
+  },
+  {
+    title: "Password Strength Checklist",
+    detail:
+      "Students compare fake passwords and explain which ones are stronger and why.",
+  },
+  {
+    title: "Digital Footprint Reflection",
+    detail:
+      "Students answer reflection questions about posts, usernames, comments, photos, and privacy settings.",
+  },
+  {
+    title: "Safe or Unsafe?",
+    detail:
+      "Students sort online situations into safer choices and risky choices, then explain their reasoning.",
+  },
+  {
+    title: "Cyber Vocabulary Match",
+    detail:
+      "Students match words like phishing, privacy settings, password, and digital footprint with beginner-friendly definitions.",
+  },
 ];
 
-const teacherTips = [
-  "Use age-appropriate examples for each grade level.",
-  "Avoid asking students to share real passwords or private information.",
-  "Focus on safe, ethical, and defensive cybersecurity habits.",
-  "Encourage students to ask trusted adults when something feels suspicious.",
-  "Use short activities and discussion questions to keep students engaged.",
-  "Collect feedback after lessons to improve future sessions.",
+const safetyNotes = [
+  "Use fake examples only. Do not ask students to type, share, or test real passwords.",
+  "Do not ask students to share personal stories that may reveal private information.",
+  "Keep lessons focused on safety, privacy, ethics, and defensive habits.",
+  "If a student reports a real online safety issue, follow school policy and involve the appropriate trusted adult or staff member.",
+  "Do not teach students how to break into accounts, bypass rules, or access systems without permission.",
+];
+
+const toolkitLinks = [
+  {
+    label: "Resources",
+    href: "/resources",
+  },
+  {
+    label: "Spot the Scam",
+    href: "/spot-the-scam",
+  },
+  {
+    label: "Password Lab",
+    href: "/password-lab",
+  },
+  {
+    label: "High School Track",
+    href: "/high-school",
+  },
+  {
+    label: "Outreach",
+    href: "/outreach",
+  },
 ];
 
 export default function TeacherToolkitPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <>
       <Navbar />
 
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-400 font-semibold">
-          Teacher Toolkit
-        </p>
-
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Classroom tools for cybersecurity education.
-        </h1>
-
-        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
-          The Teacher Toolkit helps educators use CyberShield Academy in
-          classrooms, clubs, workshops, and outreach sessions. It includes lesson
-          ideas, discussion prompts, worksheet placeholders, and safe teaching
-          guidelines.
-        </p>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Mini Lesson Plans
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {lessonPlans.map((lesson) => (
-              <div
-                key={lesson.title}
-                className="rounded-2xl bg-slate-950 border border-slate-800 p-6 hover:border-cyan-500 transition"
-              >
-                <p className="text-sm text-slate-400 mb-2">
-                  {lesson.audience} | {lesson.time}
-                </p>
-
-                <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-                  {lesson.title}
-                </h3>
-
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  <span className="font-bold text-white">Objective:</span>{" "}
-                  {lesson.objective}
-                </p>
-
-                <p className="text-slate-300 leading-relaxed">
-                  <span className="font-bold text-white">Activity:</span>{" "}
-                  {lesson.activity}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-6">
-              Discussion Prompts
-            </h2>
-
-            <div className="space-y-3">
-              {discussionPrompts.map((prompt) => (
-                <div
-                  key={prompt}
-                  className="rounded-xl border border-slate-800 bg-slate-950 p-4"
-                >
-                  {prompt}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-6">
-              Worksheet Ideas
-            </h2>
-
-            <div className="space-y-3">
-              {worksheetIdeas.map((worksheet) => (
-                <div
-                  key={worksheet}
-                  className="rounded-xl border border-slate-800 bg-slate-950 p-4"
-                >
-                  {worksheet}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Safe Teaching Guidelines
-            </h2>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Cybersecurity lessons should focus on awareness, safety, ethics,
-              and defensive habits. Students should learn how to protect
-              themselves and others online.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed">
-              Teachers should avoid asking students to test real passwords,
-              share private information, or perform unsafe technical actions.
-              CyberShield Academy activities are designed to stay educational
-              and responsible.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-              Teacher Tips
-            </h3>
-
-            <div className="space-y-3">
-              {teacherTips.map((tip) => (
-                <div
-                  key={tip}
-                  className="rounded-xl border border-slate-800 bg-slate-900 p-4"
-                >
-                  {tip}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
-              Before the Lesson
-            </h2>
-
-            <p className="text-slate-300 leading-relaxed">
-              Choose the correct grade-level track, preview the activity, and
-              decide which discussion prompts fit the class.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
-              During the Lesson
-            </h2>
-
-            <p className="text-slate-300 leading-relaxed">
-              Keep examples simple, encourage safe decision-making, and remind
-              students not to share private information.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-4">
-              After the Lesson
-            </h2>
-
-            <p className="text-slate-300 leading-relaxed">
-              Use the Feedback Center to collect suggestions and use the Impact
-              Tracker to document real outreach progress.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Future printable materials
-          </h2>
-
-          <p className="text-slate-300 leading-relaxed mb-6">
-            In a future version, CyberShield Academy can include downloadable
-            worksheets, teacher slides, lesson packets, and classroom handouts.
+      <main className="min-h-screen bg-slate-950 text-white">
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Teacher Toolkit
           </p>
 
-          <div className="inline-block rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950">
-            Printable Toolkit Coming Soon
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Classroom-ready cybersecurity lesson support.
+          </h1>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            This toolkit helps teachers, counselors, club sponsors, and outreach
+            volunteers use CyberShield Academy in a safe, ethical, and
+            student-friendly way.
+          </p>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Mini Lesson Plans
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These lessons are designed to be short, flexible, and easy to use
+              during advisory, computer science classes, digital citizenship
+              lessons, club meetings, or outreach sessions.
+            </p>
+
+            <div className="mt-6 grid gap-6 lg:grid-cols-2">
+              {lessonPlans.map((lesson) => (
+                <div
+                  key={lesson.title}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6"
+                >
+                  <h3 className="text-xl font-bold text-cyan-200">
+                    {lesson.title}
+                  </h3>
+
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                      {lesson.grade}
+                    </span>
+                    <span className="rounded-full bg-purple-400/10 px-3 py-1 text-xs font-semibold text-purple-200">
+                      {lesson.time}
+                    </span>
+                  </div>
+
+                  <p className="mt-4 text-sm leading-6 text-slate-300">
+                    <span className="font-semibold text-white">Goal:</span>{" "}
+                    {lesson.goal}
+                  </p>
+
+                  <ol className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+                    {lesson.steps.map((step, index) => (
+                      <li
+                        key={step}
+                        className="rounded-xl bg-slate-900 p-4"
+                      >
+                        <span className="font-semibold text-cyan-200">
+                          Step {index + 1}:
+                        </span>{" "}
+                        {step}
+                      </li>
+                    ))}
+                  </ol>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
+              Classroom Timing Breakdown
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Teachers can adjust these times depending on the age group,
+              class period length, and student discussion needs.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {timingBreakdown.map((item) => (
+                <div
+                  key={item.part}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                >
+                  <h3 className="text-lg font-semibold text-white">
+                    {item.part}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold text-cyan-200">
+                    {item.time}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                Warm-Up Questions
+              </h2>
+
+              <p className="mt-3 leading-7 text-slate-300">
+                Use these at the beginning of a lesson to start discussion
+                without asking students to share private information.
+              </p>
+
+              <div className="mt-6 grid gap-3">
+                {warmUpQuestions.map((question) => (
+                  <div
+                    key={question}
+                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+                  >
+                    {question}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                Exit Ticket Questions
+              </h2>
+
+              <p className="mt-3 leading-7 text-slate-300">
+                Use these at the end of a lesson to check understanding and
+                help students remember one practical safety habit.
+              </p>
+
+              <div className="mt-6 grid gap-3">
+                {exitTickets.map((question) => (
+                  <div
+                    key={question}
+                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+                  >
+                    {question}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Worksheet Placeholders
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These are worksheet ideas for future classroom handouts. They are
+              placeholders for now and can be turned into printable worksheets
+              later if needed.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {worksheetIdeas.map((worksheet) => (
+                <div
+                  key={worksheet.title}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-semibold text-cyan-200">
+                    {worksheet.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {worksheet.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
+            <h2 className="text-3xl font-bold text-yellow-100">
+              Teacher Safety Notes
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-yellow-50/90">
+              CyberShield Academy should always be used for education,
+              prevention, digital citizenship, and defensive cybersecurity.
+            </p>
+
+            <div className="mt-6 grid gap-3">
+              {safetyNotes.map((note) => (
+                <div
+                  key={note}
+                  className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
+                >
+                  {note}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Helpful CyberShield Pages
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Teachers can use these pages to support lessons, activities,
+              outreach sessions, and student practice.
+            </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+              {toolkitLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
