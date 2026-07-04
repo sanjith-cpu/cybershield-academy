@@ -46,18 +46,24 @@ const outreachSteps = [
   },
   {
     step: "4",
+    title: "Contact a school or teacher",
+    detail:
+      "Use the Email Templates page to draft a professional outreach message and ask for permission.",
+  },
+  {
+    step: "5",
     title: "Practice delivery",
     detail:
       "Practice explaining the topic clearly, using fake examples only, and keeping the session age-appropriate.",
   },
   {
-    step: "5",
+    step: "6",
     title: "Run the session",
     detail:
       "Teach the lesson, guide discussion, run an activity, and end with clear online safety takeaways.",
   },
   {
-    step: "6",
+    step: "7",
     title: "Reflect and improve",
     detail:
       "Record what worked, what students asked, and what should be improved for the next outreach session.",
@@ -71,6 +77,13 @@ const outreachMaterials = [
       "Elementary, middle school, and high school presentation plans with timing, topics, activities, and teacher notes.",
     href: "/presentation-outlines",
     button: "View Outlines",
+  },
+  {
+    title: "Email Templates",
+    description:
+      "Professional outreach email drafts for contacting teachers, counselors, administrators, clubs, and school partners.",
+    href: "/email-templates",
+    button: "View Templates",
   },
   {
     title: "Worksheets",
@@ -180,6 +193,13 @@ export default function OutreachPage() {
             </Link>
 
             <Link
+              href="/email-templates"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Email Templates
+            </Link>
+
+            <Link
               href="/worksheets"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
@@ -261,11 +281,11 @@ export default function OutreachPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              These pages support presentation planning, classroom activities,
-              printable prompts, and safe teaching.
+              These pages support presentation planning, school communication,
+              classroom activities, printable prompts, and safe teaching.
             </p>
 
-            <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
               {outreachMaterials.map((material) => (
                 <Link
                   key={material.href}
