@@ -1,252 +1,379 @@
-import Footer from "@/components/Footer";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const impactStats = [
+const currentMetrics = [
   {
     label: "Schools Contacted",
     value: "0",
-    note: "Tracking will begin during outreach.",
+    note: "Will be updated after real outreach begins.",
   },
   {
-    label: "Sessions Completed",
+    label: "Sessions Delivered",
     value: "0",
-    note: "Workshops will be recorded after delivery.",
+    note: "No school sessions have been completed yet.",
   },
   {
     label: "Students Reached",
     value: "0",
-    note: "Student reach will be updated after each session.",
+    note: "This will only include real counted participants.",
   },
   {
-    label: "Feedback Collected",
+    label: "Feedback Responses",
     value: "0",
-    note: "Teacher and student feedback will be tracked here.",
+    note: "Feedback collection has not started yet.",
   },
 ];
 
-const outreachTargets = [
+const impactGoals = [
   {
-    goal: "Contact local elementary schools",
-    status: "Planned",
-    description:
-      "Reach out to teachers or administrators about CyberShield Kids presentations.",
+    title: "Teach practical online safety",
+    detail:
+      "Help students recognize scams, protect accounts, avoid oversharing, and ask for help when something feels suspicious.",
   },
   {
-    goal: "Contact local middle schools",
-    status: "Planned",
-    description:
-      "Offer a CyberShield Junior session on scams, passwords, privacy, and digital citizenship.",
+    title: "Support teachers and schools",
+    detail:
+      "Provide classroom-friendly lessons, activities, and safety reminders that can be used during school sessions.",
   },
   {
-    goal: "Create presentation materials",
-    status: "In progress",
-    description:
-      "Use the website lessons and activities to create classroom-friendly slides and worksheets.",
+    title: "Make cybersecurity understandable",
+    detail:
+      "Explain cybersecurity in beginner-friendly language for elementary, middle, and high school students.",
   },
   {
-    goal: "Collect feedback after sessions",
-    status: "Planned",
-    description:
-      "Use feedback forms to learn what students understood and what should be improved.",
+    title: "Promote ethical defensive learning",
+    detail:
+      "Keep all cybersecurity learning focused on safety, privacy, responsibility, and helping others.",
   },
 ];
 
-const feedbackQuestions = [
-  "Was the presentation easy to understand?",
-  "What was the most useful cybersecurity tip?",
-  "What topic should CyberShield Academy explain better?",
-  "Would students recommend this session to others?",
-  "What questions did students still have after the session?",
+const futureSchoolTracker = [
+  {
+    school: "Future School Partner",
+    status: "Not contacted yet",
+    sessionType: "To be decided",
+    notes: "This row is a placeholder for future outreach tracking.",
+  },
+  {
+    school: "Future School Partner",
+    status: "Not contacted yet",
+    sessionType: "To be decided",
+    notes: "Add real school information only after outreach begins.",
+  },
+  {
+    school: "Future School Partner",
+    status: "Not contacted yet",
+    sessionType: "To be decided",
+    notes: "Do not list a school as reached unless a session actually happens.",
+  },
+];
+
+const feedbackCategories = [
+  {
+    category: "Lesson Clarity",
+    question:
+      "Did students understand the cybersecurity topic in simple language?",
+  },
+  {
+    category: "Activity Usefulness",
+    question:
+      "Did the activity help students practice a real online safety skill?",
+  },
+  {
+    category: "Student Confidence",
+    question:
+      "Do students feel more confident spotting scams or protecting accounts?",
+  },
+  {
+    category: "Teacher Usefulness",
+    question:
+      "Would a teacher use this lesson, activity, or resource again?",
+  },
+  {
+    category: "Improvement Ideas",
+    question:
+      "What should be clearer, shorter, more interactive, or more useful?",
+  },
+];
+
+const evidencePlan = [
+  "Keep screenshots of major website updates.",
+  "Record dates when pages are upgraded or launched.",
+  "Track real outreach emails only after they are sent.",
+  "Track school sessions only after they actually happen.",
+  "Use feedback without collecting private student information.",
+  "Write reflections about what improved after each outreach attempt.",
+];
+
+const privacyRules = [
+  "Do not collect student names, personal emails, passwords, phone numbers, addresses, or private account details.",
+  "Use general feedback categories instead of private personal information.",
+  "Only count real outreach, real sessions, and real feedback.",
+  "If a real online safety concern is shared, involve the proper teacher, parent, counselor, or school staff member.",
 ];
 
 export default function ImpactPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <>
       <Navbar />
 
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-400 font-semibold">
-          Impact Tracker
-        </p>
-
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Tracking CyberShield Academy&apos;s real-world impact.
-        </h1>
-
-        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
-          The Impact Tracker is designed to document outreach progress, school
-          partnerships, student reach, workshop feedback, and future improvement
-          goals. This page will be updated as CyberShield Academy begins school
-          outreach.
-        </p>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Current Impact Snapshot
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {impactStats.map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-2xl bg-slate-950 border border-slate-800 p-6 hover:border-cyan-500 transition"
-              >
-                <p className="text-sm text-slate-400 mb-2">{stat.label}</p>
-
-                <h3 className="text-5xl font-extrabold text-cyan-400 mb-4">
-                  {stat.value}
-                </h3>
-
-                <p className="text-sm text-slate-300">{stat.note}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-slate-400 mt-6 text-sm">
-            These numbers are currently set to zero because outreach has not
-            officially started yet. They should only be updated after real
-            outreach progress happens.
+      <main className="min-h-screen bg-slate-950 text-white">
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Impact Tracker
           </p>
-        </div>
-      </section>
 
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Why impact tracking matters
-            </h2>
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Tracking CyberShield Academy’s growth honestly.
+          </h1>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              CyberShield Academy is not just a website. It is also a community
-              education project. Tracking impact helps show whether the project
-              is reaching students, helping schools, and improving cybersecurity
-              awareness.
-            </p>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            This page tracks the project’s progress, outreach goals, feedback
+            categories, and future impact. Numbers will only be updated when
+            real outreach, real sessions, or real feedback happen.
+          </p>
 
-            <p className="text-slate-300 leading-relaxed">
-              This page will help organize outreach progress and make it easier
-              to reflect on results, improve lessons, and document growth over
-              time.
-            </p>
+          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+            Honesty note: CyberShield Academy does not claim fake student
+            reach, fake school partnerships, or fake feedback. Current numbers
+            are placeholders until real outreach begins.
           </div>
+        </section>
 
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-              What will be tracked
-            </h3>
-
-            <div className="space-y-3">
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Number of schools contacted
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Number of presentations delivered
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Estimated number of students reached
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Teacher and student feedback
-              </div>
-
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Improvements made after feedback
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Outreach Goals
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            {outreachTargets.map((target) => (
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {currentMetrics.map((metric) => (
               <div
-                key={target.goal}
-                className="rounded-2xl bg-slate-950 border border-slate-800 p-6"
+                key={metric.label}
+                className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6"
               >
-                <div className="flex items-start justify-between gap-4 mb-4">
-                  <h3 className="text-2xl font-bold text-cyan-400">
-                    {target.goal}
-                  </h3>
+                <p className="text-sm font-semibold text-slate-400">
+                  {metric.label}
+                </p>
 
-                  <span className="rounded-full border border-cyan-500 px-3 py-1 text-sm text-cyan-400">
-                    {target.status}
-                  </span>
-                </div>
+                <p className="mt-3 text-5xl font-bold text-cyan-200">
+                  {metric.value}
+                </p>
 
-                <p className="text-slate-300 leading-relaxed">
-                  {target.description}
+                <p className="mt-4 text-sm leading-6 text-slate-300">
+                  {metric.note}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-6">
-              Feedback Questions
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              What Impact Means
             </h2>
 
-            <div className="space-y-3">
-              {feedbackQuestions.map((question) => (
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Impact is not just about large numbers. For this project, impact
+              means making cybersecurity easier to understand, safer to learn,
+              and more useful for students and teachers.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {impactGoals.map((goal) => (
                 <div
-                  key={question}
-                  className="rounded-xl border border-slate-800 bg-slate-950 p-4"
+                  key={goal.title}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
                 >
-                  {question}
+                  <h3 className="font-semibold text-cyan-200">
+                    {goal.title}
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {goal.detail}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
+        </section>
 
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-4">
-              Future Dashboard Features
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
+              Future Schools Contacted
             </h2>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              In a later version, this page could become a full dashboard where
-              outreach sessions, schools, student counts, and feedback are added
-              through a form.
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              This table is a future tracking area. It should only be updated
+              after real outreach begins and real schools are contacted.
             </p>
 
-            <p className="text-slate-300 leading-relaxed">
-              For now, this page acts as a public impact plan and a place to
-              document progress honestly as the project grows.
-            </p>
+            <div className="mt-6 overflow-hidden rounded-2xl border border-slate-800">
+              <div className="grid bg-slate-950/80 text-sm font-semibold text-slate-200 md:grid-cols-4">
+                <div className="border-b border-slate-800 p-4 md:border-r">
+                  School
+                </div>
+                <div className="border-b border-slate-800 p-4 md:border-r">
+                  Status
+                </div>
+                <div className="border-b border-slate-800 p-4 md:border-r">
+                  Session Type
+                </div>
+                <div className="border-b border-slate-800 p-4">Notes</div>
+              </div>
+
+              {futureSchoolTracker.map((row, index) => (
+                <div
+                  key={`${row.school}-${index}`}
+                  className="grid text-sm text-slate-300 md:grid-cols-4"
+                >
+                  <div className="border-b border-slate-800 p-4 md:border-r">
+                    {row.school}
+                  </div>
+                  <div className="border-b border-slate-800 p-4 md:border-r">
+                    {row.status}
+                  </div>
+                  <div className="border-b border-slate-800 p-4 md:border-r">
+                    {row.sessionType}
+                  </div>
+                  <div className="border-b border-slate-800 p-4">
+                    {row.notes}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Honest progress matters
-          </h2>
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Feedback Categories
+            </h2>
 
-          <p className="text-slate-300 leading-relaxed">
-            CyberShield Academy should only report real outreach numbers after
-            schools are contacted, sessions are completed, and feedback is
-            collected. Accurate tracking makes the project more trustworthy.
-          </p>
-        </div>
-      </section>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Feedback should focus on improving the project, not collecting
+              private student information.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {feedbackCategories.map((item) => (
+                <div
+                  key={item.category}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-semibold text-cyan-200">
+                    {item.category}
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {item.question}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8">
+              <Link
+                href="/feedback"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                View Feedback Center
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                Evidence and Progress Plan
+              </h2>
+
+              <p className="mt-3 leading-7 text-slate-300">
+                These steps can help document the project honestly for outreach,
+                reflections, and future college application materials.
+              </p>
+
+              <div className="mt-6 grid gap-3">
+                {evidencePlan.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
+              <h2 className="text-3xl font-bold text-yellow-100">
+                Privacy and Safety Rules
+              </h2>
+
+              <p className="mt-3 leading-7 text-yellow-50/90">
+                Impact tracking should be useful, honest, and privacy-aware.
+              </p>
+
+              <div className="mt-6 grid gap-3">
+                {privacyRules.map((rule) => (
+                  <div
+                    key={rule}
+                    className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
+                  >
+                    {rule}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Continue Building Impact
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              The next step is to prepare outreach materials, improve feedback
+              collection, and keep the project honest as it grows.
+            </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <Link
+                href="/outreach"
+                className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+              >
+                Outreach Page
+              </Link>
+
+              <Link
+                href="/teacher-toolkit"
+                className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+              >
+                Teacher Toolkit
+              </Link>
+
+              <Link
+                href="/feedback"
+                className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+              >
+                Feedback Center
+              </Link>
+
+              <Link
+                href="/roadmap"
+                className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+              >
+                Roadmap
+              </Link>
+            </div>
+          </div>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
