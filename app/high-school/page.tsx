@@ -117,6 +117,12 @@ export default function HighSchoolPage() {
             >
               Try Activities
             </Link>
+            <Link
+              href="/careers"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Explore Careers
+            </Link>
           </div>
         </section>
 
@@ -153,8 +159,8 @@ export default function HighSchoolPage() {
             </h2>
             <p className="mt-4 max-w-3xl leading-7 text-slate-300">
               CyberShield Academy teaches cybersecurity as a defensive skill.
-              Students should use what they learn to protect accounts, help their
-              communities, and make safer choices online.
+              Students should use what they learn to protect accounts, help
+              their communities, and make safer choices online.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -196,6 +202,15 @@ export default function HighSchoolPage() {
                     </p>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-6">
+                <Link
+                  href="/careers"
+                  className="inline-block rounded-xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+                >
+                  View Full Careers Page
+                </Link>
               </div>
             </div>
 
@@ -253,37 +268,49 @@ export default function HighSchoolPage() {
             <h2 className="text-3xl font-bold text-white">
               Continue Learning
             </h2>
+
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               After finishing this page, students can explore lessons, complete
-              activities, use resources, review teacher materials, or check the
-              project roadmap.
+              activities, use resources, review teacher materials, explore
+              careers, or check the project roadmap.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
               <Link
                 href="/lessons"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
               >
                 Lessons
               </Link>
+
               <Link
                 href="/activities"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
               >
                 Activities
               </Link>
+
               <Link
                 href="/resources"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
               >
                 Resources
               </Link>
+
               <Link
                 href="/teacher-toolkit"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
               >
                 Teacher Toolkit
               </Link>
+
+              <Link
+                href="/careers"
+                className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+              >
+                Careers
+              </Link>
+
               <Link
                 href="/roadmap"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"

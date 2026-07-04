@@ -40,27 +40,31 @@ const footerSections = [
     ],
   },
   {
-    title: "Project",
-    links: [
-      {
-        label: "About",
-        href: "/about",
-      },
-      {
-        label: "Roadmap",
-        href: "/roadmap",
-      },
-      {
-        label: "Outreach",
-        href: "/outreach",
-      },
-      {
-        label: "Impact",
-        href: "/impact",
-      },
-    ],
-  },
-  {
+  title: "Project",
+  links: [
+    {
+      label: "About",
+      href: "/about",
+    },
+    {
+      label: "Careers",
+      href: "/careers",
+    },
+    {
+      label: "Roadmap",
+      href: "/roadmap",
+    },
+    {
+      label: "Outreach",
+      href: "/outreach",
+    },
+    {
+      label: "Impact",
+      href: "/impact",
+    },
+  ],
+},  
+{
     title: "Safety",
     links: [
       {
