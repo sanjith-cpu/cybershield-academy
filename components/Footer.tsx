@@ -100,6 +100,10 @@ const footerSections = [
         href: "/teacher-toolkit",
       },
       {
+        label: "Worksheets",
+        href: "/worksheets",
+      },
+      {
         label: "Safety & Privacy",
         href: "/safety",
       },
