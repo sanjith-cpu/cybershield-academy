@@ -35,6 +35,14 @@ const activities = [
     skills: ["Safe Browsing", "Suspicious Links", "Fake Downloads"],
     href: "/safe-browsing",
   },
+  {
+    title: "Digital Footprint Reflection",
+    type: "Reflection Activity",
+    description:
+      "Learn how posts, photos, usernames, comments, profiles, and privacy settings can shape your online footprint.",
+    skills: ["Privacy", "Reputation", "Digital Citizenship"],
+    href: "/digital-footprint",
+  },
 ];
 
 const classroomUses = [
@@ -48,6 +56,7 @@ const safetyReminders = [
   "Use fake examples only.",
   "Do not enter real passwords.",
   "Do not click real suspicious links to test them.",
+  "Do not share private personal information in reflection boxes.",
   "Ask a trusted adult, teacher, or school technology staff member if something online feels suspicious.",
 ];
 
@@ -68,8 +77,9 @@ export default function ActivitiesPage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             These activities help students practice online safety, scam
-            awareness, password security, safe browsing, privacy, and ethical
-            defensive cybersecurity using age-appropriate examples.
+            awareness, password security, safe browsing, privacy, digital
+            citizenship, and ethical defensive cybersecurity using
+            age-appropriate examples.
           </p>
 
           <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
