@@ -104,6 +104,10 @@ const footerSections = [
         href: "/worksheets",
       },
       {
+        label: "Presentation Outlines",
+        href: "/presentation-outlines",
+      },
+      {
         label: "Safety & Privacy",
         href: "/safety",
       },

@@ -108,6 +108,10 @@ const quickLinks = [
     href: "/worksheets",
   },
   {
+    label: "Presentation Outlines",
+    href: "/presentation-outlines",
+  },
+  {
     label: "Activities",
     href: "/activities",
   },
@@ -153,6 +157,13 @@ export default function TeacherToolkitPage() {
               className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
               Open Worksheets
+            </Link>
+
+            <Link
+              href="/presentation-outlines"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Presentation Outlines
             </Link>
 
             <Link
@@ -281,26 +292,61 @@ export default function TeacherToolkitPage() {
               </Link>
             </div>
 
-            <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
-              <h2 className="text-3xl font-bold text-yellow-100">
-                Classroom Safety Guidelines
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                Outreach Presentation Planning
               </h2>
 
-              <p className="mt-3 leading-7 text-yellow-50/90">
-                These reminders help keep cybersecurity lessons safe,
-                respectful, and appropriate for students.
+              <p className="mt-3 leading-7 text-slate-300">
+                The Presentation Outlines page includes ready-to-use plans for
+                elementary, middle school, and high school cybersecurity
+                outreach sessions.
               </p>
 
               <div className="mt-6 grid gap-3">
-                {safetyGuidelines.map((guideline) => (
-                  <div
-                    key={guideline}
-                    className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
-                  >
-                    {guideline}
-                  </div>
-                ))}
+                <div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300">
+                  Elementary school outline: 20–25 minutes
+                </div>
+
+                <div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300">
+                  Middle school outline: 30–35 minutes
+                </div>
+
+                <div className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300">
+                  High school outline: 40–45 minutes
+                </div>
               </div>
+
+              <Link
+                href="/presentation-outlines"
+                className="mt-6 inline-block rounded-xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                View Presentation Outlines
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
+            <h2 className="text-3xl font-bold text-yellow-100">
+              Classroom Safety Guidelines
+            </h2>
+
+            <p className="mt-3 leading-7 text-yellow-50/90">
+              These reminders help keep cybersecurity lessons safe, respectful,
+              and appropriate for students.
+            </p>
+
+            <div className="mt-6 grid gap-3 md:grid-cols-2">
+              {safetyGuidelines.map((guideline) => (
+                <div
+                  key={guideline}
+                  className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
+                >
+                  {guideline}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -316,7 +362,7 @@ export default function TeacherToolkitPage() {
               activities, and support safe cybersecurity outreach.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
               {quickLinks.map((link) => (
                 <Link
                   key={link.href}
