@@ -111,12 +111,14 @@ export default function HighSchoolPage() {
             >
               Explore Lessons
             </Link>
+
             <Link
               href="/activities"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
               Try Activities
             </Link>
+
             <Link
               href="/careers"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
@@ -136,6 +138,7 @@ export default function HighSchoolPage() {
                 <h2 className="text-2xl font-bold text-cyan-200">
                   {section.title}
                 </h2>
+
                 <p className="mt-3 text-sm leading-6 text-slate-300">
                   {section.description}
                 </p>
@@ -157,6 +160,7 @@ export default function HighSchoolPage() {
             <h2 className="text-3xl font-bold text-cyan-200">
               Defensive Cybersecurity Ethics
             </h2>
+
             <p className="mt-4 max-w-3xl leading-7 text-slate-300">
               CyberShield Academy teaches cybersecurity as a defensive skill.
               Students should use what they learn to protect accounts, help
@@ -173,6 +177,15 @@ export default function HighSchoolPage() {
                 </div>
               ))}
             </div>
+
+            <div className="mt-6">
+              <Link
+                href="/cyber-ethics"
+                className="inline-block rounded-xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Practice Cyber Ethics
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -182,6 +195,7 @@ export default function HighSchoolPage() {
               <h2 className="text-3xl font-bold text-white">
                 Career Pathway Examples
               </h2>
+
               <p className="mt-3 leading-7 text-slate-300">
                 High school students do not need to know their exact career yet,
                 but exploring roles can make cybersecurity feel more real and
@@ -197,6 +211,7 @@ export default function HighSchoolPage() {
                     <h3 className="font-semibold text-cyan-200">
                       {career.role}
                     </h3>
+
                     <p className="mt-2 text-sm leading-6 text-slate-300">
                       {career.detail}
                     </p>
@@ -218,6 +233,7 @@ export default function HighSchoolPage() {
               <h2 className="text-3xl font-bold text-white">
                 Certification Preparation Overview
               </h2>
+
               <p className="mt-3 leading-7 text-slate-300">
                 Certifications are optional future goals, not required to use
                 this website. This page introduces topics that can help students
@@ -236,6 +252,15 @@ export default function HighSchoolPage() {
                 Reminder: CyberShield Academy certificates are learning
                 recognition badges, not official industry certifications.
               </p>
+
+              <div className="mt-6">
+                <Link
+                  href="/certification-guide"
+                  className="inline-block rounded-xl bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+                >
+                  View Certification Guide
+                </Link>
+              </div>
             </div>
           </div>
         </section>
@@ -245,6 +270,7 @@ export default function HighSchoolPage() {
             <h2 className="text-3xl font-bold text-white">
               Discussion Prompts
             </h2>
+
             <p className="mt-3 leading-7 text-slate-300">
               These questions can be used by students, teachers, clubs, or
               outreach volunteers to start meaningful conversations.
@@ -272,10 +298,11 @@ export default function HighSchoolPage() {
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               After finishing this page, students can explore lessons, complete
               activities, use resources, review teacher materials, explore
-              careers, or check the project roadmap.
+              careers, review certification guidance, or check the project
+              roadmap.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7">
               <Link
                 href="/lessons"
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
@@ -309,6 +336,13 @@ export default function HighSchoolPage() {
                 className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
               >
                 Careers
+              </Link>
+
+              <Link
+                href="/certification-guide"
+                className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+              >
+                Certification Guide
               </Link>
 
               <Link
