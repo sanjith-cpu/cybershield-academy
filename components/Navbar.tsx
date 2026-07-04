@@ -1,57 +1,133 @@
-﻿import Link from "next/link";
+﻿"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  {
+    label: "Home",
+    href: "/",
+  },
+  {
+    label: "Lessons",
+    href: "/lessons",
+  },
+  {
+    label: "Activities",
+    href: "/activities",
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+  },
+  {
+    label: "Teacher Toolkit",
+    href: "/teacher-toolkit",
+  },
+  {
+    label: "Certificates",
+    href: "/certificates",
+  },
+  {
+    label: "Outreach",
+    href: "/outreach",
+  },
+  {
+    label: "Impact",
+    href: "/impact",
+  },
+  {
+    label: "Feedback",
+    href: "/feedback",
+  },
+  {
+    label: "Roadmap",
+    href: "/roadmap",
+  },
+  {
+    label: "About",
+    href: "/about",
+  },
+];
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActiveLink(href: string) {
+    if (href === "/") {
+      return pathname === "/";
+    }
+
+    return pathname.startsWith(href);
+  }
+
   return (
-    <nav className="flex flex-col gap-4 px-8 py-6 border-b border-slate-800 bg-slate-950 text-white md:flex-row md:items-center md:justify-between">
-      <Link href="/" className="text-2xl font-bold tracking-tight">
-        CyberShield Academy
-      </Link>
-
-      <div className="hidden md:flex flex-wrap justify-end gap-x-4 gap-y-2 text-xs text-slate-300">
-        <Link href="/" className="hover:text-white transition">
-          Home
+    <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 text-white backdrop-blur">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <Link
+          href="/"
+          className="text-lg font-bold tracking-tight text-cyan-300 transition hover:text-cyan-200"
+          onClick={() => setMenuOpen(false)}
+        >
+          CyberShield Academy
         </Link>
 
-        <Link href="/lessons" className="hover:text-white transition">
-          Lessons
-        </Link>
+        <div className="hidden items-center gap-2 lg:flex">
+          {navLinks.map((link) => {
+            const active = isActiveLink(link.href);
 
-        <Link href="/activities" className="hover:text-white transition">
-          Activities
-        </Link>
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
+                  active
+                    ? "bg-cyan-400 text-slate-950"
+                    : "text-slate-300 hover:bg-slate-900 hover:text-cyan-200"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
+        </div>
 
-        <Link href="/resources" className="hover:text-white transition">
-          Resources
-        </Link>
+        <button
+          type="button"
+          onClick={() => setMenuOpen((current) => !current)}
+          className="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200 lg:hidden"
+          aria-label="Toggle navigation menu"
+        >
+          {menuOpen ? "Close" : "Menu"}
+        </button>
+      </nav>
 
-        <Link href="/teacher-toolkit" className="hover:text-white transition">
-          Teacher Toolkit
-        </Link>
+      {menuOpen && (
+        <div className="border-t border-slate-800 bg-slate-950 px-6 pb-5 lg:hidden">
+          <div className="mx-auto grid max-w-7xl gap-2 pt-4 sm:grid-cols-2">
+            {navLinks.map((link) => {
+              const active = isActiveLink(link.href);
 
-        <Link href="/certificates" className="hover:text-white transition">
-          Certificates
-        </Link>
-
-        <Link href="/outreach" className="hover:text-white transition">
-          Outreach
-        </Link>
-
-        <Link href="/impact" className="hover:text-white transition">
-          Impact
-        </Link>
-
-        <Link href="/feedback" className="hover:text-white transition">
-          Feedback
-        </Link>
-
-        <Link href="/roadmap" className="hover:text-white transition">
-          Roadmap
-        </Link>
-
-        <Link href="/about" className="hover:text-white transition">
-          About
-        </Link>
-      </div>
-    </nav>
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`rounded-xl px-4 py-3 text-sm font-semibold transition ${
+                    active
+                      ? "bg-cyan-400 text-slate-950"
+                      : "bg-slate-900 text-slate-200 hover:bg-slate-800 hover:text-cyan-200"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </header>
   );
 }
