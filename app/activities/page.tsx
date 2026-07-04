@@ -43,6 +43,14 @@ const activities = [
     skills: ["Privacy", "Reputation", "Digital Citizenship"],
     href: "/digital-footprint",
   },
+  {
+    title: "Cyber Ethics Scenarios",
+    type: "Scenario Activity",
+    description:
+      "Practice responsible technology decisions about permission, privacy, reporting, respect, and defensive cybersecurity.",
+    skills: ["Ethics", "Permission", "Privacy", "Responsibility"],
+    href: "/cyber-ethics",
+  },
 ];
 
 const classroomUses = [
@@ -57,6 +65,7 @@ const safetyReminders = [
   "Do not enter real passwords.",
   "Do not click real suspicious links to test them.",
   "Do not share private personal information in reflection boxes.",
+  "Do not try to access accounts, devices, networks, or private information without permission.",
   "Ask a trusted adult, teacher, or school technology staff member if something online feels suspicious.",
 ];
 
@@ -78,13 +87,14 @@ export default function ActivitiesPage() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             These activities help students practice online safety, scam
             awareness, password security, safe browsing, privacy, digital
-            citizenship, and ethical defensive cybersecurity using
+            citizenship, cyber ethics, and defensive cybersecurity using
             age-appropriate examples.
           </p>
 
           <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
             Safety reminder: These activities are for learning only. Do not use
-            real passwords, private information, or real suspicious links.
+            real passwords, private information, real suspicious links, or
+            unauthorized systems.
           </div>
         </section>
 
@@ -159,8 +169,8 @@ export default function ActivitiesPage() {
               </h2>
 
               <p className="mt-3 leading-7 text-yellow-50/90">
-                CyberShield activities should always stay safe, defensive, and
-                privacy-aware.
+                CyberShield activities should always stay safe, defensive,
+                ethical, and privacy-aware.
               </p>
 
               <div className="mt-6 grid gap-3">
