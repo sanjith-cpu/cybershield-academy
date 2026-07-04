@@ -1,167 +1,293 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Link from "next/link";
 
-const highSchoolTracks = [
+const trackSections = [
   {
     title: "Beginner Track",
-    level: "Foundations",
     description:
-      "Learn the basic ideas behind cybersecurity, including online safety, accounts, passwords, scams, privacy, and responsible technology use.",
+      "Start with the core habits every high school student should know before going deeper into cybersecurity.",
+    modules: [
+      "Online safety habits and recognizing risky situations",
+      "Password security, passphrases, and multi-factor authentication",
+      "Phishing, fake login pages, suspicious links, and scam red flags",
+      "Digital footprint basics and how online choices can affect your future",
+    ],
   },
   {
     title: "Intermediate Track",
-    level: "Core Skills",
     description:
-      "Explore networks, authentication, operating systems, data protection, risk, and how security teams think about protecting people and organizations.",
+      "Build stronger cybersecurity thinking by learning how systems, accounts, networks, and people are protected.",
+    modules: [
+      "How attackers use social engineering and how defenders reduce risk",
+      "Basic network safety concepts like Wi-Fi security, updates, and secure browsing",
+      "Privacy settings, app permissions, and protecting personal information",
+      "Cybersecurity teamwork: reporting problems, documenting issues, and helping others safely",
+    ],
   },
   {
     title: "Advanced Track",
-    level: "Career Preparation",
     description:
-      "Learn about cybersecurity careers, certifications, ethical security work, incident response, digital forensics, and real-world defense concepts.",
+      "Explore career-connected cybersecurity concepts while staying ethical, defensive, and age-appropriate.",
+    modules: [
+      "Defensive security mindset: protecting systems instead of breaking them",
+      "Risk assessment: identifying what could go wrong and how to reduce harm",
+      "Incident response basics: what to do when something suspicious happens",
+      "Career preparation through projects, documentation, certifications, and outreach",
+    ],
   },
 ];
 
+const ethicsRules = [
+  "Only practice cybersecurity skills in safe, legal, and approved environments.",
+  "Never try to access someone else’s account, device, network, or private information.",
+  "Use cybersecurity knowledge to protect people, report problems, and reduce harm.",
+  "When in doubt, ask a teacher, parent, mentor, or trusted adult before taking action.",
+];
+
 const careerPaths = [
-  "Cybersecurity Analyst",
-  "Security Engineer",
-  "Digital Forensics Investigator",
-  "Cloud Security Specialist",
-  "Network Security Administrator",
-  "Security Awareness Educator",
+  {
+    role: "Cybersecurity Analyst",
+    detail:
+      "Monitors alerts, investigates suspicious activity, and helps organizations respond to threats.",
+  },
+  {
+    role: "Security Awareness Educator",
+    detail:
+      "Teaches students, employees, and communities how to avoid scams and stay safer online.",
+  },
+  {
+    role: "Network Security Specialist",
+    detail:
+      "Helps protect networks, Wi-Fi systems, firewalls, and connected devices.",
+  },
+  {
+    role: "Digital Forensics Investigator",
+    detail:
+      "Studies digital evidence after incidents and helps understand what happened.",
+  },
+];
+
+const certificationTopics = [
+  "Basic computer and networking knowledge",
+  "Cybersecurity vocabulary and common threats",
+  "Safe account protection habits",
+  "Ethics, laws, and responsible technology use",
+  "Risk management and security best practices",
+];
+
+const discussionPrompts = [
+  "Why do scams often use urgency, fear, or rewards to pressure people?",
+  "How can students protect their digital footprint before applying to colleges or jobs?",
+  "What is the difference between learning cybersecurity and misusing cybersecurity skills?",
+  "Why is reporting a suspicious message usually safer than trying to investigate it yourself?",
 ];
 
 export default function HighSchoolPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <Navbar />
-
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-400 font-semibold">
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
           CyberShield High School
         </p>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Cybersecurity learning paths for high school students.
+        <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+          Cybersecurity learning for high school students.
         </h1>
 
-        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-10">
-          The High School track introduces students to cybersecurity foundations,
-          technical concepts, career pathways, certifications, and ethical
-          defensive security skills.
+        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+          This track helps high school students build strong online safety
+          habits, understand defensive cybersecurity, explore career pathways,
+          and prepare for future learning in a safe and ethical way.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {highSchoolTracks.map((track) => (
+        <div className="mt-8 flex flex-wrap gap-4">
+          <Link
+            href="/lessons"
+            className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+          >
+            Explore Lessons
+          </Link>
+          <Link
+            href="/activities"
+            className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+          >
+            Try Activities
+          </Link>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="grid gap-6 md:grid-cols-3">
+          {trackSections.map((section) => (
             <div
-              key={track.title}
-              className="rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-cyan-500 transition"
+              key={section.title}
+              className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg"
             >
-              <p className="text-sm text-slate-400 mb-2">{track.level}</p>
-
-              <h2 className="text-2xl font-bold text-cyan-400 mb-3">
-                {track.title}
+              <h2 className="text-2xl font-bold text-cyan-200">
+                {section.title}
               </h2>
+              <p className="mt-3 text-sm leading-6 text-slate-300">
+                {section.description}
+              </p>
 
-              <p className="text-slate-300">{track.description}</p>
+              <ul className="mt-5 space-y-3 text-sm text-slate-300">
+                {section.modules.map((module) => (
+                  <li key={module} className="rounded-xl bg-slate-950/70 p-3">
+                    {module}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              What students will learn
-            </h2>
-
-            <p className="text-slate-300 leading-relaxed mb-4">
-              This track is designed for students who want to move beyond basic
-              online safety and begin understanding how cybersecurity works in
-              the real world.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed">
-              Lessons focus on ethical, defensive, and educational cybersecurity.
-              Students learn how to protect systems, recognize risks, and explore
-              career options responsibly.
-            </p>
-          </div>
-
-          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-              Sample Activity
-            </h3>
-
-            <p className="text-slate-300 mb-4">
-              Security Decision Challenge:
-            </p>
-
-            <div className="space-y-3">
-              <div className="rounded-xl border border-slate-800 p-4">
-                A student uses the same password for school, email, and social
-                media accounts.
-              </div>
-
-              <div className="rounded-xl border border-slate-800 p-4">
-                A club website stores member information but has no clear privacy
-                policy.
-              </div>
-
-              <div className="rounded-xl border border-slate-800 p-4">
-                A team adds multi-factor authentication to protect shared project
-                accounts.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6 text-center">
-            Cybersecurity Career Pathways
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+          <h2 className="text-3xl font-bold text-cyan-200">
+            Defensive Cybersecurity Ethics
           </h2>
-
-          <p className="text-slate-300 text-center max-w-3xl mx-auto mb-10">
-            CyberShield Academy also helps high school students discover
-            possible cybersecurity careers and understand what skills they may
-            want to build in the future.
+          <p className="mt-4 max-w-3xl leading-7 text-slate-300">
+            CyberShield Academy teaches cybersecurity as a defensive skill.
+            Students should use what they learn to protect accounts, help their
+            communities, and make safer choices online.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {careerPaths.map((career) => (
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {ethicsRules.map((rule) => (
               <div
-                key={career}
-                className="rounded-xl bg-slate-900 border border-slate-800 p-5 text-center hover:border-cyan-500 transition"
+                key={rule}
+                className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm text-slate-300"
               >
-                <p className="font-semibold">{career}</p>
+                {rule}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            High School Cyber Readiness Certificate
-          </h2>
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="grid gap-6 lg:grid-cols-2">
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <h2 className="text-3xl font-bold text-white">
+              Career Pathway Examples
+            </h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              High school students do not need to know their exact career yet,
+              but exploring roles can make cybersecurity feel more real and
+              useful.
+            </p>
 
-          <p className="text-slate-300 leading-relaxed mb-6">
-            In a future version, students will be able to complete lessons,
-            answer review questions, and earn a certificate showing that they
-            understand cybersecurity foundations and responsible online defense.
-          </p>
+            <div className="mt-6 space-y-4">
+              {careerPaths.map((career) => (
+                <div
+                  key={career.role}
+                  className="rounded-xl bg-slate-950/70 p-4"
+                >
+                  <h3 className="font-semibold text-cyan-200">
+                    {career.role}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {career.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
 
-          <div className="inline-block rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950">
-            Certificate Coming Soon
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <h2 className="text-3xl font-bold text-white">
+              Certification Preparation Overview
+            </h2>
+            <p className="mt-3 leading-7 text-slate-300">
+              Certifications are optional future goals, not required to use this
+              website. This page introduces topics that can help students prepare
+              for beginner cybersecurity learning later.
+            </p>
+
+            <ul className="mt-6 space-y-3 text-sm text-slate-300">
+              {certificationTopics.map((topic) => (
+                <li key={topic} className="rounded-xl bg-slate-950/70 p-3">
+                  {topic}
+                </li>
+              ))}
+            </ul>
+
+            <p className="mt-5 rounded-xl border border-yellow-500/30 bg-yellow-950/20 p-4 text-sm leading-6 text-yellow-100">
+              Reminder: CyberShield Academy certificates are learning
+              recognition badges, not official industry certifications.
+            </p>
           </div>
         </div>
       </section>
 
-      <Footer />
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+          <h2 className="text-3xl font-bold text-white">
+            Discussion Prompts
+          </h2>
+          <p className="mt-3 leading-7 text-slate-300">
+            These questions can be used by students, teachers, clubs, or
+            outreach volunteers to start meaningful conversations.
+          </p>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {discussionPrompts.map((prompt) => (
+              <div
+                key={prompt}
+                className="rounded-xl bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+              >
+                {prompt}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20">
+        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+          <h2 className="text-3xl font-bold text-white">
+            Continue Learning
+          </h2>
+          <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+            After finishing this page, students can explore lessons, complete
+            activities, use resources, review teacher materials, or check the
+            project roadmap.
+          </p>
+
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            <Link
+              href="/lessons"
+              className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+            >
+              Lessons
+            </Link>
+            <Link
+              href="/activities"
+              className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+            >
+              Activities
+            </Link>
+            <Link
+              href="/resources"
+              className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+            >
+              Resources
+            </Link>
+            <Link
+              href="/teacher-toolkit"
+              className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+            >
+              Teacher Toolkit
+            </Link>
+            <Link
+              href="/roadmap"
+              className="rounded-xl bg-slate-950/80 p-4 text-sm font-semibold text-cyan-200 transition hover:bg-slate-800"
+            >
+              Roadmap
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
