@@ -1,4 +1,4 @@
-﻿import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import FeatureCard from "@/components/FeatureCard";
 import TrackCard from "@/components/TrackCard";
@@ -8,181 +8,254 @@ export default function Home() {
     <main className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="px-8 py-24 text-center max-w-5xl mx-auto">
+      <section className="px-8 py-24 max-w-6xl mx-auto">
         <p className="mb-4 text-cyan-400 font-semibold">
-          Cybersecurity literacy for the next generation
+          Cybersecurity education for students
         </p>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Learn cybersecurity, online safety, and digital responsibility.
+        <h1 className="text-4xl md:text-7xl font-extrabold leading-tight mb-6">
+          CyberShield Academy helps students build safer digital habits.
         </h1>
 
-        <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10">
-          CyberShield Academy is an interactive learning platform designed to
-          teach elementary, middle, and high school students the cybersecurity
-          skills they need to stay safe, informed, and prepared for the future.
+        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl mb-10">
+          CyberShield Academy is a student-built cybersecurity education platform
+          designed to teach online safety, scam awareness, password security,
+          digital responsibility, and ethical defensive cybersecurity.
         </p>
 
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="#tracks"
-            className="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-400 transition"
+            href="/lessons"
+            className="rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-400 transition text-center"
           >
             Start Learning
           </a>
 
           <a
-            href="#mission"
-            className="rounded-xl border border-slate-600 px-6 py-3 font-semibold text-white hover:bg-slate-800 transition"
+            href="/activities"
+            className="rounded-xl border border-slate-700 px-6 py-3 font-semibold hover:border-cyan-500 transition text-center"
           >
-            Learn About the Mission
+            Try Activities
           </a>
         </div>
       </section>
 
-      {/* Learning Tracks */}
-      <section id="tracks" className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            Learning Paths for Every Age Group
-          </h2>
+      <section className="px-8 py-12 bg-slate-900">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 text-center">
+            <h2 className="text-4xl font-extrabold text-cyan-400 mb-2">3</h2>
+            <p className="text-slate-300">Learning Paths</p>
+          </div>
 
-          <p className="text-slate-300 text-center max-w-2xl mx-auto mb-12">
-            CyberShield Academy is built around age-appropriate cybersecurity
-            education, from basic online safety to technical cybersecurity
-            foundations.
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 text-center">
+            <h2 className="text-4xl font-extrabold text-cyan-400 mb-2">3</h2>
+            <p className="text-slate-300">Interactive Activities</p>
+          </div>
+
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 text-center">
+            <h2 className="text-4xl font-extrabold text-cyan-400 mb-2">5+</h2>
+            <p className="text-slate-300">Support Pages</p>
+          </div>
+
+          <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6 text-center">
+            <h2 className="text-4xl font-extrabold text-cyan-400 mb-2">V1</h2>
+            <p className="text-slate-300">In Development</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="tracks" className="px-8 py-20 max-w-6xl mx-auto">
+        <div className="mb-10">
+          <p className="mb-3 text-cyan-400 font-semibold">
+            Learning Paths
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            <TrackCard
-              title="CyberShield Kids"
-              grades="Grades 3-5"
-              description="For elementary students learning internet safety, kindness online, privacy, and trusted adult reporting."
-              href="/kids"
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            Choose the right cybersecurity track.
+          </h2>
+
+          <p className="text-slate-300 max-w-3xl leading-relaxed">
+            CyberShield Academy separates cybersecurity education by grade level
+            so students can learn online safety in a way that fits their age and
+            experience.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <TrackCard
+            title="CyberShield Kids"
+            grades="Grades 3-5"
+            description="Simple online safety lessons for elementary students."
+            href="/kids"
+          />
+
+          <TrackCard
+            title="CyberShield Junior"
+            grades="Grades 6-8"
+            description="Middle school lessons on scams, privacy, passwords, and digital citizenship."
+            href="/junior"
+          />
+
+          <TrackCard
+            title="CyberShield High School"
+            grades="Grades 9-12"
+            description="Cybersecurity foundations, careers, certifications, and defensive security."
+            href="/high-school"
+          />
+        </div>
+
+        <div className="mt-8">
+          <FeatureCard
+            title="Lesson Hub"
+            description="Students can access all grade-level learning paths from one organized lesson hub."
+            href="/lessons"
+          />
+        </div>
+      </section>
+
+      <section className="px-8 py-20 bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10">
+            <p className="mb-3 text-cyan-400 font-semibold">
+              Practice and Activities
+            </p>
+
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Learn by making cyber safety decisions.
+            </h2>
+
+            <p className="text-slate-300 max-w-3xl leading-relaxed">
+              Interactive activities help students practice identifying scams,
+              improving passwords, and making safer choices online.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <FeatureCard
+              title="Activities Hub"
+              description="Access all interactive CyberShield activities in one place."
+              href="/activities"
             />
 
-            <TrackCard
-              title="CyberShield Junior"
-              grades="Grades 6-8"
-              description="For middle school students learning passwords, scams, digital citizenship, and personal information protection."
-              href="/junior"
+            <FeatureCard
+              title="Cyber Safety Quiz"
+              description="Test cybersecurity awareness with a short interactive quiz."
+              href="/quiz"
             />
 
-            <TrackCard
-              title="CyberShield High School"
-              grades="Grades 9-12"
-              description="For high school students exploring cybersecurity fundamentals, technical concepts, careers, and certifications."
-              href="/high-school"
+            <FeatureCard
+              title="Spot the Scam"
+              description="Practice identifying suspicious messages and online red flags."
+              href="/spot-the-scam"
+            />
+
+            <FeatureCard
+              title="Password Safety Lab"
+              description="Use fake sample passwords to learn what makes passwords stronger."
+              href="/password-lab"
             />
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section id="features" className="px-8 py-16">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Version 1 Features
+      <section className="px-8 py-20 max-w-6xl mx-auto">
+        <div className="mb-10">
+          <p className="mb-3 text-cyan-400 font-semibold">
+            Resources and Support
+          </p>
+
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">
+            Tools for students, parents, and teachers.
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <p className="text-slate-300 max-w-3xl leading-relaxed">
+            CyberShield Academy includes resources that support classroom use,
+            student review, teacher planning, and future certificates.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <FeatureCard
+            title="Student Resources"
+            description="Review cybersecurity vocabulary, safety checklists, and scam warning signs."
+            href="/resources"
+          />
+
+          <FeatureCard
+            title="Teacher Toolkit"
+            description="Access lesson ideas, discussion prompts, worksheet placeholders, and teaching tips."
+            href="/teacher-toolkit"
+          />
+
+          <FeatureCard
+            title="Certificate Pathways"
+            description="Preview future CyberShield certificates for Kids, Junior, and High School tracks."
+            href="/certificates"
+          />
+        </div>
+      </section>
+
+      <section className="px-8 py-20 bg-slate-900">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10">
+            <p className="mb-3 text-cyan-400 font-semibold">
+              Outreach and Impact
+            </p>
+
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">
+              Built for real-world cybersecurity education.
+            </h2>
+
+            <p className="text-slate-300 max-w-3xl leading-relaxed">
+              CyberShield Academy is designed to support future school outreach,
+              classroom presentations, feedback collection, and honest impact
+              tracking.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <FeatureCard
-              title="Interactive Lessons"
-              description="Structured cybersecurity lessons for different age levels."
+              title="School Outreach"
+              description="Explore presentation options for elementary, middle, and high school students."
+              href="/outreach"
             />
 
             <FeatureCard
-              title="Phishing Simulator"
-              description="Practice spotting suspicious emails and online red flags."
+              title="Impact Tracker"
+              description="Track outreach goals, sessions completed, students reached, and feedback."
+              href="/impact"
             />
 
             <FeatureCard
-              title="Cyber Assessments"
-              description="Measure cybersecurity awareness and receive recommendations."
+              title="Feedback Center"
+              description="Preview a feedback form for students, parents, teachers, and volunteers."
+              href="/feedback"
             />
 
             <FeatureCard
-              title="Career Explorer"
-              description="Discover cybersecurity careers, skills, and certification paths."
+              title="Project Roadmap"
+              description="View completed features, current improvements, and future version goals."
+              href="/roadmap"
             />
-	    <FeatureCard
-  		title="Cyber Safety Quiz"
-  		description="Students can test their knowledge with an interactive cybersecurity safety quiz."
-                href="/quiz"
-	    />
-	    <FeatureCard
-  		title="Spot the Scam"
- 		description="Students can practice identifying suspicious messages, scam warning signs, and online red flags."
-  		href="/spot-the-scam"
-	    />
-	    <FeatureCard
-  		title="Password Safety Lab"
-  		description="Students can test sample passwords and learn what makes passwords stronger."
-  		href="/password-lab"
-	    />
-	    <FeatureCard
-  		title="Student Resources"
-  		description="Students, parents, and teachers can review cybersecurity vocabulary, safety checklists, and scam warning 			signs."
-  		href="/resources"
-	    />
-	    <FeatureCard
-  		title="Certificate Pathways"
-  		description="Students can preview future CyberShield certificates for Kids, Junior, and High School learning paths."
-  		href="/certificates"
-	    />
-	    <FeatureCard
-  		title="School Outreach"
-  		description="CyberShield Academy supports classroom presentations, student workshops, and real-world cybersecurity 			education outreach."
-  		href="/outreach"
-	    />
-	    <FeatureCard
-  		title="Teacher Toolkit"
-  		description="Teachers can access classroom lesson ideas, discussion prompts, worksheet placeholders, and safe teaching 			guidelines."
-  		href="/teacher-toolkit"
-	    />
-	    <FeatureCard
-  		title="Impact Tracker"
-  		description="CyberShield Academy tracks outreach goals, schools contacted, sessions completed, students reached, and 			feedback collected."
-  		href="/impact"
-	    />
-	    <FeatureCard
-  		title="Feedback Center"
-  		description="Students, parents, teachers, and volunteers can preview a feedback form to help improve CyberShield Academy."
-  		href="/feedback"
-	    />
-	    <FeatureCard
-  		title="Project Roadmap"
-  		description="CyberShield Academy tracks completed features, current improvements, future ideas, and version goals."
-  		href="/roadmap"
-	    />
-	    <FeatureCard
-  		title="Activities Hub"
-  		description="Students can access all interactive CyberShield activities, including quizzes, scam practice, and password 		safety labs."
-  		href="/activities"
-	    />
-	    <FeatureCard
-  		title="Lesson Hub"
-  		description="Students can choose CyberShield Kids, Junior, or High School lessons from one organized learning hub."
-  		href="/lessons"
- 	    />
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section id="mission" className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+      <section id="mission" className="px-8 py-20 max-w-5xl mx-auto text-center">
+        <p className="mb-3 text-cyan-400 font-semibold">
+          Mission
+        </p>
 
-          <p className="text-lg text-slate-300 leading-relaxed">
-            CyberShield Academy exists to make cybersecurity education
-            accessible, engaging, and practical for young students. The goal is
-            not only to build a website, but to create a real educational
-            initiative that can be used in local schools to teach students how
-            to stay safe online.
-          </p>
-        </div>
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Making cybersecurity easier to understand.
+        </h2>
+
+        <p className="text-lg text-slate-300 leading-relaxed">
+          CyberShield Academy focuses on safe, ethical, and defensive
+          cybersecurity education. The goal is to help students protect
+          themselves online, understand digital risks, and build confidence with
+          responsible technology use.
+        </p>
       </section>
 
       <Footer />
