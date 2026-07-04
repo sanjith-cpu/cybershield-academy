@@ -1,261 +1,422 @@
-import Footer from "@/components/Footer";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const presentationOptions = [
+const sessionOutlines = [
   {
     title: "Elementary School Session",
-    audience: "Grades 3-5",
-    time: "20-30 minutes",
-    description:
-      "A simple and friendly introduction to online safety, privacy, kindness online, passwords, and asking a trusted adult for help.",
+    audience: "Grades 3–5",
+    time: "20–25 minutes",
+    goal:
+      "Teach younger students simple online safety habits using clear language, examples, and discussion.",
     topics: [
-      "Safe and unsafe online choices",
-      "Protecting personal information",
-      "Being kind online",
-      "When to ask a trusted adult",
+      "Do not share private information online",
+      "Ask a trusted adult before clicking strange links",
+      "Use kind and respectful words online",
+      "Tell an adult if something online feels scary or confusing",
     ],
+    activity:
+      "Students review simple safe-or-unsafe examples and explain what they would do.",
   },
   {
     title: "Middle School Session",
-    audience: "Grades 6-8",
-    time: "30-40 minutes",
-    description:
-      "A practical cybersecurity awareness session focused on scams, passwords, digital footprints, and responsible technology use.",
+    audience: "Grades 6–8",
+    time: "25–35 minutes",
+    goal:
+      "Help students recognize scams, protect accounts, and think before posting or clicking.",
     topics: [
-      "Spotting suspicious messages",
-      "Password safety",
-      "Digital citizenship",
-      "Personal information protection",
+      "Scam red flags like urgency, fear, prizes, and secrecy",
+      "Password safety and why reusing passwords is risky",
+      "Digital footprint and online reputation",
+      "How to report suspicious messages safely",
     ],
+    activity:
+      "Students complete a short Spot the Scam activity and discuss the red flags they noticed.",
   },
   {
     title: "High School Session",
-    audience: "Grades 9-12",
-    time: "40-50 minutes",
-    description:
-      "A more advanced introduction to cybersecurity foundations, career pathways, certifications, and ethical defensive security.",
+    audience: "Grades 9–12",
+    time: "35–45 minutes",
+    goal:
+      "Connect cybersecurity literacy to real-life safety, digital citizenship, careers, and ethical defensive learning.",
     topics: [
-      "Cybersecurity careers",
-      "Defensive security basics",
-      "Cyber ethics",
-      "How to keep learning",
+      "Phishing and social engineering",
+      "Account protection and multi-factor authentication",
+      "Defensive cybersecurity ethics",
+      "Cybersecurity career pathways and future learning",
     ],
+    activity:
+      "Students discuss realistic scenarios and reflect on how cybersecurity can be used to protect people.",
   },
 ];
 
-const outreachSteps = [
+const presentationFlow = [
   {
-    step: "1",
-    title: "Contact Schools",
-    description:
-      "Reach out to teachers, counselors, technology coordinators, or administrators to explain the CyberShield Academy mission.",
+    part: "Introduction",
+    time: "3–5 minutes",
+    detail:
+      "Introduce CyberShield Academy, explain the goal of the session, and remind students that the lesson is about safety and defense.",
   },
   {
-    step: "2",
-    title: "Choose a Session",
-    description:
-      "Select an age-appropriate presentation for elementary, middle school, or high school students.",
+    part: "Main Lesson",
+    time: "10–15 minutes",
+    detail:
+      "Teach the key topic using simple examples, discussion questions, and safe fake scenarios.",
   },
   {
-    step: "3",
-    title: "Deliver the Workshop",
-    description:
-      "Use CyberShield Academy lessons, activities, quizzes, and examples to teach students practical cyber safety skills.",
+    part: "Interactive Activity",
+    time: "10–15 minutes",
+    detail:
+      "Use an activity like Spot the Scam, Password Lab, or a safe classroom discussion prompt.",
   },
   {
-    step: "4",
-    title: "Collect Feedback",
+    part: "Reflection",
+    time: "5 minutes",
+    detail:
+      "Ask students what they learned and what safety habit they can use after the session.",
+  },
+  {
+    part: "Teacher Follow-Up",
+    time: "Optional",
+    detail:
+      "Share CyberShield resources, teacher toolkit materials, and possible next steps for future lessons.",
+  },
+];
+
+const volunteerRoles = [
+  {
+    role: "Lead Presenter",
     description:
-      "Ask teachers and students what was helpful, what could improve, and what topics they want to learn next.",
+      "Guides the session, introduces the topic, explains examples, and keeps the lesson moving.",
+  },
+  {
+    role: "Activity Helper",
+    description:
+      "Helps students during activities, answers simple questions, and keeps students focused.",
+  },
+  {
+    role: "Teacher Contact",
+    description:
+      "Communicates with teachers or school staff before and after the session.",
+  },
+  {
+    role: "Materials Organizer",
+    description:
+      "Prepares slides, worksheets, links, timing plans, and classroom materials.",
+  },
+  {
+    role: "Reflection Recorder",
+    description:
+      "Tracks non-private feedback, lesson notes, and ideas for improving future sessions.",
+  },
+];
+
+const schoolUseCases = [
+  "Digital citizenship lessons",
+  "Advisory or homeroom activities",
+  "Computer science or technology classes",
+  "Cybersecurity club meetings",
+  "Counselor-led online safety sessions",
+  "Parent or student safety awareness events",
+];
+
+const outreachSafetyRules = [
+  "Use fake examples only. Do not ask students for real passwords or private account details.",
+  "Do not collect private student information during activities.",
+  "Keep all lessons defensive, ethical, and age-appropriate.",
+  "Ask teachers or school staff to handle real student safety concerns.",
+  "Do not teach students how to access systems, accounts, or networks without permission.",
+];
+
+const preparationChecklist = [
+  "Confirm the audience grade level.",
+  "Choose the correct session outline.",
+  "Prepare slides or talking points.",
+  "Choose one activity from CyberShield Academy.",
+  "Review teacher safety notes before presenting.",
+  "Prepare a short reflection or exit question.",
+  "Ask the teacher what classroom rules or school policies should be followed.",
+];
+
+const outreachLinks = [
+  {
+    label: "Teacher Toolkit",
+    href: "/teacher-toolkit",
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+  },
+  {
+    label: "Spot the Scam",
+    href: "/spot-the-scam",
+  },
+  {
+    label: "Password Lab",
+    href: "/password-lab",
+  },
+  {
+    label: "Impact Tracker",
+    href: "/impact",
   },
 ];
 
 export default function OutreachPage() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <>
       <Navbar />
 
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-400 font-semibold">
-          School Outreach
-        </p>
+      <main className="min-h-screen bg-slate-950 text-white">
+        <section className="mx-auto max-w-6xl px-6 py-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            School Outreach
+          </p>
 
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Bringing cybersecurity education to students and schools.
-        </h1>
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+            Helping schools teach cybersecurity literacy.
+          </h1>
 
-        <p className="text-lg text-slate-300 leading-relaxed max-w-3xl">
-          CyberShield Academy is designed to support students beyond the
-          website. The outreach program helps schools teach online safety,
-          cybersecurity awareness, and responsible technology use through
-          age-appropriate presentations and activities.
-        </p>
-      </section>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+            CyberShield Academy can support classroom lessons, school clubs,
+            advisory periods, and student-led outreach sessions. The goal is to
+            teach online safety, scam awareness, digital citizenship, and
+            defensive cybersecurity in a safe and age-appropriate way.
+          </p>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Presentation Options
-          </h2>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/teacher-toolkit"
+              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              View Teacher Toolkit
+            </Link>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {presentationOptions.map((option) => (
-              <div
-                key={option.title}
-                className="rounded-2xl bg-slate-950 border border-slate-800 p-6 hover:border-cyan-500 transition"
-              >
-                <p className="text-sm text-slate-400 mb-2">
-                  {option.audience} • {option.time}
-                </p>
-
-                <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-                  {option.title}
-                </h3>
-
-                <p className="text-slate-300 leading-relaxed mb-5">
-                  {option.description}
-                </p>
-
-                <h4 className="font-bold mb-3">Topics Covered:</h4>
-
-                <div className="space-y-3">
-                  {option.topics.map((topic) => (
-                    <div
-                      key={topic}
-                      className="rounded-xl border border-slate-800 bg-slate-900 p-3 text-sm text-slate-300"
-                    >
-                      {topic}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+            <Link
+              href="/resources"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Review Resources
+            </Link>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-          <div>
-            <h2 className="text-3xl font-bold mb-4">
-              Why outreach matters
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Outreach Session Outlines
             </h2>
 
-            <p className="text-slate-300 leading-relaxed mb-4">
-              Many students use technology every day, but they may not always
-              receive clear lessons on scams, privacy, passwords, digital
-              footprints, and safe online choices.
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These outlines help presenters adjust CyberShield Academy lessons
+              for different age groups.
             </p>
 
-            <p className="text-slate-300 leading-relaxed">
-              CyberShield Academy outreach helps turn cybersecurity awareness
-              into a real community education effort by bringing lessons directly
-              to classrooms, clubs, and school events.
-            </p>
+            <div className="mt-6 grid gap-6 lg:grid-cols-3">
+              {sessionOutlines.map((session) => (
+                <div
+                  key={session.title}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6"
+                >
+                  <h3 className="text-xl font-bold text-cyan-200">
+                    {session.title}
+                  </h3>
+
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                      {session.audience}
+                    </span>
+
+                    <span className="rounded-full bg-purple-400/10 px-3 py-1 text-xs font-semibold text-purple-200">
+                      {session.time}
+                    </span>
+                  </div>
+
+                  <p className="mt-4 text-sm leading-6 text-slate-300">
+                    <span className="font-semibold text-white">Goal:</span>{" "}
+                    {session.goal}
+                  </p>
+
+                  <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+                    {session.topics.map((topic) => (
+                      <li key={topic} className="rounded-xl bg-slate-900 p-3">
+                        {topic}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <p className="mt-5 rounded-xl border border-slate-800 bg-slate-900 p-4 text-sm leading-6 text-slate-300">
+                    <span className="font-semibold text-cyan-200">
+                      Activity:
+                    </span>{" "}
+                    {session.activity}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
+        </section>
 
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-              Outreach Goals
-            </h3>
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
+              Suggested Presentation Flow
+            </h2>
 
-            <div className="space-y-3">
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Teach students practical online safety skills.
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              This structure can be used for school visits, club presentations,
+              classroom sessions, or short workshops.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+              {presentationFlow.map((item) => (
+                <div
+                  key={item.part}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-semibold text-white">{item.part}</h3>
+
+                  <p className="mt-2 text-sm font-semibold text-cyan-200">
+                    {item.time}
+                  </p>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                Volunteer Roles
+              </h2>
+
+              <p className="mt-3 leading-7 text-slate-300">
+                These roles can help student volunteers organize a stronger and
+                more professional outreach session.
+              </p>
+
+              <div className="mt-6 grid gap-4">
+                {volunteerRoles.map((role) => (
+                  <div
+                    key={role.role}
+                    className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                  >
+                    <h3 className="font-semibold text-cyan-200">
+                      {role.role}
+                    </h3>
+
+                    <p className="mt-2 text-sm leading-6 text-slate-300">
+                      {role.description}
+                    </p>
+                  </div>
+                ))}
               </div>
+            </div>
 
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Help younger students recognize unsafe online situations.
-              </div>
+            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+              <h2 className="text-3xl font-bold text-white">
+                How Schools Can Use This
+              </h2>
 
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Support teachers with simple cybersecurity learning materials.
-              </div>
+              <p className="mt-3 leading-7 text-slate-300">
+                CyberShield Academy can fit into different school settings
+                without needing a full cybersecurity class.
+              </p>
 
-              <div className="rounded-xl border border-slate-800 bg-slate-950 p-4">
-                Build a record of community impact and student feedback.
+              <div className="mt-6 grid gap-3">
+                {schoolUseCases.map((useCase) => (
+                  <div
+                    key={useCase}
+                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+                  >
+                    {useCase}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            Outreach Process
-          </h2>
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-yellow-500/30 bg-yellow-950/20 p-8">
+            <h2 className="text-3xl font-bold text-yellow-100">
+              Outreach Safety Rules
+            </h2>
 
-          <div className="grid md:grid-cols-4 gap-6">
-            {outreachSteps.map((item) => (
-              <div
-                key={item.step}
-                className="rounded-2xl bg-slate-950 border border-slate-800 p-6"
-              >
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-500 text-slate-950 font-bold">
-                  {item.step}
+            <p className="mt-3 max-w-3xl leading-7 text-yellow-50/90">
+              Outreach should always protect students and keep cybersecurity
+              learning ethical, defensive, and school-appropriate.
+            </p>
+
+            <div className="mt-6 grid gap-3">
+              {outreachSafetyRules.map((rule) => (
+                <div
+                  key={rule}
+                  className="rounded-xl border border-yellow-500/20 bg-slate-950/60 p-4 text-sm leading-6 text-yellow-50/90"
+                >
+                  {rule}
                 </div>
-
-                <h3 className="text-xl font-bold text-cyan-400 mb-3">
-                  {item.title}
-                </h3>
-
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="px-8 py-16">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-4">
-              For Teachers
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Outreach Preparation Checklist
             </h2>
 
-            <p className="text-slate-300 leading-relaxed">
-              Teachers can use CyberShield Academy as a classroom-friendly tool
-              for introducing online safety, cybersecurity awareness, scam
-              recognition, password safety, and digital responsibility.
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Use this checklist before contacting a school or presenting a
+              CyberShield Academy lesson.
             </p>
-          </div>
 
-          <div className="rounded-2xl bg-slate-900 border border-slate-800 p-6">
-            <h2 className="text-3xl font-bold mb-4">
-              For Student Volunteers
+            <div className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+              {preparationChecklist.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-20">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Useful Pages for Outreach
             </h2>
 
-            <p className="text-slate-300 leading-relaxed">
-              Student volunteers can help deliver presentations, guide younger
-              students through activities, collect feedback, and support the
-              mission of improving cybersecurity literacy.
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These pages can support school presentations, teacher follow-up,
+              and student practice after a session.
             </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+              {outreachLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="px-8 py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Future Outreach Tracking
-          </h2>
-
-          <p className="text-slate-300 leading-relaxed mb-6">
-            In a future version, CyberShield Academy can track outreach sessions,
-            number of students reached, schools contacted, teacher feedback, and
-            student learning outcomes.
-          </p>
-
-          <div className="inline-block rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950">
-            Impact Tracker Coming Soon
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
 
       <Footer />
-    </main>
+    </>
   );
 }
