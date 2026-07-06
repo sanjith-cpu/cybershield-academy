@@ -11,6 +11,7 @@ const completedWork = [
       "Footer created",
       "About page created",
       "Safety & Privacy page created",
+      "Project Story page created",
       "Full route audit completed earlier after clearing .next",
     ],
   },
@@ -73,10 +74,10 @@ const completedWork = [
 
 const currentWork = [
   {
-    title: "Roadmap Polish",
+    title: "Project Story Connection",
     status: "Current",
     detail:
-      "The roadmap is being updated to match the real current project status and remove outdated future items.",
+      "The Project Story page is being connected through the homepage and roadmap so visitors can understand why CyberShield was created.",
   },
   {
     title: "Depth Before Launch",
@@ -100,16 +101,10 @@ const currentWork = [
 
 const nearTermWork = [
   {
-    title: "Improve Impact Page",
+    title: "Project Story Page",
     detail:
-      "Separate real completed impact from planned metrics, future outreach logs, and honest placeholders.",
-    href: "/impact",
-  },
-  {
-    title: "Add Project Story or Build Log",
-    detail:
-      "Create a page explaining why CyberShield was built, what problem it solves, what was learned, and what comes next.",
-    href: "/about",
+      "A page explaining why CyberShield was built, what problem it solves, what was learned, and what comes next.",
+    href: "/project-story",
   },
   {
     title: "Polish Outreach Materials",
@@ -122,6 +117,12 @@ const nearTermWork = [
     detail:
       "Test all routes, links, mobile layouts, grammar, spacing, and live Vercel pages before calling V1 launch-ready.",
     href: "/safety",
+  },
+  {
+    title: "Prepare Future Updates",
+    detail:
+      "Plan realistic future features like printable downloads, certificate templates, demo videos, and real outreach logs.",
+    href: "/impact",
   },
 ];
 
@@ -191,6 +192,10 @@ const roadmapLinks = [
     href: "/",
   },
   {
+    label: "Project Story",
+    href: "/project-story",
+  },
+  {
     label: "Lessons",
     href: "/lessons",
   },
@@ -213,10 +218,6 @@ const roadmapLinks = [
   {
     label: "Impact",
     href: "/impact",
-  },
-  {
-    label: "Safety",
-    href: "/safety",
   },
 ];
 
@@ -251,10 +252,10 @@ export default function RoadmapPage() {
             </Link>
 
             <Link
-              href="/activities"
+              href="/project-story"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
-              Try Activities
+              Project Story
             </Link>
 
             <Link

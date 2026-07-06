@@ -235,7 +235,7 @@ export default function HomePage() {
 
               <div className="mt-6">
                 <Link
-                  href="/about"
+                  href="/project-story"
                   className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
                 >
                   Learn why CyberShield was created →
