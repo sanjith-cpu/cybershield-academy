@@ -25,6 +25,27 @@ const realImpactMetrics = [
   },
 ];
 
+const currentStatusSnapshot = [
+  {
+    title: "Website Build",
+    status: "In progress and live",
+    detail:
+      "CyberShield Academy has working pages, lessons, activities, resources, and outreach materials that can be improved over time.",
+  },
+  {
+    title: "External Outreach",
+    status: "Not started yet",
+    detail:
+      "School, classroom, club, or community outreach should only be counted after real sessions or real contact happen.",
+  },
+  {
+    title: "Impact Data",
+    status: "0 tracked so far",
+    detail:
+      "Student reach, school participation, feedback responses, and session counts should remain 0 until there is real evidence.",
+  },
+];
+
 const realBuildProgress = [
   {
     title: "Learning System Built",
@@ -308,7 +329,40 @@ export default function ImpactPage() {
             begins.
           </div>
         </section>
+	<section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
+              Current Status Snapshot
+            </h2>
 
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              This snapshot shows where CyberShield Academy stands right now:
+              the website is being built and improved, while external outreach
+              impact has not been counted yet.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-3">
+              {currentStatusSnapshot.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
+                >
+                  <h3 className="text-lg font-bold text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                    {item.status}
+                  </p>
+
+                  <p className="mt-4 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
         <section className="mx-auto max-w-6xl px-6 pb-16">
           <h2 className="text-3xl font-bold text-white">
             Real Outreach Impact So Far
