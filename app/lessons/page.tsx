@@ -79,7 +79,7 @@ const lessonModules = [
     title: "Safe Browsing",
     level: "Beginner to Intermediate",
     time: "15–25 minutes",
-    lessonHref: "",
+    lessonHref: "/lessons/safe-browsing",
     description:
       "Learn how to check links, avoid fake download buttons, recognize pop-ups, and pause before clicking.",
     learningGoals: [
@@ -210,7 +210,6 @@ const safetyRules = [
 ];
 
 const nextLessonBuilds = [
-  "/lessons/safe-browsing",
   "/lessons/digital-footprint",
   "/lessons/cyber-ethics",
 ];
@@ -453,9 +452,9 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Password Safety, Scam Awareness, and Privacy Basics are now
-              connected. Next, we will continue building the remaining full
-              individual lesson pages one at a time.
+              Password Safety, Scam Awareness, Privacy Basics, and Safe Browsing
+              are now connected. Next, we will continue building the remaining
+              full individual lesson pages one at a time.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
