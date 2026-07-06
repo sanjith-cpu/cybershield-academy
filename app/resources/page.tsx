@@ -235,6 +235,36 @@ const quickLinks = [
     href: "/teacher-toolkit",
   },
 ];
+const trustedExternalResources = [
+  {
+    title: "CISA Secure Our World",
+    audience: "Students and families",
+    detail:
+      "Simple official guidance about recognizing phishing, using strong passwords, turning on multi-factor authentication, and updating software.",
+    href: "https://www.cisa.gov/secure-our-world",
+  },
+  {
+    title: "FTC Online Security",
+    audience: "Families and students",
+    detail:
+      "Consumer-friendly advice about protecting personal information, accounts, devices, and online privacy.",
+    href: "https://consumer.ftc.gov/online-security",
+  },
+  {
+    title: "NIST Cybersecurity & Privacy",
+    audience: "Teachers and advanced learners",
+    detail:
+      "Cybersecurity and privacy standards, guidelines, best practices, and resources from the National Institute of Standards and Technology.",
+    href: "https://www.nist.gov/cybersecurity-and-privacy",
+  },
+  {
+    title: "NIST NICE Learning Resources",
+    audience: "Career exploration",
+    detail:
+      "A collection of free and low-cost cybersecurity learning resources that can support students exploring cybersecurity pathways.",
+    href: "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/resources/education-and-training",
+  },
+];
 
 export default function ResourcesPage() {
   return (
@@ -491,7 +521,50 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+                <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
+            <h2 className="text-3xl font-bold text-emerald-100">
+              Trusted External Resources
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-emerald-50/90">
+              These official resources can help students, families, and
+              teachers continue learning beyond CyberShield Academy. They are
+              provided for education and awareness, not for emergency or
+              professional advice.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {trustedExternalResources.map((resource) => (
+                <a
+                  key={resource.title}
+                  href={resource.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-2xl border border-emerald-500/20 bg-slate-950/70 p-5 transition hover:border-emerald-300 hover:bg-slate-900"
+                >
+                  <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-100">
+                    {resource.audience}
+                  </span>
+
+                  <h3 className="mt-4 text-xl font-bold text-white">
+                    {resource.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {resource.detail}
+                  </p>
+
+                  <p className="mt-4 text-sm font-semibold text-emerald-200">
+                    Open official resource →
+                  </p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+	
+	<section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
             <h2 className="text-3xl font-bold text-white">
               Resource Transparency
