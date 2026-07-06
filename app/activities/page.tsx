@@ -12,6 +12,14 @@ const activities = [
     href: "/scenario-room",
   },
   {
+    title: "Practice Lab",
+    type: "Skill Stations",
+    description:
+      "Move through six safe cybersecurity practice stations connected to passwords, scams, privacy, browsing, footprint, and ethics.",
+    skills: ["Practice", "Lessons", "Reflection", "Safe Habits"],
+    href: "/practice-lab",
+  },
+  {
     title: "Cyber Safety Quiz",
     type: "Quiz",
     description:
@@ -63,6 +71,7 @@ const activities = [
 
 const classroomUses = [
   "Use Scenario Room as a 10–15 minute discussion activity.",
+  "Use Practice Lab as a station-based review activity.",
   "Use one activity as a classroom warm-up.",
   "Pair an activity with a short lesson from the Learning Library.",
   "Have students explain the red flags or safety habit after each activity.",
