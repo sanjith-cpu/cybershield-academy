@@ -31,6 +31,7 @@ const lessonModules = [
     title: "Scam Awareness",
     level: "Beginner",
     time: "15–25 minutes",
+    lessonHref: "/lessons/scam-awareness",
     description:
       "Learn how scams use urgency, fear, fake prizes, suspicious links, and requests for private information.",
     learningGoals: [
@@ -54,6 +55,7 @@ const lessonModules = [
     title: "Privacy Basics",
     level: "Beginner",
     time: "15–20 minutes",
+    lessonHref: "",
     description:
       "Learn what personal information is, why privacy settings matter, and how to avoid oversharing online.",
     learningGoals: [
@@ -77,6 +79,7 @@ const lessonModules = [
     title: "Safe Browsing",
     level: "Beginner to Intermediate",
     time: "15–25 minutes",
+    lessonHref: "",
     description:
       "Learn how to check links, avoid fake download buttons, recognize pop-ups, and pause before clicking.",
     learningGoals: [
@@ -100,6 +103,7 @@ const lessonModules = [
     title: "Digital Footprint",
     level: "Intermediate",
     time: "20–30 minutes",
+    lessonHref: "",
     description:
       "Learn how posts, usernames, comments, photos, and privacy settings can shape your online reputation.",
     learningGoals: [
@@ -123,6 +127,7 @@ const lessonModules = [
     title: "Cyber Ethics",
     level: "Intermediate to Advanced",
     time: "20–30 minutes",
+    lessonHref: "",
     description:
       "Learn how permission, privacy, responsibility, reporting, and defensive thinking guide ethical cybersecurity learning.",
     learningGoals: [
@@ -205,7 +210,6 @@ const safetyRules = [
 ];
 
 const nextLessonBuilds = [
-  "/lessons/scam-awareness",
   "/lessons/privacy-basics",
   "/lessons/safe-browsing",
   "/lessons/digital-footprint",
@@ -450,8 +454,9 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Password Safety is now connected. Next, we will continue building
-              the remaining full individual lesson pages one at a time.
+              Password Safety and Scam Awareness are now connected. Next, we
+              will continue building the remaining full individual lesson pages
+              one at a time.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
