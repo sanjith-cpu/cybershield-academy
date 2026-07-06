@@ -38,6 +38,14 @@ const footerSections = [
         href: "/activities",
       },
       {
+        label: "Scenario Room",
+        href: "/scenario-room",
+      },
+      {
+        label: "Practice Lab",
+        href: "/practice-lab",
+      },
+      {
         label: "Quiz",
         href: "/quiz",
       },
@@ -69,6 +77,10 @@ const footerSections = [
       {
         label: "About",
         href: "/about",
+      },
+      {
+        label: "Project Story",
+        href: "/project-story",
       },
       {
         label: "Careers",
