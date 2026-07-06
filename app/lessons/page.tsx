@@ -55,7 +55,7 @@ const lessonModules = [
     title: "Privacy Basics",
     level: "Beginner",
     time: "15–20 minutes",
-    lessonHref: "",
+    lessonHref: "/lessons/privacy-basics",
     description:
       "Learn what personal information is, why privacy settings matter, and how to avoid oversharing online.",
     learningGoals: [
@@ -210,7 +210,6 @@ const safetyRules = [
 ];
 
 const nextLessonBuilds = [
-  "/lessons/privacy-basics",
   "/lessons/safe-browsing",
   "/lessons/digital-footprint",
   "/lessons/cyber-ethics",
@@ -454,9 +453,9 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Password Safety and Scam Awareness are now connected. Next, we
-              will continue building the remaining full individual lesson pages
-              one at a time.
+              Password Safety, Scam Awareness, and Privacy Basics are now
+              connected. Next, we will continue building the remaining full
+              individual lesson pages one at a time.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
