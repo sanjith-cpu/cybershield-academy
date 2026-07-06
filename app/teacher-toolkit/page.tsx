@@ -49,6 +49,37 @@ const toolkitSections = [
   },
 ];
 
+const classroomFlow = [
+  {
+    step: "1",
+    title: "Open with a safe scenario",
+    time: "3–5 min",
+    description:
+      "Use a fake message, fake website warning, or simple question to introduce the topic without exposing real student information.",
+  },
+  {
+    step: "2",
+    title: "Teach one main idea",
+    time: "7–10 min",
+    description:
+      "Focus on one clear skill, such as spotting scam red flags, creating stronger passwords, or protecting personal information.",
+  },
+  {
+    step: "3",
+    title: "Practice with an activity",
+    time: "10–15 min",
+    description:
+      "Choose a CyberShield activity so students can apply the lesson in a safe, defensive, age-appropriate way.",
+  },
+  {
+    step: "4",
+    title: "Reflect and report safely",
+    time: "3–5 min",
+    description:
+      "End with one takeaway and remind students to ask a trusted adult, teacher, or school technology staff member when something feels suspicious.",
+  },
+];
+
 const classroomActivities = [
   {
     title: "Scam Message Review",
@@ -216,6 +247,46 @@ export default function TeacherToolkitPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
+            <h2 className="text-3xl font-bold text-emerald-100">
+              Simple 30-Minute Classroom Flow
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-emerald-50/90">
+              Teachers can use this structure for a short class activity, club
+              meeting, advisory lesson, or outreach presentation.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {classroomFlow.map((item) => (
+                <div
+                  key={item.step}
+                  className="rounded-2xl border border-emerald-500/20 bg-slate-950/70 p-5"
+                >
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-400 text-sm font-bold text-slate-950">
+                      {item.step}
+                    </span>
+
+                    <span className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-100">
+                      {item.time}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-4 text-lg font-bold text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
