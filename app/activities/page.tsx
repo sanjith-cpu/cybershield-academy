@@ -4,6 +4,14 @@ import Footer from "@/components/Footer";
 
 const activities = [
   {
+    title: "Scenario Room",
+    type: "Scenario Practice",
+    description:
+      "Practice choosing the safest response in fake cybersecurity situations about scams, privacy, passwords, safe browsing, digital footprint, and ethics.",
+    skills: ["Decision Making", "Safety", "Reporting", "Ethics"],
+    href: "/scenario-room",
+  },
+  {
     title: "Cyber Safety Quiz",
     type: "Quiz",
     description:
@@ -54,8 +62,9 @@ const activities = [
 ];
 
 const classroomUses = [
-  "Use one activity as a 10–15 minute classroom warm-up.",
-  "Pair an activity with a short lesson from the Resources page.",
+  "Use Scenario Room as a 10–15 minute discussion activity.",
+  "Use one activity as a classroom warm-up.",
+  "Pair an activity with a short lesson from the Learning Library.",
   "Have students explain the red flags or safety habit after each activity.",
   "Use activities during school outreach sessions or cybersecurity club meetings.",
 ];
