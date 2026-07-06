@@ -2,135 +2,187 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const completedItems = [
-  "Homepage created and polished",
-  "Navbar created and upgraded for mobile",
-  "Footer created",
-  "Kids learning track upgraded",
-  "Junior learning track upgraded",
-  "High School learning track upgraded",
-  "Lessons hub created",
-  "Activities hub created",
-  "Cyber Safety Quiz upgraded",
-  "Spot the Scam activity upgraded",
-  "Password Safety Lab upgraded",
-  "Resources page upgraded",
-  "Teacher Toolkit upgraded",
-  "Certificate Pathways upgraded",
-  "School Outreach page upgraded",
-  "Impact Tracker upgraded",
-  "Feedback Center upgraded",
-];
-
-const currentStatus = [
+const completedWork = [
   {
-    label: "Project Stage",
-    value: "V1 Build and Polish",
-    note: "The main site structure is live, and the focus is now quality, depth, testing, and outreach readiness.",
+    category: "Core Website",
+    items: [
+      "Homepage created and upgraded",
+      "Navbar created and upgraded for mobile",
+      "Footer created",
+      "About page created",
+      "Safety & Privacy page created",
+      "Full route audit completed earlier after clearing .next",
+    ],
   },
   {
-    label: "Live Site",
-    value: "Online",
-    note: "The project is deployed on Vercel and updated through GitHub pushes.",
+    category: "Learning Tracks",
+    items: [
+      "Kids track upgraded",
+      "Junior track upgraded",
+      "High School track upgraded",
+      "Lessons hub upgraded into a Learning Library",
+      "All six individual lesson pages created and connected",
+    ],
   },
   {
-    label: "Content Focus",
-    value: "Cybersecurity Literacy",
-    note: "Lessons focus on online safety, scams, passwords, privacy, digital citizenship, and defensive cybersecurity.",
+    category: "Lesson Pages",
+    items: [
+      "Password Safety lesson page live",
+      "Scam Awareness lesson page live",
+      "Privacy Basics lesson page live",
+      "Safe Browsing lesson page live",
+      "Digital Footprint lesson page live",
+      "Cyber Ethics lesson page live",
+    ],
   },
   {
-    label: "Outreach Status",
-    value: "Preparing",
-    note: "Outreach materials are being prepared. Real school impact should only be counted after actual outreach happens.",
-  },
-];
-
-const v1Checklist = [
-  {
-    item: "Homepage explains the project clearly",
-    status: "Done",
-  },
-  {
-    item: "Age-level tracks are useful and deeper",
-    status: "Done",
+    category: "Interactive Practice",
+    items: [
+      "Cyber Safety Quiz upgraded",
+      "Spot the Scam upgraded",
+      "Password Safety Lab upgraded",
+      "Safe Browsing Challenge created and connected",
+      "Digital Footprint Reflection created and connected",
+      "Cyber Ethics Scenarios created and connected",
+      "Scenario Room created and connected",
+      "Practice Lab created and connected",
+    ],
   },
   {
-    item: "Core activities are interactive",
-    status: "Done",
+    category: "Outreach and Support",
+    items: [
+      "Resources page upgraded",
+      "Teacher Toolkit upgraded",
+      "Worksheets page created",
+      "Presentation Outlines page created",
+      "Email Templates page created and connected through Outreach",
+      "Outreach page upgraded",
+      "Feedback Center upgraded",
+    ],
   },
   {
-    item: "Teacher resources are classroom-friendly",
-    status: "Done",
-  },
-  {
-    item: "Outreach page has school session outlines",
-    status: "Done",
-  },
-  {
-    item: "Impact page avoids fake numbers",
-    status: "Done",
-  },
-  {
-    item: "Feedback page avoids private information collection",
-    status: "Done",
-  },
-  {
-    item: "Mobile navbar works better",
-    status: "Done",
-  },
-  {
-    item: "All major links need a final full-site test",
-    status: "Needs final QA",
-  },
-  {
-    item: "Grammar and spacing need a final pass",
-    status: "Needs final QA",
+    category: "High School Expansion",
+    items: [
+      "Careers page created and connected",
+      "Certification Guide created and connected",
+      "Certificate Pathways upgraded",
+      "Impact Tracker upgraded",
+    ],
   },
 ];
 
-const notBuiltYet = [
-  "Printable PDF worksheets",
-  "Real saved feedback database",
-  "Automatic certificate generation",
-  "Student account login system",
-  "Teacher dashboard",
-  "Real outreach metrics from completed school sessions",
-  "Safe Browsing Challenge activity",
-  "Digital Footprint Reflection activity",
-  "Cyber Ethics Scenarios activity",
-  "Full demo video or presentation script",
+const currentWork = [
+  {
+    title: "Roadmap Polish",
+    status: "Current",
+    detail:
+      "The roadmap is being updated to match the real current project status and remove outdated future items.",
+  },
+  {
+    title: "Depth Before Launch",
+    status: "Current",
+    detail:
+      "The project is now focused on deeper content, stronger practice pages, better resources, and outreach readiness before Aug 17.",
+  },
+  {
+    title: "Honest Documentation",
+    status: "Current",
+    detail:
+      "CyberShield should clearly show what is complete, what is planned, and what should not be claimed until it actually happens.",
+  },
+  {
+    title: "Final Quality Pass",
+    status: "Upcoming",
+    detail:
+      "Before outreach, every major route, button, mobile layout, and safety reminder should be tested again.",
+  },
 ];
 
-const v15Goals = [
-  "Add Safe Browsing Challenge",
-  "Add Digital Footprint Reflection",
-  "Add Cyber Ethics Scenarios",
-  "Improve worksheet placeholders",
-  "Create outreach email templates",
-  "Prepare school presentation outlines",
-  "Polish mobile layout across all pages",
+const nearTermWork = [
+  {
+    title: "Improve Impact Page",
+    detail:
+      "Separate real completed impact from planned metrics, future outreach logs, and honest placeholders.",
+    href: "/impact",
+  },
+  {
+    title: "Add Project Story or Build Log",
+    detail:
+      "Create a page explaining why CyberShield was built, what problem it solves, what was learned, and what comes next.",
+    href: "/about",
+  },
+  {
+    title: "Polish Outreach Materials",
+    detail:
+      "Review presentation outlines, teacher resources, worksheets, and email templates before school outreach begins.",
+    href: "/outreach",
+  },
+  {
+    title: "Final Site QA",
+    detail:
+      "Test all routes, links, mobile layouts, grammar, spacing, and live Vercel pages before calling V1 launch-ready.",
+    href: "/safety",
+  },
 ];
 
-const v2Goals = [
-  "Add printable classroom worksheets",
-  "Create badge or certificate download templates",
-  "Add a safer feedback storage system if privacy rules are clear",
-  "Create a teacher-facing guide for using the platform",
-  "Build a project demo video script",
-  "Document real outreach results after school sessions happen",
+const futureWork = [
+  "Printable PDF worksheet downloads",
+  "Downloadable certificate templates",
+  "Project demo video script",
+  "More scenario-based practice activities",
+  "Student cyber glossary expansion",
+  "More teacher handout formats",
+  "Optional safe feedback storage system if privacy rules are clear",
+  "Real outreach log after actual school sessions happen",
+  "Real impact metrics after students or schools are actually reached",
+];
+
+const longTermVision = [
+  {
+    title: "More Learning Paths",
+    detail:
+      "Expand beginner, intermediate, and advanced cybersecurity literacy topics while keeping all content safe and defensive.",
+  },
+  {
+    title: "More Classroom Tools",
+    detail:
+      "Create stronger resources for teachers, families, clubs, outreach teams, and school presentations.",
+  },
+  {
+    title: "More Practice Systems",
+    detail:
+      "Add more safe simulations, scenario activities, reflection tools, and challenge pages using fake examples only.",
+  },
+  {
+    title: "Research and Impact",
+    detail:
+      "Eventually collect meaningful, privacy-aware insights about cybersecurity readiness only if safe consent and privacy rules are clear.",
+  },
 ];
 
 const qaChecklist = [
-  "Test every navbar link",
-  "Test every homepage card and button",
-  "Test every activity page",
-  "Test mobile menu on a narrow screen",
-  "Check that every page has Navbar and Footer",
-  "Check spelling and repeated wording",
-  "Check that safety reminders are clear",
-  "Check that no page asks for real passwords",
-  "Check that no impact numbers are fake",
-  "Check live Vercel pages after every push",
+  "Test every navbar link.",
+  "Test every footer link.",
+  "Test every homepage button and card.",
+  "Test every lesson Open Lesson button.",
+  "Test every activity card.",
+  "Test every outreach and teacher resource link.",
+  "Test mobile menu on a narrow screen.",
+  "Check that every page has Navbar and Footer.",
+  "Check spelling, grammar, spacing, and repeated wording.",
+  "Check that no page asks for real passwords.",
+  "Check that no page encourages testing real suspicious links.",
+  "Check that no fake impact numbers are claimed.",
+  "Check live Vercel pages after each push.",
+];
+
+const safetyRules = [
+  "Use fake examples only.",
+  "Do not enter real passwords.",
+  "Do not test real suspicious links.",
+  "Do not collect private student information.",
+  "Do not access accounts, devices, networks, or files without permission.",
+  "Tell students to ask a trusted adult, teacher, or technology staff member when something feels suspicious.",
 ];
 
 const roadmapLinks = [
@@ -147,6 +199,10 @@ const roadmapLinks = [
     href: "/activities",
   },
   {
+    label: "Resources",
+    href: "/resources",
+  },
+  {
     label: "Teacher Toolkit",
     href: "/teacher-toolkit",
   },
@@ -157,6 +213,10 @@ const roadmapLinks = [
   {
     label: "Impact",
     href: "/impact",
+  },
+  {
+    label: "Safety",
+    href: "/safety",
   },
 ];
 
@@ -176,20 +236,66 @@ export default function RoadmapPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            This roadmap tracks what has been built, what still needs testing,
-            and what future versions could include. The goal is to keep the
-            project honest, useful, and outreach-ready.
+            This roadmap shows what has already been built, what is being
+            improved now, what should come next, and what belongs in the
+            long-term vision. The goal is to keep CyberShield Academy honest,
+            useful, safe, and outreach-ready.
           </p>
+
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/lessons"
+              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              View Lessons
+            </Link>
+
+            <Link
+              href="/activities"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Try Activities
+            </Link>
+
+            <Link
+              href="/impact"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Impact Tracker
+            </Link>
+          </div>
 
           <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
             Honesty note: Features, outreach numbers, and impact should only be
-            marked complete when they are actually built, tested, or completed.
+            marked complete when they are actually built, tested, pushed live,
+            or completed in real outreach.
           </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {currentStatus.map((item) => (
+            {[
+              {
+                label: "Project Stage",
+                value: "Build + Polish",
+                note: "Core pages are live. The focus is now quality, depth, and outreach readiness.",
+              },
+              {
+                label: "Lesson System",
+                value: "6 Lessons Live",
+                note: "All main individual lesson pages are created, connected, and live.",
+              },
+              {
+                label: "Practice System",
+                value: "Expanded",
+                note: "Scenario Room and Practice Lab now support safe decision-based practice.",
+              },
+              {
+                label: "Outreach Status",
+                value: "Preparing",
+                note: "Outreach materials are being built. Real impact should wait until real sessions happen.",
+              },
+            ].map((item) => (
               <div
                 key={item.label}
                 className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6"
@@ -211,23 +317,36 @@ export default function RoadmapPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
-          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-            <h2 className="text-3xl font-bold text-white">
-              Completed So Far
+          <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
+            <h2 className="text-3xl font-bold text-emerald-100">
+              Completed Work
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              These parts of CyberShield Academy are already built and have been
-              tested locally before being pushed live.
+              These parts have been created, tested locally, committed, pushed,
+              and checked live during the step-by-step build process.
             </p>
 
-            <div className="mt-6 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-              {completedItems.map((item) => (
+            <div className="mt-6 grid gap-6 lg:grid-cols-2">
+              {completedWork.map((section) => (
                 <div
-                  key={item}
-                  className="rounded-xl border border-green-500/20 bg-green-950/20 p-4 text-sm leading-6 text-green-100"
+                  key={section.category}
+                  className="rounded-2xl border border-emerald-500/20 bg-slate-950/70 p-6"
                 >
-                  ✓ {item}
+                  <h3 className="text-xl font-bold text-emerald-100">
+                    {section.category}
+                  </h3>
+
+                  <div className="mt-4 grid gap-3">
+                    {section.items.map((item) => (
+                      <div
+                        key={item}
+                        className="rounded-xl border border-slate-800 bg-slate-900/70 p-4 text-sm leading-6 text-slate-300"
+                      >
+                        ✓ {item}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
@@ -237,43 +356,68 @@ export default function RoadmapPage() {
         <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
             <h2 className="text-3xl font-bold text-cyan-200">
-              V1 Launch Checklist
+              Current Work
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              This checklist shows what is ready and what still needs final
-              review before CyberShield Academy can be considered outreach-ready
-              V1.
+              The project is no longer just trying to finish quickly. The focus
+              is now making CyberShield Academy deeper, clearer, safer, and more
+              impressive before outreach.
             </p>
 
-            <div className="mt-6 overflow-hidden rounded-2xl border border-slate-800">
-              <div className="grid bg-slate-950/80 text-sm font-semibold text-slate-200 md:grid-cols-[1fr_180px]">
-                <div className="border-b border-slate-800 p-4 md:border-r">
-                  Item
-                </div>
-                <div className="border-b border-slate-800 p-4">Status</div>
-              </div>
-
-              {v1Checklist.map((row) => (
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {currentWork.map((item) => (
                 <div
-                  key={row.item}
-                  className="grid text-sm text-slate-300 md:grid-cols-[1fr_180px]"
+                  key={item.title}
+                  className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 p-5"
                 >
-                  <div className="border-b border-slate-800 p-4 md:border-r">
-                    {row.item}
-                  </div>
-                  <div className="border-b border-slate-800 p-4">
-                    <span
-                      className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                        row.status === "Done"
-                          ? "bg-green-400/10 text-green-200"
-                          : "bg-yellow-400/10 text-yellow-200"
-                      }`}
-                    >
-                      {row.status}
+                  <div className="flex flex-wrap items-center justify-between gap-3">
+                    <h3 className="font-bold text-cyan-100">{item.title}</h3>
+
+                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                      {item.status}
                     </span>
                   </div>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Recommended Next Work
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These are the next realistic improvements before the final launch
+              checklist. They keep the project honest and useful.
+            </p>
+
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
+              {nearTermWork.map((item) => (
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6 transition hover:border-cyan-300 hover:bg-slate-900"
+                >
+                  <h3 className="text-xl font-bold text-white">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+
+                  <p className="mt-5 text-sm font-semibold text-cyan-300">
+                    Open related page →
+                  </p>
+                </Link>
               ))}
             </div>
           </div>
@@ -283,7 +427,7 @@ export default function RoadmapPage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
               <h2 className="text-3xl font-bold text-white">
-                What Is Not Built Yet
+                Future Work
               </h2>
 
               <p className="mt-3 leading-7 text-slate-300">
@@ -292,7 +436,7 @@ export default function RoadmapPage() {
               </p>
 
               <div className="mt-6 grid gap-3">
-                {notBuiltYet.map((item) => (
+                {futureWork.map((item) => (
                   <div
                     key={item}
                     className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
@@ -309,8 +453,8 @@ export default function RoadmapPage() {
               </h2>
 
               <p className="mt-3 leading-7 text-yellow-50/90">
-                Before using the site for outreach, every major page and link
-                should be tested carefully.
+                This should happen near the final launch week, not too early.
+                Every major page and link should be tested carefully.
               </p>
 
               <div className="mt-6 grid gap-3">
@@ -328,47 +472,85 @@ export default function RoadmapPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-              <h2 className="text-3xl font-bold text-white">
-                V1.5 Goals
-              </h2>
+          <div className="rounded-3xl border border-purple-500/30 bg-purple-950/20 p-8">
+            <h2 className="text-3xl font-bold text-purple-100">
+              Long-Term Vision
+            </h2>
 
-              <p className="mt-3 leading-7 text-slate-300">
-                V1.5 should focus on adding useful student activities and
-                improving outreach preparation.
-              </p>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              The long-term goal is to grow CyberShield Academy into a broader
+              cybersecurity literacy, education, and outreach platform while
+              keeping student safety, privacy, and ethical learning at the
+              center.
+            </p>
 
-              <div className="mt-6 grid gap-3">
-                {v15Goals.map((goal) => (
-                  <div
-                    key={goal}
-                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
-                  >
-                    {goal}
-                  </div>
-                ))}
-              </div>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {longTermVision.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-2xl border border-purple-500/20 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-bold text-purple-100">{item.title}</h3>
+
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
             </div>
+          </div>
+        </section>
 
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-              <h2 className="text-3xl font-bold text-white">V2 Goals</h2>
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-red-500/30 bg-red-950/20 p-8">
+            <h2 className="text-3xl font-bold text-red-100">
+              What CyberShield Should Not Claim Yet
+            </h2>
 
-              <p className="mt-3 leading-7 text-slate-300">
-                V2 can include more advanced features after the main site is
-                stable, tested, and useful for real outreach.
-              </p>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              This section keeps the project honest for college applications,
+              outreach, and public viewing.
+            </p>
 
-              <div className="mt-6 grid gap-3">
-                {v2Goals.map((goal) => (
-                  <div
-                    key={goal}
-                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
-                  >
-                    {goal}
-                  </div>
-                ))}
-              </div>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {[
+                "Do not claim students reached until real students are reached.",
+                "Do not claim school partnerships until real schools agree.",
+                "Do not claim research results until real data is collected safely and ethically.",
+                "Do not claim automatic certificates unless that feature is actually built.",
+                "Do not claim teacher dashboards or student accounts until they exist.",
+                "Do not claim expert review unless an expert actually reviews the content.",
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="rounded-2xl border border-red-500/20 bg-slate-950/70 p-5 text-sm leading-6 text-slate-300"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Safety Rules for Future Features
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Every future CyberShield feature should follow these rules.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {safetyRules.map((rule) => (
+                <div
+                  key={rule}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5 text-sm leading-6 text-slate-300"
+                >
+                  {rule}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -384,14 +566,14 @@ export default function RoadmapPage() {
               sections, and continue preparing for outreach.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {roadmapLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
                 >
-                  {link.label}
+                  {link.label} →
                 </Link>
               ))}
             </div>
