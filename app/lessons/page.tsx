@@ -103,7 +103,7 @@ const lessonModules = [
     title: "Digital Footprint",
     level: "Intermediate",
     time: "20–30 minutes",
-    lessonHref: "",
+    lessonHref: "/lessons/digital-footprint",
     description:
       "Learn how posts, usernames, comments, photos, and privacy settings can shape your online reputation.",
     learningGoals: [
@@ -209,10 +209,7 @@ const safetyRules = [
   "Ask a trusted adult, teacher, or technology staff member when something feels suspicious.",
 ];
 
-const nextLessonBuilds = [
-  "/lessons/digital-footprint",
-  "/lessons/cyber-ethics",
-];
+const nextLessonBuilds = ["/lessons/cyber-ethics"];
 
 export default function LessonsPage() {
   return (
@@ -448,13 +445,13 @@ export default function LessonsPage() {
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
             <h2 className="text-3xl font-bold text-white">
-              Next Lesson Pages to Build
+              Next Lesson Page to Build
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Password Safety, Scam Awareness, Privacy Basics, and Safe Browsing
-              are now connected. Next, we will continue building the remaining
-              full individual lesson pages one at a time.
+              Password Safety, Scam Awareness, Privacy Basics, Safe Browsing,
+              and Digital Footprint are now connected. Next, we will build the
+              final individual lesson page.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
