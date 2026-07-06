@@ -7,6 +7,7 @@ const lessonModules = [
     title: "Password Safety",
     level: "Beginner",
     time: "15–20 minutes",
+    lessonHref: "/lessons/password-safety",
     description:
       "Learn how strong passwords, passphrases, password managers, and multi-factor authentication help protect accounts.",
     learningGoals: [
@@ -204,7 +205,6 @@ const safetyRules = [
 ];
 
 const nextLessonBuilds = [
-  "/lessons/password-safety",
   "/lessons/scam-awareness",
   "/lessons/privacy-basics",
   "/lessons/safe-browsing",
@@ -299,8 +299,9 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Each module includes a topic summary, learning goals, and practice
-              pages that connect the lesson to interactive learning.
+              Each module includes a topic summary, learning goals, full lesson
+              pages when available, and practice pages that connect the lesson
+              to interactive learning.
             </p>
 
             <div className="mt-6 grid gap-6">
@@ -328,6 +329,17 @@ export default function LessonsPage() {
                   <p className="mt-4 max-w-4xl leading-7 text-slate-300">
                     {module.description}
                   </p>
+
+                  {module.lessonHref && (
+                    <div className="mt-5">
+                      <Link
+                        href={module.lessonHref}
+                        className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
+                      >
+                        Open Lesson →
+                      </Link>
+                    </div>
+                  )}
 
                   <div className="mt-6 grid gap-6 lg:grid-cols-2">
                     <div>
@@ -438,8 +450,8 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              This upgraded library is the hub. Next, we will create full
-              individual lesson pages for each topic.
+              Password Safety is now connected. Next, we will continue building
+              the remaining full individual lesson pages one at a time.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
