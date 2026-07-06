@@ -127,7 +127,7 @@ const lessonModules = [
     title: "Cyber Ethics",
     level: "Intermediate to Advanced",
     time: "20–30 minutes",
-    lessonHref: "",
+    lessonHref: "/lessons/cyber-ethics",
     description:
       "Learn how permission, privacy, responsibility, reporting, and defensive thinking guide ethical cybersecurity learning.",
     learningGoals: [
@@ -209,7 +209,14 @@ const safetyRules = [
   "Ask a trusted adult, teacher, or technology staff member when something feels suspicious.",
 ];
 
-const nextLessonBuilds = ["/lessons/cyber-ethics"];
+const completedLessonPages = [
+  "/lessons/password-safety",
+  "/lessons/scam-awareness",
+  "/lessons/privacy-basics",
+  "/lessons/safe-browsing",
+  "/lessons/digital-footprint",
+  "/lessons/cyber-ethics",
+];
 
 export default function LessonsPage() {
   return (
@@ -299,8 +306,8 @@ export default function LessonsPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Each module includes a topic summary, learning goals, full lesson
-              pages when available, and practice pages that connect the lesson
-              to interactive learning.
+              pages, and practice pages that connect the lesson to interactive
+              learning.
             </p>
 
             <div className="mt-6 grid gap-6">
@@ -329,16 +336,14 @@ export default function LessonsPage() {
                     {module.description}
                   </p>
 
-                  {module.lessonHref && (
-                    <div className="mt-5">
-                      <Link
-                        href={module.lessonHref}
-                        className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
-                      >
-                        Open Lesson →
-                      </Link>
-                    </div>
-                  )}
+                  <div className="mt-5">
+                    <Link
+                      href={module.lessonHref}
+                      className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
+                    >
+                      Open Lesson →
+                    </Link>
+                  </div>
 
                   <div className="mt-6 grid gap-6 lg:grid-cols-2">
                     <div>
@@ -443,25 +448,26 @@ export default function LessonsPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-20">
-          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-            <h2 className="text-3xl font-bold text-white">
-              Next Lesson Page to Build
+          <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
+            <h2 className="text-3xl font-bold text-emerald-100">
+              Individual Lesson Pages Complete
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Password Safety, Scam Awareness, Privacy Basics, Safe Browsing,
-              and Digital Footprint are now connected. Next, we will build the
-              final individual lesson page.
+              The main Learning Library now connects to all six full individual
+              lesson pages: Password Safety, Scam Awareness, Privacy Basics,
+              Safe Browsing, Digital Footprint, and Cyber Ethics.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {nextLessonBuilds.map((route) => (
-                <div
+              {completedLessonPages.map((route) => (
+                <Link
                   key={route}
-                  className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-slate-300"
+                  href={route}
+                  className="rounded-xl border border-emerald-500/20 bg-slate-950/70 p-4 text-sm font-semibold text-emerald-100 transition hover:border-cyan-300 hover:text-cyan-200"
                 >
-                  {route}
-                </div>
+                  {route} →
+                </Link>
               ))}
             </div>
           </div>
