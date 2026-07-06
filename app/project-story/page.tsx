@@ -4,108 +4,216 @@ import Footer from "@/components/Footer";
 
 const storySections = [
   {
-    title: "Why I Built CyberShield Academy",
+    title: "Why I Built It",
     detail:
-      "Cybersecurity is becoming more important for students, but many online safety lessons are either too basic, too technical, or not designed for real school use. I built CyberShield Academy to make cybersecurity literacy easier for students to understand and easier for teachers to share.",
+      "Cybersecurity is becoming part of everyday student life, but many students do not get enough practical guidance about scams, privacy, passwords, safe browsing, digital footprint, and ethical technology use. CyberShield Academy was built to make these topics easier to understand and easier to teach.",
   },
   {
-    title: "The Problem It Solves",
+    title: "Who It Helps",
     detail:
-      "Students use the internet every day for school, communication, games, social media, and personal accounts, but many do not get enough practical guidance about scams, passwords, privacy, safe browsing, digital footprint, and ethical online choices.",
+      "The project is designed for students, teachers, families, clubs, and future outreach partners. It includes lessons, activities, classroom resources, and safe practice tools for different age levels.",
   },
   {
-    title: "The Goal of the Project",
+    title: "What Makes It Different",
     detail:
-      "The goal is to create a student-friendly cybersecurity learning platform with lessons, activities, resources, teacher tools, and outreach materials that can support real school presentations.",
+      "CyberShield Academy is not just a single page or simple slideshow. It is a growing cybersecurity literacy platform with connected lessons, practice activities, teacher tools, outreach materials, impact tracking, and a roadmap for future growth.",
+  },
+];
+
+const projectStats = [
+  {
+    label: "Learning Focus",
+    value: "Cyber Safety",
+    note: "Scams, passwords, privacy, safe browsing, digital footprint, and cyber ethics.",
+  },
+  {
+    label: "Audience",
+    value: "Students + Schools",
+    note: "Built for students, teachers, families, and future outreach settings.",
+  },
+  {
+    label: "Project Type",
+    value: "Student-Built",
+    note: "Created as a real website using a step-by-step development workflow.",
+  },
+  {
+    label: "Impact Status",
+    value: "Honest Tracking",
+    note: "Real outreach numbers stay at 0 until real outreach happens.",
   },
 ];
 
 const growthTimeline = [
   {
     stage: "Stage 1",
-    title: "Basic Website Foundation",
+    title: "Website Foundation",
     detail:
-      "The project started with the main website structure, homepage, navigation, footer, and early learning pages.",
+      "The project started with the main website structure, homepage, navigation, footer, and early pages that explained the mission.",
   },
   {
     stage: "Stage 2",
     title: "Age-Level Learning Tracks",
     detail:
-      "CyberShield expanded into Kids, Junior, and High School tracks so different students could learn at the right level.",
+      "CyberShield expanded into Kids, Junior, and High School tracks so cybersecurity topics could be explained at different student levels.",
   },
   {
     stage: "Stage 3",
-    title: "Lessons and Activities",
+    title: "Learning Library",
     detail:
-      "The platform grew with a Learning Library, six individual lesson pages, quizzes, scam practice, password safety, Scenario Room, and Practice Lab.",
+      "A lessons hub and six individual lessons were created for password safety, scam awareness, privacy basics, safe browsing, digital footprint, and cyber ethics.",
   },
   {
     stage: "Stage 4",
-    title: "Outreach Preparation",
+    title: "Practice Activities",
     detail:
-      "The project added resources, teacher tools, worksheets, presentation outlines, email templates, feedback planning, and honest impact tracking.",
+      "The site added quizzes, scam spotting, password practice, safe browsing challenges, digital footprint reflection, cyber ethics scenarios, Scenario Room, and Practice Lab.",
   },
   {
     stage: "Stage 5",
+    title: "Outreach Preparation",
+    detail:
+      "Teacher resources, worksheets, presentation outlines, outreach materials, email templates, feedback planning, and impact tracking were added to support future school presentations.",
+  },
+  {
+    stage: "Stage 6",
     title: "Polish and Launch Readiness",
     detail:
-      "The current focus is improving quality, testing routes, strengthening content, and preparing the site for future school outreach.",
+      "The current phase is focused on improving quality, testing pages, strengthening wording, checking links, and preparing the site for future real outreach.",
+  },
+];
+
+const buildSkills = [
+  {
+    title: "Planning",
+    detail:
+      "I learned how to break a large idea into smaller pages, sections, phases, and checkpoints instead of trying to build everything at once.",
+  },
+  {
+    title: "Web Development",
+    detail:
+      "I practiced building with Next.js, Tailwind CSS, reusable components, page routes, local testing, GitHub commits, and Vercel deployment.",
+  },
+  {
+    title: "Product Thinking",
+    detail:
+      "I learned to think about different audiences, including elementary students, middle school students, high school students, teachers, and families.",
+  },
+  {
+    title: "Safety Design",
+    detail:
+      "I learned that cybersecurity education must be ethical, defensive, age-appropriate, and careful about privacy.",
   },
 ];
 
 const lessonsLearned = [
-  "How to plan a real project with multiple pages, goals, and audiences.",
-  "How to use Next.js, Tailwind CSS, GitHub, and Vercel in a real workflow.",
-  "How to test locally before pushing changes live.",
-  "How to keep cybersecurity content safe, ethical, and age-appropriate.",
-  "How to build for students, teachers, families, and outreach at the same time.",
-  "How to document progress honestly without exaggerating impact.",
+  "A real project needs planning, testing, patience, and many small improvements.",
+  "Good cybersecurity education should be practical, safe, and understandable.",
+  "A website becomes stronger when pages are connected instead of isolated.",
+  "Outreach materials need to be useful for teachers, not just impressive to look at.",
+  "Impact should be documented honestly instead of exaggerated.",
+  "GitHub, Vercel, and testing checkpoints make the project safer to improve.",
 ];
 
 const projectValues = [
   {
     title: "Safety First",
     detail:
-      "CyberShield uses fake examples only and avoids real passwords, real suspicious links, and private student data.",
+      "CyberShield uses fake examples only and avoids real passwords, real suspicious links, harmful instructions, and private student data collection.",
   },
   {
     title: "Student-Friendly",
     detail:
-      "Lessons are written in clear language so students can understand cybersecurity without needing advanced technical knowledge.",
+      "The content is written in clear language so students can understand important online safety ideas without needing advanced technical knowledge.",
   },
   {
-    title: "Ethical Learning",
+    title: "Defensive Learning",
     detail:
-      "The project focuses on defensive cybersecurity, privacy, permission, and responsible online behavior.",
+      "The project focuses on prevention, awareness, privacy, reporting, permission, and responsible decision-making.",
   },
   {
     title: "Honest Impact",
     detail:
-      "CyberShield does not claim students reached, school partnerships, or feedback until those things actually happen.",
+      "CyberShield does not claim students reached, school partnerships, feedback responses, or expert review until those things actually happen.",
+  },
+];
+
+const websiteSystems = [
+  {
+    title: "Learning System",
+    detail:
+      "Lessons and age-level tracks teach the core ideas of cybersecurity literacy.",
+    href: "/lessons",
+    label: "View Lessons",
+  },
+  {
+    title: "Practice System",
+    detail:
+      "Activities help students apply what they learn through safe, fake, defensive examples.",
+    href: "/practice-lab",
+    label: "Open Practice Lab",
+  },
+  {
+    title: "Teacher Support System",
+    detail:
+      "Teacher Toolkit, worksheets, and presentation outlines help prepare classroom-friendly learning.",
+    href: "/teacher-toolkit",
+    label: "Open Teacher Toolkit",
+  },
+  {
+    title: "Outreach System",
+    detail:
+      "Outreach materials and email templates support future school or community presentations.",
+    href: "/outreach",
+    label: "View Outreach",
+  },
+  {
+    title: "Documentation System",
+    detail:
+      "Roadmap, Impact, and Project Story pages explain what is built, what is planned, and what should not be claimed yet.",
+    href: "/roadmap",
+    label: "View Roadmap",
+  },
+  {
+    title: "Safety System",
+    detail:
+      "Safety and privacy reminders keep the project focused on ethical, age-appropriate learning.",
+    href: "/safety",
+    label: "Safety & Privacy",
   },
 ];
 
 const whatComesNext = [
   {
-    title: "Final Quality Testing",
+    title: "Final Site Testing",
     detail:
-      "Test every page, button, route, mobile layout, safety reminder, and live Vercel link before outreach.",
+      "Test every page, route, button, footer link, mobile layout, and live Vercel page before calling the site launch-ready.",
   },
   {
     title: "Outreach Preparation",
     detail:
-      "Prepare short school presentations, teacher handouts, worksheets, and email messages for future outreach.",
+      "Polish teacher materials, worksheets, presentation outlines, and outreach email templates for future school contact.",
   },
   {
-    title: "Real School Sessions",
+    title: "Real Outreach",
     detail:
-      "After the site is ready, CyberShield can be shared with teachers, clubs, or schools through real outreach.",
+      "After the site is ready, CyberShield can be shared with teachers, clubs, schools, or community programs through real outreach.",
   },
   {
-    title: "Feedback-Based Improvements",
+    title: "Feedback Improvements",
     detail:
       "Future updates should be based on real feedback, real testing, and real student or teacher needs.",
   },
+];
+
+const whatThisProjectDoesNotDo = [
+  "It does not ask students to enter real passwords.",
+  "It does not use real suspicious links for practice.",
+  "It does not collect private student information.",
+  "It does not teach unauthorized access.",
+  "It does not encourage testing real systems.",
+  "It does not claim fake outreach numbers.",
+  "It does not claim school partnerships before they exist.",
+  "It does not replace help from teachers, parents, or school technology staff.",
 ];
 
 const projectLinks = [
@@ -122,6 +230,10 @@ const projectLinks = [
     href: "/resources",
   },
   {
+    label: "Teacher Toolkit",
+    href: "/teacher-toolkit",
+  },
+  {
     label: "Outreach",
     href: "/outreach",
   },
@@ -132,6 +244,10 @@ const projectLinks = [
   {
     label: "Roadmap",
     href: "/roadmap",
+  },
+  {
+    label: "Safety & Privacy",
+    href: "/safety",
   },
 ];
 
@@ -152,9 +268,9 @@ export default function ProjectStoryPage() {
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             CyberShield Academy is a student-built cybersecurity literacy
-            project created to help students learn safer online habits, practice
-            ethical decision-making, and prepare for a more secure digital
-            world.
+            project created to help students build safer online habits, practice
+            ethical decision-making, and understand cybersecurity in a way that
+            is clear, useful, and age-appropriate.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -188,6 +304,29 @@ export default function ProjectStoryPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {projectStats.map((item) => (
+              <div
+                key={item.label}
+                className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6"
+              >
+                <p className="text-sm font-semibold text-slate-400">
+                  {item.label}
+                </p>
+
+                <h2 className="mt-3 text-2xl font-bold text-cyan-200">
+                  {item.value}
+                </h2>
+
+                <p className="mt-4 text-sm leading-6 text-slate-300">
+                  {item.note}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="grid gap-6 lg:grid-cols-3">
             {storySections.map((section) => (
               <div
@@ -213,8 +352,8 @@ export default function ProjectStoryPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              CyberShield Academy grew step by step from a basic idea into a
-              larger cybersecurity education platform.
+              CyberShield Academy grew step by step from a basic website idea
+              into a larger cybersecurity education and outreach platform.
             </p>
 
             <div className="mt-6 grid gap-4">
@@ -249,7 +388,7 @@ export default function ProjectStoryPage() {
 
               <p className="mt-3 leading-7 text-slate-300">
                 Building CyberShield Academy has been both a technical project
-                and a learning experience in planning, design, safety, and
+                and a real learning experience in planning, design, safety, and
                 communication.
               </p>
 
@@ -267,24 +406,24 @@ export default function ProjectStoryPage() {
 
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
               <h2 className="text-3xl font-bold text-white">
-                Project Values
+                Skills Built During the Project
               </h2>
 
               <p className="mt-3 leading-7 text-slate-300">
-                These values guide every CyberShield page, feature, lesson, and
-                future outreach plan.
+                CyberShield Academy helped turn an idea into a real product with
+                planning, building, testing, publishing, and improvement cycles.
               </p>
 
               <div className="mt-6 grid gap-4">
-                {projectValues.map((value) => (
+                {buildSkills.map((skill) => (
                   <div
-                    key={value.title}
+                    key={skill.title}
                     className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
                   >
-                    <h3 className="font-bold text-cyan-200">{value.title}</h3>
+                    <h3 className="font-bold text-cyan-200">{skill.title}</h3>
 
                     <p className="mt-2 text-sm leading-6 text-slate-300">
-                      {value.detail}
+                      {skill.detail}
                     </p>
                   </div>
                 ))}
@@ -294,8 +433,72 @@ export default function ProjectStoryPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              What the Website Includes
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              CyberShield Academy is organized into connected systems so the
+              project can support learning, practice, outreach, safety, and
+              honest documentation.
+            </p>
+
+            <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {websiteSystems.map((system) => (
+                <Link
+                  key={system.title}
+                  href={system.href}
+                  className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5 transition hover:border-cyan-300 hover:bg-slate-900"
+                >
+                  <h3 className="text-xl font-bold text-cyan-200">
+                    {system.title}
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                    {system.detail}
+                  </p>
+
+                  <p className="mt-5 text-sm font-semibold text-cyan-300">
+                    {system.label} →
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="rounded-3xl border border-purple-500/30 bg-purple-950/20 p-8">
             <h2 className="text-3xl font-bold text-purple-100">
+              Project Values
+            </h2>
+
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              These values guide every CyberShield page, feature, lesson, and
+              future outreach plan.
+            </p>
+
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {projectValues.map((value) => (
+                <div
+                  key={value.title}
+                  className="rounded-2xl border border-purple-500/20 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-bold text-purple-100">{value.title}</h3>
+
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {value.detail}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
               What Comes Next
             </h2>
 
@@ -308,9 +511,9 @@ export default function ProjectStoryPage() {
               {whatComesNext.map((item) => (
                 <div
                   key={item.title}
-                  className="rounded-2xl border border-purple-500/20 bg-slate-950/70 p-5"
+                  className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 p-5"
                 >
-                  <h3 className="font-bold text-purple-100">{item.title}</h3>
+                  <h3 className="font-bold text-cyan-100">{item.title}</h3>
 
                   <p className="mt-2 text-sm leading-6 text-slate-300">
                     {item.detail}
@@ -329,18 +532,12 @@ export default function ProjectStoryPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               CyberShield Academy is a safe educational project. It does not
-              teach harmful actions or encourage students to test real systems.
+              teach harmful actions, collect private student information, or
+              encourage students to test real systems.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {[
-                "It does not ask students to enter real passwords.",
-                "It does not use real suspicious links for practice.",
-                "It does not collect private student information.",
-                "It does not teach unauthorized access.",
-                "It does not claim fake outreach numbers.",
-                "It does not replace help from teachers, parents, or technology staff.",
-              ].map((item) => (
+              {whatThisProjectDoesNotDo.map((item) => (
                 <div
                   key={item}
                   className="rounded-2xl border border-red-500/20 bg-slate-950/70 p-5 text-sm leading-6 text-slate-300"
@@ -360,10 +557,10 @@ export default function ProjectStoryPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Use these pages to see how CyberShield Academy connects learning,
-              practice, resources, outreach, and honest documentation.
+              practice, resources, outreach, safety, and honest documentation.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {projectLinks.map((link) => (
                 <Link
                   key={link.href}
