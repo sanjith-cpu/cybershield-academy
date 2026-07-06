@@ -83,6 +83,10 @@ const footerSections = [
         href: "/project-story",
       },
       {
+        label: "Build Log",
+        href: "/build-log",
+      },
+      {
         label: "Careers",
         href: "/careers",
       },

@@ -16,7 +16,7 @@ const storySections = [
   {
     title: "What Makes It Different",
     detail:
-      "CyberShield Academy is not just a single page or simple slideshow. It is a growing cybersecurity literacy platform with connected lessons, practice activities, teacher tools, outreach materials, impact tracking, and a roadmap for future growth.",
+      "CyberShield Academy is not just a single page or simple slideshow. It is a growing cybersecurity literacy platform with connected lessons, practice activities, teacher tools, outreach materials, impact tracking, a build log, and a roadmap for future growth.",
   },
 ];
 
@@ -78,7 +78,7 @@ const growthTimeline = [
     stage: "Stage 6",
     title: "Polish and Launch Readiness",
     detail:
-      "The current phase is focused on improving quality, testing pages, strengthening wording, checking links, and preparing the site for future real outreach.",
+      "The current phase is focused on improving quality, testing pages, strengthening wording, checking links, documenting the build, and preparing the site for future real outreach.",
   },
 ];
 
@@ -169,9 +169,9 @@ const websiteSystems = [
   {
     title: "Documentation System",
     detail:
-      "Roadmap, Impact, and Project Story pages explain what is built, what is planned, and what should not be claimed yet.",
-    href: "/roadmap",
-    label: "View Roadmap",
+      "Roadmap, Impact, Project Story, and Build Log pages explain what is built, what is planned, and what should not be claimed yet.",
+    href: "/build-log",
+    label: "Open Build Log",
   },
   {
     title: "Safety System",
@@ -246,6 +246,10 @@ const projectLinks = [
     href: "/roadmap",
   },
   {
+    label: "Build Log",
+    href: "/build-log",
+  },
+  {
     label: "Safety & Privacy",
     href: "/safety",
   },
@@ -279,6 +283,13 @@ export default function ProjectStoryPage() {
               className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
               Explore Lessons
+            </Link>
+
+            <Link
+              href="/build-log"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              View Build Log
             </Link>
 
             <Link
@@ -557,10 +568,11 @@ export default function ProjectStoryPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Use these pages to see how CyberShield Academy connects learning,
-              practice, resources, outreach, safety, and honest documentation.
+              practice, resources, outreach, safety, build documentation, and
+              honest impact tracking.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {projectLinks.map((link) => (
                 <Link
                   key={link.href}

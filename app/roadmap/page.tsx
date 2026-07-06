@@ -8,10 +8,11 @@ const completedWork = [
     items: [
       "Homepage created and upgraded",
       "Navbar created and upgraded for mobile",
-      "Footer created",
+      "Footer created and connected",
       "About page created",
-      "Safety & Privacy page created",
-      "Project Story page created",
+      "Safety & Privacy page created and upgraded",
+      "Project Story page created and upgraded",
+      "Build Log page created",
       "Full route audit completed earlier after clearing .next",
     ],
   },
@@ -74,6 +75,12 @@ const completedWork = [
 
 const currentWork = [
   {
+    title: "Build Log Connection",
+    status: "Current",
+    detail:
+      "The Build Log page has been created and is being connected through the Footer, Project Story, Roadmap, and About page.",
+  },
+  {
     title: "Final Public Page Polish",
     status: "Current",
     detail:
@@ -86,12 +93,6 @@ const currentWork = [
       "Teacher resources, worksheets, presentation outlines, email templates, and outreach pages are being reviewed so they are ready for future real school outreach.",
   },
   {
-    title: "Honest Documentation",
-    status: "Current",
-    detail:
-      "CyberShield clearly separates completed website progress from future outreach goals and does not claim real impact before it happens.",
-  },
-  {
     title: "Final Quality Pass",
     status: "Upcoming",
     detail:
@@ -101,10 +102,10 @@ const currentWork = [
 
 const nearTermWork = [
   {
-    title: "Polish Project Story",
+    title: "Finish Build Log Connections",
     detail:
-      "Review the Project Story page so it clearly explains why CyberShield was built, what was learned, and what comes next.",
-    href: "/project-story",
+      "Connect the Build Log through major project pages so visitors can understand how CyberShield Academy was built.",
+    href: "/build-log",
   },
   {
     title: "Polish Outreach Materials",
@@ -119,12 +120,13 @@ const nearTermWork = [
     href: "/safety",
   },
   {
-    title: "Plan a Build Log",
+    title: "Document Real Impact Later",
     detail:
-      "Decide whether to add a Build Log page that documents how the project was created and improved over time.",
-    href: "/about",
+      "Keep the Impact page honest by only updating outreach numbers after real sessions, real feedback, or real student reach happen.",
+    href: "/impact",
   },
 ];
+
 const futureWork = [
   "Printable PDF worksheet downloads",
   "Downloadable certificate templates",
@@ -167,6 +169,7 @@ const qaChecklist = [
   "Test every lesson Open Lesson button.",
   "Test every activity card.",
   "Test every outreach and teacher resource link.",
+  "Test the Build Log route and all Build Log links.",
   "Test mobile menu on a narrow screen.",
   "Check that every page has Navbar and Footer.",
   "Check spelling, grammar, spacing, and repeated wording.",
@@ -193,6 +196,10 @@ const roadmapLinks = [
   {
     label: "Project Story",
     href: "/project-story",
+  },
+  {
+    label: "Build Log",
+    href: "/build-log",
   },
   {
     label: "Lessons",
@@ -251,6 +258,13 @@ export default function RoadmapPage() {
             </Link>
 
             <Link
+              href="/build-log"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+            >
+              Build Log
+            </Link>
+
+            <Link
               href="/project-story"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
@@ -291,9 +305,9 @@ export default function RoadmapPage() {
                 note: "Scenario Room and Practice Lab now support safe decision-based practice.",
               },
               {
-                label: "Outreach Status",
-                value: "Preparing",
-                note: "Outreach materials are being built. Real impact should wait until real sessions happen.",
+                label: "Documentation",
+                value: "Build Log Added",
+                note: "Project Story, Roadmap, Impact, and Build Log explain the project honestly.",
               },
             ].map((item) => (
               <div
@@ -324,7 +338,7 @@ export default function RoadmapPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               These parts have been created, tested locally, committed, pushed,
-              and checked live during the step-by-step build process.
+              or prepared during the step-by-step build process.
             </p>
 
             <div className="mt-6 grid gap-6 lg:grid-cols-2">
@@ -361,8 +375,8 @@ export default function RoadmapPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               The project is no longer just trying to finish quickly. The focus
-              is now making CyberShield Academy deeper, clearer, safer, and more
-              impressive before outreach.
+              is now making CyberShield Academy deeper, clearer, safer, better
+              documented, and more impressive before outreach.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -563,10 +577,10 @@ export default function RoadmapPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Use these pages to review the current project, test major
-              sections, and continue preparing for outreach.
+              sections, document the build, and continue preparing for outreach.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {roadmapLinks.map((link) => (
                 <Link
                   key={link.href}
