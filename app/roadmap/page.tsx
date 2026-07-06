@@ -74,36 +74,36 @@ const completedWork = [
 
 const currentWork = [
   {
-    title: "Project Story Connection",
+    title: "Final Public Page Polish",
     status: "Current",
     detail:
-      "The Project Story page is being connected through the homepage and roadmap so visitors can understand why CyberShield was created.",
+      "The project is now focused on carefully polishing important public pages without breaking pages that already work.",
   },
   {
-    title: "Depth Before Launch",
+    title: "Outreach Readiness",
     status: "Current",
     detail:
-      "The project is now focused on deeper content, stronger practice pages, better resources, and outreach readiness before Aug 17.",
+      "Teacher resources, worksheets, presentation outlines, email templates, and outreach pages are being reviewed so they are ready for future real school outreach.",
   },
   {
     title: "Honest Documentation",
     status: "Current",
     detail:
-      "CyberShield should clearly show what is complete, what is planned, and what should not be claimed until it actually happens.",
+      "CyberShield clearly separates completed website progress from future outreach goals and does not claim real impact before it happens.",
   },
   {
     title: "Final Quality Pass",
     status: "Upcoming",
     detail:
-      "Before outreach, every major route, button, mobile layout, and safety reminder should be tested again.",
+      "Before calling the site launch-ready, every major route, button, mobile layout, footer link, and safety reminder should be tested again.",
   },
 ];
 
 const nearTermWork = [
   {
-    title: "Project Story Page",
+    title: "Polish Project Story",
     detail:
-      "A page explaining why CyberShield was built, what problem it solves, what was learned, and what comes next.",
+      "Review the Project Story page so it clearly explains why CyberShield was built, what was learned, and what comes next.",
     href: "/project-story",
   },
   {
@@ -113,19 +113,18 @@ const nearTermWork = [
     href: "/outreach",
   },
   {
-    title: "Final Site QA",
+    title: "Prepare Final Site QA",
     detail:
       "Test all routes, links, mobile layouts, grammar, spacing, and live Vercel pages before calling V1 launch-ready.",
     href: "/safety",
   },
   {
-    title: "Prepare Future Updates",
+    title: "Plan a Build Log",
     detail:
-      "Plan realistic future features like printable downloads, certificate templates, demo videos, and real outreach logs.",
-    href: "/impact",
+      "Decide whether to add a Build Log page that documents how the project was created and improved over time.",
+    href: "/about",
   },
 ];
-
 const futureWork = [
   "Printable PDF worksheet downloads",
   "Downloadable certificate templates",
