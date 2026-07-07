@@ -6,131 +6,134 @@ const curriculumModules = [
   {
     number: "Module 1",
     title: "Online Safety Basics",
-    status: "Next build",
+    status: "Live",
     href: "/kids/online-safety-basics",
     description:
       "Students learn what information is okay to share, what should stay private, how to choose safer usernames, and when to ask a trusted adult for help.",
     outcome:
-      "Students can explain the difference between public information and private information.",
+      "Students can explain the difference between personal information, private information, and safer online choices.",
     lessons: [
       {
         number: "1.1",
         title: "Personal Information",
-        description:
-          "Learn what personal information means and why it matters online.",
+        status: "Live",
+        href: "/kids/online-safety-basics/personal-information",
       },
       {
         number: "1.2",
         title: "Private Information",
-        description:
-          "Learn which details should not be shared in games, chats, forms, or websites.",
+        status: "Live",
+        href: "/kids/online-safety-basics/private-information",
       },
       {
         number: "1.3",
         title: "Safe Usernames",
-        description:
-          "Learn how to create usernames that do not reveal real names, schools, or locations.",
+        status: "Live",
+        href: "/kids/online-safety-basics/safe-usernames",
       },
       {
         number: "1.4",
         title: "Trusted Adults",
-        description:
-          "Learn when to pause, step away, and ask a parent, teacher, counselor, or school technology staff member for help.",
+        status: "Live",
+        href: "/kids/online-safety-basics/trusted-adults",
       },
       {
         number: "1.5",
         title: "Module Review",
-        description:
-          "Review safe choices, warning signs, and what to do when something online feels wrong.",
+        status: "Live",
+        href: "/kids/online-safety-basics/review",
       },
     ],
   },
   {
     number: "Module 2",
     title: "Passwords and Accounts",
-    status: "Coming next",
+    status: "Live",
+    href: "/kids/passwords-and-accounts",
     description:
-      "Students learn why passwords protect accounts, why passwords should not be shared, and how trusted adults can help with account safety.",
+      "Students learn why passwords protect accounts, why passwords should stay secret, and how trusted adults can help with account safety.",
     outcome:
-      "Students can explain that passwords are private and should be protected.",
+      "Students can explain that passwords are private and should never be shared or typed into practice activities.",
     lessons: [
       {
         number: "2.1",
         title: "What Passwords Protect",
-        description:
-          "Understand that passwords help protect games, school tools, videos, and learning accounts.",
+        status: "Live",
+        href: "/kids/passwords-and-accounts/what-passwords-protect",
       },
       {
         number: "2.2",
         title: "Why Passwords Stay Secret",
-        description:
-          "Learn why students should not share passwords with friends, strangers, or people in online games.",
+        status: "Live",
+        href: "/kids/passwords-and-accounts/why-passwords-stay-secret",
       },
       {
         number: "2.3",
         title: "Asking for Account Help",
-        description:
-          "Learn how to ask a trusted adult for help when locked out or confused.",
+        status: "Live",
+        href: "/kids/passwords-and-accounts/asking-for-account-help",
       },
       {
         number: "2.4",
         title: "Safe Account Habits",
-        description:
-          "Practice signing out, protecting devices, and avoiding password guessing games.",
+        status: "Live",
+        href: "/kids/passwords-and-accounts/safe-account-habits",
       },
       {
         number: "2.5",
         title: "Module Review",
-        description:
-          "Review password safety, account safety, and when to get adult help.",
+        status: "Live",
+        href: "/kids/passwords-and-accounts/review",
       },
     ],
   },
   {
     number: "Module 3",
     title: "Scam Spotting",
-    status: "Planned",
+    status: "Live",
+    href: "/kids/scam-spotting",
     description:
       "Students learn that some online messages, popups, prizes, and game offers may be fake or unsafe.",
     outcome:
-      "Students can notice common warning signs and ask for help before clicking.",
+      "Students can notice common scam warning signs and ask for help before clicking.",
     lessons: [
       {
         number: "3.1",
         title: "What Is a Scam?",
-        description:
-          "Learn that scams try to trick people into clicking, sharing, or believing something fake.",
+        status: "Live",
+        href: "/kids/scam-spotting/what-is-a-scam",
       },
       {
         number: "3.2",
         title: "Too-Good-to-Be-True Offers",
-        description:
-          "Learn why free prizes, free game coins, and urgent rewards can be warning signs.",
+        status: "Live",
+        href: "/kids/scam-spotting/too-good-to-be-true-offers",
       },
       {
         number: "3.3",
         title: "Strange Messages",
-        description:
-          "Practice noticing messages that ask for secrets, passwords, money, or personal details.",
+        status: "Live",
+        href: "/kids/scam-spotting/strange-messages",
       },
       {
         number: "3.4",
         title: "Pause Before You Click",
-        description:
-          "Learn a simple pause-check-ask routine before clicking links or buttons.",
+        status: "Live",
+        href: "/kids/scam-spotting/pause-before-you-click",
       },
       {
         number: "3.5",
         title: "Module Review",
-        description:
-          "Review scam warning signs using safe, fake examples only.",
+        status: "Live",
+        href: "/kids/scam-spotting/review",
       },
     ],
   },
   {
     number: "Module 4",
     title: "Kind and Safe Technology Use",
-    status: "Planned",
+    status: "Live",
+    href: "/kids/kind-and-safe-technology-use",
     description:
       "Students learn how to be respectful online, avoid joining mean behavior, and get help when someone is being hurtful.",
     outcome:
@@ -139,125 +142,127 @@ const curriculumModules = [
       {
         number: "4.1",
         title: "Kind Words Online",
-        description:
-          "Learn how online words can affect real people and why kindness matters.",
+        status: "Live",
+        href: "/kids/kind-and-safe-technology-use/kind-words-online",
       },
       {
         number: "4.2",
         title: "Group Chats and Games",
-        description:
-          "Learn safe choices in chats, comments, game messages, and class tools.",
+        status: "Live",
+        href: "/kids/kind-and-safe-technology-use/group-chats-and-games",
       },
       {
         number: "4.3",
         title: "What to Do if Someone Is Mean",
-        description:
-          "Practice stepping away, saving evidence for an adult, and asking for help.",
+        status: "Live",
+        href: "/kids/kind-and-safe-technology-use/what-to-do-if-someone-is-mean",
       },
       {
         number: "4.4",
         title: "Being a Digital Helper",
-        description:
-          "Learn how students can support others without joining drama or arguments.",
+        status: "Live",
+        href: "/kids/kind-and-safe-technology-use/being-a-digital-helper",
       },
       {
         number: "4.5",
         title: "Module Review",
-        description:
-          "Review respectful choices and safe ways to respond to online problems.",
+        status: "Live",
+        href: "/kids/kind-and-safe-technology-use/review",
       },
     ],
   },
   {
     number: "Module 5",
     title: "Digital Footprints",
-    status: "Planned",
+    status: "Live",
+    href: "/kids/digital-footprints",
     description:
-      "Students learn that online actions can leave traces and that sharing should be thoughtful, safe, and respectful.",
+      "Students learn that online actions can leave traces and that sharing should be thoughtful, safe, private, and respectful.",
     outcome:
-      "Students can explain why they should think before posting, sharing, or commenting.",
+      "Students can explain why they should think before posting, sharing, commenting, or spreading screenshots.",
     lessons: [
       {
         number: "5.1",
         title: "What Is a Digital Footprint?",
-        description:
-          "Learn that online choices can leave a trail, even when something feels temporary.",
+        status: "Live",
+        href: "/kids/digital-footprints/what-is-a-digital-footprint",
       },
       {
         number: "5.2",
         title: "Think Before You Share",
-        description:
-          "Practice deciding what is safe, kind, and appropriate to share.",
+        status: "Live",
+        href: "/kids/digital-footprints/think-before-you-share",
       },
       {
         number: "5.3",
-        title: "Photos and Videos",
-        description:
-          "Learn why students should ask a trusted adult before posting images or videos.",
+        title: "Photos, Posts, and Screenshots",
+        status: "Live",
+        href: "/kids/digital-footprints/photos-posts-and-screenshots",
       },
       {
         number: "5.4",
-        title: "Online Reputation",
-        description:
-          "Learn how choices online can affect how others see us.",
+        title: "Cleaning Up and Asking for Help",
+        status: "Live",
+        href: "/kids/digital-footprints/cleaning-up-and-asking-for-help",
       },
       {
         number: "5.5",
-        title: "Module Review",
-        description:
-          "Review digital footprint choices using simple student-friendly examples.",
+        title: "Digital Footprints Review",
+        status: "Live",
+        href: "/kids/digital-footprints/review",
       },
     ],
   },
   {
     number: "Module 6",
     title: "Cyber Safety Review",
-    status: "Planned",
+    status: "In Progress",
+    href: "/kids/cyber-safety-review",
     description:
-      "Students review the biggest safety habits from the Kids track and practice choosing safe next steps.",
+      "Students review the biggest safety habits from the Kids Track and practice choosing safe next steps.",
     outcome:
-      "Students can use a simple safety checklist before clicking, sharing, chatting, or asking for help.",
+      "Students can use a simple safety checklist before clicking, sharing, chatting, posting, or asking for help.",
     lessons: [
       {
         number: "6.1",
-        title: "Safety Habit Review",
-        description:
-          "Review privacy, passwords, kindness, scams, and trusted adults.",
+        title: "Safety Habits Review",
+        status: "Live",
+        href: "/kids/cyber-safety-review/safety-habits-review",
       },
       {
         number: "6.2",
-        title: "Safe or Unsafe?",
-        description:
-          "Practice deciding whether example situations are safe or unsafe.",
+        title: "Trusted Adult Practice",
+        status: "Live",
+        href: "/kids/cyber-safety-review/trusted-adult-practice",
       },
       {
         number: "6.3",
-        title: "What Would You Do?",
-        description:
-          "Choose safe next steps for common online situations.",
+        title: "Safe Choices Scenarios",
+        status: "Live",
+        href: "/kids/cyber-safety-review/safe-choices-scenarios",
       },
       {
         number: "6.4",
-        title: "Cyber Safety Pledge",
-        description:
-          "Create a simple promise for safe, kind, and responsible technology use.",
+        title: "CyberShield Kids Final Review",
+        status: "Live",
+        href: "/kids/cyber-safety-review/final-review",
       },
       {
         number: "6.5",
-        title: "Final Review",
-        description:
-          "Complete the Kids track review before future certificate features are added.",
+        title: "Kids Track Completion",
+        status: "Next",
+        href: "/kids/cyber-safety-review/completion",
       },
     ],
   },
 ];
 
 const safetyHabits = [
-  "Pause before clicking buttons, links, popups, or messages that feel strange.",
-  "Keep private information private, including home address, school name, phone number, and passwords.",
-  "Use usernames that do not reveal your full real name, school, location, or birthday.",
-  "Be kind in games, chats, comments, and classroom technology tools.",
-  "Ask a trusted adult when something online feels confusing, scary, urgent, or unsafe.",
+  "Pause before clicking buttons, links, popups, downloads, or messages that feel strange.",
+  "Keep private information private, including home address, school name, phone number, location, and passwords.",
+  "Use usernames that do not reveal full real names, schools, locations, or birthdays.",
+  "Be kind in games, chats, comments, group messages, and classroom technology tools.",
+  "Ask a trusted adult when something online feels confusing, scary, urgent, secret, embarrassing, or unsafe.",
 ];
 
 const audienceCards = [
@@ -267,11 +272,11 @@ const audienceCards = [
   },
   {
     title: "For Teachers",
-    text: "A clear module structure that can support classroom discussions and future worksheets.",
+    text: "A clear module structure that can support classroom discussions, review activities, and future worksheets.",
   },
   {
     title: "For Families",
-    text: "Age-appropriate reminders that encourage students to ask trusted adults for help.",
+    text: "Age-appropriate reminders that encourage students to pause, protect private information, and ask trusted adults for help.",
   },
 ];
 
@@ -279,7 +284,6 @@ export default function KidsPage() {
   return (
     <>
       <Navbar />
-
       <main className="min-h-screen bg-slate-950 text-white">
         <section className="px-8 py-24">
           <div className="mx-auto max-w-6xl">
@@ -292,22 +296,23 @@ export default function KidsPage() {
             </h1>
 
             <p className="mb-10 max-w-3xl text-lg leading-relaxed text-slate-300">
-              The Kids track is being expanded into a real learning path with
-              modules, numbered lessons, safe examples, review activities, and
-              future local-only progress tracking. Students will learn how to
-              protect private information, pause before clicking, use technology
-              kindly, and ask trusted adults for help.
+              The Kids Track is now a full learning path with modules, numbered
+              lessons, safe examples, review activities, and age-appropriate
+              safety reminders. Students learn how to protect private
+              information, pause before clicking, use technology kindly, think
+              before sharing, and ask trusted adults for help.
             </p>
 
-            <div className="grid gap-4 md:grid-cols-3">
+            <div className="grid gap-6 md:grid-cols-3">
               {audienceCards.map((card) => (
                 <div
                   key={card.title}
-                  className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5"
+                  className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6"
                 >
-                  <h2 className="mb-2 text-xl font-bold text-cyan-200">
+                  <h2 className="mb-3 text-2xl font-bold text-cyan-200">
                     {card.title}
                   </h2>
+
                   <p className="leading-relaxed text-slate-300">
                     {card.text}
                   </p>
@@ -324,17 +329,17 @@ export default function KidsPage() {
               </Link>
 
               <Link
+                href="/kids/cyber-safety-review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Continue Module 6
+              </Link>
+
+              <Link
                 href="/activities"
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Try Activities
-              </Link>
-
-              <Link
-                href="/lessons"
-                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
-              >
-                Back to Lessons
               </Link>
             </div>
           </div>
@@ -352,80 +357,89 @@ export default function KidsPage() {
               </h2>
 
               <p className="leading-relaxed text-slate-300">
-                Each module is planned to become its own section with individual
-                lesson pages. The first module will be built first, then future
-                modules can be added one at a time without breaking the website.
+                Modules 1 through 5 are live. Module 6 is currently in progress,
+                with Lesson 6.5 as the next build step.
               </p>
             </div>
 
-            <div className="space-y-8">
+            <div className="space-y-6">
               {curriculumModules.map((module) => (
                 <div
-                  key={module.title}
+                  key={module.number}
                   className="rounded-3xl border border-slate-800 bg-slate-950/70 p-6"
                 >
-                  <div className="mb-6 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                  <div className="mb-5 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
                       <div className="mb-3 flex flex-wrap items-center gap-3">
                         <span className="rounded-full border border-cyan-400/40 bg-cyan-400/10 px-3 py-1 text-sm font-semibold text-cyan-200">
                           {module.number}
                         </span>
 
-                        <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-sm font-semibold text-slate-300">
+                        <span
+                          className={`rounded-full border px-3 py-1 text-sm font-semibold ${
+                            module.status === "Live"
+                              ? "border-emerald-500/30 bg-emerald-950/20 text-emerald-200"
+                              : "border-yellow-500/30 bg-yellow-950/20 text-yellow-100"
+                          }`}
+                        >
                           {module.status}
                         </span>
                       </div>
 
-                      <h3 className="mb-3 text-3xl font-bold text-white">
+                      <h3 className="mb-3 text-2xl font-bold text-white md:text-3xl">
                         {module.title}
                       </h3>
 
-                      <p className="max-w-4xl leading-relaxed text-slate-300">
+                      <p className="max-w-3xl leading-relaxed text-slate-300">
                         {module.description}
                       </p>
                     </div>
 
-                    {module.href ? (
-                      <Link
-                        href={module.href}
-                        className="rounded-xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
-                      >
-                        Learn More
-                      </Link>
-                    ) : (
-                      <span className="rounded-xl border border-slate-700 bg-slate-900 px-5 py-3 text-center font-semibold text-slate-400">
-                        Learn More Soon
-                      </span>
-                    )}
+                    <Link
+                      href={module.href}
+                      className="rounded-xl bg-cyan-400 px-5 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+                    >
+                      Open Module
+                    </Link>
                   </div>
 
-                  <div className="mb-6 rounded-2xl border border-emerald-500/30 bg-emerald-950/20 p-5">
-                    <h4 className="mb-2 font-bold text-emerald-200">
+                  <div className="mb-5 rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
+                    <h4 className="mb-2 font-bold text-cyan-200">
                       Student Outcome
                     </h4>
+
                     <p className="leading-relaxed text-slate-300">
                       {module.outcome}
                     </p>
                   </div>
 
-                  <div className="grid gap-4 md:grid-cols-2">
+                  <div className="grid gap-3 md:grid-cols-5">
                     {module.lessons.map((lesson) => (
-                      <div
-                        key={`${module.number}-${lesson.number}`}
-                        className="rounded-2xl border border-slate-800 bg-slate-900/70 p-5"
+                      <Link
+                        key={lesson.number}
+                        href={lesson.href}
+                        className="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 transition hover:border-cyan-400"
                       >
-                        <p className="mb-2 text-sm font-semibold text-cyan-300">
-                          Lesson {lesson.number}
-                        </p>
+                        <div className="mb-3 flex flex-wrap items-center gap-2">
+                          <span className="text-sm font-semibold text-cyan-300">
+                            Lesson {lesson.number}
+                          </span>
 
-                        <h4 className="mb-2 text-xl font-bold text-white">
+                          <span
+                            className={`rounded-full border px-2 py-1 text-xs font-semibold ${
+                              lesson.status === "Live"
+                                ? "border-emerald-500/30 bg-emerald-950/20 text-emerald-200"
+                                : "border-yellow-500/30 bg-yellow-950/20 text-yellow-100"
+                            }`}
+                          >
+                            {lesson.status}
+                          </span>
+                        </div>
+
+                        <h4 className="font-bold text-white">
                           {lesson.title}
                         </h4>
-
-                        <p className="leading-relaxed text-slate-300">
-                          {lesson.description}
-                        </p>
-                      </div>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -462,69 +476,78 @@ export default function KidsPage() {
                 Safety Reminder
               </p>
 
-              <h2 className="mb-4 text-3xl font-bold text-white">
-                No private information needed
+              <h2 className="mb-4 text-3xl font-bold">
+                No private information needed.
               </h2>
 
               <p className="mb-5 leading-relaxed text-yellow-100">
                 CyberShield Kids should never ask students to type real
                 passwords, real addresses, real phone numbers, real school
-                information, or private family details. All examples should be
-                fake, safe, and classroom appropriate.
+                information, real screenshots, real private messages, or private
+                family details. All examples should be fake, safe, and classroom
+                appropriate.
               </p>
 
               <div className="rounded-2xl border border-yellow-500/30 bg-slate-950/60 p-5">
                 <h3 className="mb-2 font-bold text-yellow-100">
                   Trusted adult rule
                 </h3>
+
                 <p className="leading-relaxed text-slate-300">
-                  If something online feels scary, confusing, urgent, secret, or
-                  unsafe, students should pause and ask a parent, teacher,
-                  counselor, or school technology staff member for help.
+                  If something online feels scary, confusing, urgent, secret,
+                  embarrassing, or unsafe, students should pause and ask a
+                  parent, guardian, teacher, counselor, coach, librarian, or
+                  school technology staff member for help.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="border-t border-slate-800 bg-slate-900/60 px-8 py-16">
+        <section className="border-t border-slate-800 px-8 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-3 font-semibold text-cyan-300">
-              Next Step in V2
+              Current Build Status
             </p>
 
             <h2 className="mb-6 text-3xl font-bold md:text-5xl">
-              Module 1 will become the first full Kids learning unit.
+              The next Kids Track build step is Lesson 6.5.
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
-              After this hub works, the next page to build is{" "}
+              Modules 1, 2, 3, 4, and 5 are live. Module 6 is almost complete.
+              The next page to build is{" "}
               <span className="font-semibold text-cyan-200">
-                /kids/online-safety-basics
+                /kids/cyber-safety-review/completion
               </span>
-              . That page will introduce Module 1 and connect to the individual
-              1.1, 1.2, 1.3, 1.4, and 1.5 lesson pages.
+              .
             </p>
 
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Link
-                href="/kids/online-safety-basics"
+                href="/kids/cyber-safety-review"
                 className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Learn More
+                Open Module 6
               </Link>
 
               <Link
-                href="/resources"
+                href="/kids/cyber-safety-review/final-review"
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
-                View Resources
+                Review Lesson 6.4
+              </Link>
+
+              <Link
+                href="/activities"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                View Activities
               </Link>
             </div>
           </div>
         </section>
       </main>
-
       <Footer />
     </>
   );
