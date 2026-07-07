@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "3.1",
     title: "What Is a Scam?",
     href: "/kids/scam-spotting/what-is-a-scam",
-    status: "Next",
+    status: "Live",
     description:
       "Learn that scams are tricks that try to get people to click, share, believe, or do something unsafe.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "3.2",
     title: "Too-Good-to-Be-True Offers",
     href: "/kids/scam-spotting/too-good-to-be-true-offers",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn why free prizes, free game coins, surprise rewards, and impossible offers can be warning signs.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "3.3",
     title: "Strange Messages",
     href: "/kids/scam-spotting/strange-messages",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn how to notice messages that ask for secrets, passwords, private information, money, or fast action.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "3.4",
     title: "Pause Before You Click",
     href: "/kids/scam-spotting/pause-before-you-click",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn a simple pause-check-ask habit before clicking buttons, links, popups, downloads, or messages.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "3.5",
     title: "Module Review",
     href: "/kids/scam-spotting/review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review scam warning signs, fake prize messages, strange requests, and safe next steps.",
     learn: [
@@ -428,6 +428,47 @@ export default function KidsScamSpottingPage() {
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Back to Kids Track
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="border-t border-slate-800 px-8 py-16">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="mb-3 font-semibold text-cyan-300">
+              Continue Learning
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+              Ready for Module 4?
+            </h2>
+
+            <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
+              After finishing Scam Spotting, students can continue to Kind and
+              Safe Technology Use to learn how to use kind words online, make
+              safe choices in games and group chats, and ask for help when
+              someone is being mean.
+            </p>
+
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/kids"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Back to Kids Track
+              </Link>
+
+              <Link
+                href="/kids/scam-spotting/review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Review Module 3
+              </Link>
+
+              <Link
+                href="/kids/kind-and-safe-technology-use"
+                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Next Module →
               </Link>
             </div>
           </div>
