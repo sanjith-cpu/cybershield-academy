@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "5.1",
     title: "What Is a Digital Footprint?",
     href: "/kids/digital-footprints/what-is-a-digital-footprint",
-    status: "Next",
+    status: "Live",
     description:
       "Learn that online actions can leave traces, like posts, messages, searches, comments, photos, and account activity.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "5.2",
     title: "Think Before You Share",
     href: "/kids/digital-footprints/think-before-you-share",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn how to pause before sharing personal details, photos, messages, locations, or information about others.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "5.3",
     title: "Photos, Posts, and Screenshots",
     href: "/kids/digital-footprints/photos-posts-and-screenshots",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn why photos, posts, screenshots, and private messages should be handled carefully and respectfully.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "5.4",
     title: "Cleaning Up and Asking for Help",
     href: "/kids/digital-footprints/cleaning-up-and-asking-for-help",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn what students can do if they posted something by mistake or need help with an online situation.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "5.5",
     title: "Module Review",
     href: "/kids/digital-footprints/review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review digital footprints, thoughtful sharing, photos, screenshots, posts, privacy, and trusted adult help.",
     learn: [
@@ -424,6 +424,47 @@ export default function KidsDigitalFootprintsPage() {
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Back to Kids Track
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="border-t border-slate-800 px-8 py-16">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="mb-3 font-semibold text-cyan-300">
+              Continue Learning
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+              Ready for Module 6?
+            </h2>
+
+            <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
+              After finishing Digital Footprints, students can continue to Cyber
+              Safety Review to review the biggest safety habits from the full
+              Kids Track and practice safe choices with fake classroom
+              scenarios.
+            </p>
+
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/kids"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Back to Kids Track
+              </Link>
+
+              <Link
+                href="/kids/digital-footprints/review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Review Module 5
+              </Link>
+
+              <Link
+                href="/kids/cyber-safety-review"
+                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Next Module →
               </Link>
             </div>
           </div>
