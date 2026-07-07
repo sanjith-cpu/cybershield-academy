@@ -153,13 +153,19 @@ const trackPaths = [
   {
     title: "Kids Path",
     audience: "Elementary students",
+    status: "Complete",
+    modules: "6 modules live",
+    lessons: "30 lessons live",
     description:
-      "Simple online safety lessons about trusted adults, private information, kind behavior, and strange links.",
+      "A complete elementary cyber safety track about trusted adults, private information, passwords, scams, kind behavior, digital footprints, and safe review choices.",
     href: "/kids",
   },
   {
     title: "Junior Path",
     audience: "Middle school students",
+    status: "Live",
+    modules: "Middle school track",
+    lessons: "Practical lessons",
     description:
       "Practical lessons about scams, passwords, safe browsing, privacy, and reporting suspicious messages.",
     href: "/junior",
@@ -167,6 +173,9 @@ const trackPaths = [
   {
     title: "High School Path",
     audience: "High school students",
+    status: "Live",
+    modules: "High school track",
+    lessons: "Advanced literacy",
     description:
       "Deeper cybersecurity literacy with ethics, careers, certifications, digital footprint, and responsible learning.",
     href: "/high-school",
@@ -237,22 +246,23 @@ export default function LessonsPage() {
             The CyberShield Academy Learning Library organizes cybersecurity
             literacy into clear modules. Students can learn the basics, practice
             safely, reflect on real-life choices, and build stronger defensive
-            cybersecurity habits.
+            cybersecurity habits. The Kids Path is now complete with six live
+            modules and thirty live lessons.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/activities"
+              href="/kids"
               className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
             >
-              Start Activities
+              Open Complete Kids Path
             </Link>
 
             <Link
-              href="/resources"
+              href="/activities"
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
-              Review Resources
+              Start Activities
             </Link>
 
             <Link
@@ -278,15 +288,37 @@ export default function LessonsPage() {
                 href={track.href}
                 className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 transition hover:border-cyan-300 hover:bg-slate-900"
               >
-                <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
-                  {track.audience}
-                </span>
+                <div className="flex flex-wrap gap-2">
+                  <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                    {track.audience}
+                  </span>
+
+                  <span
+                    className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                      track.status === "Complete"
+                        ? "bg-emerald-500/10 text-emerald-200"
+                        : "bg-slate-800 text-slate-300"
+                    }`}
+                  >
+                    {track.status}
+                  </span>
+                </div>
 
                 <h2 className="mt-4 text-2xl font-bold text-white">
                   {track.title}
                 </h2>
 
-                <p className="mt-3 text-sm leading-6 text-slate-300">
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm font-semibold text-cyan-200">
+                    {track.modules}
+                  </div>
+
+                  <div className="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm font-semibold text-cyan-200">
+                    {track.lessons}
+                  </div>
+                </div>
+
+                <p className="mt-4 text-sm leading-6 text-slate-300">
                   {track.description}
                 </p>
 
@@ -454,9 +486,10 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              The main Learning Library now connects to all six full individual
+              The main Learning Library connects to all six full individual
               lesson pages: Password Safety, Scam Awareness, Privacy Basics,
-              Safe Browsing, Digital Footprint, and Cyber Ethics.
+              Safe Browsing, Digital Footprint, and Cyber Ethics. The Kids Path
+              is also complete with six modules and thirty lessons.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -469,6 +502,15 @@ export default function LessonsPage() {
                   {route} →
                 </Link>
               ))}
+            </div>
+
+            <div className="mt-6">
+              <Link
+                href="/kids"
+                className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Open Complete Kids Path →
+              </Link>
             </div>
           </div>
         </section>
