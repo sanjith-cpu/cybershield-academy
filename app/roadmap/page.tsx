@@ -19,11 +19,25 @@ const completedWork = [
   {
     category: "Learning Tracks",
     items: [
-      "Kids track upgraded",
+      "Kids Path completed with 6 modules and 30 live lessons",
+      "Kids hub updated to show the full track as complete",
+      "Kids module pages updated to show live status and next-module navigation",
       "Junior track upgraded",
       "High School track upgraded",
       "Lessons hub upgraded into a Learning Library",
-      "All six individual lesson pages created and connected",
+      "All six individual general lesson pages created and connected",
+    ],
+  },
+  {
+    category: "Kids Track Expansion",
+    items: [
+      "Module 1: Online Safety Basics completed and live",
+      "Module 2: Passwords and Accounts completed and live",
+      "Module 3: Scam Spotting completed and live",
+      "Module 4: Kind and Safe Technology Use completed and live",
+      "Module 5: Digital Footprints completed and live",
+      "Module 6: Cyber Safety Review completed and live",
+      "Kids Track completion page created and live",
     ],
   },
   {
@@ -75,12 +89,6 @@ const completedWork = [
 
 const currentWork = [
   {
-    title: "Build Log Connection",
-    status: "Current",
-    detail:
-      "The Build Log page has been created and is being connected through the Footer, Project Story, Roadmap, and About page.",
-  },
-  {
     title: "Final Public Page Polish",
     status: "Current",
     detail:
@@ -93,6 +101,12 @@ const currentWork = [
       "Teacher resources, worksheets, presentation outlines, email templates, and outreach pages are being reviewed so they are ready for future real school outreach.",
   },
   {
+    title: "Site Consistency Updates",
+    status: "Current",
+    detail:
+      "Major public pages are being updated so they accurately show that the Kids Path is complete with six modules and thirty lessons.",
+  },
+  {
     title: "Final Quality Pass",
     status: "Upcoming",
     detail:
@@ -101,12 +115,6 @@ const currentWork = [
 ];
 
 const nearTermWork = [
-  {
-    title: "Finish Build Log Connections",
-    detail:
-      "Connect the Build Log through major project pages so visitors can understand how CyberShield Academy was built.",
-    href: "/build-log",
-  },
   {
     title: "Polish Outreach Materials",
     detail:
@@ -118,6 +126,12 @@ const nearTermWork = [
     detail:
       "Test all routes, links, mobile layouts, grammar, spacing, and live Vercel pages before calling V1 launch-ready.",
     href: "/safety",
+  },
+  {
+    title: "Review Complete Kids Path",
+    detail:
+      "Click through the full Kids Path from Module 1 through Module 6 to confirm every lesson, review page, and navigation button works correctly.",
+    href: "/kids",
   },
   {
     title: "Document Real Impact Later",
@@ -168,6 +182,7 @@ const qaChecklist = [
   "Test every homepage button and card.",
   "Test every lesson Open Lesson button.",
   "Test every activity card.",
+  "Test every Kids module page and lesson page.",
   "Test every outreach and teacher resource link.",
   "Test the Build Log route and all Build Log links.",
   "Test mobile menu on a narrow screen.",
@@ -192,6 +207,10 @@ const roadmapLinks = [
   {
     label: "Homepage",
     href: "/",
+  },
+  {
+    label: "Kids Path",
+    href: "/kids",
   },
   {
     label: "Project Story",
@@ -221,10 +240,6 @@ const roadmapLinks = [
     label: "Outreach",
     href: "/outreach",
   },
-  {
-    label: "Impact",
-    href: "/impact",
-  },
 ];
 
 export default function RoadmapPage() {
@@ -245,14 +260,21 @@ export default function RoadmapPage() {
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
             This roadmap shows what has already been built, what is being
             improved now, what should come next, and what belongs in the
-            long-term vision. The goal is to keep CyberShield Academy honest,
-            useful, safe, and outreach-ready.
+            long-term vision. The CyberShield Kids Path is now complete with six
+            live modules and thirty live lessons.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/lessons"
+              href="/kids"
               className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+            >
+              View Complete Kids Path
+            </Link>
+
+            <Link
+              href="/lessons"
+              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
               View Lessons
             </Link>
@@ -269,13 +291,6 @@ export default function RoadmapPage() {
               className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
             >
               Project Story
-            </Link>
-
-            <Link
-              href="/impact"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Impact Tracker
             </Link>
           </div>
 
@@ -295,19 +310,19 @@ export default function RoadmapPage() {
                 note: "Core pages are live. The focus is now quality, depth, and outreach readiness.",
               },
               {
+                label: "Kids Path",
+                value: "Complete",
+                note: "All 6 Kids modules and all 30 Kids lessons are live and connected.",
+              },
+              {
                 label: "Lesson System",
-                value: "6 Lessons Live",
+                value: "6 Core Lessons Live",
                 note: "All main individual lesson pages are created, connected, and live.",
               },
               {
                 label: "Practice System",
                 value: "Expanded",
                 note: "Scenario Room and Practice Lab now support safe decision-based practice.",
-              },
-              {
-                label: "Documentation",
-                value: "Build Log Added",
-                note: "Project Story, Roadmap, Impact, and Build Log explain the project honestly.",
               },
             ].map((item) => (
               <div
