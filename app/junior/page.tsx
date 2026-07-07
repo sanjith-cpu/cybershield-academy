@@ -10,7 +10,7 @@ const juniorModules = [
     description:
       "Students learn that online identity includes usernames, profiles, posts, comments, images, likes, group activity, and online behavior.",
     lessons: "6 lessons",
-    status: "Next to build",
+    status: "Live",
   },
   {
     number: "Module 2",
@@ -19,7 +19,7 @@ const juniorModules = [
     description:
       "Students learn what data is, how apps and websites may collect it, and why privacy settings matter.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 3",
@@ -28,7 +28,7 @@ const juniorModules = [
     description:
       "Students learn why accounts matter, how strong passwords help, what password reuse risks are, and how MFA adds protection.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 4",
@@ -37,7 +37,7 @@ const juniorModules = [
     description:
       "Students learn how scams use urgency, fear, curiosity, fake rewards, and impersonation to manipulate decisions.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 5",
@@ -46,7 +46,7 @@ const juniorModules = [
     description:
       "Students learn about URLs, domains, pop-ups, fake buttons, redirects, downloads, and safer browsing habits.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 6",
@@ -55,7 +55,7 @@ const juniorModules = [
     description:
       "Students learn about group chats, gaming scams, voice chat, stranger contact, screenshots, rumors, blocking, and reporting.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 7",
@@ -64,7 +64,7 @@ const juniorModules = [
     description:
       "Students learn the difference between conflict and cyberbullying, bystander choices, posting while angry, and reporting harm.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 8",
@@ -73,7 +73,7 @@ const juniorModules = [
     description:
       "Students learn how posts, photos, comments, search results, screenshots, and online behavior can shape reputation.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 9",
@@ -82,7 +82,7 @@ const juniorModules = [
     description:
       "Students learn about device locks, updates, permissions, notifications, shared devices, backups, and lost devices.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 10",
@@ -91,7 +91,7 @@ const juniorModules = [
     description:
       "Students learn about AI tools, edited media, deepfakes, fake news, source checking, and responsible AI use for school.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 11",
@@ -100,7 +100,7 @@ const juniorModules = [
     description:
       "Students learn beginner-friendly ideas about devices, servers, websites, Wi-Fi, cloud storage, and security layers.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
   {
     number: "Module 12",
@@ -109,7 +109,7 @@ const juniorModules = [
     description:
       "Students review the full Junior Track through scam, privacy, group chat, gaming, AI, and digital reputation scenarios.",
     lessons: "6 lessons",
-    status: "Planned",
+    status: "Live",
   },
 ];
 
@@ -285,7 +285,7 @@ export default function JuniorPage() {
 
                 <span
                   className={`w-fit rounded-full px-3 py-1 text-xs font-bold ${
-                    module.status === "Next to build"
+                    module.status === "Live"
                       ? "bg-emerald-400 text-slate-950"
                       : "bg-slate-800 text-slate-300"
                   }`}
