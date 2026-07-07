@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "4.1",
     title: "Kind Words Online",
     href: "/kids/kind-and-safe-technology-use/kind-words-online",
-    status: "Next",
+    status: "Live",
     description:
       "Learn why online words matter and how kind messages can help people feel safe and respected.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "4.2",
     title: "Group Chats and Games",
     href: "/kids/kind-and-safe-technology-use/group-chats-and-games",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn safe and respectful choices in group chats, games, comments, classroom tools, and online communities.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "4.3",
     title: "What to Do if Someone Is Mean",
     href: "/kids/kind-and-safe-technology-use/what-to-do-if-someone-is-mean",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn safe next steps when someone is being mean, hurtful, or disrespectful online.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "4.4",
     title: "Being a Digital Helper",
     href: "/kids/kind-and-safe-technology-use/being-a-digital-helper",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn how students can support others online without joining drama, arguments, or unsafe conversations.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "4.5",
     title: "Module Review",
     href: "/kids/kind-and-safe-technology-use/review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review kind words, respectful technology use, group chat choices, and safe ways to respond to online problems.",
     learn: [
@@ -424,6 +424,47 @@ export default function KidsKindAndSafeTechnologyUsePage() {
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Back to Kids Track
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="border-t border-slate-800 px-8 py-16">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="mb-3 font-semibold text-cyan-300">
+              Continue Learning
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+              Ready for Module 5?
+            </h2>
+
+            <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
+              After finishing Kind and Safe Technology Use, students can
+              continue to Digital Footprints to learn how posts, photos,
+              comments, screenshots, and sharing choices can leave a trail
+              online.
+            </p>
+
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/kids"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Back to Kids Track
+              </Link>
+
+              <Link
+                href="/kids/kind-and-safe-technology-use/review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Review Module 4
+              </Link>
+
+              <Link
+                href="/kids/digital-footprints"
+                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Next Module →
               </Link>
             </div>
           </div>
