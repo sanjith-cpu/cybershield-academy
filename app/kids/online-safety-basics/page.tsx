@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "1.1",
     title: "Personal Information",
     href: "/kids/online-safety-basics/personal-information",
-    status: "Next",
+    status: "Live",
     description:
       "Learn what personal information means and why students should be careful when sharing details online.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "1.2",
     title: "Private Information",
     href: "/kids/online-safety-basics/private-information",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn which details should stay private, including addresses, phone numbers, school names, passwords, and family information.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "1.3",
     title: "Safe Usernames",
     href: "/kids/online-safety-basics/safe-usernames",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn how to create usernames that do not reveal full names, schools, birthdays, or locations.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "1.4",
     title: "Trusted Adults",
     href: "/kids/online-safety-basics/trusted-adults",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn when to pause, step away, and ask a parent, teacher, counselor, or school technology staff member for help.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "1.5",
     title: "Module Review",
     href: "/kids/online-safety-basics/review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review safe choices, warning signs, and what to do when something online feels confusing, strange, or unsafe.",
     learn: [
@@ -160,9 +160,7 @@ export default function KidsOnlineSafetyBasicsPage() {
               </h2>
 
               <p className="leading-relaxed text-slate-300">
-                Each lesson will eventually become its own page. For now, this
-                module page shows the full structure so the Kids track feels
-                like a real curriculum path.
+                All Module 1 lessons are live. Students can complete the lessons in order or return to any lesson for review.
               </p>
             </div>
 
@@ -315,15 +313,15 @@ export default function KidsOnlineSafetyBasicsPage() {
         <section className="px-8 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-3 font-semibold text-cyan-300">
-              Next Build Step
+              Module Status
             </p>
 
             <h2 className="mb-6 text-3xl font-bold md:text-5xl">
-              Next, build Lesson 1.1.
+              Module 1 is complete and live
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
-              After this module page works, the next route should be{" "}
+              Online Safety Basics is fully built. Students can review this module or continue to Module 2.{" "}
               <span className="font-semibold text-cyan-200">
                 /kids/online-safety-basics/personal-information
               </span>
@@ -343,6 +341,46 @@ export default function KidsOnlineSafetyBasicsPage() {
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Back to Kids Track
+              </Link>
+            </div>
+          </div>
+        </section>
+	<section className="border-t border-slate-800 px-8 py-16">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="mb-3 font-semibold text-cyan-300">
+              Continue Learning
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+              Ready for Module 2?
+            </h2>
+
+            <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
+              After finishing Online Safety Basics, students can continue to
+              Passwords and Accounts to learn how accounts are protected and why
+              passwords should stay private.
+            </p>
+
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/kids"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Back to Kids Track
+              </Link>
+
+              <Link
+                href="/kids/online-safety-basics/review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Review Module 1
+              </Link>
+
+              <Link
+                href="/kids/passwords-and-accounts"
+                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Next Module →
               </Link>
             </div>
           </div>
