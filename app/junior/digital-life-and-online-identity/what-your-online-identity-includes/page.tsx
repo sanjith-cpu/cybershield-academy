@@ -183,6 +183,12 @@ export default function WhatYourOnlineIdentityIncludesPage() {
           >
             Back to Junior Track
           </Link>
+          <Link
+            href="/junior/digital-life-and-online-identity/usernames-profiles-and-first-impressions"
+            className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300 transition text-center"
+          >
+            Next Lesson
+          </Link>
         </div>
       </section>
 
