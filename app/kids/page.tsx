@@ -216,7 +216,7 @@ const curriculumModules = [
   {
     number: "Module 6",
     title: "Cyber Safety Review",
-    status: "In Progress",
+    status: "Live",
     href: "/kids/cyber-safety-review",
     description:
       "Students review the biggest safety habits from the Kids Track and practice choosing safe next steps.",
@@ -250,7 +250,7 @@ const curriculumModules = [
       {
         number: "6.5",
         title: "Kids Track Completion",
-        status: "Next",
+        status: "Live",
         href: "/kids/cyber-safety-review/completion",
       },
     ],
@@ -292,15 +292,16 @@ export default function KidsPage() {
             </p>
 
             <h1 className="mb-6 max-w-4xl text-4xl font-extrabold leading-tight md:text-6xl">
-              A beginner-friendly cyber safety track for elementary students.
+              A complete beginner-friendly cyber safety track for elementary
+              students.
             </h1>
 
             <p className="mb-10 max-w-3xl text-lg leading-relaxed text-slate-300">
-              The Kids Track is now a full learning path with modules, numbered
-              lessons, safe examples, review activities, and age-appropriate
-              safety reminders. Students learn how to protect private
-              information, pause before clicking, use technology kindly, think
-              before sharing, and ask trusted adults for help.
+              The Kids Track is now a full learning path with six modules,
+              numbered lessons, safe examples, review activities, and
+              age-appropriate safety reminders. Students learn how to protect
+              private information, pause before clicking, use technology kindly,
+              think before sharing, and ask trusted adults for help.
             </p>
 
             <div className="grid gap-6 md:grid-cols-3">
@@ -329,10 +330,10 @@ export default function KidsPage() {
               </Link>
 
               <Link
-                href="/kids/cyber-safety-review"
+                href="/kids/cyber-safety-review/completion"
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
-                Continue Module 6
+                View Completion Page
               </Link>
 
               <Link
@@ -357,8 +358,8 @@ export default function KidsPage() {
               </h2>
 
               <p className="leading-relaxed text-slate-300">
-                Modules 1 through 5 are live. Module 6 is currently in progress,
-                with Lesson 6.5 as the next build step.
+                All six Kids Track modules are live. Students can move through
+                the lessons in order or return to any module for review.
               </p>
             </div>
 
@@ -375,13 +376,7 @@ export default function KidsPage() {
                           {module.number}
                         </span>
 
-                        <span
-                          className={`rounded-full border px-3 py-1 text-sm font-semibold ${
-                            module.status === "Live"
-                              ? "border-emerald-500/30 bg-emerald-950/20 text-emerald-200"
-                              : "border-yellow-500/30 bg-yellow-950/20 text-yellow-100"
-                          }`}
-                        >
+                        <span className="rounded-full border border-emerald-500/30 bg-emerald-950/20 px-3 py-1 text-sm font-semibold text-emerald-200">
                           {module.status}
                         </span>
                       </div>
@@ -425,13 +420,7 @@ export default function KidsPage() {
                             Lesson {lesson.number}
                           </span>
 
-                          <span
-                            className={`rounded-full border px-2 py-1 text-xs font-semibold ${
-                              lesson.status === "Live"
-                                ? "border-emerald-500/30 bg-emerald-950/20 text-emerald-200"
-                                : "border-yellow-500/30 bg-yellow-950/20 text-yellow-100"
-                            }`}
-                          >
+                          <span className="rounded-full border border-emerald-500/30 bg-emerald-950/20 px-2 py-1 text-xs font-semibold text-emerald-200">
                             {lesson.status}
                           </span>
                         </div>
@@ -511,31 +500,28 @@ export default function KidsPage() {
             </p>
 
             <h2 className="mb-6 text-3xl font-bold md:text-5xl">
-              The next Kids Track build step is Lesson 6.5.
+              The CyberShield Kids Track is complete.
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
-              Modules 1, 2, 3, 4, and 5 are live. Module 6 is almost complete.
-              The next page to build is{" "}
-              <span className="font-semibold text-cyan-200">
-                /kids/cyber-safety-review/completion
-              </span>
-              .
+              Modules 1 through 6 are live, including the final Kids Track
+              completion page. Students can now use the full Kids learning path
+              from Online Safety Basics through Cyber Safety Review.
             </p>
 
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Link
-                href="/kids/cyber-safety-review"
+                href="/kids/online-safety-basics"
                 className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Open Module 6
+                Start Kids Track
               </Link>
 
               <Link
-                href="/kids/cyber-safety-review/final-review"
+                href="/kids/cyber-safety-review/completion"
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
-                Review Lesson 6.4
+                Completion Page
               </Link>
 
               <Link
