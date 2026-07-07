@@ -6,13 +6,19 @@ const audienceCards = [
   {
     title: "CyberShield Kids",
     audience: "Elementary Students",
+    status: "Complete",
+    detailOne: "6 modules live",
+    detailTwo: "30 lessons live",
     description:
-      "Simple online safety lessons about private information, kind choices, trusted adults, and strange links.",
+      "A complete elementary cyber safety path about private information, passwords, scam spotting, kind choices, digital footprints, trusted adults, and safe review habits.",
     href: "/kids",
   },
   {
     title: "CyberShield Junior",
     audience: "Middle School Students",
+    status: "Live",
+    detailOne: "Middle school path",
+    detailTwo: "Practical lessons",
     description:
       "Practical lessons about scams, passwords, privacy, safe browsing, reporting, and digital citizenship.",
     href: "/junior",
@@ -20,6 +26,9 @@ const audienceCards = [
   {
     title: "CyberShield High School",
     audience: "High School Students",
+    status: "Live",
+    detailOne: "High school path",
+    detailTwo: "Advanced literacy",
     description:
       "Deeper cybersecurity literacy with ethics, careers, certifications, digital footprint, and defensive thinking.",
     href: "/high-school",
@@ -30,7 +39,7 @@ const featureCards = [
   {
     title: "Full Lesson Library",
     description:
-      "Six complete lessons covering password safety, scams, privacy, safe browsing, digital footprint, and cyber ethics.",
+      "A complete Kids Path plus six core lesson pages covering password safety, scams, privacy, safe browsing, digital footprint, and cyber ethics.",
     href: "/lessons",
     label: "Open Lessons",
   },
@@ -126,6 +135,10 @@ const quickLinks = [
     href: "/lessons",
   },
   {
+    label: "Kids Path",
+    href: "/kids",
+  },
+  {
     label: "Activities",
     href: "/activities",
   },
@@ -148,10 +161,6 @@ const quickLinks = [
   {
     label: "Impact",
     href: "/impact",
-  },
-  {
-    label: "Roadmap",
-    href: "/roadmap",
   },
 ];
 
@@ -177,13 +186,21 @@ export default function HomePage() {
                 CyberShield Academy is a student-built cybersecurity education
                 platform that teaches online safety, scam awareness, password
                 security, privacy, digital footprint, safe browsing, and ethical
-                defensive cybersecurity.
+                defensive cybersecurity. The CyberShield Kids Path is now
+                complete with six live modules and thirty live lessons.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-4">
                 <Link
-                  href="/lessons"
+                  href="/kids"
                   className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+                >
+                  Open Complete Kids Path
+                </Link>
+
+                <Link
+                  href="/lessons"
+                  className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
                 >
                   Start Learning
                 </Link>
@@ -193,13 +210,6 @@ export default function HomePage() {
                   className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
                 >
                   Try Scenario Room
-                </Link>
-
-                <Link
-                  href="/resources"
-                  className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-                >
-                  View Resources
                 </Link>
               </div>
 
@@ -217,7 +227,8 @@ export default function HomePage() {
 
               <div className="mt-6 grid gap-3">
                 {[
-                  "6 complete student lesson pages",
+                  "Complete Kids Path with 6 modules and 30 lessons",
+                  "6 complete general student lesson pages",
                   "Scenario-based cybersecurity practice",
                   "Practice Lab skill stations",
                   "Resources for students, families, and teachers",
@@ -278,7 +289,8 @@ export default function HomePage() {
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               CyberShield Academy is organized by age level so students can
               learn cybersecurity in a way that feels understandable, useful,
-              and safe.
+              and safe. The Kids Path is complete and ready to use from Module 1
+              through Module 6.
             </p>
 
             <div className="mt-6 grid gap-6 lg:grid-cols-3">
@@ -288,15 +300,37 @@ export default function HomePage() {
                   href={card.href}
                   className="rounded-2xl border border-slate-800 bg-slate-950/70 p-6 transition hover:border-cyan-300 hover:bg-slate-900"
                 >
-                  <p className="text-sm font-semibold text-cyan-300">
-                    {card.audience}
-                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+                      {card.audience}
+                    </span>
 
-                  <h3 className="mt-3 text-2xl font-bold text-white">
+                    <span
+                      className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                        card.status === "Complete"
+                          ? "bg-emerald-500/10 text-emerald-200"
+                          : "bg-slate-800 text-slate-300"
+                      }`}
+                    >
+                      {card.status}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-4 text-2xl font-bold text-white">
                     {card.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-6 text-slate-300">
+                  <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                    <div className="rounded-xl border border-slate-800 bg-slate-900/70 p-3 text-sm font-semibold text-cyan-200">
+                      {card.detailOne}
+                    </div>
+
+                    <div className="rounded-xl border border-slate-800 bg-slate-900/70 p-3 text-sm font-semibold text-cyan-200">
+                      {card.detailTwo}
+                    </div>
+                  </div>
+
+                  <p className="mt-4 text-sm leading-6 text-slate-300">
                     {card.description}
                   </p>
 
@@ -389,8 +423,9 @@ export default function HomePage() {
               <p className="mt-4 leading-8 text-slate-300">
                 CyberShield Academy is designed to support short classroom
                 presentations, cybersecurity club sessions, and student-led
-                outreach. The project includes teacher tools, worksheets,
-                presentation outlines, and safe feedback resources.
+                outreach. The project includes a complete Kids Path, teacher
+                tools, worksheets, presentation outlines, and safe feedback
+                resources.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-4">
