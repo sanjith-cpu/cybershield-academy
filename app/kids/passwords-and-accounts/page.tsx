@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "2.1",
     title: "What Passwords Protect",
     href: "/kids/passwords-and-accounts/what-passwords-protect",
-    status: "Next",
+    status: "Live",
     description:
       "Learn that passwords help protect games, school tools, learning accounts, videos, devices, and personal settings.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "2.2",
     title: "Why Passwords Stay Secret",
     href: "/kids/passwords-and-accounts/why-passwords-stay-secret",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn why passwords should not be shared with friends, strangers, online players, or people in messages.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "2.3",
     title: "Asking for Account Help",
     href: "/kids/passwords-and-accounts/asking-for-account-help",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn how to ask a parent, teacher, guardian, or school technology staff member for help with accounts.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "2.4",
     title: "Safe Account Habits",
     href: "/kids/passwords-and-accounts/safe-account-habits",
-    status: "Planned",
+    status: "Live",
     description:
       "Learn simple habits like signing out, locking devices, using trusted websites, and checking before saving passwords.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "2.5",
     title: "Module Review",
     href: "/kids/passwords-and-accounts/review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review password safety, account safety, trusted adult help, and safer choices for common account situations.",
     learn: [
@@ -385,6 +385,46 @@ export default function KidsPasswordsAndAccountsPage() {
                 className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
               >
                 Back to Kids Track
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="border-t border-slate-800 px-8 py-16">
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="mb-3 font-semibold text-cyan-300">
+              Continue Learning
+            </p>
+
+            <h2 className="mb-6 text-3xl font-bold md:text-5xl">
+              Ready for Module 3?
+            </h2>
+
+            <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
+              After finishing Passwords and Accounts, students can continue to
+              Scam Spotting to learn how to notice strange messages, fake
+              offers, and unsafe clicking.
+            </p>
+
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
+              <Link
+                href="/kids"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Back to Kids Track
+              </Link>
+
+              <Link
+                href="/kids/passwords-and-accounts/review"
+                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
+              >
+                Review Module 2
+              </Link>
+
+              <Link
+                href="/kids/scam-spotting"
+                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Next Module →
               </Link>
             </div>
           </div>
