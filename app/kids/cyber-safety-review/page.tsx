@@ -7,7 +7,7 @@ const moduleLessons = [
     number: "6.1",
     title: "Safety Habits Review",
     href: "/kids/cyber-safety-review/safety-habits-review",
-    status: "Next",
+    status: "Live",
     description:
       "Review the most important online safety habits from the Kids Track, including privacy, pausing, kindness, scam spotting, and asking trusted adults for help.",
     learn: [
@@ -20,7 +20,7 @@ const moduleLessons = [
     number: "6.2",
     title: "Trusted Adult Practice",
     href: "/kids/cyber-safety-review/trusted-adult-practice",
-    status: "Planned",
+    status: "Live",
     description:
       "Practice choosing when to ask a trusted adult and who can help when something online feels confusing, unsafe, embarrassing, secret, or urgent.",
     learn: [
@@ -33,7 +33,7 @@ const moduleLessons = [
     number: "6.3",
     title: "Safe Choices Scenarios",
     href: "/kids/cyber-safety-review/safe-choices-scenarios",
-    status: "Planned",
+    status: "Live",
     description:
       "Use fake classroom scenarios to decide which online choices are safer and which choices could create problems.",
     learn: [
@@ -46,7 +46,7 @@ const moduleLessons = [
     number: "6.4",
     title: "CyberShield Kids Final Review",
     href: "/kids/cyber-safety-review/final-review",
-    status: "Planned",
+    status: "Live",
     description:
       "Review all five Kids modules: online safety, passwords, scams, kind technology use, and digital footprints.",
     learn: [
@@ -59,7 +59,7 @@ const moduleLessons = [
     number: "6.5",
     title: "Kids Track Completion",
     href: "/kids/cyber-safety-review/completion",
-    status: "Planned",
+    status: "Live",
     description:
       "Celebrate finishing the Kids Track and prepare students for a safe, simple completion activity or certificate.",
     learn: [
@@ -402,15 +402,15 @@ export default function KidsCyberSafetyReviewPage() {
         <section className="px-8 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-3 font-semibold text-cyan-300">
-              Next Build Step
+              Module Status
             </p>
 
             <h2 className="mb-6 text-3xl font-bold md:text-5xl">
-              Next, build Lesson 6.1.
+              Module 6 is complete and live.
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl leading-relaxed text-slate-300">
-              After this module page works, the next route should be{" "}
+              Cyber Safety Review is fully built. Students can review Module 6, visit the completion page, or return to the full Kids 		      Track.{" "}
               <span className="font-semibold text-cyan-200">
                 /kids/cyber-safety-review/safety-habits-review
               </span>
@@ -423,7 +423,7 @@ export default function KidsCyberSafetyReviewPage() {
                 href="/kids/cyber-safety-review/safety-habits-review"
                 className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
               >
-                Go to Lesson 6.1
+                Review Lesson 6.1
               </Link>
 
               <Link
