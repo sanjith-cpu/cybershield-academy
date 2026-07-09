@@ -11,112 +11,124 @@ const juniorModules = [
       "Students learn that online identity includes usernames, profiles, posts, comments, images, likes, group activity, and online behavior.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/digital-life-and-online-identity",
   },
   {
     number: "Module 2",
     title: "Privacy and Personal Data",
     bigQuestion: "How can small pieces of data reveal more than expected?",
     description:
-      "Students learn what data is, how apps and websites may collect it, and why privacy settings matter.",
+      "Students learn what personal data is, how apps and websites may collect it, and why privacy settings and careful sharing matter.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/privacy-and-personal-data",
   },
   {
     number: "Module 3",
     title: "Passwords, Accounts, and Login Safety",
     bigQuestion: "Why are accounts valuable, and how can students protect them?",
     description:
-      "Students learn why accounts matter, how strong passwords help, what password reuse risks are, and how MFA adds protection.",
+      "Students learn why accounts matter, how strong passwords help, what password reuse risks are, and how multi-factor authentication adds protection.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/passwords-accounts-and-login-safety",
   },
   {
     number: "Module 4",
-    title: "Scam Spotting and Social Engineering",
-    bigQuestion: "How do scams use emotions to pressure people into unsafe choices?",
+    title: "Phishing and Scam Awareness",
+    bigQuestion: "How can students recognize scams before responding, clicking, or sharing information?",
     description:
-      "Students learn how scams use urgency, fear, curiosity, fake rewards, and impersonation to manipulate decisions.",
+      "Students learn how phishing and scams use urgency, fear, curiosity, fake rewards, and impersonation to pressure unsafe choices.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/phishing-and-scam-awareness",
   },
   {
     number: "Module 5",
     title: "Safe Browsing and Downloads",
-    bigQuestion: "What clues can help students decide whether a website or download is risky?",
+    bigQuestion: "How can students make safer choices before visiting, clicking, downloading, or allowing access?",
     description:
-      "Students learn about URLs, domains, pop-ups, fake buttons, redirects, downloads, and safer browsing habits.",
+      "Students learn how to browse more safely, recognize website warning signs, avoid risky downloads, and handle pop-ups and device alerts carefully.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/safe-browsing-and-downloads",
   },
   {
     number: "Module 6",
-    title: "Group Chats, Gaming, and Online Communities",
-    bigQuestion: "How can students stay safer in fast-moving online spaces?",
+    title: "Social Media, Chats, and Online Communication",
+    bigQuestion: "How can students communicate online in ways that are safe, respectful, and thoughtful?",
     description:
-      "Students learn about group chats, gaming scams, voice chat, stranger contact, screenshots, rumors, blocking, and reporting.",
+      "Students learn about online communication basics, group chat safety, friend requests, screenshots, sharing posts, and respectful conflict response.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/social-media-chats-and-online-communication",
   },
   {
     number: "Module 7",
-    title: "Cyberbullying, Conflict, and Digital Citizenship",
-    bigQuestion: "How can students respond responsibly when online conflict becomes harmful?",
+    title: "Cyberbullying, Digital Drama, and Getting Help",
+    bigQuestion: "How can students respond safely when online behavior becomes hurtful, stressful, or unsafe?",
     description:
-      "Students learn the difference between conflict and cyberbullying, bystander choices, posting while angry, and reporting harm.",
+      "Students learn what cyberbullying means, how to compare digital drama with serious harm, how to support others safely, and when to get trusted adult help.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/cyberbullying-digital-drama-and-getting-help",
   },
   {
     number: "Module 8",
-    title: "Digital Footprints and Future Opportunities",
-    bigQuestion: "How can online choices affect school, sports, clubs, and future opportunities?",
+    title: "Misinformation, AI, and Online Content Trust",
+    bigQuestion: "How can students decide whether online content is trustworthy before believing or sharing it?",
     description:
-      "Students learn how posts, photos, comments, search results, screenshots, and online behavior can shape reputation.",
+      "Students learn about misinformation, clickbait, rumors, source checking, AI images, edited media, and responsible sharing.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/misinformation-ai-and-online-content-trust",
   },
   {
     number: "Module 9",
-    title: "Devices, Apps, and Settings",
-    bigQuestion: "How do device settings and app choices affect privacy and safety?",
+    title: "Devices, Networks, and Wi-Fi Safety",
+    bigQuestion: "How can students use devices and networks more safely at home, school, and public places?",
     description:
-      "Students learn about device locks, updates, permissions, notifications, shared devices, backups, and lost devices.",
+      "Students learn device and network basics, home Wi-Fi safety, public Wi-Fi habits, Bluetooth and nearby sharing safety, and shared device care.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/devices-networks-and-wifi-safety",
   },
   {
     number: "Module 10",
-    title: "AI, Media, and Misinformation",
-    bigQuestion: "How can students tell when media or information may be misleading?",
+    title: "Cyber Threats and Defense Basics",
+    bigQuestion: "What are common cyber threats, and how do defenders reduce risk safely and ethically?",
     description:
-      "Students learn about AI tools, edited media, deepfakes, fake news, source checking, and responsible AI use for school.",
+      "Students learn about common cyber threats, malware basics, social engineering, updates, backups, basic protection, and what cyber defenders do.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/cyber-threats-and-defense-basics",
   },
   {
     number: "Module 11",
-    title: "Intro to How the Internet Works",
-    bigQuestion: "What basic systems make websites, networks, accounts, and cloud tools work?",
+    title: "Digital Citizenship, Ethics, and Laws",
+    bigQuestion: "How can students make online choices that are safe, legal, respectful, and ethical?",
     description:
-      "Students learn beginner-friendly ideas about devices, servers, websites, Wi-Fi, cloud storage, and security layers.",
+      "Students learn about digital citizenship, online rules, school policies, copyright, credit, ethical hacking, and responsible digital consequences.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/digital-citizenship-ethics-and-laws",
   },
   {
     number: "Module 12",
     title: "Junior Cyber Safety Capstone",
-    bigQuestion: "Can students apply safer choices across realistic online situations?",
+    bigQuestion: "How can students combine everything they learned into a real-life cyber safety plan?",
     description:
-      "Students review the full Junior Track through scam, privacy, group chat, gaming, AI, and digital reputation scenarios.",
+      "Students build a personal cyber safety plan and practice final scenario challenges about suspicious messages, unsafe websites, privacy, reputation, and communication.",
     lessons: "6 lessons",
     status: "Live",
+    href: "/junior/junior-cyber-safety-capstone",
   },
 ];
 
 const juniorDifferenceCards = [
   {
     title: "Real-Life Scenarios",
-    text: "Junior lessons use middle school situations like group chats, gaming spaces, school platforms, and online communities.",
+    text: "Junior lessons use middle school situations like group chats, school platforms, social media, devices, AI content, and online communities.",
   },
   {
     title: "Stronger Explanations",
@@ -138,12 +150,15 @@ const skills = [
   "Account safety",
   "Digital reputation",
   "Group chat responsibility",
-  "Gaming safety",
+  "Respectful communication",
   "Source checking",
   "AI awareness",
   "Device safety",
+  "Network safety",
   "Safe reporting",
   "Trusted adult communication",
+  "Cyber defense basics",
+  "Digital citizenship",
   "Smarter online decision-making",
 ];
 
@@ -151,8 +166,8 @@ const safetyRules = [
   "Use fake examples only.",
   "Do not enter real passwords.",
   "Do not share real private information.",
-  "Do not test real suspicious links.",
-  "Do not use real screenshots or private messages.",
+  "Do not test real suspicious links, files, websites, or downloads.",
+  "Do not use real screenshots or private messages for practice.",
   "Ask a trusted adult, teacher, counselor, guardian, or school technology staff when something feels unsafe.",
 ];
 
@@ -164,16 +179,16 @@ const scenarioExamples = [
       "Do not spread it, pause before replying, and ask a trusted adult if the situation becomes hurtful or unsafe.",
   },
   {
-    situation: "A gaming account offers a free reward if a student shares login information.",
+    situation: "A message offers a free reward if a student shares login information.",
     riskyChoice: "Sharing the account details to get the reward quickly.",
     smarterChoice:
       "Treat it as suspicious, do not share login information, and ask for help before clicking or responding.",
   },
   {
-    situation: "A student wants to post a profile bio with their school, team, and location.",
-    riskyChoice: "Posting all the details because only friends will probably see it.",
+    situation: "A student sees a viral post that sounds shocking but does not show a clear source.",
+    riskyChoice: "Reposting it immediately because it looks important.",
     smarterChoice:
-      "Use interests instead of private details and remember that online audiences can be larger than expected.",
+      "Pause, check trusted sources, look for evidence, and avoid sharing until the information is confirmed.",
   },
 ];
 
@@ -192,15 +207,15 @@ export default function JuniorPage() {
         </h1>
 
         <p className="text-lg text-slate-300 leading-relaxed max-w-4xl mb-10">
-          CyberShield Junior is a middle school cybersecurity literacy track
-          focused on privacy, scams, group chats, gaming safety, digital
-          reputation, AI awareness, misinformation, device safety, and smarter
-          online choices.
+          CyberShield Junior is a complete middle school cybersecurity literacy
+          track focused on privacy, scams, accounts, safe browsing, online
+          communication, cyberbullying, misinformation, devices, cyber defense,
+          digital citizenship, and real-life cyber safety planning.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
-            href="#module-1"
+            href="/junior/digital-life-and-online-identity"
             className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300 transition text-center"
           >
             Start Module 1
@@ -242,9 +257,7 @@ export default function JuniorPage() {
                   {card.title}
                 </h3>
 
-                <p className="text-slate-300 leading-relaxed">
-                  {card.text}
-                </p>
+                <p className="text-slate-300 leading-relaxed">{card.text}</p>
               </div>
             ))}
           </div>
@@ -267,16 +280,17 @@ export default function JuniorPage() {
           <p className="text-slate-300 leading-relaxed max-w-4xl">
             Each module uses fake middle school scenarios to help students
             understand warning signs, compare choices, and practice safer
-            real-life actions.
+            real-life actions. Click any module card to open that module homepage.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
           {juniorModules.map((module, index) => (
-            <div
+            <Link
               id={index === 0 ? "module-1" : undefined}
               key={module.title}
-              className="rounded-2xl bg-slate-900/70 border border-slate-800 p-6 hover:border-cyan-400 transition"
+              href={module.href}
+              className="rounded-2xl bg-slate-900/70 border border-slate-800 p-6 hover:border-cyan-400 transition block"
             >
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-4">
                 <p className="text-sm text-cyan-300 font-semibold">
@@ -313,15 +327,13 @@ export default function JuniorPage() {
               </p>
 
               <div className="flex items-center justify-between gap-4">
-                <p className="text-sm text-slate-400">
-                  {module.lessons}
-                </p>
+                <p className="text-sm text-slate-400">{module.lessons}</p>
 
                 <p className="text-sm font-semibold text-cyan-300">
-                  Middle school level
+                  Open Module →
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -379,9 +391,7 @@ export default function JuniorPage() {
               </p>
 
               <div className="rounded-xl border border-red-400/40 bg-red-400/10 p-4 mb-4">
-                <h4 className="font-bold text-red-200 mb-2">
-                  Risky Choice
-                </h4>
+                <h4 className="font-bold text-red-200 mb-2">Risky Choice</h4>
 
                 <p className="text-slate-200 leading-relaxed">
                   {scenario.riskyChoice}
@@ -405,9 +415,7 @@ export default function JuniorPage() {
       <section className="px-8 py-16 bg-slate-900/70 border-y border-slate-800">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8">
           <div className="rounded-2xl bg-slate-950 border border-slate-800 p-6">
-            <p className="text-cyan-300 font-semibold mb-3">
-              Safety Rules
-            </p>
+            <p className="text-cyan-300 font-semibold mb-3">Safety Rules</p>
 
             <h2 className="text-3xl font-bold mb-6">
               Every Junior lesson stays safe, ethical, and defensive.
@@ -431,7 +439,7 @@ export default function JuniorPage() {
             </p>
 
             <h2 className="text-3xl font-bold mb-6">
-              The full Junior Track will become a complete middle school course.
+              The full Junior Track is now a complete middle school course.
             </h2>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
@@ -475,32 +483,32 @@ export default function JuniorPage() {
       <section className="px-8 py-16">
         <div className="max-w-5xl mx-auto rounded-2xl bg-slate-900/70 border border-slate-800 p-8 text-center">
           <p className="text-cyan-300 font-semibold mb-3">
-            Next Build Step
+            Junior Track Complete
           </p>
 
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Next, build Module 1: Digital Life and Online Identity.
+            Start with Module 1 or jump to any live module.
           </h2>
 
           <p className="text-slate-300 leading-relaxed mb-8">
-            Module 1 will introduce online identity, profiles, first
-            impressions, public and private spaces, screenshots, digital
-            reputation, and safer profile choices.
+            The Junior Track now connects to all 12 module homepages. Students
+            can move through the course in order or open a specific module for
+            focused practice.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="#module-1"
+              href="/junior/digital-life-and-online-identity"
               className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300 transition text-center"
             >
-              Review Module 1 Plan
+              Start Module 1
             </Link>
 
             <Link
-              href="/lessons"
+              href="#junior-learning-path"
               className="rounded-xl border border-slate-700 px-6 py-3 font-semibold hover:border-cyan-400 transition text-center"
             >
-              Back to Lessons
+              View All Modules
             </Link>
 
             <Link
