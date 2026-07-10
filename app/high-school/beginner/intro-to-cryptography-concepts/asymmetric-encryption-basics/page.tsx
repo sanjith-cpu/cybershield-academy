@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -575,7 +575,7 @@ export default function AsymmetricEncryptionBasicsPage() {
 
         <FakeAlertCard
           title="Private Key Uploaded to a Shared Folder"
-          severity="Critical"
+          severity="High"
           time="11:26 AM"
           source="Fake Key-Pair Training"
           details="A fictional user accidentally uploads a private key beside the public certificate in a broadly shared folder."

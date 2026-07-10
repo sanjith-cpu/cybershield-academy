@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -576,7 +576,7 @@ export default function CertificatesAndSecureConnectionsPage() {
 
         <FakeAlertCard
           title="Certificate Does Not Match the Login Domain"
-          severity="Critical"
+          severity="High"
           time="9:47 AM"
           source="Fake Secure Connection Training"
           details="A fictional school login page presents a certificate for a different domain while requesting usernames, passwords, and MFA codes."

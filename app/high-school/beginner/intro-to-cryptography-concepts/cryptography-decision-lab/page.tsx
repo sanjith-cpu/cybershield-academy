@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -577,7 +577,7 @@ export default function CryptographyDecisionLabPage() {
 
         <FakeAlertCard
           title="Multiple Trust Failures in One Workflow"
-          severity="Critical"
+          severity="High"
           time="2:32 PM"
           source="Fake Cryptography Decision Training"
           details="A fictional portal uses the wrong domain, shows a certificate warning, requests an MFA code, and provides a software download whose hash does not match the official publisher value."
