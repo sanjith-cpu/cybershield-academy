@@ -368,7 +368,7 @@ export default function DigitalIdentityPrivacyModuleTestPage() {
 
   const score = useMemo(
     () =>
-      answers.reduce(
+      answers.reduce<number>(
         (total, selected, index) =>
           total + (selected === questions[index].answer ? 1 : 0),
         0
