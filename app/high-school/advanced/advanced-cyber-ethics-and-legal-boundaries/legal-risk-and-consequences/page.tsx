@@ -986,6 +986,7 @@ export default function LegalRiskAndConsequencesPage() {
 
         <AnalyzeEvidenceCard
           title="Which Fictional Response Best Manages Legal Risk?"
+          question="Which Fictional Response Best Manages Legal Risk?"
           evidence={[
             "One High identity alert exists, but compromise and data loss are unconfirmed.",
             "The current authorization allows supplied-log review and recommendations only.",

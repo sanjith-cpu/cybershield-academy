@@ -1278,6 +1278,7 @@ export default function AdvancedEthicsCaseLabPage() {
 
         <AnalyzeEvidenceCard
           title="Which Fictional Final Decision Is Most Defensible?"
+          question="Which Fictional Final Decision Is Most Defensible?"
           evidence={[
             "Written authorization permits supplied identity and service-log review only until 1:00 PM.",
             "One High alert with 92% confidence exists, but compromise and data loss are unconfirmed.",

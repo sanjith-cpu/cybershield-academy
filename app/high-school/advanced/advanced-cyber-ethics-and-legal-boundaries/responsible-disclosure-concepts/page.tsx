@@ -1156,6 +1156,7 @@ export default function ResponsibleDisclosureConceptsPage() {
 
         <AnalyzeEvidenceCard
           title="Should the Fictional Student Publish the Finding Now?"
+          question="Should the Fictional Student Publish the Finding Now?"
           evidence={[
             "Written authorization permits supplied-evidence review and private reporting only.",
             "The supplied record supports one unauthorized page view.",

@@ -1024,6 +1024,7 @@ export default function ProfessionalResponsibilityInCybersecurityPage() {
 
         <AnalyzeEvidenceCard
           title="What Should the Fictional Analyst Do Next?"
+          question="What Should the Fictional Analyst Do Next?"
           evidence={[
             "Written authorization permits supplied authentication logs for two named training systems only.",
             "The mailbox export request is outside that written scope.",

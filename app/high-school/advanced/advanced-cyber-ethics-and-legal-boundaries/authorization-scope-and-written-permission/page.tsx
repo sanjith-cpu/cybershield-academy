@@ -1044,6 +1044,7 @@ export default function AuthorizationScopeAndWrittenPermissionPage() {
 
         <AnalyzeEvidenceCard
           title="May the Fictional Analyst Review the Database?"
+          question="May the Fictional Analyst Review the Database?"
           evidence={[
             "The signed authorization names APP-TRAIN-01 and ID-TRAIN-01 only.",
             "DB-TRAIN-02 is a dependency but is not listed as an authorized asset.",

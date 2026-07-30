@@ -1022,6 +1022,7 @@ export default function ProfessionalCommunicationDuringRiskPage() {
 
         <AnalyzeEvidenceCard
           title="Which Fictional Communication Plan Is Strongest?"
+          question="Which Fictional Communication Plan Is Strongest?"
           evidence={[
             "One unusual service-account sign-in is confirmed.",
             "Compromise, malicious intent, and data access are unconfirmed.",

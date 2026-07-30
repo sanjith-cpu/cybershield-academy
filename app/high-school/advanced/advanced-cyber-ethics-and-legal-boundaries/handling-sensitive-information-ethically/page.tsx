@@ -1188,6 +1188,7 @@ export default function HandlingSensitiveInformationEthicallyPage() {
 
         <AnalyzeEvidenceCard
           title="What Should the Fictional Analyst Do with the Mailbox Request?"
+          question="What Should the Fictional Analyst Do with the Mailbox Request?"
           evidence={[
             "Written authorization permits four sign-in fields for two training accounts.",
             "A full year of mailbox content was requested.",

@@ -1151,6 +1151,7 @@ export default function ResearchBoundariesAndSafeEnvironmentsPage() {
 
         <AnalyzeEvidenceCard
           title="Should the Fictional Exercise Begin?"
+          question="Should the Fictional Exercise Begin?"
           evidence={[
             "The authorization permits local supplied-log analysis in LAB-ADV-01 only.",
             "The expected network includes two training systems and one local logging service.",

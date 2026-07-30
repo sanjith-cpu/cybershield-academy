@@ -1274,6 +1274,7 @@ export default function EthicsInAiAndAutomationPage() {
 
         <AnalyzeEvidenceCard
           title="Should the Fictional Workflow Disable the Account Automatically?"
+          question="Should the Fictional Workflow Disable the Account Automatically?"
           evidence={[
             "The approved purpose is enrichment and ticket creation only.",
             "The model produced a 91% confidence malicious label.",

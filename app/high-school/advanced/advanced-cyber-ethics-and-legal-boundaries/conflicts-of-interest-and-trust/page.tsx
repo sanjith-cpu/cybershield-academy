@@ -1125,6 +1125,7 @@ export default function ConflictsOfInterestAndTrustPage() {
 
         <AnalyzeEvidenceCard
           title="Can the Fictional Analyst Remain the Final Approver?"
+          question="Can the Fictional Analyst Remain the Final Approver?"
           evidence={[
             "The analyst is reviewing a close friend's account.",
             "The analyst helped design the control under review.",
