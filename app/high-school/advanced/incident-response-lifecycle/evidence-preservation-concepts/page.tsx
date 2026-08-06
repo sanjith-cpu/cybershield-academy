@@ -19,7 +19,7 @@ import {
 const trackPath = "/high-school/advanced";
 const modulePath = `${trackPath}/incident-response-lifecycle`;
 const previousLesson = `${modulePath}/stakeholder-communication`;
-const nextLesson = `${modulePath}/lessons-learned-and-corrective-actions`;
+const nextLesson = `${modulePath}/post-incident-review`;
 
 const objectives = [
   "Distinguish fictional evidence preservation from invasive collection, surveillance, unrestricted copying, operational forensics, or unauthorized investigation.",
