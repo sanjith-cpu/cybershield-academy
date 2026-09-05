@@ -22,8 +22,8 @@ const navLinks = [
     href: "/resources",
   },
   {
-    label: "Teacher Toolkit",
-    href: "/teacher-toolkit",
+    label: "Cyber Safety Starter",
+    href: "/cyber-safety-starter",
   },
   {
     label: "Certificates",
