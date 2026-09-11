@@ -67,8 +67,8 @@ export default function PasswordSafetyLessonPage() {
           <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
             <h2 className="text-xl font-bold text-cyan-300">Safety Rule</h2>
             <p className="mt-4 text-slate-300">
-              Never type a real password into a practice website, worksheet, or
-              classroom activity. Use fake examples only.
+              Never type a real password into a practice website, quiz, or
+              activity. Use fake examples only.
             </p>
           </div>
         </div>
@@ -268,10 +268,10 @@ export default function PasswordSafetyLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-full border border-slate-600 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-300"
               >
-                Open Worksheets
+                More Activities
               </Link>
             </div>
           </div>
@@ -309,12 +309,12 @@ export default function PasswordSafetyLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-2xl border border-slate-700 bg-slate-950 p-5 transition hover:border-cyan-400"
               >
-                <h3 className="font-bold text-cyan-300">Worksheets</h3>
+                <h3 className="font-bold text-cyan-300">Activities</h3>
                 <p className="mt-2 text-sm text-slate-400">
-                  Use printable activities for practice.
+                  Practice with safe interactive activities.
                 </p>
               </Link>
 

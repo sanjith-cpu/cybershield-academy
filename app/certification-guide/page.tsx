@@ -11,7 +11,7 @@ const overviewCards = [
   {
     title: "Are certifications required?",
     detail:
-      "No. Students can learn cybersecurity through classes, projects, clubs, outreach, practice, reading, and mentorship before thinking about certifications.",
+      "No. Students can learn cybersecurity through classes, projects, clubs, practice, reading, and mentorship before thinking about certifications.",
   },
   {
     title: "Why learn about them?",
@@ -82,7 +82,7 @@ const studyHabits = [
   "Use safe practice examples only.",
   "Review vocabulary regularly.",
   "Connect topics to real-life student situations.",
-  "Create small projects to teach what you learned.",
+  "Create small projects to reinforce what you learned.",
   "Document progress honestly.",
   "Check official exam providers for current requirements before spending money.",
 ];
@@ -140,8 +140,8 @@ const relatedLinks = [
     href: "/resources",
   },
   {
-    label: "Roadmap",
-    href: "/roadmap",
+    label: "Activities",
+    href: "/activities",
   },
   {
     label: "Safety & Privacy",
@@ -155,30 +155,55 @@ export default function CertificationGuidePage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Certification Guide
-          </p>
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Certification Guide
+            </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            A student-friendly guide to cybersecurity certifications.
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              A student-friendly guide to cybersecurity certifications.
+            </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Certifications can be useful future learning goals, but they are not
-            required to start learning cybersecurity. This guide explains
-            certification pathways in a beginner-friendly way so students can
-            explore them carefully and responsibly.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              Certifications can be useful future learning goals, but they are not
+              required to start learning cybersecurity. This guide explains
+              certification pathways in a beginner-friendly way so students can
+              explore them carefully and responsibly.
+            </p>
 
-          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
-            Important: CyberShield Academy does not provide official industry
-            certifications. The CyberShield badges are learning recognition
-            badges only.
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/careers"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Explore Careers
+              </Link>
+
+              <Link
+                href="/high-school"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                High School Track
+              </Link>
+
+              <Link
+                href="/resources"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Student Resources
+              </Link>
+            </div>
+
+            <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+              Important: CyberShield Academy does not provide official industry
+              certifications. CyberShield certificates or badges are learning
+              recognition only.
+            </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {overviewCards.map((card) => (
               <div
@@ -330,7 +355,7 @@ export default function CertificationGuidePage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Certification exploration connects to careers, high school
-              learning, safety, resources, and project documentation.
+              learning, activities, safety, and student resources.
             </p>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
@@ -340,7 +365,7 @@ export default function CertificationGuidePage() {
                   href={link.href}
                   className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
                 >
-                  {link.label}
+                  {link.label} →
                 </Link>
               ))}
             </div>

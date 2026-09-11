@@ -3,6 +3,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const advancedPath = "/high-school/advanced";
+
+function toLessonSlug(title: string) {
+  return title
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
 const modules = [
   {
     "code": "A1",
@@ -1133,6 +1141,21 @@ export default function HighSchoolAdvancedPage() {
 
       <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.16),_transparent_32%),linear-gradient(135deg,_#020617_0%,_#0f172a_52%,_#111827_100%)]">
         <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="mb-10 flex flex-wrap gap-3 text-sm font-semibold">
+            <Link
+              href="/high-school/intermediate"
+              className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-slate-200 transition hover:border-purple-400 hover:text-purple-200"
+            >
+              ← Intermediate Track
+            </Link>
+
+            <Link
+              href="/high-school"
+              className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+            >
+              Back to High School Hub Hub
+            </Link>
+          </div>
           <div className="flex flex-wrap gap-3 text-sm font-black uppercase tracking-[0.2em]">
             <span className="rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-cyan-200">
               High School
@@ -1168,20 +1191,6 @@ export default function HighSchoolAdvancedPage() {
                   className="rounded-xl bg-cyan-400 px-6 py-3 font-black text-slate-950 transition hover:bg-cyan-300"
                 >
                   Start Advanced with A1
-                </Link>
-
-                <Link
-                  href="/high-school"
-                  className="rounded-xl border border-slate-700 px-6 py-3 font-black text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
-                >
-                  High School Hub
-                </Link>
-
-                <Link
-                  href="/high-school/intermediate"
-                  className="rounded-xl border border-slate-700 px-6 py-3 font-black text-slate-200 transition hover:border-purple-400 hover:text-purple-200"
-                >
-                  Intermediate Track
                 </Link>
               </div>
             </div>
@@ -1433,27 +1442,31 @@ export default function HighSchoolAdvancedPage() {
 
                           <div className="mt-4 grid gap-2">
                             {module.lessons.map((lesson) => (
-                              <div
+                              <Link
                                 key={lesson.number}
-                                className="grid gap-2 rounded-xl border border-slate-800 bg-slate-950 p-3 sm:grid-cols-[0.22fr_1fr] sm:items-center"
+                                href={`${advancedPath}/${module.slug}/${toLessonSlug(lesson.title)}`}
+                                className="group grid gap-2 rounded-xl border border-slate-800 bg-slate-950 p-3 transition hover:border-cyan-400/70 hover:bg-slate-900 sm:grid-cols-[0.22fr_1fr] sm:items-center"
                               >
                                 <span className="font-mono text-sm font-black text-cyan-200">
                                   {lesson.number}
                                 </span>
-                                <span className="text-sm font-semibold leading-6 text-slate-200">
+                                <span className="text-sm font-semibold leading-6 text-slate-200 transition group-hover:text-cyan-100">
                                   {lesson.title}
                                 </span>
-                              </div>
+                              </Link>
                             ))}
 
-                            <div className="grid gap-2 rounded-xl border border-yellow-400/25 bg-yellow-400/10 p-3 sm:grid-cols-[0.22fr_1fr] sm:items-center">
+                            <Link
+                              href={`${advancedPath}/${module.slug}/module-test`}
+                              className="group grid gap-2 rounded-xl border border-yellow-400/25 bg-yellow-400/10 p-3 transition hover:border-yellow-300/60 hover:bg-yellow-400/15 sm:grid-cols-[0.22fr_1fr] sm:items-center"
+                            >
                               <span className="font-mono text-sm font-black text-yellow-200">
                                 Test
                               </span>
-                              <span className="text-sm font-semibold leading-6 text-yellow-50">
+                              <span className="text-sm font-semibold leading-6 text-yellow-50 transition group-hover:text-white">
                                 {module.code} Module Test — 25 Questions
                               </span>
-                            </div>
+                            </Link>
                           </div>
                         </div>
 
@@ -1601,11 +1614,29 @@ export default function HighSchoolAdvancedPage() {
               href="/high-school"
               className="rounded-xl border border-emerald-300/40 px-6 py-3 font-black text-emerald-50 transition hover:border-white"
             >
-              Back to High School
+              Back to High School Hub
             </Link>
           </div>
         </section>
       </div>
+
+      <section className="mx-auto max-w-6xl px-6 pb-16">
+        <div className="flex flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+          <Link
+            href="/high-school/intermediate"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-purple-400 hover:text-purple-200"
+          >
+            ← Intermediate Track
+          </Link>
+
+          <Link
+            href="/high-school"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            Back to High School Hub
+          </Link>
+        </div>
+      </section>
 
       <Footer />
     </main>

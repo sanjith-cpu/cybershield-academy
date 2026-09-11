@@ -9,7 +9,7 @@ const scenarios = [
     situation:
       "A student gets an email claiming their school account will be deleted in 10 minutes unless they click a link and enter their password.",
     bestResponse:
-      "Do not click the link. Report the message to a teacher or school technology staff member.",
+      "Do not click the link. Report the message to a trusted adult or appropriate school technology support.",
     why:
       "The message uses urgency and asks for a password, which are common scam warning signs.",
   },
@@ -19,7 +19,7 @@ const scenarios = [
     situation:
       "A student notices that someone else forgot to log out of a school account on a shared computer.",
     bestResponse:
-      "Do not look through the account. Tell a teacher or staff member so the account can be protected.",
+      "Do not look through the account. Tell the account owner or an appropriate trusted adult so the account can be protected.",
     why:
       "Even if the account is open, it is still private. Ethical cybersecurity requires permission and respect.",
   },
@@ -29,7 +29,7 @@ const scenarios = [
     situation:
       "A homework website has several large download buttons, but the student is not sure which one is real.",
     bestResponse:
-      "Do not download anything. Close the page and ask a trusted adult or teacher for help.",
+      "Do not download anything. Close the page and ask a trusted adult for help.",
     why:
       "Fake download buttons can lead to unwanted files, scams, or unsafe websites.",
   },
@@ -70,7 +70,7 @@ const decisionRules = [
   "Use fake examples only for practice.",
   "Do not enter real passwords or login codes.",
   "Do not investigate suspicious links alone.",
-  "Ask a trusted adult, teacher, or school technology staff member for help.",
+  "Ask a trusted adult or appropriate support person for help.",
   "Report suspicious messages safely.",
 ];
 
@@ -80,41 +80,50 @@ export default function ScenarioRoomPage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Interactive Practice
-          </p>
-
-          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8 md:p-10">
-            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-              Scenario Room
-            </h1>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              Practice making safe cybersecurity decisions using fake student
-              scenarios. Each situation focuses on defensive choices, privacy,
-              reporting, and responsible online behavior.
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Interactive Practice
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/activities"
-                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                Back to Activities
-              </Link>
+            <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8 md:p-10">
+              <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+                Scenario Room
+              </h1>
 
-              <Link
-                href="/lessons"
-                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-              >
-                Review Lessons
-              </Link>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                Practice making safe cybersecurity decisions using fictional
+                student scenarios. Each situation focuses on defensive choices,
+                privacy, reporting, and responsible online behavior.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/activities"
+                  className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+                >
+                  Back to Activities
+                </Link>
+
+                <Link
+                  href="/lessons"
+                  className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+                >
+                  Review Lessons
+                </Link>
+
+                <Link
+                  href="/safety"
+                  className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+                >
+                  Safety & Privacy
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
               <h2 className="text-xl font-bold text-cyan-200">
@@ -129,12 +138,12 @@ export default function ScenarioRoomPage() {
 
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
               <h2 className="text-xl font-bold text-cyan-200">
-                Best For
+                Practice Style
               </h2>
 
               <p className="mt-4 text-sm leading-6 text-slate-300">
-                Students, teachers, club leaders, and outreach sessions that
-                need short discussion-based cybersecurity practice.
+                Read each situation, identify the warning signs, choose the
+                safest response, and explain why that decision protects people.
               </p>
             </div>
 
@@ -144,8 +153,8 @@ export default function ScenarioRoomPage() {
               </h2>
 
               <p className="mt-4 text-sm leading-6 text-yellow-50/90">
-                These are fake scenarios. Do not test real suspicious links,
-                collect private information, or access anything without
+                These are fictional scenarios. Do not test real suspicious
+                links, collect private information, or access anything without
                 permission.
               </p>
             </div>
@@ -163,7 +172,7 @@ export default function ScenarioRoomPage() {
                 {
                   step: "1",
                   title: "Read",
-                  detail: "Read the fake situation carefully.",
+                  detail: "Read the fictional situation carefully.",
                 },
                 {
                   step: "2",
@@ -300,10 +309,10 @@ export default function ScenarioRoomPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-xl border border-yellow-500/30 px-5 py-3 font-semibold text-yellow-50 transition hover:border-cyan-300 hover:text-cyan-200"
               >
-                Open Worksheets
+                More Activities
               </Link>
 
               <Link

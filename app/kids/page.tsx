@@ -265,88 +265,105 @@ const safetyHabits = [
   "Ask a trusted adult when something online feels confusing, scary, urgent, secret, embarrassing, or unsafe.",
 ];
 
-const audienceCards = [
-  {
-    title: "For Students",
-    text: "Short lessons, safe examples, review questions, and simple cyber safety habits.",
-  },
-  {
-    title: "For Teachers",
-    text: "A clear module structure that can support classroom discussions, review activities, and future worksheets.",
-  },
-  {
-    title: "For Families",
-    text: "Age-appropriate reminders that encourage students to pause, protect private information, and ask trusted adults for help.",
-  },
-];
-
 export default function KidsPage() {
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="px-8 py-24">
-          <div className="mx-auto max-w-6xl">
-            <p className="mb-4 font-semibold text-cyan-300">
-              CyberShield Kids Curriculum
-            </p>
+        <section className="px-6 pt-10 md:px-8 md:pt-12">
+          <div className="mx-auto flex max-w-7xl flex-wrap gap-3">
+            <Link
+              href="/lessons"
+              className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+            >
+              ← Back to Learning Library
+            </Link>
 
-            <h1 className="mb-6 max-w-4xl text-4xl font-extrabold leading-tight md:text-6xl">
-              A complete beginner-friendly cyber safety track for elementary
-              students.
-            </h1>
+            <Link
+              href="/junior"
+              className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+            >
+              Junior Track →
+            </Link>
+          </div>
+        </section>
 
-            <p className="mb-10 max-w-3xl text-lg leading-relaxed text-slate-300">
-              The Kids Track is now a full learning path with six modules,
-              numbered lessons, safe examples, review activities, and
-              age-appropriate safety reminders. Students learn how to protect
-              private information, pause before clicking, use technology kindly,
-              think before sharing, and ask trusted adults for help.
-            </p>
+        <section className="px-6 py-16 md:px-8 md:py-20">
+          <div className="mx-auto max-w-7xl rounded-3xl border border-cyan-500/30 bg-slate-900/70 p-8 shadow-2xl shadow-cyan-950/20 md:p-12">
+            <div className="grid gap-10 lg:grid-cols-[1fr_260px] lg:items-center">
+              <div>
+                <p className="mb-6 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.24em] text-cyan-200">
+                  CyberShield Academy Kids
+                </p>
 
-            <div className="grid gap-6 md:grid-cols-3">
-              {audienceCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6"
-                >
-                  <h2 className="mb-3 text-2xl font-bold text-cyan-200">
-                    {card.title}
-                  </h2>
+                <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+                  Complete Elementary Cyber Safety Program
+                </h1>
 
-                  <p className="leading-relaxed text-slate-300">
-                    {card.text}
-                  </p>
+                <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                  The Kids Track is a complete beginner-friendly learning path
+                  with six modules and thirty lessons. Students learn how to
+                  protect private information, pause before clicking, use
+                  technology kindly, think before sharing, recognize scams, and
+                  ask trusted adults for help.
+                </p>
+
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <Link
+                    href="/kids/online-safety-basics"
+                    className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+                  >
+                    Start Module 1
+                  </Link>
+
+                  <Link
+                    href="#kids-modules"
+                    className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+                  >
+                    View All Modules
+                  </Link>
+
+                  <Link
+                    href="/lessons"
+                    className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+                  >
+                    Back to Learning Library
+                  </Link>
                 </div>
-              ))}
-            </div>
+              </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link
-                href="/kids/online-safety-basics"
-                className="rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-slate-950 transition hover:bg-cyan-300"
-              >
-                Start Module 1
-              </Link>
+              <aside className="rounded-3xl border border-slate-800 bg-slate-950/70 p-6">
+                <h2 className="text-lg font-bold text-cyan-200">
+                  Kids Track Scope
+                </h2>
 
-              <Link
-                href="/kids/cyber-safety-review/completion"
-                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
-              >
-                View Completion Page
-              </Link>
+                <div className="mt-5 space-y-4 text-sm">
+                  <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                    <span className="text-slate-300">Level</span>
+                    <span className="font-bold text-white">Elementary</span>
+                  </div>
 
-              <Link
-                href="/activities"
-                className="rounded-xl border border-slate-700 px-6 py-3 text-center font-semibold transition hover:border-cyan-400"
-              >
-                Try Activities
-              </Link>
+                  <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                    <span className="text-slate-300">Total modules</span>
+                    <span className="font-bold text-white">6</span>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                    <span className="text-slate-300">Lesson pages</span>
+                    <span className="font-bold text-white">30</span>
+                  </div>
+
+                  <div className="flex items-center justify-between gap-4">
+                    <span className="text-slate-300">Track status</span>
+                    <span className="font-bold text-emerald-300">Complete</span>
+                  </div>
+                </div>
+              </aside>
             </div>
           </div>
         </section>
 
-        <section className="border-y border-slate-800 bg-slate-900/60 px-8 py-16">
+        <section id="kids-modules" className="scroll-mt-24 border-y border-slate-800 bg-slate-900/60 px-8 py-16">
           <div className="mx-auto max-w-6xl">
             <div className="mb-10 max-w-3xl">
               <p className="mb-3 font-semibold text-cyan-300">
@@ -531,6 +548,23 @@ export default function KidsPage() {
                 View Activities
               </Link>
             </div>
+          </div>
+        </section>
+        <section className="px-6 pb-16 md:px-8">
+          <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+            <Link
+              href="/lessons"
+              className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+            >
+              ← Back to Learning Library
+            </Link>
+
+            <Link
+              href="/junior"
+              className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+            >
+              Junior Track →
+            </Link>
           </div>
         </section>
       </main>

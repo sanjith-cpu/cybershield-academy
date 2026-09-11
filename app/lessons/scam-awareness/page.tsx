@@ -288,10 +288,10 @@ export default function ScamAwarenessLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
               >
-                Open Worksheets
+                More Activities
               </Link>
             </div>
           </div>
@@ -346,12 +346,12 @@ export default function ScamAwarenessLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/safety"
                 className="rounded-2xl border border-yellow-500/20 bg-slate-950/70 p-5 transition hover:border-cyan-300"
               >
-                <h3 className="font-bold text-cyan-200">Worksheets</h3>
+                <h3 className="font-bold text-cyan-200">Safety & Privacy</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Use printable classroom activities.
+                  Review CyberShield safety and privacy guidance.
                 </p>
               </Link>
             </div>

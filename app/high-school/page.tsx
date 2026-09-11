@@ -575,6 +575,24 @@ export default function HighSchoolHubPage() {
     <main className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
 
+      <section className="mx-auto max-w-7xl px-6 pt-10 lg:px-8 lg:pt-12">
+        <div className="flex flex-wrap gap-3">
+          <Link
+            href="/junior"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            ← Junior Track
+          </Link>
+
+          <Link
+            href="/lessons"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            Back to Learning Library
+          </Link>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-14">
         <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 shadow-2xl shadow-cyan-950/30 lg:p-12">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
@@ -633,10 +651,10 @@ export default function HighSchoolHubPage() {
               Open Advanced Track
             </Link>
             <Link
-              href="/"
+              href="/lessons"
               className="rounded-xl border border-slate-700 px-5 py-3 text-sm font-bold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
             >
-              Back to Home
+              Back to Learning Library
             </Link>
           </div>
         </div>
@@ -810,6 +828,24 @@ export default function HighSchoolHubPage() {
               accent="purple"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
+        <div className="flex flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+          <Link
+            href="/junior"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            ← Junior Track
+          </Link>
+
+          <Link
+            href="/lessons"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            Back to Learning Library
+          </Link>
         </div>
       </section>
 

@@ -11,7 +11,7 @@ type IntermediateModule = {
   purpose: string;
   skills: string[];
   phase: string;
-  status: "In Progress" | "Planned";
+  status: "Complete";
   lessons: Lesson[];
 };
 
@@ -28,7 +28,7 @@ const modules: IntermediateModule[] = [
       "segmentation"
     ],
     "phase": "Network and Systems",
-    "status": "In Progress",
+    "status": "Complete",
     "lessons": [
       [
         "I1.1",
@@ -84,7 +84,7 @@ const modules: IntermediateModule[] = [
       "system logs"
     ],
     "phase": "Network and Systems",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I2.1",
@@ -140,7 +140,7 @@ const modules: IntermediateModule[] = [
       "security settings"
     ],
     "phase": "Network and Systems",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I3.1",
@@ -196,7 +196,7 @@ const modules: IntermediateModule[] = [
       "timelines"
     ],
     "phase": "Identity and Operations",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I4.1",
@@ -252,7 +252,7 @@ const modules: IntermediateModule[] = [
       "tool limitations"
     ],
     "phase": "Identity and Operations",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I5.1",
@@ -308,7 +308,7 @@ const modules: IntermediateModule[] = [
       "privileged accounts"
     ],
     "phase": "Identity and Operations",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I6.1",
@@ -364,7 +364,7 @@ const modules: IntermediateModule[] = [
       "escalation"
     ],
     "phase": "Identity and Operations",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I7.1",
@@ -420,7 +420,7 @@ const modules: IntermediateModule[] = [
       "secure configuration"
     ],
     "phase": "Detection and Defense",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I8.1",
@@ -476,7 +476,7 @@ const modules: IntermediateModule[] = [
       "code review"
     ],
     "phase": "Detection and Defense",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I9.1",
@@ -532,7 +532,7 @@ const modules: IntermediateModule[] = [
       "remediation planning"
     ],
     "phase": "Detection and Defense",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I10.1",
@@ -588,7 +588,7 @@ const modules: IntermediateModule[] = [
       "incident communication"
     ],
     "phase": "Applications and Response",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I11.1",
@@ -644,7 +644,7 @@ const modules: IntermediateModule[] = [
       "timeline analysis"
     ],
     "phase": "Applications and Response",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I12.1",
@@ -700,7 +700,7 @@ const modules: IntermediateModule[] = [
       "cloud monitoring"
     ],
     "phase": "Applications and Response",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I13.1",
@@ -756,7 +756,7 @@ const modules: IntermediateModule[] = [
       "clear guidance"
     ],
     "phase": "Applications and Response",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I14.1",
@@ -812,7 +812,7 @@ const modules: IntermediateModule[] = [
       "shift handoffs"
     ],
     "phase": "Applications and Response",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I15.1",
@@ -868,7 +868,7 @@ const modules: IntermediateModule[] = [
       "defensive reports"
     ],
     "phase": "Practice and Capstone",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I16.1",
@@ -924,7 +924,7 @@ const modules: IntermediateModule[] = [
       "final readiness"
     ],
     "phase": "Practice and Capstone",
-    "status": "Planned",
+    "status": "Complete",
     "lessons": [
       [
         "I17.1",
@@ -1039,17 +1039,12 @@ export default function HighSchoolIntermediatePage() {
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
           <div className="mb-7 flex flex-wrap gap-3 text-sm font-semibold">
             <Link
-              href="/high-school"
-              className="rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              ← High School Hub
-            </Link>
-            <Link
               href="/high-school/beginner"
               className="rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-slate-200 transition hover:border-emerald-300 hover:text-emerald-200"
             >
-              Beginner Track
+              ← Beginner Track
             </Link>
+
             <Link
               href="/high-school/advanced"
               className="rounded-full border border-slate-700 bg-slate-900/70 px-4 py-2 text-slate-200 transition hover:border-blue-300 hover:text-blue-200"
@@ -1063,9 +1058,6 @@ export default function HighSchoolIntermediatePage() {
               <div className="flex flex-wrap gap-3">
                 <span className="rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-xs font-black uppercase tracking-[0.24em] text-cyan-200">
                   High School Intermediate
-                </span>
-                <span className="rounded-full border border-blue-400/40 bg-blue-400/10 px-4 py-2 text-xs font-black uppercase tracking-[0.24em] text-blue-200">
-                  Development in Progress
                 </span>
               </div>
 
@@ -1098,22 +1090,22 @@ export default function HighSchoolIntermediatePage() {
 
             <div className="rounded-3xl border border-cyan-400/30 bg-slate-900/80 p-6 shadow-2xl shadow-cyan-950/40">
               <p className="text-sm font-black uppercase tracking-[0.22em] text-cyan-300">
-                Track Progress
+                Track Snapshot
               </p>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                <Stat label="Modules planned" value="17" />
-                <Stat label="Lessons planned" value="136" />
-                <Stat label="Module tests planned" value="17" />
-                <Stat label="Track assessments" value="3" />
+                <Stat label="Modules" value="17" />
+                <Stat label="Lesson Pages" value="136" />
+                <Stat label="Module Tests" value="17" />
+                <Stat label="Track Assessments" value="3" />
               </div>
 
-              <div className="mt-5 rounded-2xl border border-blue-400/30 bg-blue-400/10 p-5">
-                <p className="font-black text-blue-200">
-                  Current build: Module I1
+              <div className="mt-5 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 p-5">
+                <p className="font-black text-emerald-200">
+                  Complete Intermediate Track
                 </p>
-                <p className="mt-2 text-sm leading-6 text-blue-50">
-                  Networking for Defenders is the first Intermediate module.
-                  All lesson titles and future routes are displayed below.
+                <p className="mt-2 text-sm leading-6 text-emerald-50">
+                  All 17 modules, 136 lesson pages, module tests, practice tests,
+                  and the final assessment are available throughout this track.
                 </p>
               </div>
             </div>
@@ -1149,7 +1141,7 @@ export default function HighSchoolIntermediatePage() {
               Complete Learning Path
             </p>
             <h2 className="mt-3 text-3xl font-black text-white">
-              Everything planned for Intermediate
+              Everything included in Intermediate
             </h2>
             <div className="mt-6 grid gap-3 sm:grid-cols-2">
               {[
@@ -1230,7 +1222,7 @@ export default function HighSchoolIntermediatePage() {
                       {module.phase}
                     </span>
                     <span
-                      className={`rounded-full px-3 py-1 text-xs font-black uppercase tracking-[0.16em] ${module.status === "In Progress" ? "border border-emerald-400/30 bg-emerald-400/10 text-emerald-200" : "border border-slate-700 bg-slate-950/70 text-slate-400"}`}
+                      className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-emerald-200"
                     >
                       {module.status}
                     </span>
@@ -1288,7 +1280,7 @@ export default function HighSchoolIntermediatePage() {
                         </p>
                       </div>
                       <span className="rounded-full border border-slate-700 px-2 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-slate-500">
-                        {module.status === "In Progress" ? "Building" : "Planned"}
+                        Complete
                       </span>
                     </div>
                   </Link>
@@ -1307,8 +1299,8 @@ export default function HighSchoolIntermediatePage() {
                         25-Question Module Test
                       </p>
                     </div>
-                    <span className="rounded-full border border-yellow-300/30 px-2 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-yellow-200/70">
-                      Planned
+                    <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-2 py-1 text-[10px] font-black uppercase tracking-[0.12em] text-emerald-200">
+                      Complete
                     </span>
                   </div>
                 </Link>
@@ -1330,9 +1322,9 @@ export default function HighSchoolIntermediatePage() {
             Practice tests and final assessment
           </h2>
           <p className="mt-3 max-w-3xl text-slate-300">
-            These assessments will be created after all seventeen modules are
-            complete. Answers and explanations will stay hidden until
-            submission.
+            These assessments cover the complete Intermediate Track. Answers
+            and explanations stay hidden until submission so students can complete
+            each assessment before reviewing feedback.
           </p>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -1346,8 +1338,8 @@ export default function HighSchoolIntermediatePage() {
                   <p className="text-sm font-black uppercase tracking-[0.2em] text-yellow-200">
                     {assessment.label}
                   </p>
-                  <span className="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-slate-400">
-                    Planned
+                  <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-black uppercase tracking-[0.16em] text-emerald-200">
+                    Complete
                   </span>
                 </div>
 
@@ -1361,7 +1353,7 @@ export default function HighSchoolIntermediatePage() {
                   {assessment.detail}
                 </p>
                 <p className="mt-5 text-sm font-black text-cyan-200">
-                  Future assessment route →
+                  Open assessment →
                 </p>
               </Link>
             ))}
@@ -1402,42 +1394,20 @@ export default function HighSchoolIntermediatePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
-        <div className="rounded-3xl border border-emerald-400/30 bg-[linear-gradient(135deg,_rgba(16,185,129,0.16),_rgba(34,211,238,0.08),_rgba(15,23,42,0.8))] p-7 md:p-10">
-          <div className="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-            <div>
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-emerald-200">
-                Intermediate Track Development
-              </p>
-              <h2 className="mt-3 text-3xl font-black text-white md:text-4xl">
-                Begin with Networking for Defenders
-              </h2>
-              <p className="mt-4 max-w-3xl leading-7 text-slate-200">
-                Module I1 builds the network evidence and defensive reasoning
-                foundation required by the rest of the Intermediate curriculum.
-              </p>
-            </div>
+        <div className="flex flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+          <Link
+            href="/high-school/beginner"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-emerald-300 hover:text-emerald-200"
+          >
+            ← Beginner Track
+          </Link>
 
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
-              <Link
-                href="/high-school/intermediate/networking-for-defenders"
-                className="rounded-2xl bg-cyan-400 px-5 py-4 text-center font-black text-slate-950 transition hover:bg-cyan-300"
-              >
-                Open Module I1
-              </Link>
-              <Link
-                href="/high-school/beginner"
-                className="rounded-2xl border border-emerald-300/40 bg-emerald-400/10 px-5 py-4 text-center font-black text-emerald-50 transition hover:border-white"
-              >
-                Review Beginner Track
-              </Link>
-              <Link
-                href="/high-school"
-                className="rounded-2xl border border-slate-700 bg-slate-950/70 px-5 py-4 text-center font-black text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-              >
-                High School Hub
-              </Link>
-            </div>
-          </div>
+          <Link
+            href="/high-school/advanced"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-blue-300 hover:text-blue-200"
+          >
+            Advanced Track →
+          </Link>
         </div>
       </section>
 

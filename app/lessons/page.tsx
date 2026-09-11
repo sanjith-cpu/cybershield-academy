@@ -22,8 +22,8 @@ const lessonModules = [
         href: "/password-lab",
       },
       {
-        label: "Worksheets",
-        href: "/worksheets",
+        label: "Cyber Safety Quiz",
+        href: "/quiz",
       },
     ],
   },
@@ -94,8 +94,8 @@ const lessonModules = [
         href: "/safe-browsing",
       },
       {
-        label: "Worksheets",
-        href: "/worksheets",
+        label: "Scenario Room",
+        href: "/scenario-room",
       },
     ],
   },
@@ -182,30 +182,30 @@ const trackPaths = [
   },
 ];
 
-const classroomFlow = [
+const learningFlow = [
   {
     step: "1",
-    title: "Introduce the topic",
+    title: "Learn the concept",
     detail:
-      "Start with a short explanation and a safe example students can understand.",
+      "Start with a clear explanation of the topic and the safety ideas behind it.",
   },
   {
     step: "2",
-    title: "Discuss the risk",
+    title: "Think through the risk",
     detail:
-      "Ask students what could go wrong and what safer choices would look like.",
+      "Consider what could go wrong, which warning signs matter, and what a safer choice would look like.",
   },
   {
     step: "3",
-    title: "Practice with an activity",
+    title: "Practice safely",
     detail:
-      "Use a CyberShield activity, worksheet, or reflection to reinforce the lesson.",
+      "Use a CyberShield activity, quiz, scenario, or reflection with fictional examples only.",
   },
   {
     step: "4",
-    title: "Reflect and report",
+    title: "Reflect and apply",
     detail:
-      "End with one takeaway and remind students how to report suspicious activity safely.",
+      "Finish with one takeaway you can use to make safer decisions online.",
   },
 ];
 
@@ -215,7 +215,7 @@ const safetyRules = [
   "Do not click real suspicious links to test them.",
   "Do not share private personal information.",
   "Do not access accounts, devices, networks, or files without permission.",
-  "Ask a trusted adult, teacher, or technology staff member when something feels suspicious.",
+  "Ask a trusted adult or appropriate support person when something online feels suspicious.",
 ];
 
 const completedLessonPages = [
@@ -233,54 +233,56 @@ export default function LessonsPage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Learning Library
-          </p>
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Learning Library
+            </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            Learn cybersecurity step by step.
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              Learn cybersecurity step by step.
+            </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            The CyberShield Academy Learning Library organizes cybersecurity
-            literacy into clear modules. Students can learn the basics, practice
-            safely, reflect on real-life choices, and build stronger defensive
-            cybersecurity habits. The Kids Path is now complete with six live
-            modules and thirty live lessons.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              The CyberShield Academy Learning Library organizes cybersecurity
+              literacy into clear modules. Learn the basics, practice safely,
+              reflect on real-life choices, and build stronger defensive
+              cybersecurity habits. Choose an age-based track or begin with one
+              of the focused lesson modules below.
+            </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/kids"
-              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              Open Complete Kids Path
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/kids"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Open Kids Path
+              </Link>
 
-            <Link
-              href="/activities"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Start Activities
-            </Link>
+              <Link
+                href="/activities"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Start Activities
+              </Link>
 
-            <Link
-              href="/teacher-toolkit"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Teacher Toolkit
-            </Link>
-          </div>
+              <Link
+                href="/resources"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Student Resources
+              </Link>
+            </div>
 
-          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
-            Safety reminder: These lessons are for safe, ethical, and defensive
-            learning only. Do not use real passwords, private information, real
-            suspicious links, or unauthorized systems.
+            <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+              Safety reminder: these lessons are for safe, ethical, and defensive
+              learning only. Do not use real passwords, private information, real
+              suspicious links, or unauthorized systems.
+            </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-6 md:grid-cols-3">
             {trackPaths.map((track) => (
               <Link
@@ -337,8 +339,8 @@ export default function LessonsPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Each module includes a topic summary, learning goals, full lesson
-              pages, and practice pages that connect the lesson to interactive
+              Each module includes a topic summary, learning goals, a full lesson
+              page, and practice links that connect the topic to interactive
               learning.
             </p>
 
@@ -423,16 +425,16 @@ export default function LessonsPage() {
           <div className="grid gap-6 lg:grid-cols-2">
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
               <h2 className="text-3xl font-bold text-white">
-                Classroom Lesson Flow
+                A Simple Learning Flow
               </h2>
 
               <p className="mt-3 leading-7 text-slate-300">
-                Teachers, club leaders, and outreach volunteers can use this
-                simple structure for short cybersecurity lessons.
+                Use this four-step approach to move from understanding a concept
+                to practicing it safely and applying it to everyday decisions.
               </p>
 
               <div className="mt-6 grid gap-4">
-                {classroomFlow.map((item) => (
+                {learningFlow.map((item) => (
                   <div
                     key={item.step}
                     className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
@@ -461,8 +463,8 @@ export default function LessonsPage() {
               </h2>
 
               <p className="mt-3 leading-7 text-yellow-50/90">
-                These rules keep every lesson safe, ethical, and appropriate for
-                students.
+                These rules keep every lesson safe, ethical, privacy-aware, and
+                appropriate for students.
               </p>
 
               <div className="mt-6 grid gap-3">
@@ -482,14 +484,14 @@ export default function LessonsPage() {
         <section className="mx-auto max-w-6xl px-6 pb-20">
           <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
             <h2 className="text-3xl font-bold text-emerald-100">
-              Individual Lesson Pages Complete
+              Explore the Individual Lessons
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              The main Learning Library connects to all six full individual
-              lesson pages: Password Safety, Scam Awareness, Privacy Basics,
-              Safe Browsing, Digital Footprint, and Cyber Ethics. The Kids Path
-              is also complete with six modules and thirty lessons.
+              The Learning Library connects to six focused lesson pages:
+              Password Safety, Scam Awareness, Privacy Basics, Safe Browsing,
+              Digital Footprint, and Cyber Ethics. You can also continue into
+              the complete age-based learning tracks.
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -504,12 +506,26 @@ export default function LessonsPage() {
               ))}
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap gap-4">
               <Link
                 href="/kids"
                 className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
               >
-                Open Complete Kids Path →
+                Open Kids Path →
+              </Link>
+
+              <Link
+                href="/junior"
+                className="inline-flex rounded-xl border border-emerald-500/30 px-5 py-3 text-sm font-bold text-emerald-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Open Junior Path →
+              </Link>
+
+              <Link
+                href="/high-school"
+                className="inline-flex rounded-xl border border-emerald-500/30 px-5 py-3 text-sm font-bold text-emerald-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Open High School Path →
               </Link>
             </div>
           </div>

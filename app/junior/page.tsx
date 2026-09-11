@@ -197,43 +197,97 @@ export default function JuniorPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <Navbar />
 
-      <section className="px-8 py-24 max-w-6xl mx-auto">
-        <p className="mb-4 text-cyan-300 font-semibold">
-          CyberShield Junior • Middle School Track
-        </p>
-
-        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-          Smarter cybersecurity decisions for middle school students.
-        </h1>
-
-        <p className="text-lg text-slate-300 leading-relaxed max-w-4xl mb-10">
-          CyberShield Junior is a complete middle school cybersecurity literacy
-          track focused on privacy, scams, accounts, safe browsing, online
-          communication, cyberbullying, misinformation, devices, cyber defense,
-          digital citizenship, and real-life cyber safety planning.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4">
+      <section className="px-6 pt-10 md:px-8 md:pt-12">
+        <div className="mx-auto flex max-w-7xl flex-wrap gap-3">
           <Link
-            href="/junior/digital-life-and-online-identity"
-            className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 hover:bg-cyan-300 transition text-center"
+            href="/kids"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
           >
-            Start Module 1
+            ← Kids Track
           </Link>
 
           <Link
-            href="#junior-learning-path"
-            className="rounded-xl border border-slate-700 px-6 py-3 font-semibold hover:border-cyan-400 transition text-center"
+            href="/high-school"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
           >
-            View All Modules
+            High School Track →
           </Link>
+        </div>
+      </section>
 
-          <Link
-            href="/lessons"
-            className="rounded-xl border border-slate-700 px-6 py-3 font-semibold hover:border-cyan-400 transition text-center"
-          >
-            Back to Learning Library
-          </Link>
+      <section className="px-6 py-16 md:px-8 md:py-20">
+        <div className="mx-auto max-w-7xl rounded-3xl border border-cyan-500/30 bg-slate-900/70 p-8 shadow-2xl shadow-cyan-950/20 md:p-12">
+          <div className="grid gap-10 lg:grid-cols-[1fr_260px] lg:items-center">
+            <div>
+              <p className="mb-6 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-4 py-2 text-sm font-bold uppercase tracking-[0.24em] text-cyan-200">
+                CyberShield Academy Junior
+              </p>
+
+              <h1 className="max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+                Complete Middle School Cybersecurity Program
+              </h1>
+
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+                CyberShield Junior is a complete middle school cybersecurity
+                literacy track with twelve modules and seventy-two lessons.
+                Students build stronger judgment around privacy, scams, account
+                safety, safe browsing, online communication, misinformation,
+                devices, cyber defense, digital citizenship, and real-life cyber
+                safety planning.
+              </p>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <Link
+                  href="/junior/digital-life-and-online-identity"
+                  className="rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+                >
+                  Start Module 1
+                </Link>
+
+                <Link
+                  href="#junior-learning-path"
+                  className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+                >
+                  View All Modules
+                </Link>
+
+                <Link
+                  href="/lessons"
+                  className="rounded-xl border border-slate-700 px-6 py-3 font-semibold text-slate-100 transition hover:border-cyan-400 hover:text-cyan-200"
+                >
+                  Back to Learning Library
+                </Link>
+              </div>
+            </div>
+
+            <aside className="rounded-3xl border border-slate-800 bg-slate-950/70 p-6">
+              <h2 className="text-lg font-bold text-cyan-200">
+                Junior Track Scope
+              </h2>
+
+              <div className="mt-5 space-y-4 text-sm">
+                <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                  <span className="text-slate-300">Level</span>
+                  <span className="font-bold text-white">Middle School</span>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                  <span className="text-slate-300">Total modules</span>
+                  <span className="font-bold text-white">12</span>
+                </div>
+
+                <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                  <span className="text-slate-300">Lesson pages</span>
+                  <span className="font-bold text-white">72</span>
+                </div>
+
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-slate-300">Track status</span>
+                  <span className="font-bold text-emerald-300">Complete</span>
+                </div>
+              </div>
+            </aside>
+          </div>
         </div>
       </section>
 
@@ -512,12 +566,30 @@ export default function JuniorPage() {
             </Link>
 
             <Link
-              href="/"
+              href="/lessons"
               className="rounded-xl border border-slate-700 px-6 py-3 font-semibold hover:border-cyan-400 transition text-center"
             >
-              Back Home
+              Back to Learning Library
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="px-6 pb-16 md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+          <Link
+            href="/kids"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            ← Kids Track
+          </Link>
+
+          <Link
+            href="/high-school"
+            className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            High School Track →
+          </Link>
         </div>
       </section>
 

@@ -460,24 +460,20 @@ export default function HighSchoolBeginnerPage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-14 lg:px-8">
-        <div className="rounded-3xl border border-cyan-400/30 bg-cyan-400/10 p-6 md:p-8">
-          <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.22em] text-cyan-200">Build Note</p>
-              <h2 className="mt-3 text-2xl font-black text-white">Next page to build</h2>
-              <p className="mt-3 leading-7 text-slate-300">
-                After this track homepage works, the next build step is the reusable High School component setup, then the B1 module homepage.
-              </p>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              <Link href="/high-school/beginner/cybersecurity-foundations" className="rounded-2xl bg-cyan-400 px-5 py-4 text-center font-black text-slate-950 transition hover:bg-cyan-300">
-                Go to B1 Homepage
-              </Link>
-              <Link href="/high-school" className="rounded-2xl border border-slate-700 bg-slate-950/70 px-5 py-4 text-center font-black text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200">
-                Back to High School Hub
-              </Link>
-            </div>
-          </div>
+        <div className="flex flex-wrap justify-between gap-3 border-t border-slate-800 pt-8">
+          <Link
+            href="/high-school"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-300 hover:text-cyan-200"
+          >
+            ← Back to High School Hub
+          </Link>
+
+          <Link
+            href="/high-school/intermediate"
+            className="rounded-full border border-slate-700 bg-slate-900/70 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-emerald-300 hover:text-emerald-200"
+          >
+            Intermediate Track →
+          </Link>
         </div>
       </section>
 

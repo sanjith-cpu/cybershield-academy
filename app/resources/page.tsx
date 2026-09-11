@@ -98,29 +98,6 @@ const familyGuide = [
   },
 ];
 
-const teacherHandout = [
-  {
-    title: "Use fake examples only",
-    detail:
-      "Classroom examples should never ask students to enter real passwords, real account details, or real private information.",
-  },
-  {
-    title: "Connect lessons to student life",
-    detail:
-      "Use examples involving school accounts, games, group chats, social media, emails, and shared devices.",
-  },
-  {
-    title: "Focus on defensive habits",
-    detail:
-      "CyberShield lessons should teach prevention, privacy, reporting, safe browsing, and ethical decision-making.",
-  },
-  {
-    title: "End with reflection",
-    detail:
-      "Ask students what warning signs they noticed and what safer action they would take next time.",
-  },
-];
-
 const safeBrowsingSteps = [
   {
     title: "Check the address",
@@ -148,7 +125,7 @@ const reportingSteps = [
   {
     situation: "You clicked a suspicious link",
     response:
-      "Stop using the page. Do not enter passwords or personal information. Tell a trusted adult, teacher, or technology staff member.",
+      "Stop using the page. Do not enter passwords or personal information. Tell a trusted adult or appropriate technology support person.",
   },
   {
     situation: "You shared a password by mistake",
@@ -158,22 +135,22 @@ const reportingSteps = [
   {
     situation: "Someone asks for a login code",
     response:
-      "Do not share the code. Login codes are private. Report the message to a trusted adult or staff member.",
+      "Do not share the code. Login codes are private. Report the message to a trusted adult or appropriate support person.",
   },
   {
     situation: "A device shows a scary warning",
     response:
-      "Do not download unknown tools from pop-ups. Ask a trusted adult or technology staff member to check it safely.",
+      "Do not download unknown tools from pop-ups. Ask a trusted adult or technology support person to check it safely.",
   },
   {
     situation: "Someone is pressuring you online",
     response:
-      "Do not keep it secret. Stop replying, save evidence if needed, and tell a trusted adult or school staff member.",
+      "Do not keep it secret. Stop replying, save evidence if needed, and tell a trusted adult.",
   },
   {
     situation: "You see someone else’s account open",
     response:
-      "Do not look through it. Tell the person, a teacher, or technology staff so the account can be protected.",
+      "Do not look through it. Tell the account owner or an appropriate trusted adult so the account can be protected.",
   },
 ];
 
@@ -181,7 +158,7 @@ const resourceSections = [
   {
     title: "For Students",
     detail:
-      "Use the checklist, glossary, and activities to build safer online habits one topic at a time.",
+      "Use the checklist, glossary, lessons, and activities to build safer online habits one topic at a time.",
     href: "/lessons",
     label: "Open Lessons",
   },
@@ -193,11 +170,11 @@ const resourceSections = [
     label: "Safety & Privacy",
   },
   {
-    title: "For Teachers",
+    title: "Practice & Review",
     detail:
-      "Use the teacher handout ideas for classroom warm-ups, outreach sessions, and student discussions.",
-    href: "/teacher-toolkit",
-    label: "Teacher Toolkit",
+      "Use CyberShield activities to reinforce lessons with safe scenarios, quizzes, reflections, and practice labs.",
+    href: "/activities",
+    label: "Open Activities",
   },
 ];
 
@@ -227,14 +204,15 @@ const quickLinks = [
     href: "/password-lab",
   },
   {
-    label: "Worksheets",
-    href: "/worksheets",
+    label: "Safe Browsing",
+    href: "/safe-browsing",
   },
   {
-    label: "Teacher Toolkit",
-    href: "/teacher-toolkit",
+    label: "Digital Footprint",
+    href: "/digital-footprint",
   },
 ];
+
 const trustedExternalResources = [
   {
     title: "CISA Secure Our World",
@@ -252,7 +230,7 @@ const trustedExternalResources = [
   },
   {
     title: "NIST Cybersecurity & Privacy",
-    audience: "Teachers and advanced learners",
+    audience: "Advanced learners",
     detail:
       "Cybersecurity and privacy standards, guidelines, best practices, and resources from the National Institute of Standards and Technology.",
     href: "https://www.nist.gov/cybersecurity-and-privacy",
@@ -272,54 +250,55 @@ export default function ResourcesPage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            CyberShield Resources
-          </p>
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              CyberShield Resources
+            </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            A cybersecurity resource hub for students, families, and teachers.
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              Cybersecurity resources for safer online choices.
+            </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Use this page to review beginner-friendly cybersecurity vocabulary,
-            student safety habits, family discussion guides, teacher handout
-            ideas, safe browsing reminders, and what to do when something
-            suspicious happens online.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              Use this resource hub to review beginner-friendly cybersecurity
+              vocabulary, student safety habits, family guidance, safe browsing
+              reminders, trusted help steps, and official learning resources.
+            </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/lessons"
-              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              View Lessons
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/lessons"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                View Lessons
+              </Link>
 
-            <Link
-              href="/practice-lab"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Practice Lab
-            </Link>
+              <Link
+                href="/activities"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Explore Activities
+              </Link>
 
-            <Link
-              href="/worksheets"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Worksheets
-            </Link>
-          </div>
+              <Link
+                href="/safety"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Safety & Privacy
+              </Link>
+            </div>
 
-          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
-            Safety reminder: CyberShield Academy is for safe, ethical,
-            defensive learning only. Do not use real passwords, private
-            information, real suspicious links, or unauthorized systems during
-            practice.
+            <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+              Safety reminder: CyberShield Academy is for safe, ethical,
+              defensive learning only. Do not use real passwords, private
+              information, real suspicious links, or unauthorized systems during
+              practice.
+            </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-6 md:grid-cols-3">
             {resourceSections.map((section) => (
               <Link
@@ -380,8 +359,8 @@ export default function ResourcesPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Students can use this checklist before clicking, posting,
-              downloading, replying, or sharing information online.
+              Use this checklist before clicking, posting, downloading, replying,
+              or sharing information online.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -398,57 +377,30 @@ export default function ResourcesPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
-              <h2 className="text-3xl font-bold text-cyan-200">
-                Family Online Safety Guide
-              </h2>
+          <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
+            <h2 className="text-3xl font-bold text-cyan-200">
+              Family Online Safety Guide
+            </h2>
 
-              <p className="mt-3 leading-7 text-slate-300">
-                Families can use these ideas to build safer habits at home and
-                make it easier for students to ask for help.
-              </p>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Families can use these ideas to build safer habits at home and
+              make it easier for students to ask for help when something goes
+              wrong online.
+            </p>
 
-              <div className="mt-6 grid gap-4">
-                {familyGuide.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 p-5"
-                  >
-                    <h3 className="font-bold text-cyan-100">{item.title}</h3>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {familyGuide.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-2xl border border-cyan-500/20 bg-slate-950/70 p-5"
+                >
+                  <h3 className="font-bold text-cyan-100">{item.title}</h3>
 
-                    <p className="mt-2 text-sm leading-6 text-slate-300">
-                      {item.detail}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-              <h2 className="text-3xl font-bold text-white">
-                Teacher Handout Sections
-              </h2>
-
-              <p className="mt-3 leading-7 text-slate-300">
-                Teachers, club leaders, and outreach volunteers can use these
-                reminders when presenting CyberShield activities.
-              </p>
-
-              <div className="mt-6 grid gap-4">
-                {teacherHandout.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5"
-                  >
-                    <h3 className="font-bold text-cyan-200">{item.title}</h3>
-
-                    <p className="mt-2 text-sm leading-6 text-slate-300">
-                      {item.detail}
-                    </p>
-                  </div>
-                ))}
-              </div>
+                  <p className="mt-2 text-sm leading-6 text-slate-300">
+                    {item.detail}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -461,7 +413,7 @@ export default function ResourcesPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
               Before clicking links, downloading files, or entering information,
-              students should slow down and check for warning signs.
+              slow down and check for warning signs.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -498,8 +450,8 @@ export default function ResourcesPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-yellow-50/90">
               Mistakes can happen. The safest response is to stop, avoid making
-              the problem worse, and ask a trusted adult, teacher, or school
-              technology staff member for help.
+              the problem worse, and ask a trusted adult or appropriate support
+              person for help.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -521,17 +473,16 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-                <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="rounded-3xl border border-emerald-500/30 bg-emerald-950/20 p-8">
             <h2 className="text-3xl font-bold text-emerald-100">
               Trusted External Resources
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-emerald-50/90">
-              These official resources can help students, families, and
-              teachers continue learning beyond CyberShield Academy. They are
-              provided for education and awareness, not for emergency or
-              professional advice.
+              These official resources can help students and families continue
+              learning beyond CyberShield Academy. They are provided for
+              education and awareness, not for emergency or professional advice.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -563,8 +514,8 @@ export default function ResourcesPage() {
             </div>
           </div>
         </section>
-	
-	<section className="mx-auto max-w-6xl px-6 pb-16">
+
+        <section className="mx-auto max-w-6xl px-6 pb-16">
           <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
             <h2 className="text-3xl font-bold text-white">
               Resource Transparency
@@ -598,8 +549,8 @@ export default function ResourcesPage() {
               <div className="rounded-2xl border border-slate-800 bg-slate-950/70 p-5">
                 <h3 className="font-bold text-cyan-200">Ask for Help</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Students are encouraged to report concerns to trusted adults,
-                  teachers, or technology staff.
+                  Students are encouraged to report concerns to trusted adults or
+                  appropriate technology support.
                 </p>
               </div>
             </div>
@@ -613,9 +564,8 @@ export default function ResourcesPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              After reviewing the resources, students can practice with
-              interactive activities, lessons, worksheets, and classroom-friendly
-              tools.
+              After reviewing the resources, continue with interactive
+              activities, lessons, scenarios, quizzes, and reflection tools.
             </p>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
