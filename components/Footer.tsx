@@ -5,6 +5,10 @@ const footerSections = [
     title: "Learn",
     links: [
       {
+        label: "Cyber Safety Starter",
+        href: "/cyber-safety-starter",
+      },
+      {
         label: "Kids",
         href: "/kids",
       },
@@ -20,18 +24,10 @@ const footerSections = [
         label: "Lessons",
         href: "/lessons",
       },
-      {
-        label: "Certificates",
-        href: "/certificates",
-      },
-      {
-        label: "Certification Guide",
-        href: "/certification-guide",
-      },
     ],
   },
   {
-    title: "Activities",
+    title: "Practice",
     links: [
       {
         label: "Activities",
@@ -72,64 +68,31 @@ const footerSections = [
     ],
   },
   {
-    title: "Project",
-    links: [
-      {
-        label: "About",
-        href: "/about",
-      },
-      {
-        label: "Project Story",
-        href: "/project-story",
-      },
-      {
-        label: "Build Log",
-        href: "/build-log",
-      },
-      {
-        label: "Careers",
-        href: "/careers",
-      },
-      {
-        label: "Roadmap",
-        href: "/roadmap",
-      },
-      {
-        label: "Outreach",
-        href: "/outreach",
-      },
-      {
-        label: "Impact",
-        href: "/impact",
-      },
-    ],
-  },
-  {
-    title: "Support",
+    title: "Explore",
     links: [
       {
         label: "Resources",
         href: "/resources",
       },
       {
-        label: "Teacher Toolkit",
-        href: "/teacher-toolkit",
+        label: "Careers",
+        href: "/careers",
       },
       {
-        label: "Worksheets",
-        href: "/worksheets",
+        label: "Certification Guide",
+        href: "/certification-guide",
       },
       {
-        label: "Presentation Outlines",
-        href: "/presentation-outlines",
+        label: "Certificates",
+        href: "/certificates",
       },
       {
         label: "Safety & Privacy",
         href: "/safety",
       },
       {
-        label: "Feedback",
-        href: "/feedback",
+        label: "About",
+        href: "/about",
       },
     ],
   },
@@ -139,25 +102,25 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 text-white">
       <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="grid gap-10 lg:grid-cols-[1.5fr_2fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.2fr_2fr]">
           <div>
             <Link href="/" className="text-2xl font-bold text-cyan-300">
               CyberShield Academy
             </Link>
 
             <p className="mt-4 max-w-md text-sm leading-6 text-slate-400">
-              A student-built cybersecurity literacy platform that teaches
-              online safety, scam awareness, password habits, privacy,
-              responsible technology use, and defensive cybersecurity.
+              A student-built cybersecurity learning platform for online safety,
+              scam awareness, password security, privacy, responsible technology
+              use, and ethical defensive cybersecurity.
             </p>
 
             <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-4 text-sm leading-6 text-yellow-100">
-              CyberShield Academy is for safe, ethical, and defensive learning
-              only.
+              Learn safely. Use fictional examples, protect private information,
+              and keep cybersecurity practice ethical and defensive.
             </div>
           </div>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {footerSections.map((section) => (
               <div key={section.title}>
                 <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-300">
@@ -181,8 +144,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-slate-800 pt-6 text-sm text-slate-500">
-          © 2026 CyberShield Academy. Built for cybersecurity education,
-          outreach, and safer online habits.
+          © 2026 CyberShield Academy. Built for cybersecurity education and safer
+          online habits.
         </div>
       </div>
     </footer>

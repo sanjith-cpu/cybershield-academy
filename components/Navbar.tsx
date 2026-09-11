@@ -8,46 +8,47 @@ const navLinks = [
   {
     label: "Home",
     href: "/",
+    activePrefixes: ["/"],
   },
   {
-    label: "Lessons",
+    label: "Learn",
     href: "/lessons",
+    activePrefixes: ["/lessons", "/kids", "/junior", "/high-school"],
   },
   {
     label: "Activities",
     href: "/activities",
-  },
-  {
-    label: "Resources",
-    href: "/resources",
+    activePrefixes: [
+      "/activities",
+      "/quiz",
+      "/spot-the-scam",
+      "/password-lab",
+      "/safe-browsing",
+      "/digital-footprint",
+      "/cyber-ethics",
+      "/scenario-room",
+      "/practice-lab",
+    ],
   },
   {
     label: "Cyber Safety Starter",
     href: "/cyber-safety-starter",
+    activePrefixes: ["/cyber-safety-starter"],
   },
   {
-    label: "Certificates",
-    href: "/certificates",
-  },
-  {
-    label: "Outreach",
-    href: "/outreach",
-  },
-  {
-    label: "Impact",
-    href: "/impact",
-  },
-  {
-    label: "Feedback",
-    href: "/feedback",
-  },
-  {
-    label: "Roadmap",
-    href: "/roadmap",
+    label: "Resources",
+    href: "/resources",
+    activePrefixes: [
+      "/resources",
+      "/careers",
+      "/certification-guide",
+      "/certificates",
+    ],
   },
   {
     label: "About",
     href: "/about",
+    activePrefixes: ["/about", "/project-story"],
   },
 ];
 
@@ -55,17 +56,22 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  function isActiveLink(href: string) {
-    if (href === "/") {
+  function isActiveLink(link: (typeof navLinks)[number]) {
+    if (link.href === "/") {
       return pathname === "/";
     }
 
-    return pathname.startsWith(href);
+    return link.activePrefixes.some(
+      (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
+    );
   }
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 text-white backdrop-blur">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <nav
+        className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
+        aria-label="Primary navigation"
+      >
         <Link
           href="/"
           className="text-lg font-bold tracking-tight text-cyan-300 transition hover:text-cyan-200"
@@ -76,12 +82,13 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-2 lg:flex">
           {navLinks.map((link) => {
-            const active = isActiveLink(link.href);
+            const active = isActiveLink(link);
 
             return (
               <Link
                 key={link.href}
                 href={link.href}
+                aria-current={active ? "page" : undefined}
                 className={`rounded-lg px-3 py-2 text-sm font-medium transition ${
                   active
                     ? "bg-cyan-400 text-slate-950"
@@ -97,24 +104,30 @@ export default function Navbar() {
         <button
           type="button"
           onClick={() => setMenuOpen((current) => !current)}
-          className="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200 lg:hidden"
+          className="rounded-xl border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-300/60 lg:hidden"
           aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           {menuOpen ? "Close" : "Menu"}
         </button>
       </nav>
 
       {menuOpen && (
-        <div className="border-t border-slate-800 bg-slate-950 px-6 pb-5 lg:hidden">
+        <div
+          id="mobile-navigation"
+          className="border-t border-slate-800 bg-slate-950 px-6 pb-5 lg:hidden"
+        >
           <div className="mx-auto grid max-w-7xl gap-2 pt-4 sm:grid-cols-2">
             {navLinks.map((link) => {
-              const active = isActiveLink(link.href);
+              const active = isActiveLink(link);
 
               return (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
+                  aria-current={active ? "page" : undefined}
                   className={`rounded-xl px-4 py-3 text-sm font-semibold transition ${
                     active
                       ? "bg-cyan-400 text-slate-950"

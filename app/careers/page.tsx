@@ -92,7 +92,7 @@ const studentSteps = [
   {
     title: "Build small projects",
     detail:
-      "Create educational pages, quizzes, checklists, reflections, or classroom activities that help others learn safely.",
+      "Create educational pages, quizzes, checklists, reflections, or other safe projects that demonstrate what you know.",
   },
   {
     title: "Practice communication",
@@ -107,7 +107,7 @@ const studentSteps = [
   {
     title: "Stay ethical",
     detail:
-      "Only practice in safe, legal, approved environments and focus on protecting people.",
+      "Only practice in safe, legal, approved environments and focus on protecting people and systems.",
   },
 ];
 
@@ -116,7 +116,7 @@ const beginnerProjects = [
   "Build a password safety lesson using fake examples",
   "Make a digital footprint reflection activity",
   "Create a safe browsing challenge",
-  "Prepare a classroom cybersecurity presentation",
+  "Build a cybersecurity vocabulary guide",
   "Write a guide about reporting suspicious messages safely",
 ];
 
@@ -167,16 +167,16 @@ const relatedLinks = [
     href: "/resources",
   },
   {
-    label: "Teacher Toolkit",
-    href: "/teacher-toolkit",
+    label: "Certification Guide",
+    href: "/certification-guide",
   },
   {
-    label: "Outreach",
-    href: "/outreach",
+    label: "Activities",
+    href: "/activities",
   },
   {
-    label: "Roadmap",
-    href: "/roadmap",
+    label: "Safety & Privacy",
+    href: "/safety",
   },
 ];
 
@@ -186,29 +186,55 @@ export default function CareersPage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Cybersecurity Careers
-          </p>
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Cybersecurity Careers
+            </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            Explore cybersecurity career paths.
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              Explore where cybersecurity skills can lead.
+            </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            Cybersecurity includes many different careers. Some roles are very
-            technical, some focus on investigation, some focus on teaching, and
-            some focus on helping organizations make safer decisions.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              Cybersecurity includes many different careers. Some roles are
+              highly technical, some focus on investigation, some focus on
+              communication, and others help organizations design safer systems
+              and make better security decisions.
+            </p>
 
-          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
-            Career reminder: Cybersecurity careers require ethics, permission,
-            responsibility, and defensive thinking. CyberShield Academy focuses
-            on safe learning, not harmful hacking.
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/high-school"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Explore High School Track
+              </Link>
+
+              <Link
+                href="/certification-guide"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Certification Guide
+              </Link>
+
+              <Link
+                href="/resources"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Student Resources
+              </Link>
+            </div>
+
+            <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+              Career reminder: cybersecurity careers require ethics, permission,
+              responsibility, and defensive thinking. CyberShield Academy
+              focuses on safe learning, not harmful or unauthorized activity.
+            </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {careerPaths.map((career) => (
               <div
@@ -255,9 +281,9 @@ export default function CareersPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Students do not need to know their exact career right away. A
-              strong start is learning safe habits, building helpful projects,
-              and documenting progress honestly.
+              You do not need to choose an exact cybersecurity career right
+              away. Start by building strong fundamentals, practicing safely,
+              creating projects, and learning how to explain your work.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
@@ -285,8 +311,8 @@ export default function CareersPage() {
               </h2>
 
               <p className="mt-3 leading-7 text-slate-300">
-                These project ideas are safe, educational, and useful for
-                students who want to explore cybersecurity.
+                These project ideas are safe ways to explore cybersecurity,
+                practice communication, and build something you can explain.
               </p>
 
               <div className="mt-6 grid gap-3">
@@ -308,7 +334,7 @@ export default function CareersPage() {
 
               <p className="mt-3 leading-7 text-slate-300">
                 Cybersecurity careers combine technical learning with ethics,
-                communication, documentation, and responsibility.
+                communication, documentation, judgment, and responsibility.
               </p>
 
               <div className="mt-6 grid gap-4">
@@ -338,8 +364,8 @@ export default function CareersPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Career exploration connects to ethics, classroom lessons, student
-              projects, outreach, and the high school learning track.
+              Continue with the High School track, cyber ethics, certifications,
+              activities, resources, or CyberShield safety guidance.
             </p>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
@@ -349,7 +375,7 @@ export default function CareersPage() {
                   href={link.href}
                   className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-slate-900"
                 >
-                  {link.label}
+                  {link.label} →
                 </Link>
               ))}
             </div>

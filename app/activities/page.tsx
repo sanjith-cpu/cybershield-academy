@@ -7,7 +7,7 @@ const activities = [
     title: "Scenario Room",
     type: "Scenario Practice",
     description:
-      "Choose the safest response in fake cybersecurity situations about scams, privacy, passwords, safe browsing, digital footprint, and ethics.",
+      "Choose the safest response in fictional cybersecurity situations about scams, privacy, passwords, safe browsing, digital footprint, and ethics.",
     skills: ["Decision Making", "Reporting", "Ethics", "Safe Choices"],
     href: "/scenario-room",
   },
@@ -15,7 +15,7 @@ const activities = [
     title: "Practice Lab",
     type: "Skill Stations",
     description:
-      "Move through six safe practice stations connected to CyberShield’s main lessons and online safety habits.",
+      "Move through safe practice stations connected to CyberShield’s main lessons and online safety habits.",
     skills: ["Practice", "Reflection", "Lesson Review", "Safe Habits"],
     href: "/practice-lab",
   },
@@ -74,35 +74,26 @@ const activityPath = [
     step: "1",
     title: "Pick a topic",
     detail:
-      "Start with a skill students need to practice, such as scam awareness, passwords, privacy, or safe browsing.",
+      "Choose a skill to practice, such as scam awareness, passwords, privacy, safe browsing, or cyber ethics.",
   },
   {
     step: "2",
-    title: "Use fake examples",
+    title: "Use safe examples",
     detail:
-      "Every activity should use made-up messages, fake passwords, and safe practice situations only.",
+      "Every activity uses fictional messages, fake passwords, or clearly safe practice situations.",
   },
   {
     step: "3",
-    title: "Discuss the choice",
+    title: "Make a decision",
     detail:
-      "After each activity, students should explain the warning signs they noticed and the safer action they would take.",
+      "Look for warning signs, compare the choices, and decide which response is safest.",
   },
   {
     step: "4",
-    title: "Connect to real habits",
+    title: "Reflect",
     detail:
-      "End by connecting the activity to everyday decisions on school accounts, games, apps, emails, and group chats.",
+      "Connect the activity to safer everyday decisions without testing anything risky in the real world.",
   },
-];
-
-const classroomUses = [
-  "Use Scenario Room as a 10–15 minute discussion activity.",
-  "Use Practice Lab as a station-based review activity.",
-  "Use one activity as a classroom warm-up.",
-  "Pair an activity with a short lesson from the Learning Library.",
-  "Have students explain the red flags or safety habit after each activity.",
-  "Use activities during school outreach sessions or cybersecurity club meetings.",
 ];
 
 const lessonPairings = [
@@ -139,12 +130,12 @@ const lessonPairings = [
 ];
 
 const safetyReminders = [
-  "Use fake examples only.",
+  "Use fictional or clearly safe examples only.",
   "Do not enter real passwords.",
   "Do not click real suspicious links to test them.",
-  "Do not share private personal information in reflection answers.",
+  "Do not share private personal information in activity responses.",
   "Do not try to access accounts, devices, networks, files, or private information without permission.",
-  "Ask a trusted adult, teacher, or school technology staff member if something online feels suspicious.",
+  "Use activities to learn safer decisions, not to experiment on real systems or people.",
 ];
 
 const quickLinks = [
@@ -157,20 +148,12 @@ const quickLinks = [
     href: "/resources",
   },
   {
-    label: "Teacher Toolkit",
-    href: "/teacher-toolkit",
-  },
-  {
-    label: "Worksheets",
-    href: "/worksheets",
-  },
-  {
-    label: "Presentation Outlines",
-    href: "/presentation-outlines",
-  },
-  {
     label: "Safety & Privacy",
     href: "/safety",
+  },
+  {
+    label: "About CyberShield",
+    href: "/about",
   },
 ];
 
@@ -180,53 +163,55 @@ export default function ActivitiesPage() {
       <Navbar />
 
       <main className="min-h-screen bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-6 py-16">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            CyberShield Activities
-          </p>
+        <section className="border-b border-slate-800 bg-[radial-gradient(circle_at_top_left,_rgba(34,211,238,0.18),_transparent_34%),radial-gradient(circle_at_top_right,_rgba(168,85,247,0.12),_transparent_30%),linear-gradient(135deg,_#020617_0%,_#0f172a_55%,_#111827_100%)]">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              CyberShield Activities
+            </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
-            Safe cybersecurity practice for students and classrooms.
-          </h1>
+            <h1 className="max-w-4xl text-4xl font-bold tracking-tight md:text-6xl">
+              Practice cybersecurity skills in a safe environment.
+            </h1>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            CyberShield activities help students practice online safety, scam
-            awareness, password security, safe browsing, privacy, digital
-            citizenship, cyber ethics, and defensive cybersecurity using
-            age-appropriate fake examples.
-          </p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
+              CyberShield activities help students practice online safety, scam
+              awareness, password security, safe browsing, privacy, digital
+              citizenship, cyber ethics, and defensive cybersecurity using
+              fictional examples.
+            </p>
 
-          <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="/scenario-room"
-              className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
-            >
-              Start Scenario Room
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/scenario-room"
+                className="rounded-xl bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                Start Scenario Room
+              </Link>
 
-            <Link
-              href="/practice-lab"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Open Practice Lab
-            </Link>
+              <Link
+                href="/practice-lab"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Open Practice Lab
+              </Link>
 
-            <Link
-              href="/lessons"
-              className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
-            >
-              Review Lessons
-            </Link>
-          </div>
+              <Link
+                href="/lessons"
+                className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Review Lessons
+              </Link>
+            </div>
 
-          <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
-            Safety reminder: These activities are for learning only. Do not use
-            real passwords, private information, real suspicious links, or
-            unauthorized systems.
+            <div className="mt-6 rounded-2xl border border-yellow-500/30 bg-yellow-950/20 p-5 text-sm leading-6 text-yellow-100">
+              Safety reminder: these activities are for learning only. Do not use
+              real passwords, private information, real suspicious links, or
+              unauthorized systems.
+            </div>
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-6 pb-16">
+        <section className="mx-auto max-w-6xl px-6 py-16">
           <div className="grid gap-4 md:grid-cols-3">
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
               <p className="text-sm font-semibold text-slate-400">
@@ -234,8 +219,8 @@ export default function ActivitiesPage() {
               </p>
               <p className="mt-3 text-4xl font-bold text-cyan-200">8</p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Activities connected to lessons, classroom practice, and safe
-                decision-making.
+                Eight focused activities for cybersecurity review, reflection,
+                and safer decision-making.
               </p>
             </div>
 
@@ -246,18 +231,18 @@ export default function ActivitiesPage() {
               <p className="mt-3 text-4xl font-bold text-cyan-200">Fake Only</p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
                 Practice uses made-up examples instead of real accounts,
-                passwords, or suspicious links.
+                passwords, private messages, or suspicious links.
               </p>
             </div>
 
             <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6">
               <p className="text-sm font-semibold text-slate-400">
-                Classroom Use
+                Learning Style
               </p>
-              <p className="mt-3 text-4xl font-bold text-cyan-200">Flexible</p>
+              <p className="mt-3 text-4xl font-bold text-cyan-200">Interactive</p>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Activities can be used as warm-ups, discussions, stations,
-                outreach demos, or lesson review.
+                Use scenarios, quizzes, labs, reflections, and decision-making
+                activities to reinforce what you learn.
               </p>
             </div>
           </div>
@@ -270,9 +255,9 @@ export default function ActivitiesPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Each activity focuses on a different cybersecurity habit. Students
-              should practice safely, explain their thinking, and connect each
-              choice to real online behavior.
+              Each activity focuses on a different cybersecurity habit. Practice
+              safely, explain your thinking, and connect each choice to safer
+              online behavior.
             </p>
 
             <div className="mt-6 grid gap-6 md:grid-cols-2">
@@ -323,8 +308,8 @@ export default function ActivitiesPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              This flow helps teachers, club leaders, and outreach volunteers
-              turn activities into short learning moments.
+              Use this simple flow whenever you work through a CyberShield
+              activity.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
@@ -349,53 +334,29 @@ export default function ActivitiesPage() {
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-16">
-          <div className="grid gap-6 lg:grid-cols-2">
-            <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
-              <h2 className="text-3xl font-bold text-white">
-                Pair Activities With Lessons
-              </h2>
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-8">
+            <h2 className="text-3xl font-bold text-white">
+              Pair Activities With Lessons
+            </h2>
 
-              <p className="mt-3 leading-7 text-slate-300">
-                Activities work best when students first learn the topic, then
-                practice it with fake examples.
-              </p>
+            <p className="mt-3 max-w-3xl leading-7 text-slate-300">
+              Learn the concept first, then use the matching activity to practice
+              it with safe examples.
+            </p>
 
-              <div className="mt-6 grid gap-3">
-                {lessonPairings.map((pairing) => (
-                  <Link
-                    key={`${pairing.activity}-${pairing.lesson}`}
-                    href={pairing.href}
-                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300 transition hover:border-cyan-300 hover:bg-slate-900"
-                  >
-                    <span className="font-semibold text-cyan-200">
-                      {pairing.activity}
-                    </span>{" "}
-                    → {pairing.lesson}
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-3xl border border-cyan-500/30 bg-cyan-950/30 p-8">
-              <h2 className="text-3xl font-bold text-cyan-200">
-                Classroom Use Ideas
-              </h2>
-
-              <p className="mt-3 leading-7 text-slate-300">
-                These activities can support lessons, school outreach,
-                cybersecurity clubs, and student discussions.
-              </p>
-
-              <div className="mt-6 grid gap-3">
-                {classroomUses.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+            <div className="mt-6 grid gap-3 md:grid-cols-2">
+              {lessonPairings.map((pairing) => (
+                <Link
+                  key={`${pairing.activity}-${pairing.lesson}`}
+                  href={pairing.href}
+                  className="rounded-xl border border-slate-800 bg-slate-950/70 p-4 text-sm leading-6 text-slate-300 transition hover:border-cyan-300 hover:bg-slate-900"
+                >
+                  <span className="font-semibold text-cyan-200">
+                    {pairing.activity}
+                  </span>{" "}
+                  → {pairing.lesson}
+                </Link>
+              ))}
             </div>
           </div>
         </section>
@@ -408,7 +369,7 @@ export default function ActivitiesPage() {
 
             <p className="mt-3 max-w-3xl leading-7 text-yellow-50/90">
               CyberShield activities should always stay safe, defensive,
-              ethical, and privacy-aware.
+              ethical, privacy-aware, and permission-based.
             </p>
 
             <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -431,11 +392,11 @@ export default function ActivitiesPage() {
             </h2>
 
             <p className="mt-3 max-w-3xl leading-7 text-slate-300">
-              Activities work best when students also review lessons, resources,
-              worksheets, and safety reminders.
+              Review lessons, student resources, safety guidance, or information
+              about CyberShield Academy after completing an activity.
             </p>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {quickLinks.map((link) => (
                 <Link
                   key={link.href}
