@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -62,8 +62,8 @@ export default function SafeBrowsingLessonPage() {
               <h2 className="text-xl font-bold text-cyan-200">Key Skill</h2>
 
               <p className="mt-4 text-sm leading-6 text-slate-300">
-                Before clicking, pause and ask: “Do I know this site, does the
-                link look right, and is this action necessary?”
+                Before clicking, pause and ask: â€œDo I know this site, does the
+                link look right, and is this action necessary?â€
               </p>
             </div>
 
@@ -238,8 +238,8 @@ export default function SafeBrowsingLessonPage() {
                 </p>
 
                 <p className="mt-4 rounded-xl border border-slate-800 bg-slate-900 p-4 text-sm leading-6 text-slate-300">
-                  A website says, “Your browser is outdated. Download this
-                  required security update now,” but the page is not from the
+                  A website says, â€œYour browser is outdated. Download this
+                  required security update now,â€ but the page is not from the
                   real browser company.
                 </p>
 
@@ -258,7 +258,7 @@ export default function SafeBrowsingLessonPage() {
 
                 <p className="mt-4 rounded-xl border border-slate-800 bg-slate-900 p-4 text-sm leading-6 text-slate-300">
                   A student searches for homework help and sees a page with ten
-                  different “Download Answer Key” buttons.
+                  different â€œDownload Answer Keyâ€ buttons.
                 </p>
 
                 <h3 className="mt-5 font-bold text-red-200">Warning Signs</h3>
@@ -343,10 +343,10 @@ export default function SafeBrowsingLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
               >
-                Open Worksheets
+                More Activities
               </Link>
             </div>
           </div>
@@ -401,10 +401,10 @@ export default function SafeBrowsingLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-2xl border border-yellow-500/20 bg-slate-950/70 p-5 transition hover:border-cyan-300"
               >
-                <h3 className="font-bold text-cyan-200">Worksheets</h3>
+                <h3 className="font-bold text-cyan-200">Activities</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
                   Use printable classroom activities.
                 </p>

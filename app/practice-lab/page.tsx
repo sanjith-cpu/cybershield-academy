@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -260,7 +260,7 @@ export default function PracticeLabPage() {
                     href={station.href}
                     className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
                   >
-                    Review Related Lesson →
+                    Review Related Lesson â†’
                   </Link>
                 </div>
               </div>
@@ -314,10 +314,10 @@ export default function PracticeLabPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/scenario-room"
                 className="rounded-xl border border-emerald-500/30 px-5 py-3 font-semibold text-emerald-50 transition hover:border-cyan-300 hover:text-cyan-200"
               >
-                Open Worksheets
+                Open Scenario Room
               </Link>
 
               <Link

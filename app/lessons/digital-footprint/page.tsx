@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -62,8 +62,8 @@ export default function DigitalFootprintLessonPage() {
               <h2 className="text-xl font-bold text-cyan-200">Key Skill</h2>
 
               <p className="mt-4 text-sm leading-6 text-slate-300">
-                Before posting, ask: “Would I be okay with a teacher, coach,
-                family member, college, or future employer seeing this later?”
+                Before posting, ask: â€œWould I be okay with a teacher, coach,
+                family member, college, or future employer seeing this later?â€
               </p>
             </div>
 
@@ -74,7 +74,7 @@ export default function DigitalFootprintLessonPage() {
 
               <p className="mt-4 text-sm leading-6 text-yellow-50/90">
                 Do not post private information, hurtful comments, screenshots,
-                or other people’s photos without permission.
+                or other peopleâ€™s photos without permission.
               </p>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default function DigitalFootprintLessonPage() {
                 <h3 className="mt-5 font-bold text-red-200">Concern</h3>
                 <p className="mt-3 text-sm leading-6 text-slate-300">
                   The comment can harm someone else and affect how others view
-                  the student’s judgment.
+                  the studentâ€™s judgment.
                 </p>
               </div>
 
@@ -323,10 +323,10 @@ export default function DigitalFootprintLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-xl border border-slate-700 px-5 py-3 font-semibold text-slate-100 transition hover:border-cyan-300 hover:text-cyan-200"
               >
-                Open Worksheets
+                More Activities
               </Link>
             </div>
           </div>
@@ -356,7 +356,7 @@ export default function DigitalFootprintLessonPage() {
             <p className="mt-4 leading-8 text-yellow-50/90">
               CyberShield Academy teaches safe, ethical, defensive online
               behavior. Do not post private information, do not target or harass
-              others, and do not share someone else’s information without
+              others, and do not share someone elseâ€™s information without
               permission.
             </p>
 
@@ -382,10 +382,10 @@ export default function DigitalFootprintLessonPage() {
               </Link>
 
               <Link
-                href="/worksheets"
+                href="/activities"
                 className="rounded-2xl border border-yellow-500/20 bg-slate-950/70 p-5 transition hover:border-cyan-300"
               >
-                <h3 className="font-bold text-cyan-200">Worksheets</h3>
+                <h3 className="font-bold text-cyan-200">Activities</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-300">
                   Use printable classroom activities.
                 </p>

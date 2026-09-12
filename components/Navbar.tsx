@@ -48,7 +48,7 @@ const navLinks = [
   {
     label: "About",
     href: "/about",
-    activePrefixes: ["/about", "/project-story"],
+    activePrefixes: ["/about"],
   },
 ];
 
