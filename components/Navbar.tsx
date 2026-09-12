@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -74,10 +75,19 @@ export default function Navbar() {
       >
         <Link
           href="/"
-          className="text-lg font-bold tracking-tight text-cyan-300 transition hover:text-cyan-200"
+          className="flex items-center gap-3 text-lg font-bold tracking-tight text-cyan-300 transition hover:text-cyan-200"
           onClick={() => setMenuOpen(false)}
         >
-          CyberShield Academy
+          <Image
+            src="/cybershield-logo.png"
+            alt="CyberShield Academy logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-lg object-contain"
+            priority
+          />
+
+          <span>CyberShield Academy</span>
         </Link>
 
         <div className="hidden items-center gap-2 lg:flex">
