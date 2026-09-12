@@ -807,7 +807,7 @@ export default function HighSchoolHubPage() {
               Practice Tests and Final Exams
             </h2>
             <p className="mt-3 text-sm leading-6 text-slate-400">
-              Every High School track ends with two 50-question practice tests and one 125-question final test. These are planned as scored assessments where answers and explanations stay hidden until submission.
+              Every High School track ends with two 50-question practice tests and one 125-question final test. These are scored assessments where answers and explanations stay hidden until submission.
             </p>
           </div>
 

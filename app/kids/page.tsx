@@ -513,7 +513,7 @@ export default function KidsPage() {
         <section className="border-t border-slate-800 px-8 py-16">
           <div className="mx-auto max-w-5xl text-center">
             <p className="mb-3 font-semibold text-cyan-300">
-              Current Build Status
+              Track Status
             </p>
 
             <h2 className="mb-6 text-3xl font-bold md:text-5xl">
