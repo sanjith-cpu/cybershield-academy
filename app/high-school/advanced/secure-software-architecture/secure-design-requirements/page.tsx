@@ -905,7 +905,7 @@ export default function SecureDesignRequirementsPage() {
 
         <Section
           eyebrow="Core Framework"
-          title="Goal â†’ Requirement â†’ Design â†’ Evidence"
+          title="Goal → Requirement → Design → Evidence"
         >
           <p className="leading-8">
             One of the most important architecture skills is keeping different

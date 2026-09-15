@@ -260,7 +260,7 @@ export default function PracticeLabPage() {
                     href={station.href}
                     className="inline-flex rounded-xl bg-cyan-400 px-5 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-300"
                   >
-                    Review Related Lesson â†’
+                    Review Related Lesson →
                   </Link>
                 </div>
               </div>

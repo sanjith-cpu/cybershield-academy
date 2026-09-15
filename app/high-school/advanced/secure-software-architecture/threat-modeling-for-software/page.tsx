@@ -1019,32 +1019,32 @@ export default function ThreatModelingForSoftwarePage() {
               <tbody>
                 {[
                   [
-                    "Browser â†’ Application",
+                    "Browser → Application",
                     "User session, requests, record references, submitted data",
                     "How is identity established? Which actions require authorization? What input is accepted? What errors are returned?",
                   ],
                   [
-                    "Application â†’ Authorization Service",
+                    "Application → Authorization Service",
                     "User identity, role, assignment, requested action, target reference",
                     "Which source is authoritative? What happens if the service is unavailable or data is stale?",
                   ],
                   [
-                    "Application â†’ Database",
+                    "Application → Database",
                     "Approved record queries and updates",
                     "Which data should be returned? Which service identity is used? How are privileged changes audited?",
                   ],
                   [
-                    "Application â†’ Scheduling Vendor",
+                    "Application → Scheduling Vendor",
                     "Approved appointment fields",
                     "Why is each field needed? Who approved the purpose? What if the vendor requests additional data?",
                   ],
                   [
-                    "Application â†’ Logging Platform",
+                    "Application → Logging Platform",
                     "Audit events and operational telemetry",
                     "Which fields are required? Which secrets or private values are forbidden? Who can access the logs?",
                   ],
                   [
-                    "Standard Workflow â†’ Privileged Workflow",
+                    "Standard Workflow → Privileged Workflow",
                     "Account recovery, role changes, broad exports, configuration actions",
                     "Which additional approval, authorization, logging, or separation-of-duty controls apply?",
                   ],

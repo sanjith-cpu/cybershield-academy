@@ -1548,7 +1548,7 @@ export default function SecurityInSoftwareLifecyclePage() {
 
           <p className="mt-4 leading-8">
             Design a fictional gate for the transition from
-            <strong className="text-white"> Validate â†’ Release</strong>. Your
+            <strong className="text-white"> Validate → Release</strong>. Your
             gate should include:
           </p>
 
