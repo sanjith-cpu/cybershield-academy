@@ -1,6 +1,7 @@
 ﻿import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LessonCompleteButton from "../../../components/LessonCompleteButton";
 
 export default function DigitalFootprintLessonPage() {
   return (
@@ -393,6 +394,9 @@ export default function DigitalFootprintLessonPage() {
             </div>
           </div>
         </section>
+	<div className="mx-auto max-w-5xl px-6 pb-10">
+  	<LessonCompleteButton lessonId="lessons/digital-footprint" />
+	</div>
       </main>
 
       <Footer />

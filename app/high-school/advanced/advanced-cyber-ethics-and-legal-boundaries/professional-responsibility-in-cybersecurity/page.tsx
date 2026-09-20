@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import {
   AnalyzeEvidenceCard,
   DefenderChecklist,
@@ -1217,6 +1218,9 @@ export default function ProfessionalResponsibilityInCybersecurityPage() {
       </div>
 
       <Footer />
+<div className="mx-auto max-w-5xl px-6 pb-10">
+  <LessonCompleteButton lessonId="A1.1" />
+</div>
     </main>
   );
 }
