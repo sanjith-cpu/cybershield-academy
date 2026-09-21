@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -452,6 +453,13 @@ export default function KidsKindWordsOnlinePage() {
             </div>
           </div>
         </section>
+      <div className="mx-auto max-w-5xl px-6 pb-10">
+
+        <LessonCompleteButton lessonId="kids/kind-and-safe-technology-use/kind-words-online" />
+
+      </div>
+
+
       </main>
 
       <Footer />

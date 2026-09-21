@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -598,6 +599,13 @@ export default function UsernamesProfilesAndFirstImpressionsPage() {
       </section>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="junior/digital-life-and-online-identity/usernames-profiles-and-first-impressions" />
+
+    </div>
+
+
     </main>
   );
 }

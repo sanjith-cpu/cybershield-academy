@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
@@ -369,6 +370,13 @@ export default function EvidenceIntegrityAndChainOfCustodyPage() {
         <section className="rounded-2xl border border-emerald-400/30 bg-emerald-400/10 p-6 text-emerald-50"><p className="text-xs font-semibold uppercase tracking-[0.25em] text-emerald-200">Lesson Complete</p><h2 className="mt-2 text-2xl font-black">Continue to Timeline Analysis Concepts</h2><p className="mt-3 max-w-3xl leading-7">A8.2 established how fictional evidence identity, provenance, custody, handling, corrections, and lifecycle are documented. A8.3 moves into chronology: how event time, receipt time, processing time, review time, timezone, delays, duplicates, conflicts, gaps, and source health change the story a timeline can responsibly tell.</p><div className="mt-6"><Navigation /></div></section>
       </div>
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/advanced/digital-forensics-concepts/evidence-integrity-and-chain-of-custody" />
+
+    </div>
+
+
     </main>
   );
 }

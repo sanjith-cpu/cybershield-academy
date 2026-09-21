@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
@@ -735,6 +736,13 @@ export default function FakeWebDefenseReviewLabPage() {
         <section className="rounded-2xl border border-slate-800 bg-slate-900/70 p-6"><p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Navigation</p><h2 className="mt-2 text-2xl font-bold text-white">Continue Module I16</h2><div className="mt-5"><Navigation /></div></section>
       </div>
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/intermediate/intermediate-defensive-labs/fake-web-defense-review-lab" />
+
+    </div>
+
+
     </main>
   );
 }

@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -596,6 +597,13 @@ export default function NetworkDiagramReviewLabPage() {
       </div>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/beginner/networking-basics/network-diagram-review-lab" />
+
+    </div>
+
+
     </main>
   );
 }

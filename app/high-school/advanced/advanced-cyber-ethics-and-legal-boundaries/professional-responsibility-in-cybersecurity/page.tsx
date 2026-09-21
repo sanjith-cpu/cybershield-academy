@@ -1219,7 +1219,7 @@ export default function ProfessionalResponsibilityInCybersecurityPage() {
 
       <Footer />
 <div className="mx-auto max-w-5xl px-6 pb-10">
-  <LessonCompleteButton lessonId="A1.1" />
+  <LessonCompleteButton lessonId="high-school/advanced/advanced-cyber-ethics-and-legal-boundaries/professional-responsibility-in-cybersecurity" />
 </div>
     </main>
   );

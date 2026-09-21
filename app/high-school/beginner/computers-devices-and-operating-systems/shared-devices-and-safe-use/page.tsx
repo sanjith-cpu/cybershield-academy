@@ -1,4 +1,5 @@
 "use client";
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
@@ -446,6 +447,13 @@ export default function SharedDevicesAndSafeUsePage() {
       </div>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/beginner/computers-devices-and-operating-systems/shared-devices-and-safe-use" />
+
+    </div>
+
+
     </main>
   );
 }

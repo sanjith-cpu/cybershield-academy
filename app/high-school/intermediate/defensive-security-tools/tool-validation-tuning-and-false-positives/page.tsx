@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
@@ -1717,6 +1718,13 @@ return (
     </div>
 
     <Footer />
+  <div className="mx-auto max-w-5xl px-6 pb-10">
+
+    <LessonCompleteButton lessonId="high-school/intermediate/defensive-security-tools/tool-validation-tuning-and-false-positives" />
+
+  </div>
+
+
   </main>
 );
 }

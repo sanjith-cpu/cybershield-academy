@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -640,6 +641,13 @@ export default function MisinformationAIAndOnlineContentTrustReviewPage() {
       </section>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="junior/misinformation-ai-and-online-content-trust/review" />
+
+    </div>
+
+
     </main>
   );
 }

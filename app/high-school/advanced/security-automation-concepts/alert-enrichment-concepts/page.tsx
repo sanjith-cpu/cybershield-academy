@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
@@ -1646,6 +1647,13 @@ export default function AlertEnrichmentConceptsPage() {
       </div>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/advanced/security-automation-concepts/alert-enrichment-concepts" />
+
+    </div>
+
+
     </main>
   );
 }

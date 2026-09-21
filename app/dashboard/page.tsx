@@ -101,6 +101,35 @@ export default async function DashboardPage() {
     "advanced",
   ];
 
+  // Find the user's most recently completed curriculum lesson.
+  // Route-based IDs contain "/" and can be opened directly.
+  const latestCurriculumLesson = progressRows.find((row) => {
+    return (
+      row.lesson_id.includes("/") &&
+      getTrackFromLessonId(row.lesson_id) !== null
+    );
+  });
+
+  const latestTrack = latestCurriculumLesson
+    ? getTrackFromLessonId(latestCurriculumLesson.lesson_id)
+    : null;
+
+  const continueHref = latestCurriculumLesson
+    ? `/${latestCurriculumLesson.lesson_id}`
+    : null;
+
+  const lessonName = latestCurriculumLesson
+    ? latestCurriculumLesson.lesson_id
+        .split("/")
+        .at(-1)
+        ?.split("-")
+        .map(
+          (word: string) =>
+            word.charAt(0).toUpperCase() + word.slice(1)
+        )
+        .join(" ")
+    : null;
+
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <div className="mx-auto max-w-6xl px-6 py-16">
@@ -115,7 +144,9 @@ export default async function DashboardPage() {
 
           <p className="mt-3 text-slate-400">
             Signed in as{" "}
-            <span className="font-medium text-slate-200">{email}</span>
+            <span className="font-medium text-slate-200">
+              {email}
+            </span>
           </p>
         </div>
 
@@ -161,6 +192,56 @@ export default async function DashboardPage() {
           </div>
         </div>
 
+        <section className="mt-8 rounded-2xl border border-cyan-400/20 bg-cyan-400/5 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
+            Continue Learning
+          </p>
+
+          {latestCurriculumLesson &&
+          latestTrack &&
+          continueHref ? (
+            <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="text-sm font-medium text-slate-400">
+                  Most recent lesson
+                </p>
+
+                <h2 className="mt-2 text-2xl font-bold text-white">
+                  {lessonName}
+                </h2>
+
+                <p className="mt-2 text-sm text-slate-400">
+                  {progressConfig[latestTrack].label}
+                </p>
+
+                <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-500">
+                  Return to your most recently completed lesson and use
+                  its Next Lesson navigation to continue your
+                  CyberShield learning journey.
+                </p>
+              </div>
+
+              <Link
+                href={continueHref}
+                className="inline-flex shrink-0 items-center justify-center rounded-xl bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+              >
+                Continue Learning
+              </Link>
+            </div>
+          ) : (
+            <div className="mt-4">
+              <h2 className="text-xl font-bold text-white">
+                Start your learning journey
+              </h2>
+
+              <p className="mt-2 text-sm leading-6 text-slate-400">
+                Complete a curriculum lesson while signed in and
+                CyberShield will remember where you left off.
+              </p>
+            </div>
+          )}
+        </section>
+
         <section className="mt-8 rounded-2xl border border-slate-800 bg-slate-900/70 p-6 sm:p-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">
@@ -172,8 +253,8 @@ export default async function DashboardPage() {
             </h2>
 
             <p className="mt-3 max-w-2xl leading-7 text-slate-400">
-              Progress is calculated from lessons you mark complete while
-              signed in to your CyberShield Academy account.
+              Progress is calculated from lessons you mark complete
+              while signed in to your CyberShield Academy account.
             </p>
           </div>
 
@@ -195,7 +276,8 @@ export default async function DashboardPage() {
                       </h3>
 
                       <p className="mt-1 text-sm text-slate-500">
-                        {completed} of {config.totalLessons} lessons completed
+                        {completed} of {config.totalLessons} lessons
+                        completed
                       </p>
                     </div>
 

@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
@@ -1732,6 +1733,13 @@ export default function ErrorHandlingLoggingAndSecretsPage() {
       </div>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/intermediate/secure-coding-basics/error-handling-logging-and-secrets" />
+
+    </div>
+
+
     </main>
   );
 }

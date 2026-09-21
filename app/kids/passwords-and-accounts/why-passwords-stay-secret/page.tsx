@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -453,6 +454,13 @@ export default function KidsWhyPasswordsStaySecretPage() {
             </div>
           </div>
         </section>
+      <div className="mx-auto max-w-5xl px-6 pb-10">
+
+        <LessonCompleteButton lessonId="kids/passwords-and-accounts/why-passwords-stay-secret" />
+
+      </div>
+
+
       </main>
 
       <Footer />

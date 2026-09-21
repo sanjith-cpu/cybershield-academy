@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -717,6 +718,13 @@ export default function PersonalDataVsPrivateDataPage() {
       </section>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="junior/privacy-and-personal-data/personal-data-vs-private-data" />
+
+    </div>
+
+
     </main>
   );
 }

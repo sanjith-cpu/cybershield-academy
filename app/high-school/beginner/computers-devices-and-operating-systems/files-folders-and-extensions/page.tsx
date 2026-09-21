@@ -1,3 +1,4 @@
+import LessonCompleteButton from "../../../../../components/LessonCompleteButton";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -719,6 +720,13 @@ export default function FilesFoldersExtensionsPage() {
       </div>
 
       <Footer />
+    <div className="mx-auto max-w-5xl px-6 pb-10">
+
+      <LessonCompleteButton lessonId="high-school/beginner/computers-devices-and-operating-systems/files-folders-and-extensions" />
+
+    </div>
+
+
     </main>
   );
 }
