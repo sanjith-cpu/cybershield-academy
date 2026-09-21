@@ -1,9 +1,10 @@
 ﻿"use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { createClient } from "../utils/supabase/client";
 
 const navLinks = [
   {
@@ -55,7 +56,33 @@ const navLinks = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean | null>(null);
+
   const pathname = usePathname();
+
+  useEffect(() => {
+    const supabase = createClient();
+
+    async function checkUser() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
+      setIsLoggedIn(Boolean(user));
+    }
+
+    checkUser();
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setIsLoggedIn(Boolean(session?.user));
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, []);
 
   function isActiveLink(link: (typeof navLinks)[number]) {
     if (link.href === "/") {
@@ -66,6 +93,15 @@ export default function Navbar() {
       (prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`)
     );
   }
+
+  const accountHref = isLoggedIn ? "/dashboard" : "/login";
+  const accountLabel = isLoggedIn ? "My Progress" : "Log In";
+
+  const accountActive =
+    pathname === "/dashboard" ||
+    pathname === "/login" ||
+    pathname === "/register" ||
+    pathname.startsWith("/forgot-password");
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95 text-white backdrop-blur">
@@ -109,6 +145,20 @@ export default function Navbar() {
               </Link>
             );
           })}
+
+          {isLoggedIn !== null && (
+            <Link
+              href={accountHref}
+              aria-current={accountActive ? "page" : undefined}
+              className={`ml-2 rounded-lg border px-4 py-2 text-sm font-semibold transition ${
+                accountActive
+                  ? "border-cyan-400 bg-cyan-400 text-slate-950"
+                  : "border-cyan-400/50 text-cyan-300 hover:border-cyan-300 hover:bg-cyan-400/10 hover:text-cyan-200"
+              }`}
+            >
+              {accountLabel}
+            </Link>
+          )}
         </div>
 
         <button
@@ -148,6 +198,21 @@ export default function Navbar() {
                 </Link>
               );
             })}
+
+            {isLoggedIn !== null && (
+              <Link
+                href={accountHref}
+                onClick={() => setMenuOpen(false)}
+                aria-current={accountActive ? "page" : undefined}
+                className={`rounded-xl border px-4 py-3 text-sm font-semibold transition ${
+                  accountActive
+                    ? "border-cyan-400 bg-cyan-400 text-slate-950"
+                    : "border-cyan-400/40 bg-cyan-400/5 text-cyan-300 hover:border-cyan-300 hover:bg-cyan-400/10"
+                }`}
+              >
+                {accountLabel}
+              </Link>
+            )}
           </div>
         </div>
       )}
