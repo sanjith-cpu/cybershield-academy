@@ -218,25 +218,25 @@ const domains = [
 ];
 const readinessLevels = [
   {
-    "level": "Level 4 — Demonstrated",
+    "level": "Level 4: Demonstrated",
     "description": "The student can explain the concept, apply it to new fictional evidence, justify the decision, identify limits, assign owners, and validate the outcome.",
     "evidence": "Accurate quiz answers, strong lab artifact, clear explanation, correct workflow, and successful transfer to a new scenario.",
     "action": "Maintain with spaced review and include the best fictional artifact in the portfolio."
   },
   {
-    "level": "Level 3 — Functional",
+    "level": "Level 3: Functional",
     "description": "The student can usually apply the concept but may miss an edge case, owner boundary, alternate explanation, or validation step.",
     "evidence": "Mostly accurate work with minor corrections after feedback.",
     "action": "Complete one targeted mixed scenario and revise the related artifact."
   },
   {
-    "level": "Level 2 — Developing",
+    "level": "Level 2: Developing",
     "description": "The student recognizes the concept but applies it inconsistently or relies on memorized patterns.",
     "evidence": "Correct definitions with weak scenario decisions, vague evidence use, or incomplete validation.",
     "action": "Return to the lesson, complete retrieval practice, study worked examples, and repeat a safe fictional lab."
   },
   {
-    "level": "Level 1 — Beginning",
+    "level": "Level 1: Beginning",
     "description": "The student cannot yet explain the concept accurately or use it safely in a fictional task.",
     "evidence": "Repeated misconceptions, unsupported claims, missing workflow, or inability to identify evidence and owners.",
     "action": "Rebuild the foundation before attempting the capstone or module test."

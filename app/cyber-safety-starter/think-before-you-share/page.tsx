@@ -308,7 +308,7 @@ const skillCheck = [
     ],
     answer: 1,
     explanation:
-      "The goal is thoughtful, respectful sharing—not fear or avoiding the internet completely.",
+      "The goal is thoughtful, respectful sharing, not fear or avoiding the internet completely.",
   },
 ];
 

@@ -381,7 +381,7 @@ export default function CorrelationAndAlertRulesPage() {
           "Use fictional mission and defender questions before writing rule conditions.",
           "Keep source meaning, provenance, timing, source health, coverage, and missing-data behavior visible.",
           "Separate observation confidence, potential severity, review priority, and response decisions.",
-          "Test rule logic, alert presentation, grouping, privacy, recovery, and lifecycle—not only positive matching.",
+          "Test rule logic, alert presentation, grouping, privacy, recovery, and lifecycle, not only positive matching.",
           "Keep the entire artifact completely fictional, defensive, non-operational, privacy-safe, evidence-aware, maintainable, and suitable for a public learning portfolio.",
         ]} />
 

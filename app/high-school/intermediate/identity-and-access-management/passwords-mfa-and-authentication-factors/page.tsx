@@ -193,7 +193,7 @@ principle: "Length and uniqueness",
 explanation:
 "A fictional password or passphrase should be sufficiently long and unique to that account under the organization’s policy.",
 defenderFocus:
-"Review policy, reset history, reuse indicators, owner education, and recovery—not the secret itself.",
+"Review policy, reset history, reuse indicators, owner education, and recovery, not the secret itself.",
 },
 {
 principle: "Private handling",

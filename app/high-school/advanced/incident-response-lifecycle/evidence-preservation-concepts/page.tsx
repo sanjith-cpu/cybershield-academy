@@ -605,7 +605,7 @@ export default function EvidencePreservationConceptsPage() {
 
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             Evidence quality depends on purpose, context, provenance, timing,
-            source health, integrity, access, and limitations—not just volume.
+            source health, integrity, access, and limitations, not just volume.
           </div>
         </SectionCard>
 

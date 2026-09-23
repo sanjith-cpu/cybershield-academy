@@ -1447,7 +1447,7 @@ export default function EthicalLimitsInInvestigationsPage() {
             "Conflicts of interest should be disclosed and managed through qualified decisions about recusal, limited participation, or independent review.",
             "Evidence collected for one fictional purpose does not automatically become appropriate for a different purpose.",
             "Retention should remain tied to approved purpose, access, review, archive, ownership, and disposition.",
-            "Transparency means accurate, reviewable communication—not universal distribution of sensitive detail.",
+            "Transparency means accurate, reviewable communication, not universal distribution of sensitive detail.",
             "The strongest ethical forensic investigator knows when to investigate, when to narrow, when to escalate, when to recuse, and when to stop.",
           ]}
         />

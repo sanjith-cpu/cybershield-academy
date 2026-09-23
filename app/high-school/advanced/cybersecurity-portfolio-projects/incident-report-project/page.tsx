@@ -1154,7 +1154,7 @@ export default function IncidentReportProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Early Identity Concern"
+          title="Scenario Decision 1: Early Identity Concern"
           scenario="At 14:15, the analyst has a rare privileged service-identity alert, elevated API latency, and a maintenance window, but the maintenance owner has not yet confirmed whether the identity action was expected. How should the report capture the situation?"
           choices={[
             {
@@ -1185,7 +1185,7 @@ export default function IncidentReportProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Final Root-Cause Language"
+          title="Scenario Decision 2: Final Root-Cause Language"
           scenario="By 14:42, the service is stable, queue behavior is the strongest technical explanation, and the identity concern has been resolved as authorized maintenance. However, no supplied evidence proves a single exclusive root cause. What should the final report say?"
           choices={[
             {
@@ -1274,7 +1274,7 @@ export default function IncidentReportProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Incident Report Project"
+          title="Portfolio Prompt: Incident Report Project"
           prompt="Create a polished fictional incident report for the Northbridge case. Include an executive summary, case scope, evidence inventory, normalized timeline, findings with confidence and limitations, impact assessment, decision history, recovery evidence, follow-up actions with owners and validation, unresolved questions, and a short revision note explaining how you improved the report after review."
           tips={[
             "Use the synthetic evidence IDs and fictional Northbridge names supplied in this lesson only.",

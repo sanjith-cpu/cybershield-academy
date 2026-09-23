@@ -155,7 +155,7 @@ const questions = [
     ],
     answer: 2,
     explanation:
-      "A decision-ready flow explains meaning, control, ownership, failure, and recovery—not merely connectivity.",
+      "A decision-ready flow explains meaning, control, ownership, failure, and recovery, not merely connectivity.",
   },
   {
     question:

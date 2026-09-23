@@ -302,7 +302,7 @@ const checklistItems = [
 ];
 
 const takeaways = [
-  "A cybersecurity portfolio is evidence of thinking, communication, and responsible technical judgment—not merely a folder of files.",
+  "A cybersecurity portfolio is evidence of thinking, communication, and responsible technical judgment, not merely a folder of files.",
   "Strong artifacts explain the problem, evidence, reasoning, decision, limitations, and next step.",
   "Portfolio work should be truthful about what was simulated, what was fictional, what you personally created, and what remains uncertain.",
   "Different audiences need different levels of technical depth, but the underlying facts should remain consistent.",

@@ -996,7 +996,7 @@ export default function TicketingAndWorkflowAutomationPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Workflow automation should move the work—not silently make the security decision.
+              Workflow automation should move the work, not silently make the security decision.
             </p>
           </div>
         </Section>

@@ -1225,7 +1225,7 @@ export default function FirewallsAndNetworkSecurityToolsPage() {
 
         <SectionCard
           eyebrow="Professional Hook"
-          title="A Firewall Decides Whether Traffic Matches Policy—not Whether the Entire Activity Is Safe"
+          title="A Firewall Decides Whether Traffic Matches Policy, not Whether the Entire Activity Is Safe"
         >
           <p className="leading-8">
             A firewall may allow approved traffic, block mistaken traffic,

@@ -900,7 +900,7 @@ export default function SymmetricAndAsymmetricEncryptionConceptsPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Choose the encryption model by trust, distribution, performance, lifecycle, recovery, and ownership—not by popularity.
+              Choose the encryption model by trust, distribution, performance, lifecycle, recovery, and ownership, not by popularity.
             </p>
           </div>
         </Section>

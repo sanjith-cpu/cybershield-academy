@@ -1625,7 +1625,7 @@ export default function PrivacyEngineeringLabPage() {
           <p className="mt-6 leading-8">
             The roadmap should explain why each action belongs in its time
             horizon. Urgency should come from impact, uncertainty, dependency,
-            reversibility, and change—not from arbitrary deadlines.
+            reversibility, and change, not from arbitrary deadlines.
           </p>
         </Section>
 

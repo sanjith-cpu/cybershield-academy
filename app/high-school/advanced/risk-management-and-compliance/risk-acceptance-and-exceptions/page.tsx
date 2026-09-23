@@ -490,7 +490,7 @@ const records = [
     rationale:
       "Immediate retirement would disrupt required historical reporting while modernization is in progress.",
     residual:
-      "High — obsolete trust, incomplete ownership, and transport gaps remain",
+      "High: obsolete trust, incomplete ownership, and transport gaps remain",
     compensating:
       "Restricted network scope, increased monitoring, monthly governance review",
     riskOwner:
@@ -1713,7 +1713,7 @@ export default function RiskAcceptanceAndExceptionsPage() {
               {
                 title: "Treat expiry seriously",
                 detail:
-                  "An expired record should move to reassessment, treatment, block, or renewed approval—not remain silently valid.",
+                  "An expired record should move to reassessment, treatment, block, or renewed approval, not remain silently valid.",
               },
               {
                 title: "Connect forward",

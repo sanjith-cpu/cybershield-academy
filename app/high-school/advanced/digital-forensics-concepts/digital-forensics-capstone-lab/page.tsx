@@ -1578,7 +1578,7 @@ export default function DigitalForensicsCapstoneLabPage() {
             "Professional findings distinguish account association, physical-person attribution, sequence, causation, intent, and impact.",
             "Unknown is a valid outcome when fictional evidence cannot support confirmation or exclusion.",
             "Ethical forensic practice includes stopping, narrowing, minimizing, recusing, referring, or deferring when authority, purpose, privacy, proportionality, or impartiality requires it.",
-            "A8 capstone success is measured by defensible reasoning, traceable evidence, ethical restraint, accurate uncertainty, and public-safe communication—not by forcing every question into a definite answer.",
+            "A8 capstone success is measured by defensible reasoning, traceable evidence, ethical restraint, accurate uncertainty, and public-safe communication, not by forcing every question into a definite answer.",
           ]}
         />
 

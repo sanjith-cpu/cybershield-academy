@@ -300,7 +300,7 @@ function ProtectionFlow() {
 
       <div className="mt-6 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
         <span className="font-bold">Defender rule:</span> protect data according
-        to its value and possible impact—not only by whether it contains a
+        to its value and possible impact, not only by whether it contains a
         password.
       </div>
     </section>

@@ -1912,7 +1912,7 @@ export default function AbuseCasesAndMisuseThinkingPage() {
             "Write outcome-focused defensive scenarios and never include step-by-step harmful procedures.",
             "Use neutral fictional actor language and preserve deliberate, accidental, process, supplier, automation, and unknown explanations.",
             "Connect every case to exact assets, capabilities, conditions, controls, evidence, owners, and review triggers.",
-            "Include detection, response, recovery, privacy, communication, source health, and business-state reconciliation—not only prevention.",
+            "Include detection, response, recovery, privacy, communication, source health, and business-state reconciliation, not only prevention.",
             "Keep the entire artifact completely fictional, non-operational, privacy-safe, school-appropriate, and suitable for a public learning portfolio.",
           ]}
         />
@@ -1959,7 +1959,7 @@ export default function AbuseCasesAndMisuseThinkingPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Abuse cases are defensive, outcome-focused models—not instructions for causing harm.",
+            "Abuse cases are defensive, outcome-focused models, not instructions for causing harm.",
             "A strong abuse case connects affected assets, actors, entry points, flows, trust boundaries, preconditions, capabilities, outcomes, evidence, controls, owners, and review triggers.",
             "Professional misuse thinking includes deliberate, accidental, process, supplier, automation, usability, degraded-operation, and recovery explanations.",
             "Actor role, unusual behavior, denied requests, external origin, missing fields, or stale identity do not prove malicious intent.",

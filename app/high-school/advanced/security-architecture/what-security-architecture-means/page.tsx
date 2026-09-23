@@ -722,7 +722,7 @@ export default function WhatSecurityArchitectureMeansPage() {
             and backup administration are not logged, the application reaches
             an undocumented management interface, and recovery restores the
             application without identity synchronization. Architecture means
-            understanding how those decisions interact—not merely drawing the
+            understanding how those decisions interact, not merely drawing the
             boxes.
           </p>
 
@@ -1454,7 +1454,7 @@ export default function WhatSecurityArchitectureMeansPage() {
             "Strong fictional requirements are specific, measurable, owner-aware, and testable.",
             "Control layers should provide independent value rather than failing together through shared dependencies.",
             "Evidence, source health, time quality, privacy, retention, and ownership should be designed before incidents occur.",
-            "Recovery must validate identity, data, dependencies, service, logging, access, communication, and residual risk—not only application availability.",
+            "Recovery must validate identity, data, dependencies, service, logging, access, communication, and residual risk, not only application availability.",
             "Architecture remains effective through owners, decisions, validation, exceptions, versioning, change control, and lifecycle governance.",
             "Every CyberShield architecture artifact must remain fully fictional, defensive, non-operational, privacy-safe, and incapable of exposing real systems.",
           ]}

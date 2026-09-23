@@ -1063,7 +1063,7 @@ export default function AuthorizationAndAccessControlDesignPage() {
             "I can keep authentication and authorization separate: a valid session does not automatically permit a protected action.",
             "I will use least privilege, deny by default, object ownership, explicit business purpose, and decision ownership throughout the lesson.",
             "I will treat denied access as an access event rather than automatic proof of malicious intent.",
-            "I will validate fictional access design through policy tables, expected decisions, owner evidence, monitoring, and safe review—not bypass testing.",
+            "I will validate fictional access design through policy tables, expected decisions, owner evidence, monitoring, and safe review, not bypass testing.",
           ]}
         />
 
@@ -1684,7 +1684,7 @@ export default function AuthorizationAndAccessControlDesignPage() {
             Use only the invented roles, resources, actions, access cases,
             service identities, exception records, and evidence on this page.
             The goal is defensive policy design, governance, ownership,
-            recertification, privacy, and monitoring—not bypass testing.
+            recertification, privacy, and monitoring, not bypass testing.
           </p>
 
           <div className="mt-6 grid gap-5">

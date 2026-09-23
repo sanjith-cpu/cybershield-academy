@@ -847,7 +847,7 @@ export default function PortfolioReflectionAndPresentationPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Strong Reflection"
+          title="Evidence Analysis 1: Strong Reflection"
           question="Which reflection statement provides the strongest evidence of learning?"
           evidence={[
             "The student completed a risk assessment and received feedback that two Moderate risks were not equally important.",
@@ -898,7 +898,7 @@ export default function PortfolioReflectionAndPresentationPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Audience Adaptation"
+          title="Evidence Analysis 2: Audience Adaptation"
           question="A student is presenting the same threat-model project to a technical reviewer and a college admissions reader. What should change?"
           evidence={[
             "The underlying project facts, artifact, and student's contribution remain the same.",
@@ -988,32 +988,32 @@ export default function PortfolioReflectionAndPresentationPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Choose the artifact",
+                title: "Task 1: Choose the artifact",
                 detail:
                   "Select one project that demonstrates a skill you want the audience to remember. Write one sentence explaining why it belongs in the showcase.",
               },
               {
-                title: "Task 2 — Build the story",
+                title: "Task 2: Build the story",
                 detail:
                   "Write one or two sentences for context, problem, approach, decision, artifact, result, limitation, and lesson.",
               },
               {
-                title: "Task 3 — Select evidence",
+                title: "Task 3: Select evidence",
                 detail:
                   "Choose no more than three visual or written evidence points from the fictional artifact. Explain what each proves.",
               },
               {
-                title: "Task 4 — Adapt the audience",
+                title: "Task 4: Adapt the audience",
                 detail:
                   "Create one technical version and one general version. Keep the facts the same while changing terminology and depth.",
               },
               {
-                title: "Task 5 — Prepare questions",
+                title: "Task 5: Prepare questions",
                 detail:
                   "Write answers for why you chose the project, what was difficult, what you changed, what remains limited, and what you personally contributed.",
               },
               {
-                title: "Task 6 — Safety review",
+                title: "Task 6: Safety review",
                 detail:
                   "Confirm every screenshot, diagram, record, name, and example is fictional or safely abstracted and contains no private or real security-sensitive information.",
               },
@@ -1032,7 +1032,7 @@ export default function PortfolioReflectionAndPresentationPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Reviewer Asks Whether the Project Proves Real-World Security"
+          title="Scenario Decision 1: Reviewer Asks Whether the Project Proves Real-World Security"
           scenario="A portfolio reviewer asks whether the fictional Cloud Security Review proves that a real cloud environment is secure."
           choices={[
             {
@@ -1063,7 +1063,7 @@ export default function PortfolioReflectionAndPresentationPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Tool Assistance Question"
+          title="Scenario Decision 2: Tool Assistance Question"
           scenario="A reviewer asks whether tools or AI helped with parts of the portfolio."
           choices={[
             {
@@ -1151,7 +1151,7 @@ export default function PortfolioReflectionAndPresentationPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Reflection and Presentation Package"
+          title="Portfolio Prompt: Reflection and Presentation Package"
           prompt="Create a final A19 Reflection and Presentation Package. Select three to five portfolio artifacts, explain why each was chosen, identify the skill each artifact proves, document at least three meaningful revisions, write a five-minute presentation outline for one project, create a shorter nontechnical version, prepare answers to seven common reviewer questions, include a personal-contribution statement, identify limitations and next steps, and finish with a publication-safety check."
           tips={[
             "Choose artifacts that demonstrate different strengths instead of repeating the same kind of evidence.",

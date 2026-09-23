@@ -991,7 +991,7 @@ export default function DefensiveNetworkArchitecturePage() {
             Learn how professional defenders design fictional networks around
             mission, identity, services, data, zones, trust relationships,
             administrative separation, supplier dependencies, visibility, safe
-            failure, recovery, evidence, ownership, and lifecycle—not merely
+            failure, recovery, evidence, ownership, and lifecycle, not merely
             around devices or one perimeter.
           </p>
 
@@ -2002,7 +2002,7 @@ export default function DefensiveNetworkArchitecturePage() {
 
         <KeyTakeaways
           takeaways={[
-            "Defensive network architecture begins with fictional mission, users, services, identity, data, evidence, administration, failure, and recovery—not devices alone.",
+            "Defensive network architecture begins with fictional mission, users, services, identity, data, evidence, administration, failure, and recovery, not devices alone.",
             "Zones should represent meaningful differences in purpose, trust, sensitivity, ownership, administration, visibility, and recovery.",
             "Reachability does not prove identity, authorization, validation, safe business action, or control effectiveness.",
             "Every important path should have a purpose, source, destination, identity, service, data need, owner, evidence, failure mode, recovery decision, exception, and review trigger.",

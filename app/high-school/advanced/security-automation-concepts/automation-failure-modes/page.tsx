@@ -1570,7 +1570,7 @@ export default function AutomationFailureModesPage() {
           <p className="leading-8">
             A17.8 focuses on Measuring Automation Value. Before continuing, make
             sure you can explain how quality metrics should include failure,
-            exception, override, stale-data, and fallback behavior—not just
+            exception, override, stale-data, and fallback behavior, not just
             speed or action count.
           </p>
 

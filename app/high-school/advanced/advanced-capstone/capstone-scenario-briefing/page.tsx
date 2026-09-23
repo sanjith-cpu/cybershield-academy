@@ -783,7 +783,7 @@ export default function CapstoneScenarioBriefingPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Fact or Cause?"
+          title="Evidence Analysis 1: Fact or Cause?"
           question="What is the strongest conclusion about the 09:11 privileged action during the initial briefing?"
           evidence={[
             "The action is present in two synthetic evidence sources.",
@@ -880,7 +880,7 @@ export default function CapstoneScenarioBriefingPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Approved Change Context"
+          title="Evidence Analysis 2: Approved Change Context"
           question="An approved change record covers identity-policy and worker-service maintenance. What is the strongest use of that record?"
           evidence={[
             "The change has a fictional owner, approved purpose, timing, affected services, and rollback plan.",
@@ -996,32 +996,32 @@ export default function CapstoneScenarioBriefingPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Define mission and decision",
+                title: "Task 1: Define mission and decision",
                 detail:
                   "Write one mission statement and one primary decision question that explain why the case exists.",
               },
               {
-                title: "Task 2 — Bound the scope",
+                title: "Task 2: Bound the scope",
                 detail:
                   "List included systems, identities, evidence classes, time window, and explicit exclusions.",
               },
               {
-                title: "Task 3 — Build an evidence inventory",
+                title: "Task 3: Build an evidence inventory",
                 detail:
                   "For at least six sources, record what each supports, what it cannot prove, and its current health or limitation.",
               },
               {
-                title: "Task 4 — Classify statements",
+                title: "Task 4: Classify statements",
                 detail:
                   "Write at least four facts, two interpretations, two hypotheses, two assumptions, and two unresolved questions.",
               },
               {
-                title: "Task 5 — Assign owners",
+                title: "Task 5: Assign owners",
                 detail:
                   "Identify fictional owners for application, identity, monitoring, recovery, risk, privacy, and incident decisions.",
               },
               {
-                title: "Task 6 — Write the briefing summary",
+                title: "Task 6: Write the briefing summary",
                 detail:
                   "Produce a short summary that states confirmed conditions, major uncertainty, immediate decision needs, and what the briefing does not prove.",
               },
@@ -1040,7 +1040,7 @@ export default function CapstoneScenarioBriefingPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Leadership Wants an Immediate Cause"
+          title="Scenario Decision 1: Leadership Wants an Immediate Cause"
           scenario="A fictional executive asks whether the approved maintenance caused the portal interruption before the architecture and timeline review are complete."
           choices={[
             {
@@ -1071,7 +1071,7 @@ export default function CapstoneScenarioBriefingPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Missing Alert During Source Delay"
+          title="Scenario Decision 2: Missing Alert During Source Delay"
           scenario="A reviewer argues that no privileged alert means no privileged concern existed during the monitoring-delay window."
           choices={[
             {
@@ -1167,7 +1167,7 @@ export default function CapstoneScenarioBriefingPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Capstone Case Charter and Evidence Inventory"
+          title="Portfolio Prompt: Capstone Case Charter and Evidence Inventory"
           prompt="Create a fictional Northbridge Capstone Case Charter and Evidence Inventory. Include mission, primary decision, scope, exclusions, stakeholders, owners, constraints, assumptions, unknowns, stop conditions, at least six evidence sources, provenance, source-health state, freshness, what each source supports, what each source cannot prove, at least four confirmed facts, two interpretations, two hypotheses, two findings, two risks or risk questions, two unresolved questions, and a short technical and executive briefing that preserve the same underlying case truth."
           tips={[
             "Write the decision question before proposing solutions.",

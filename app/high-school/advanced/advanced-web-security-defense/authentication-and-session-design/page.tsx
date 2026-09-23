@@ -928,7 +928,7 @@ export default function AuthenticationAndSessionDesignPage() {
 
         <SectionCard eyebrow="Safe Fictional Lab" title="Build the Northbridge Authentication and Session Design Review">
           <p className="leading-8">
-            Use only the invented journeys, policies, session states, monitoring records, and evidence on this page. The lab is about defensive identity design, usability, accessibility, privacy, ownership, and monitoring—not bypassing authentication or obtaining session material.
+            Use only the invented journeys, policies, session states, monitoring records, and evidence on this page. The lab is about defensive identity design, usability, accessibility, privacy, ownership, and monitoring, not bypassing authentication or obtaining session material.
           </p>
           <div className="mt-6 grid gap-5">
             {labPhases.map(([phase, tasks]) => (

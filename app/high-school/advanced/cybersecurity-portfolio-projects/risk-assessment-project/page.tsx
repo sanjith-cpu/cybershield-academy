@@ -828,7 +828,7 @@ export default function RiskAssessmentProjectPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — High Inherent, Moderate Residual"
+          title="Evidence Analysis 1: High Inherent, Moderate Residual"
           question="Why can RISK-NB-201 reasonably be rated High inherent risk but Moderate residual risk?"
           evidence={[
             "The fictional administrative role can change sensitive configuration, so uncontrolled impact could be high.",
@@ -968,7 +968,7 @@ export default function RiskAssessmentProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Evidence Gap vs Confirmed Failure"
+          title="Evidence Analysis 2: Evidence Gap vs Confirmed Failure"
           question="RISK-NB-203 says telemetry freshness is not consistently documented. What is the strongest conclusion?"
           evidence={[
             "Synthetic monitoring records exist from several sources.",
@@ -1030,32 +1030,32 @@ export default function RiskAssessmentProjectPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Select the top three",
+                title: "Task 1: Select the top three",
                 detail:
                   "Choose the three risks you believe deserve attention first. Explain the order using asset importance, likelihood, impact, controls, uncertainty, dependencies, and recovery.",
               },
               {
-                title: "Task 2 — Challenge one rating",
+                title: "Task 2: Challenge one rating",
                 detail:
                   "Pick one record and argue for a different likelihood, impact, or residual rating. Your argument must cite the supplied fictional evidence and controls.",
               },
               {
-                title: "Task 3 — Improve one treatment",
+                title: "Task 3: Improve one treatment",
                 detail:
                   "Rewrite one treatment so it has a clear owner, action, evidence of completion, and review point.",
               },
               {
-                title: "Task 4 — Add one accepted risk",
+                title: "Task 4: Add one accepted risk",
                 detail:
                   "Create a low or moderate fictional risk that can reasonably be accepted. Include owner, rationale, residual risk, conditions, expiration, and review date.",
               },
               {
-                title: "Task 5 — Write an executive summary",
+                title: "Task 5: Write an executive summary",
                 detail:
                   "Summarize the risk posture in one short paragraph without copying all six records. State the highest priorities, overall confidence, and immediate decisions.",
               },
               {
-                title: "Task 6 — Check publication safety",
+                title: "Task 6: Check publication safety",
                 detail:
                   "Confirm that the final artifact contains only fictional systems and synthetic evidence and reveals no real internal security information.",
               },
@@ -1074,7 +1074,7 @@ export default function RiskAssessmentProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Risk Acceptance Request"
+          title="Scenario Decision 1: Risk Acceptance Request"
           scenario="A fictional service owner asks to accept a moderate residual risk because the planned mitigation would not be completed until the next quarter."
           choices={[
             {
@@ -1105,7 +1105,7 @@ export default function RiskAssessmentProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Two Similar Risk Scores"
+          title="Scenario Decision 2: Two Similar Risk Scores"
           scenario="Two fictional risks both receive a Moderate residual rating. One affects a low-impact reporting feature; the other affects a shared monitoring dependency used during incident response."
           choices={[
             {
@@ -1198,7 +1198,7 @@ export default function RiskAssessmentProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Risk Assessment Project"
+          title="Portfolio Prompt: Risk Assessment Project"
           prompt="Create a professional fictional Northbridge Risk Assessment. Include scope, assets, at least six risk statements, likelihood and impact rationale, inherent risk, current controls, evidence confidence, residual risk, treatment, owner, review date, top-three priorities, one carefully governed accepted-risk example, an executive summary, and a short publication-safety statement."
           tips={[
             "Use the A19.4 Threat Model Project as an input, but do not simply copy threat statements into the risk register.",

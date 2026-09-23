@@ -773,7 +773,7 @@ const checklistItems = [
 ];
 
 const takeaways = [
-  "Cloud network architecture is about trust, exposure, purpose, direction, identity, and evidence — not only addresses and subnets.",
+  "Cloud network architecture is about trust, exposure, purpose, direction, identity, and evidence, not only addresses and subnets.",
   "Public exposure should be limited to components that genuinely require internet reachability.",
   "Private reachability does not replace workload identity or service authorization.",
   "Service-to-service paths should be tied to named dependencies and accountable owners.",
@@ -920,7 +920,7 @@ export default function CloudNetworkBoundariesPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Private reachability is a boundary control — not a replacement for identity.
+              Private reachability is a boundary control, not a replacement for identity.
             </p>
           </div>
         </Section>

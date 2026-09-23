@@ -687,7 +687,7 @@ const checklistItems = [
 ];
 
 const takeaways = [
-  "Cloud secret governance is about purpose, scope, ownership, lifecycle, monitoring, and evidence — not secret values.",
+  "Cloud secret governance is about purpose, scope, ownership, lifecycle, monitoring, and evidence, not secret values.",
   "Workload identity can reduce dependence on reusable service credentials.",
   "Production and lower-environment credentials should remain separated.",
   "Long-lived or shared credentials create more lifecycle and revocation risk.",

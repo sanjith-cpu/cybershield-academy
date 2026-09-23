@@ -1944,7 +1944,7 @@ export default function KeyManagementDesignLabPage() {
             Capstone Safety Boundary
           </p>
           <h2 className="mt-2 text-2xl font-black">
-            Enterprise crypto review is about architecture evidence—not breaking cryptography
+            Enterprise crypto review is about architecture evidence, not breaking cryptography
           </h2>
           <p className="mt-3 leading-7">
             Do not extract or recover real keys, inspect private key material,

@@ -98,31 +98,31 @@ const toolCategories = [
 
 const actionLevels = [
   {
-    level: "Level 1 — Observe",
+    level: "Level 1: Observe",
     description: "View supplied fictional dashboards, records, alerts, inventories, or reports without changing anything.",
     examples: "Read an alert, compare timestamps, identify source fields, review an approved rule, or inspect a fictional asset record.",
     approval: "Requires clear access authorization and privacy boundaries, even when no change is made.",
   },
   {
-    level: "Level 2 — Analyze",
+    level: "Level 2: Analyze",
     description: "Filter, normalize, correlate, classify, summarize, and document supplied evidence.",
     examples: "Build a timeline, compare sources, classify a pattern, calculate coverage, or write a finding.",
     approval: "Requires approved purpose, evidence-handling rules, and defined report recipients.",
   },
   {
-    level: "Level 3 — Test Safely",
+    level: "Level 3: Test Safely",
     description: "Evaluate fictional or isolated tool logic in a controlled training environment.",
     examples: "Test a supplied rule against fictional records, compare two safe configurations, or validate a mock alert workflow.",
     approval: "Requires an isolated scope, expected result, owner, safety limit, and stop condition.",
   },
   {
-    level: "Level 4 — Change",
+    level: "Level 4: Change",
     description: "Modify a fictional rule, threshold, exclusion, setting, access control, service state, or protection behavior.",
     examples: "Tune a mock alert rule, narrow a fictional firewall rule, or correct a training configuration.",
     approval: "Requires explicit change approval, dependency review, backup, rollback, validation, and monitoring.",
   },
   {
-    level: "Level 5 — Contain or Remediate",
+    level: "Level 5: Contain or Remediate",
     description: "Take an approved action intended to reduce risk or restore a fictional system.",
     examples: "Quarantine a supplied training file, isolate a fictional device, revoke a simulated session, or restore a safe configuration.",
     approval: "Requires incident or change authority, owner coordination, impact review, validation, and residual-risk documentation.",

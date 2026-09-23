@@ -792,7 +792,7 @@ const quizQuestions = [
     ],
     answer: 0,
     explanation:
-      "Recoverability depends on current keys, versions, access, and workflow—not old assumptions.",
+      "Recoverability depends on current keys, versions, access, and workflow, not old assumptions.",
   },
   {
     question:
@@ -1591,7 +1591,7 @@ export default function CommonCryptoDesignMistakesPage() {
               {
                 title: "Recommend architecture correction",
                 detail:
-                  "Focus on ownership, scope, protected boundaries, lifecycle, recovery, and governance—not exploit testing.",
+                  "Focus on ownership, scope, protected boundaries, lifecycle, recovery, and governance, not exploit testing.",
               },
               {
                 title: "Show residual risk",

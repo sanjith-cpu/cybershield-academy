@@ -364,7 +364,7 @@ const criteriaDomains = [
 
 const escalationLevels = [
   {
-    level: "Level 0 — Routine triage",
+    level: "Level 0: Routine triage",
     meaning:
       "Fictional analyst can answer the question through normal evidence review and owner response.",
     examples:
@@ -375,7 +375,7 @@ const escalationLevels = [
       "Move to closure, Expected, Conditional, or another normal triage state.",
   },
   {
-    level: "Level 1 — Specialist review",
+    level: "Level 1: Specialist review",
     meaning:
       "A fictional source, identity, device, service, supplier, detection, or recovery specialist is needed.",
     examples:
@@ -386,7 +386,7 @@ const escalationLevels = [
       "Return to routine triage when the specialist question is resolved.",
   },
   {
-    level: "Level 2 — Multi-owner coordination",
+    level: "Level 2: Multi-owner coordination",
     meaning:
       "Several fictional owners must review related questions in parallel.",
     examples:
@@ -397,7 +397,7 @@ const escalationLevels = [
       "Return to narrower ownership when scope, impact, and unresolved questions are reduced.",
   },
   {
-    level: "Level 3 — Time-sensitive mission escalation",
+    level: "Level 3: Time-sensitive mission escalation",
     meaning:
       "Fictional active impact, privileged authority, broad source loss, widening scope, or short response opportunity requires immediate coordinated review.",
     examples:
@@ -408,7 +408,7 @@ const escalationLevels = [
       "De-escalate only after active triggers are controlled and evidence is stable enough.",
   },
   {
-    level: "Level 4 — Leadership or risk decision",
+    level: "Level 4: Leadership or risk decision",
     meaning:
       "Fictional mission, resource, cross-team, legal, privacy, deadline, or residual-risk decisions exceed operational authority.",
     examples:
@@ -589,7 +589,7 @@ const escalationMatrix = [
     evidence:
       "Fictional role and session remain Active after approval_end; extension evidence is delayed; service is critical.",
     level:
-      "Level 3 — Time-sensitive mission escalation",
+      "Level 3: Time-sensitive mission escalation",
     owners:
       "Case owner, identity owner, source owner, service owner.",
     deadline:
@@ -603,7 +603,7 @@ const escalationMatrix = [
     evidence:
       "Fictional application and user-support sources confirm current impact across a broad user population.",
     level:
-      "Level 3 — Time-sensitive mission escalation",
+      "Level 3: Time-sensitive mission escalation",
     owners:
       "Service owner, recovery owner, case owner, leadership owner if resources conflict.",
     deadline:
@@ -631,7 +631,7 @@ const escalationMatrix = [
     evidence:
       "Fictional role source says Revoked while group source says Active beyond expected synchronization.",
     level:
-      "Level 1 — Specialist review",
+      "Level 1: Specialist review",
     owners:
       "Identity owner, source owners, case owner.",
     deadline:
@@ -659,7 +659,7 @@ const escalationMatrix = [
     evidence:
       "Fictional analyst requests complete identity and device history for one bounded authorization question.",
     level:
-      "Level 1 — Privacy specialist review",
+      "Level 1: Privacy specialist review",
     owners:
       "Privacy reviewer, case owner, identity owner.",
     deadline:
@@ -673,7 +673,7 @@ const escalationMatrix = [
     evidence:
       "Fictional connectivity returned, but sessions, replay, duplicates, source health, service validation, and residual risk remain incomplete.",
     level:
-      "Level 2 — Multi-owner coordination",
+      "Level 2: Multi-owner coordination",
     owners:
       "Recovery owner, service owner, source owner, identity owner, quality owner.",
     deadline:
@@ -1002,7 +1002,7 @@ const commonMistakes = [
     impact:
       "Communication becomes defensive and the decision need becomes unclear.",
     correction:
-      "Escalate the blocked question, impact, scope, source-health, or authority need—not the person.",
+      "Escalate the blocked question, impact, scope, source-health, or authority need, not the person.",
   },
   {
     mistake: "Every High alert escalates automatically",
@@ -2363,7 +2363,7 @@ export default function EscalationCriteriaPage() {
           title="Portfolio Prompt"
           prompt="Create a fully fictional Escalation Criteria Package for the Northbridge Student-Support Cooperative. Include mission, stakeholders, escalation purpose, escalation definitions, triggers, thresholds, technical escalation, identity escalation, service-owner escalation, supplier escalation, source-health escalation, privacy escalation, recovery escalation, leadership escalation, time-sensitive escalation, mission-impact criteria, privilege criteria, scope criteria, active-effect criteria, source-health criteria, owner-nonresponse criteria, time-sensitivity criteria, privacy criteria, recovery criteria, cross-team-conflict criteria, Level 0 routine triage, Level 1 specialist review, Level 2 multi-owner coordination, Level 3 time-sensitive mission escalation, Level 4 leadership or risk decision, escalation identifiers, neutral observations, primary escalation questions, evidence summaries, source-health summaries, severity, confidence, priority, scope, impact, alternatives, completed actions, requested actions, out-of-scope boundaries, case owners, escalation coordinators, receiving owners, backup owners, response deadlines, review deadlines, acceptance criteria, de-escalation criteria, closure criteria, reopen criteria, communication templates, analyst messages, specialist messages, owner messages, privacy messages, recovery messages, leadership messages, parallel-owner matrices, shared chronology, unresolved-question registers, acceptance records, aging rules, reminders, alternate paths, leadership paths, trigger-resolution evidence, source-health stabilization, impact control, recovery validation, residual uncertainty, residual risk, routine-case tests, specialist-question tests, critical-impact tests, privileged-authority tests, broad-Blind-period tests, owner-nonresponse tests, privacy-boundary tests, cross-team-disagreement tests, incomplete-recovery tests, de-escalation tests, false-urgency tests, handoff-acceptance tests, expected outcomes, observed outcomes, defects, corrective actions, validation gates, escalation-precision metrics, delayed-escalation metrics, premature-escalation metrics, handoff-completeness metrics, owner-response metrics, parallel-coordination metrics, de-escalation metrics, escalation debt, owner matrix, change history, review triggers, leadership summary, reflection, and a statement that every organization, alert, source, identity, service, owner, date, decision, and outcome is invented."
           tips={[
-            "Escalate fictional decision needs, impact, source loss, privacy, recovery, or authority—not people.",
+            "Escalate fictional decision needs, impact, source loss, privacy, recovery, or authority, not people.",
             "Keep observation, source health, severity, confidence, priority, alternatives, and non-proof statements visible.",
             "Use bounded questions, named owners, deadlines, acceptance, aging, de-escalation, residual risk, and reopen criteria.",
             "Preserve central case coordination during parallel fictional owner review.",
@@ -2412,7 +2412,7 @@ export default function EscalationCriteriaPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Fictional escalation is an evidence-based expansion of review, expertise, authority, communication, or urgency—not punishment or proof.",
+            "Fictional escalation is an evidence-based expansion of review, expertise, authority, communication, or urgency, not punishment or proof.",
             "Technical, identity, service, supplier, source-health, privacy, recovery, leadership, and time-sensitive escalations answer different bounded questions.",
             "Mission impact, privilege, scope, active effect, source health, owner nonresponse, time sensitivity, privacy, recovery, and cross-team conflict can justify escalation.",
             "High severity alone is not enough, and complete certainty is not required when active impact or a short response opportunity is supported.",

@@ -855,7 +855,7 @@ export default function EthicsInAiAndAutomationPage() {
         >
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {[
-              ["Assist", "Use fictional AI to organize, enrich, summarize, or recommend—not to replace professional ownership."],
+              ["Assist", "Use fictional AI to organize, enrich, summarize, or recommend, not to replace professional ownership."],
               ["Explain", "Show evidence, assumptions, confidence, limitations, alternatives, and source health."],
               ["Approve", "Require the correct fictional human owner for high-impact action and communication."],
               ["Limit", "Use least privilege, narrow scope, rate limits, exclusions, exceptions, and stop conditions."],

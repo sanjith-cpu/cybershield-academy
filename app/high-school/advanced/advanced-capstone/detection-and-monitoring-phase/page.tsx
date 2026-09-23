@@ -629,7 +629,7 @@ const takeaways = [
   "Severity describes potential consequence, while confidence describes evidentiary support. Neither alone proves incident status.",
   "Correlation can strengthen context without proving causation.",
   "Good tuning addresses the actual source of noise while preserving useful coverage, degraded-state behavior, validation, ownership, and rollback.",
-  "Monitoring quality should be measured through usefulness, duplication, source-health coverage, context speed, reopen rate, and validation coverage—not alert volume alone.",
+  "Monitoring quality should be measured through usefulness, duplication, source-health coverage, context speed, reopen rate, and validation coverage, not alert volume alone.",
   "The entire A20 monitoring phase remains fictional, synthetic, defensive, non-operational, and publication-safe.",
 ];
 
@@ -969,7 +969,7 @@ export default function DetectionMonitoringPhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — High Severity, Moderate Confidence"
+          title="Evidence Analysis 1: High Severity, Moderate Confidence"
           question="How should the privileged-change alert be interpreted during the collector delay?"
           evidence={[
             "The privileged action itself is confirmed by two synthetic sources.",
@@ -1092,7 +1092,7 @@ export default function DetectionMonitoringPhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — No Alert During a Delay"
+          title="Evidence Analysis 2: No Alert During a Delay"
           question="A reviewer says no additional privileged activity occurred between 09:12 and 09:16 because no central alert is visible. What is the strongest response?"
           evidence={[
             "The collector was delayed during the same period.",
@@ -1222,32 +1222,32 @@ export default function DetectionMonitoringPhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Define five defensive questions",
+                title: "Task 1: Define five defensive questions",
                 detail:
                   "Use architecture findings to state what a defender needs to know and why the answer affects a decision.",
               },
               {
-                title: "Task 2 — Build the telemetry map",
+                title: "Task 2: Build the telemetry map",
                 detail:
                   "For each question, identify synthetic sources, key fields, source owner, source health, and what the source cannot prove.",
               },
               {
-                title: "Task 3 — Design detection candidates",
+                title: "Task 3: Design detection candidates",
                 detail:
                   "Create at least four provider-neutral detection records with objective, evidence, severity, confidence, owner, and decision path.",
               },
               {
-                title: "Task 4 — Define degraded-source behavior",
+                title: "Task 4: Define degraded-source behavior",
                 detail:
                   "Explain what each important detection should do when a required source is delayed, partial, blind, conflicting, or recovering.",
               },
               {
-                title: "Task 5 — Create safe validation cases",
+                title: "Task 5: Create safe validation cases",
                 detail:
                   "Use synthetic positive, negative, maintenance, boundary, duplicate, source-degraded, recovery, and regression scenarios.",
               },
               {
-                title: "Task 6 — Define monitoring metrics",
+                title: "Task 6: Define monitoring metrics",
                 detail:
                   "Choose measures such as usefulness, duplicates, source-health coverage, context speed, reopen rate, and validation coverage.",
               },
@@ -1266,7 +1266,7 @@ export default function DetectionMonitoringPhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Approved Maintenance Creates Noise"
+          title="Scenario Decision 1: Approved Maintenance Creates Noise"
           scenario="The privileged-change detection repeatedly alerts during approved maintenance because the alert does not include change-ticket context."
           choices={[
             {
@@ -1297,7 +1297,7 @@ export default function DetectionMonitoringPhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Collector Is Recovering"
+          title="Scenario Decision 2: Collector Is Recovering"
           scenario="The collector starts processing again after a backlog, but processed-through time still trails current time by several minutes."
           choices={[
             {
@@ -1400,7 +1400,7 @@ export default function DetectionMonitoringPhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Detection and Monitoring Review"
+          title="Portfolio Prompt: Detection and Monitoring Review"
           prompt="Create a fictional Northbridge Detection and Monitoring Review. Include at least five defensive questions, the architecture finding or risk each question supports, a telemetry map, source purpose, provenance, key fields, source owners, source-health states, freshness, limitations, what each source supports, what each source cannot prove, at least four provider-neutral detection candidates, severity, confidence, decision path, degraded-source behavior, maintenance context, duplicate handling, synthetic validation cases, tuning decisions, suppression debt, observation windows, rollback criteria, monitoring metrics, privacy purpose, minimization, retention considerations, unresolved evidence questions, and a short handoff explaining what A20.5 incident response should preserve."
           tips={[
             "Begin with the defensive decision, then choose evidence.",

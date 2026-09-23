@@ -853,7 +853,7 @@ export default function CloudIdentityReviewPhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Authenticated or Authorized?"
+          title="Evidence Analysis 1: Authenticated or Authorized?"
           question="What is the strongest conclusion about the 09:11 privileged action?"
           evidence={[
             "The privileged identity authenticated successfully.",
@@ -962,7 +962,7 @@ export default function CloudIdentityReviewPhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Workload Purpose vs. Scope"
+          title="Evidence Analysis 2: Workload Purpose vs. Scope"
           question="The worker service clearly needs access to the queue and protected-data service, but the exact current authorization map is incomplete. What is the strongest finding?"
           evidence={[
             "The architecture documents a legitimate worker business purpose.",
@@ -1108,32 +1108,32 @@ export default function CloudIdentityReviewPhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Build shared-responsibility notes",
+                title: "Task 1: Build shared-responsibility notes",
                 detail:
                   "For identity, data, configuration, monitoring, and recovery, separate provider capability from Northbridge responsibility.",
               },
               {
-                title: "Task 2 — Inventory identities",
+                title: "Task 2: Inventory identities",
                 detail:
                   "Record at least six fictional identities or identity types with purpose, owner, privilege, resources, lifecycle, and review trigger.",
               },
               {
-                title: "Task 3 — Review privileged access",
+                title: "Task 3: Review privileged access",
                 detail:
                   "Compare the 09:11 event with role purpose, maintenance scope, action evidence, ownership, and unresolved task authorization.",
               },
               {
-                title: "Task 4 — Review workload access",
+                title: "Task 4: Review workload access",
                 detail:
                   "Compare portal and worker business purpose with required resources and current synthetic authorization evidence.",
               },
               {
-                title: "Task 5 — Review cloud controls",
+                title: "Task 5: Review cloud controls",
                 detail:
                   "Assess identity, configuration, data, monitoring, recovery, and exception governance by expected state and evidence.",
               },
               {
-                title: "Task 6 — Create A20.7 handoffs",
+                title: "Task 6: Create A20.7 handoffs",
                 detail:
                   "Identify which issues become residual risk, privacy review items, treatment decisions, or owner actions in the next phase.",
               },
@@ -1152,7 +1152,7 @@ export default function CloudIdentityReviewPhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Privileged Event Authorization"
+          title="Scenario Decision 1: Privileged Event Authorization"
           scenario="The 09:11 privileged action is confirmed. The user authenticated successfully and maintenance was approved, but the exact task is not explicitly mapped in the supplied change evidence."
           choices={[
             {
@@ -1183,7 +1183,7 @@ export default function CloudIdentityReviewPhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Worker Identity Scope"
+          title="Scenario Decision 2: Worker Identity Scope"
           scenario="The worker identity must process queue jobs and access protected data, but exact current permissions are not fully represented in the synthetic evidence."
           choices={[
             {
@@ -1286,7 +1286,7 @@ export default function CloudIdentityReviewPhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Cloud and Identity Governance Review"
+          title="Portfolio Prompt: Cloud and Identity Governance Review"
           prompt="Create a fictional Northbridge Cloud and Identity Governance Review. Include a shared-responsibility map for identity, data, configuration, monitoring, and recovery; at least six identity types or named fictional identities; purpose, owner, required resources, privilege, approval, lifecycle, review trigger, evidence, and residual risk for each; a focused review of the 09:11 privileged event; a workload-identity review for the portal and worker services; federation governance questions; cloud control evidence for identity, configuration, data protection, monitoring, recovery, and exceptions; findings with stable IDs, owners, evidence, limitations, and treatment or review needs; and a clear handoff identifying which findings A20.7 should evaluate as risk or privacy decisions."
           tips={[
             "Keep authentication, authorization, approval, and business purpose separate.",

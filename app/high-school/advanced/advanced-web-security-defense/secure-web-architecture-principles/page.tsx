@@ -962,7 +962,7 @@ export default function SecureWebArchitecturePrinciplesPage() {
 
         <SectionCard eyebrow="Safe Fictional Lab" title="Build the Northbridge Web Architecture Review">
           <p className="leading-8">
-            Use only the invented zones, assets, trust boundaries, evidence, and decisions on this page. The goal is architecture reasoning, ownership, resilience, privacy, and review—not exploitation or live security testing.
+            Use only the invented zones, assets, trust boundaries, evidence, and decisions on this page. The goal is architecture reasoning, ownership, resilience, privacy, and review, not exploitation or live security testing.
           </p>
           <div className="mt-6 grid gap-5">
             {labPhases.map(([phase, tasks]) => (

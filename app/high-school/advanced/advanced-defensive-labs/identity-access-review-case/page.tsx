@@ -928,7 +928,7 @@ const quizQuestions = [
     ],
     answer: 0,
     explanation:
-      "Access should be justified by current purpose, scope, ownership, approval, and review—not convenience or historical existence.",
+      "Access should be justified by current purpose, scope, ownership, approval, and review, not convenience or historical existence.",
   },
   {
     question:
@@ -1034,7 +1034,7 @@ const checklistItems = [
 ];
 
 const takeaways = [
-  "Identity review is about current purpose, scope, ownership, approval, and evidence—not just whether access exists.",
+  "Identity review is about current purpose, scope, ownership, approval, and evidence, not just whether access exists.",
   "Frequent use proves activity, not continuing business justification.",
   "Low use does not automatically make emergency access unnecessary.",
   "Service identities require the same governance discipline as human identities: purpose, owner, scope, review, monitoring, and lifecycle.",
@@ -1578,7 +1578,7 @@ export default function IdentityAccessReviewCasePage() {
             "Broaden its permissions before the next emergency.",
           ]}
           bestAnswer={0}
-          explanation="Emergency identities should be judged by purpose, governance, readiness, scope, and monitoring—not normal usage frequency."
+          explanation="Emergency identities should be judged by purpose, governance, readiness, scope, and monitoring, not normal usage frequency."
         />
 
         <Section

@@ -990,7 +990,7 @@ export default function WhySecurityAutomationExistsPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Automation should remove repetitive work—not remove accountability.
+              Automation should remove repetitive work, not remove accountability.
             </p>
           </div>
         </Section>
@@ -1559,7 +1559,7 @@ export default function WhySecurityAutomationExistsPage() {
               {
                 title: "Show value",
                 detail:
-                  "Use analyst effort, evidence quality, routing, queue health, and safety—not just action count.",
+                  "Use analyst effort, evidence quality, routing, queue health, and safety, not just action count.",
               },
               {
                 title: "Show ownership",

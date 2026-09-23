@@ -986,7 +986,7 @@ export default function AlertEnrichmentConceptsPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Enrichment should improve evidence quality—not pretend the machine already knows the answer.
+              Enrichment should improve evidence quality, not pretend the machine already knows the answer.
             </p>
           </div>
         </Section>

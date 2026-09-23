@@ -2193,7 +2193,7 @@ export default function BehaviorBasedDetectionThinkingPage() {
             "Behavior-based detection evaluates fictional identities, devices, services, destinations, timing, sequences, frequency, privilege, peers, state, authorization, source health, and mission impact.",
             "Rare, unusual, changed, outside-hours, peer-different, or new-destination behavior is not automatic proof of harmful intent.",
             "Repeated fictional behavior can still represent stale exceptions, policy drift, unsupported workflows, or source defects.",
-            "Expected behavior should reflect current authorization, purpose, owner, state, policy, and evidence—not merely historical repetition.",
+            "Expected behavior should reflect current authorization, purpose, owner, state, policy, and evidence, not merely historical repetition.",
             "Peer groups require shared mission, identity type, environment, state, schedule, coverage, ownership, unique-role context, and lifecycle review.",
             "Change context can explain behavior but does not prove correct implementation, scope, outcome, or closure.",
             "Source delay, missing evidence, duplication, reordering, schema change, and blind periods can create false behavior differences.",

@@ -739,7 +739,7 @@ export default function AdvancedTrackKnowledgeReviewPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Completion or Readiness?"
+          title="Evidence Analysis 1: Completion or Readiness?"
           question="A student completed every earlier Advanced module but cannot explain how source health changes confidence when a log source is delayed. What is the strongest readiness conclusion?"
           evidence={[
             "All previous modules were completed.",
@@ -870,7 +870,7 @@ export default function AdvancedTrackKnowledgeReviewPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Cross-Domain Reasoning"
+          title="Evidence Analysis 2: Cross-Domain Reasoning"
           question="A fictional monitoring source is delayed during an identity-related service interruption. Which conclusion is strongest?"
           evidence={[
             "The identity platform reports a service interruption.",
@@ -901,32 +901,32 @@ export default function AdvancedTrackKnowledgeReviewPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Select eight domains",
+                title: "Task 1: Select eight domains",
                 detail:
                   "Choose at least eight Advanced domains that will matter in A20 and write one sentence explaining the core decision each domain supports.",
               },
               {
-                title: "Task 2 — Assign readiness states",
+                title: "Task 2: Assign readiness states",
                 detail:
                   "Mark each domain Ready, Nearly Ready, Review Needed, or Unknown based on what you can currently explain and apply.",
               },
               {
-                title: "Task 3 — Record evidence",
+                title: "Task 3: Record evidence",
                 detail:
                   "For each state, cite a prior fictional artifact, quiz result, reflection, or scenario that supports the judgment.",
               },
               {
-                title: "Task 4 — Identify cross-domain links",
+                title: "Task 4: Identify cross-domain links",
                 detail:
                   "Choose four pairs such as architecture/detection or cloud/recovery and explain how one domain changes the other.",
               },
               {
-                title: "Task 5 — Assign targeted review",
+                title: "Task 5: Assign targeted review",
                 detail:
                   "For every non-Ready domain, define the smallest useful review action before the related A20 lesson.",
               },
               {
-                title: "Task 6 — Define readiness evidence",
+                title: "Task 6: Define readiness evidence",
                 detail:
                   "State what you must be able to explain or decide after review before changing the domain to Ready.",
               },
@@ -945,7 +945,7 @@ export default function AdvancedTrackKnowledgeReviewPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Strong Overall, One Weak Domain"
+          title="Scenario Decision 1: Strong Overall, One Weak Domain"
           scenario="A student is strong in architecture, incident response, risk, and communication but is uncertain about workload identities. A20.6 will require cloud-and-identity reasoning."
           choices={[
             {
@@ -976,7 +976,7 @@ export default function AdvancedTrackKnowledgeReviewPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Missing Event During a Blind Window"
+          title="Scenario Decision 2: Missing Event During a Blind Window"
           scenario="A synthetic case contains no alert for a privileged event during a period when the monitoring source was delayed."
           choices={[
             {
@@ -1079,7 +1079,7 @@ export default function AdvancedTrackKnowledgeReviewPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Advanced Knowledge Readiness Map"
+          title="Portfolio Prompt: Advanced Knowledge Readiness Map"
           prompt="Create an Advanced Knowledge Readiness Map for A20. Include at least eight cybersecurity domains, a short definition of the decision each domain supports, a readiness state of Ready, Nearly Ready, Review Needed, or Unknown, evidence supporting the state, one prior fictional portfolio artifact or module reference, important cross-domain dependencies, a targeted review action for every non-Ready domain, and the evidence required before changing that domain to Ready."
           tips={[
             "Use applied understanding as the standard for readiness, not simple module completion.",

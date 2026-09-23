@@ -977,7 +977,7 @@ const quizQuestions = [
     ],
     answer: 1,
     explanation:
-      "Assets include mission outcomes, data, identity authority, services, processes, evidence, privacy, trust, safety, and recovery—not only technology."
+      "Assets include mission outcomes, data, identity authority, services, processes, evidence, privacy, trust, safety, and recovery, not only technology."
   },
   {
     question:
@@ -2314,7 +2314,7 @@ export default function AssetsActorsAndEntryPointsPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Assets include mission outcomes, data, identity authority, services, processes, evidence, privacy, trust, safety, and recovery—not only devices or applications.",
+            "Assets include mission outcomes, data, identity authority, services, processes, evidence, privacy, trust, safety, and recovery, not only devices or applications.",
             "Actors include humans, services, workloads, devices, suppliers, automation, reviewers, administrators, support roles, emergency roles, and unknown parties.",
             "Actor category, source, error, denied request, unusual timing, or missing context does not prove malicious intent.",
             "Entry points are approved interfaces with purpose, accepted operations, connected actors, affected assets, owners, controls, evidence, failure behavior, and lifecycle.",

@@ -260,7 +260,7 @@ const threatStatements = [
     controls:
       "bounded privileged access, explicit change-task scope, session evidence, approval, revocation, and retrospective review",
     confidence:
-      "Medium — the 09:11 event is confirmed, but whether it matched the approved task remains unresolved.",
+      "Medium: the 09:11 event is confirmed, but whether it matched the approved task remains unresolved.",
   },
   {
     id: "THR-NB-02",
@@ -273,7 +273,7 @@ const threatStatements = [
     controls:
       "source-health monitoring, backlog visibility, timestamp normalization, degraded-state indicators, and recovery validation",
     confidence:
-      "High — the briefing already confirms collector delay during the case window.",
+      "High: the briefing already confirms collector delay during the case window.",
   },
   {
     id: "THR-NB-03",
@@ -286,7 +286,7 @@ const threatStatements = [
     controls:
       "scoped workload authorization, narrow destinations, role ownership, access review, audit evidence, and revocation",
     confidence:
-      "Low to Medium — the architecture shows the relationship, but current role scope has not yet been reviewed.",
+      "Low to Medium: the architecture shows the relationship, but current role scope has not yet been reviewed.",
   },
   {
     id: "THR-NB-04",
@@ -312,7 +312,7 @@ const threatStatements = [
     controls:
       "current restoration exercises, dependency validation, recovery-role review, RTO/RPO evidence, and residual-risk ownership",
     confidence:
-      "High — the case briefing identifies current backups but older full restoration evidence.",
+      "High: the case briefing identifies current backups but older full restoration evidence.",
   },
   {
     id: "THR-NB-06",
@@ -668,7 +668,7 @@ export default function ArchitectureThreatModelPhasePage() {
             Threat modeling adds a second question: under what plausible conditions
             could those relationships produce a meaningful security, privacy,
             reliability, or recovery concern? The answer should lead to defensive
-            controls and evidence needs—not exploitation procedures.
+            controls and evidence needs, not exploitation procedures.
           </p>
         </Section>
 
@@ -817,7 +817,7 @@ export default function ArchitectureThreatModelPhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Design or Proof?"
+          title="Evidence Analysis 1: Design or Proof?"
           question="The architecture requires privileged maintenance to use approved, time-bounded administrative access. A privileged action appears at 09:11. What is the strongest conclusion?"
           evidence={[
             "The design expects approved bounded privilege.",
@@ -949,7 +949,7 @@ export default function ArchitectureThreatModelPhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Dependency or Root Cause?"
+          title="Evidence Analysis 2: Dependency or Root Cause?"
           question="Queue latency rises before portal errors during the approved maintenance window. What is the strongest architecture conclusion?"
           evidence={[
             "Worker queue latency rises at 09:13.",
@@ -1064,32 +1064,32 @@ export default function ArchitectureThreatModelPhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Map the mission and assets",
+                title: "Task 1: Map the mission and assets",
                 detail:
                   "List the portal mission, protected data, critical services, human identities, workload identities, evidence systems, and recovery assets.",
               },
               {
-                title: "Task 2 — Draw the defensive architecture",
+                title: "Task 2: Draw the defensive architecture",
                 detail:
                   "Create a fictional diagram showing portal, identity, worker, queue, data, monitoring, recovery, and important administrative relationships.",
               },
               {
-                title: "Task 3 — Mark trust boundaries",
+                title: "Task 3: Mark trust boundaries",
                 detail:
                   "Label at least five places where identity, privilege, data sensitivity, environment, or responsibility changes.",
               },
               {
-                title: "Task 4 — Review dependencies",
+                title: "Task 4: Review dependencies",
                 detail:
                   "Identify at least four concentration dependencies and describe degraded behavior, evidence needs, and recovery ownership.",
               },
               {
-                title: "Task 5 — Write threat statements",
+                title: "Task 5: Write threat statements",
                 detail:
                   "Write at least five bounded threat statements using condition, affected asset/outcome, consequence, controls, and current confidence.",
               },
               {
-                title: "Task 6 — Carry findings forward",
+                title: "Task 6: Carry findings forward",
                 detail:
                   "Create architecture findings for A20.4–A20.7 that identify what monitoring, identity, recovery, risk, or privacy evidence should be reviewed later.",
               },
@@ -1108,7 +1108,7 @@ export default function ArchitectureThreatModelPhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Workload Access Is Not Fully Documented"
+          title="Scenario Decision 1: Workload Access Is Not Fully Documented"
           scenario="The worker service clearly needs queue and protected-data access, but the supplied case does not contain complete evidence showing the exact current workload permissions."
           choices={[
             {
@@ -1139,7 +1139,7 @@ export default function ArchitectureThreatModelPhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Recovery Confidence"
+          title="Scenario Decision 2: Recovery Confidence"
           scenario="Northbridge has current backup status, but the latest full restoration exercise is older than the preferred review window."
           choices={[
             {
@@ -1241,7 +1241,7 @@ export default function ArchitectureThreatModelPhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Architecture and Threat Model Decision Pack"
+          title="Portfolio Prompt: Architecture and Threat Model Decision Pack"
           prompt="Create a fictional Northbridge Architecture and Threat Model Decision Pack. Include mission, critical services, assets, protected data, human identities, workload identities, service flows, administrative flows, monitoring flows, at least five trust boundaries, at least four concentration dependencies, degraded-mode considerations, recovery paths, control expectations, evidence sources, architecture assumptions, implementation-evidence gaps, at least five bounded threat statements, current confidence, defensive controls, architecture findings, fictional owners, validation needs, unresolved questions, and a short summary explaining which findings should be carried into detection, incident response, cloud, identity, risk, privacy, and recovery review."
           tips={[
             "Use architecture to explain relationships, not to claim unsupported implementation facts.",

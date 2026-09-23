@@ -779,7 +779,7 @@ export default function WindowsSecurityBasicsModuleTestPage() {
             {[
               [
                 "Prefer evidence over appearance",
-                "Choose the answer supported by account, permission, alert, event, service, owner, timeline, or change evidence—not by a familiar name, warning color, or assumption.",
+                "Choose the answer supported by account, permission, alert, event, service, owner, timeline, or change evidence, not by a familiar name, warning color, or assumption.",
               ],
               [
                 "Prefer narrow action over broad disruption",

@@ -724,7 +724,7 @@ export default function FirewallsAndNetworkAccessRulesPage() {
 
           <div className="mt-5 rounded-2xl border border-blue-400/30 bg-blue-400/10 p-5 text-blue-50">
             <span className="font-bold">Intermediate habit:</span> interpret an
-            allow or deny result as one documented control decision—not as a
+            allow or deny result as one documented control decision, not as a
             complete judgment about the person, application, or event.
           </div>
         </SectionCard>

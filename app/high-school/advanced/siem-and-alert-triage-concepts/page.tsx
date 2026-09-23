@@ -524,7 +524,7 @@ export default function SiemAndAlertTriageConceptsModulePage() {
               ],
               [
                 "Quality before volume",
-                "A strong fictional SIEM program measures useful decisions, missed conditions, source health, analyst effort, privacy, and lifecycle—not only alert counts.",
+                "A strong fictional SIEM program measures useful decisions, missed conditions, source health, analyst effort, privacy, and lifecycle, not only alert counts.",
               ],
             ].map(([title, detail]) => (
               <div

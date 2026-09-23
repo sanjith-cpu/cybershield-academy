@@ -342,7 +342,7 @@ const evidencePreview = [
   {
     type: "Privacy risk record",
     example:
-      "PRA-008 — partner data scope expansion — impact=Medium-High — confidence=Moderate — state=Treat",
+      "PRA-008 — partner data scope expansion — impact=Medium-High: confidence=Moderate — state=Treat",
     decisionValue:
       "Connects a privacy concern to evidence, uncertainty, ownership, and treatment.",
   },
@@ -650,7 +650,7 @@ export default function PrivacyEngineeringAndDataGovernancePage() {
                 Use fictional or synthetic data only. Do not collect, infer,
                 deanonymize, expose, or investigate real people or private
                 datasets. This module teaches defensive privacy engineering and
-                governance—not surveillance, evasion, or unauthorized access.
+                governance, not surveillance, evasion, or unauthorized access.
               </p>
             </div>
           </div>

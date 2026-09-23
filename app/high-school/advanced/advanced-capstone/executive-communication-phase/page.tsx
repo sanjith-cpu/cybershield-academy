@@ -877,7 +877,7 @@ export default function ExecutiveCommunicationPhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — What Belongs in the Executive Brief?"
+          title="Evidence Analysis 1: What Belongs in the Executive Brief?"
           question="Which summary best reflects the Northbridge case for leadership?"
           evidence={[
             "Portal service recovered after a short disruption.",
@@ -994,7 +994,7 @@ export default function ExecutiveCommunicationPhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Different Audience, Same Truth"
+          title="Evidence Analysis 2: Different Audience, Same Truth"
           question="The technical report says worker authorization scope is Unknown pending role comparison. What should the executive brief say?"
           evidence={[
             "The worker has a legitimate business purpose.",
@@ -1164,32 +1164,32 @@ export default function ExecutiveCommunicationPhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Select material findings",
+                title: "Task 1: Select material findings",
                 detail:
                   "Choose the three to five findings most likely to affect leadership decisions and explain why each is material.",
               },
               {
-                title: "Task 2 — Write the technical view",
+                title: "Task 2: Write the technical view",
                 detail:
                   "Preserve evidence, source health, confidence, owners, validation, and unresolved questions.",
               },
               {
-                title: "Task 3 — Write the manager view",
+                title: "Task 3: Write the manager view",
                 detail:
                   "Summarize service state, priorities, owners, treatment progress, dependencies, deadlines, and escalation triggers.",
               },
               {
-                title: "Task 4 — Write the executive view",
+                title: "Task 4: Write the executive view",
                 detail:
                   "Use situation, impact, current state, confidence, top risks, recommendation, owner, and next checkpoint.",
               },
               {
-                title: "Task 5 — Check consistency",
+                title: "Task 5: Check consistency",
                 detail:
                   "Compare all versions and verify that incident status, authorization state, confidence, risk, and privacy decisions are identical underneath the different depth.",
               },
               {
-                title: "Task 6 — Prepare presentation notes",
+                title: "Task 6: Prepare presentation notes",
                 detail:
                   "Create a short speaking outline that explains the case without reading every slide or adding unsupported claims.",
               },
@@ -1208,7 +1208,7 @@ export default function ExecutiveCommunicationPhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Executive Wants a Yes-or-No Root Cause"
+          title="Scenario Decision 1: Executive Wants a Yes-or-No Root Cause"
           scenario="A fictional executive asks whether the privileged action caused the service disruption. The supplied evidence still supports several plausible explanations."
           choices={[
             {
@@ -1239,7 +1239,7 @@ export default function ExecutiveCommunicationPhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Executive Brief Is Too Technical"
+          title="Scenario Decision 2: Executive Brief Is Too Technical"
           scenario="The draft leadership brief includes every synthetic timestamp, telemetry field, and source-health metric, but the actual decision request is hard to find."
           choices={[
             {
@@ -1341,7 +1341,7 @@ export default function ExecutiveCommunicationPhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Executive Capstone Brief"
+          title="Portfolio Prompt: Executive Capstone Brief"
           prompt="Create a fictional Northbridge Executive Capstone Brief. Include a technical view, manager view, executive view, and portfolio-facing summary that preserve the same confirmed facts and uncertainty. Identify the situation, business impact, current state, evidence confidence, three to five material risks or governance findings, privacy implications, recovery state, options, recommendation, tradeoffs, residual risk, accountable owners, decisions required, next checkpoints, and reopen or escalation triggers. Add a consistency review showing that incident status, privileged-action authorization status, workload-identity scope, monitoring-source health, recovery confidence, and privacy decisions are aligned across all audience versions."
           tips={[
             "Change depth and emphasis by audience, not the underlying facts.",

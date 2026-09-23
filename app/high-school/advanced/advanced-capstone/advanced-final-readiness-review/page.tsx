@@ -253,7 +253,7 @@ const recurringPatterns = [
 
 const readinessScale = [
   {
-    level: "Level 4 — Ready to Explain and Apply",
+    level: "Level 4: Ready to Explain and Apply",
     description:
       "I can explain the concept, apply it to a new fictional scenario, compare strong and weak reasoning, and defend the decision without prompts.",
     evidence:
@@ -262,7 +262,7 @@ const readinessScale = [
       "Use brief review only; spend study time elsewhere.",
   },
   {
-    level: "Level 3 — Mostly Ready",
+    level: "Level 3: Mostly Ready",
     description:
       "I understand the concept and usually apply it correctly, but one subtopic or edge case still causes hesitation.",
     evidence:
@@ -271,7 +271,7 @@ const readinessScale = [
       "Review one focused lesson or complete two targeted scenario questions.",
   },
   {
-    level: "Level 2 — Review Needed",
+    level: "Level 2: Review Needed",
     description:
       "I recognize the vocabulary but cannot consistently explain the decision logic, evidence requirement, or limitation.",
     evidence:
@@ -280,7 +280,7 @@ const readinessScale = [
       "Return to the relevant module, rebuild the concept, then retest with a new scenario.",
   },
   {
-    level: "Level 1 — Not Yet Ready",
+    level: "Level 1: Not Yet Ready",
     description:
       "I cannot explain the concept accurately enough to make a defensible decision.",
     evidence:
@@ -458,35 +458,35 @@ const questionTypes = [
 
 const finalReviewPriorities = [
   {
-    priority: "Priority 1 — Evidence boundaries",
+    priority: "Priority 1: Evidence boundaries",
     why:
       "Many Advanced questions are decided by whether the answer respects what a source can actually prove.",
     review:
       "Authentication vs. authorization; design vs. implementation; correlation vs. causation; absence vs. source health; alert vs. incident.",
   },
   {
-    priority: "Priority 2 — Identity and workload governance",
+    priority: "Priority 2: Identity and workload governance",
     why:
       "Identity appears across cloud, architecture, monitoring, incident response, recovery, and risk.",
     review:
       "Purpose, owner, privilege, scope, approval, lifecycle, federation, workload access, recovery roles.",
   },
   {
-    priority: "Priority 3 — Monitoring and source health",
+    priority: "Priority 3: Monitoring and source health",
     why:
       "Detection quality depends on telemetry reliability, context, confidence, tuning, validation, and degraded-state behavior.",
     review:
       "Healthy/Delayed/Partial/Blind/Conflicting/Recovering, severity vs. confidence, safe validation, metrics.",
   },
   {
-    priority: "Priority 4 — Risk, privacy, and governance",
+    priority: "Priority 4: Risk, privacy, and governance",
     why:
       "These topics turn technical evidence into organizational decisions.",
     review:
       "Likelihood, impact, controls, inherent/residual risk, treatment, acceptance, purpose, minimization, retention, review triggers.",
   },
   {
-    priority: "Priority 5 — Recovery and communication",
+    priority: "Priority 5: Recovery and communication",
     why:
       "Advanced questions often ask what must happen after immediate stabilization and how decisions should be explained.",
     review:
@@ -977,7 +977,7 @@ export default function AdvancedFinalReadinessReviewPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Can You Apply the Principle?"
+          title="Evidence Analysis 1: Can You Apply the Principle?"
           question="A synthetic privileged action occurred during approved maintenance. The identity authenticated successfully, but the exact task-level authorization is missing. What is the strongest Advanced answer?"
           evidence={[
             "The event itself is confirmed.",
@@ -1093,7 +1093,7 @@ export default function AdvancedFinalReadinessReviewPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Recovery Readiness"
+          title="Evidence Analysis 2: Recovery Readiness"
           question="A fictional organization has current backups, stable service, and older-than-preferred restoration testing. Which answer best demonstrates Advanced reasoning?"
           evidence={[
             "Backup status is current.",
@@ -1256,32 +1256,32 @@ export default function AdvancedFinalReadinessReviewPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Rate twelve domains",
+                title: "Task 1: Rate twelve domains",
                 detail:
                   "Assign each domain Level 4, 3, 2, or 1 using evidence from your capstone and recent scenario reasoning.",
               },
               {
-                title: "Task 2 — Identify recurring mistakes",
+                title: "Task 2: Identify recurring mistakes",
                 detail:
                   "Look for patterns such as overconfidence, source-health errors, identity confusion, risk-rating uncertainty, or privacy overcollection.",
               },
               {
-                title: "Task 3 — Choose five review priorities",
+                title: "Task 3: Choose five review priorities",
                 detail:
                   "Rank the areas that would most improve your ability to answer cross-domain scenario questions.",
               },
               {
-                title: "Task 4 — Build targeted practice",
+                title: "Task 4: Build targeted practice",
                 detail:
                   "For each priority, write two new fictional scenario questions that require a decision rather than a definition.",
               },
               {
-                title: "Task 5 — Define readiness evidence",
+                title: "Task 5: Define readiness evidence",
                 detail:
                   "State what you must be able to explain correctly before moving a topic from Review Needed to Mostly Ready or Ready.",
               },
               {
-                title: "Task 6 — Prepare assessment sequence",
+                title: "Task 6: Prepare assessment sequence",
                 detail:
                   "Complete the A20 Module Test first, then use later 50-question practice tests to identify remaining full-track gaps before the 125-question final.",
               },
@@ -1300,7 +1300,7 @@ export default function AdvancedFinalReadinessReviewPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — One Weak Area Before the Test"
+          title="Scenario Decision 1: One Weak Area Before the Test"
           scenario="A student is strong in architecture, incident response, recovery, and communication but repeatedly confuses workload identity purpose with proof of current permission scope."
           choices={[
             {
@@ -1331,7 +1331,7 @@ export default function AdvancedFinalReadinessReviewPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Two Answers Seem Plausible"
+          title="Scenario Decision 2: Two Answers Seem Plausible"
           scenario="A scenario contains a High-severity privileged alert during approved maintenance, but source health is degraded and task-level authorization is incomplete."
           choices={[
             {
@@ -1447,7 +1447,7 @@ export default function AdvancedFinalReadinessReviewPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Advanced Final Readiness Plan"
+          title="Portfolio Prompt: Advanced Final Readiness Plan"
           prompt="Create an Advanced Final Readiness Plan using the completed Advanced Capstone Portfolio Submission and prior Advanced work. Rate at least twelve cybersecurity domains using Level 4 Ready to Explain and Apply, Level 3 Mostly Ready, Level 2 Review Needed, or Level 1 Not Yet Ready. For each domain include evidence supporting the rating, one recurring reasoning pattern, one common mistake to avoid, one targeted review action, and the evidence required before raising the readiness level. Identify your five highest-priority review areas, create at least two new fictional scenario questions for each priority, and include an assessment sequence covering the A20 Module Test, Advanced Practice Test 1, Advanced Practice Test 2, and the 125-question Advanced Final Test."
           tips={[
             "Use applied scenario reasoning as the standard for readiness, not familiarity with vocabulary.",
@@ -1464,7 +1464,7 @@ export default function AdvancedFinalReadinessReviewPage() {
           title="Are You Ready for the A20 Module Test?"
         >
           <p className="leading-8">
-            The module test is the next checkpoint—not the final Advanced
+            The module test is the next checkpoint, not the final Advanced
             assessment. Use it to verify that you can integrate the A20 capstone
             concepts before moving to the two full-track practice tests.
           </p>

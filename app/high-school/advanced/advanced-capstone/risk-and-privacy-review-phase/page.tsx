@@ -946,7 +946,7 @@ export default function RiskPrivacyReviewPhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Unknown Scope Is Not Automatic High Risk"
+          title="Evidence Analysis 1: Unknown Scope Is Not Automatic High Risk"
           question="How should the worker workload authorization issue be represented before exact current permissions are available?"
           evidence={[
             "The worker has a legitimate queue-processing and protected-data purpose.",
@@ -1087,7 +1087,7 @@ export default function RiskPrivacyReviewPhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Security Purpose vs. Privacy Scope"
+          title="Evidence Analysis 2: Security Purpose vs. Privacy Scope"
           question="The monitoring team proposes collecting additional synthetic identity fields because they may be useful later. What is the strongest privacy decision?"
           evidence={[
             "Current defensive questions can already be answered with role, action category, target class, and timing.",
@@ -1260,32 +1260,32 @@ export default function RiskPrivacyReviewPhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Write five risk statements",
+                title: "Task 1: Write five risk statements",
                 detail:
                   "Connect each condition to a protected asset or business outcome and adverse consequence.",
               },
               {
-                title: "Task 2 — Assess evidence and controls",
+                title: "Task 2: Assess evidence and controls",
                 detail:
                   "Record likelihood confidence, impact, current controls, control-evidence strength, and meaningful unknowns.",
               },
               {
-                title: "Task 3 — Determine residual risk",
+                title: "Task 3: Determine residual risk",
                 detail:
                   "State what exposure remains after current controls without forcing a precise rating where evidence is incomplete.",
               },
               {
-                title: "Task 4 — Build the privacy inventory",
+                title: "Task 4: Build the privacy inventory",
                 detail:
                   "For at least five synthetic data classes, record purpose, minimization, access, retention, sharing, lifecycle, and review triggers.",
               },
               {
-                title: "Task 5 — Select treatment",
+                title: "Task 5: Select treatment",
                 detail:
                   "Choose reduce, avoid, share/transfer where appropriate, or accept, then name the fictional owner and rationale.",
               },
               {
-                title: "Task 6 — Prepare executive handoff",
+                title: "Task 6: Prepare executive handoff",
                 detail:
                   "Summarize the three most material risks, the most important privacy decision, owners, treatment status, residual uncertainty, and next checkpoint.",
               },
@@ -1304,7 +1304,7 @@ export default function RiskPrivacyReviewPhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Recovery Evidence Is Stale"
+          title="Scenario Decision 1: Recovery Evidence Is Stale"
           scenario="Northbridge has current backup status, but the last complete restoration exercise is older than the preferred review window. The service is currently stable."
           choices={[
             {
@@ -1335,7 +1335,7 @@ export default function RiskPrivacyReviewPhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Monitoring Wants More Identity Data"
+          title="Scenario Decision 2: Monitoring Wants More Identity Data"
           scenario="The monitoring team proposes adding several synthetic identity fields that are available from the platform but are not necessary for current defensive questions."
           choices={[
             {
@@ -1438,7 +1438,7 @@ export default function RiskPrivacyReviewPhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Risk and Privacy Decision Register"
+          title="Portfolio Prompt: Risk and Privacy Decision Register"
           prompt="Create a fictional Northbridge Risk and Privacy Decision Register. Include at least five risk statements; affected assets or business outcomes; likelihood confidence; impact; current controls; control-evidence strength; inherent and residual risk where supportable; uncertainty; treatment choice; treatment rationale; fictional owner; target evidence; review trigger; exception or acceptance details where relevant; at least five privacy data classes with purpose, minimization, access, sharing, retention, lifecycle, and review triggers; a mapping between security monitoring purpose and required data fields; unresolved privacy or risk questions; and a short executive handoff identifying the three most material risks, the most important privacy decision, accountable owners, treatment status, and next checkpoint."
           tips={[
             "Do not force exact risk ratings when important evidence is still Unknown.",

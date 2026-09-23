@@ -97,13 +97,13 @@ const registerFields = [
   {
     field: "Impact",
     purpose: "Describe the business consequence if the scenario occurs.",
-    strong: "High — sensitive data exposure, disruption, difficult investigation, governance impact",
+    strong: "High: sensitive data exposure, disruption, difficult investigation, governance impact",
     weak: "Bad",
   },
   {
     field: "Likelihood",
     purpose: "Record how plausible the scenario is under current conditions and evidence.",
-    strong: "Medium-High — several active control gaps and incomplete ownership remain",
+    strong: "Medium-High: several active control gaps and incomplete ownership remain",
     weak: "Probably high",
   },
   {
@@ -1205,7 +1205,7 @@ export default function RiskRegistersAndOwnershipPage() {
               { title: "Show decision state", detail: "Draft, Open, Treat, Conditional, Accepted Risk, Blocked, Monitor, and Closed should have clear meanings." },
               { title: "Use meaningful milestones", detail: "A due date should describe what should be different by that date." },
               { title: "Show evidence freshness", detail: "Risk status should lose confidence when evidence becomes stale or contradictory." },
-              { title: "Use objective closure criteria", detail: "A risk closes because evidence shows the target state was reached—not because the task list is empty." },
+              { title: "Use objective closure criteria", detail: "A risk closes because evidence shows the target state was reached, not because the task list is empty." },
               { title: "Show escalation rules", detail: "High residual risk, missed P0 work, missing ownership, or above-tolerance conditions should have a path to leadership." },
               { title: "Connect forward", detail: "A15.4 will evaluate whether the controls referenced in your risk register are actually designed and operating as intended." },
             ].map((item) => (
@@ -1221,7 +1221,7 @@ export default function RiskRegistersAndOwnershipPage() {
 
         <section className="rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-6 text-yellow-50">
           <p className="text-xs font-black uppercase tracking-[0.18em] text-yellow-200">Lesson Safety Boundary</p>
-          <h2 className="mt-2 text-2xl font-black">Risk governance uses safe evidence—not offensive validation</h2>
+          <h2 className="mt-2 text-2xl font-black">Risk governance uses safe evidence, not offensive validation</h2>
           <p className="mt-3 leading-7">Do not scan, probe, exploit, test, or investigate real systems, vendors, accounts, or people. Do not collect private risk records or confidential organizational evidence. All records, owners, systems, logs, and evidence in this lesson are fictional.</p>
         </section>
 

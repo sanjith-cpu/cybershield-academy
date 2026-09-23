@@ -1335,7 +1335,7 @@ export default function AdvancedNetworkDefenseLabPage() {
 
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             Professional defense evaluates how controls interact under normal,
-            changed, degraded, and recovery conditions—not merely whether they
+            changed, degraded, and recovery conditions, not merely whether they
             exist.
           </div>
         </SectionCard>
@@ -2310,7 +2310,7 @@ export default function AdvancedNetworkDefenseLabPage() {
             "Findings should separate observation, evidence, alternatives, confidence, scope, impact, owner, action, residual risk, and completion criteria.",
             "Stale privileged access, broad communication policy, delayed evidence, mixed DNS state, ownership gaps, capacity limits, and shared dependencies can interact and increase risk.",
             "Evidence connectivity, freshness, completeness, timing, provenance, correlation, coverage, and privacy should be evaluated separately.",
-            "Unknown or unowned fictional devices, records, rules, aliases, and access profiles require validation—not automatic blame or deletion.",
+            "Unknown or unowned fictional devices, records, rules, aliases, and access profiles require validation, not automatic blame or deletion.",
             "Priority should reflect mission impact, authority, blast radius, evidence, privacy, recoverability, feasibility, and correlated risk.",
             "Phased implementation, compensating controls, validation gates, rollback, support, and maintenance reduce the risk of defensive change.",
             "Failover, degraded operation, recovery, reconciliation, failback, and closure are separate professional decisions.",

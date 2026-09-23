@@ -401,7 +401,7 @@ const skillCheck = [
     ],
     answer: 2,
     explanation:
-      "The goal is calm, thoughtful decision-making—not fear or trying to solve everything alone.",
+      "The goal is calm, thoughtful decision-making, not fear or trying to solve everything alone.",
   },
 ];
 

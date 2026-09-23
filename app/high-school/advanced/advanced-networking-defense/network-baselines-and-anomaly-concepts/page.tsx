@@ -1245,7 +1245,7 @@ export default function NetworkBaselinesAndAnomalyConceptsPage() {
             temporary for migration, one is repeatedly denied, and two remain
             unexplained. The difference is real, but the correct response
             requires change, policy, identity, source-health, service, and
-            business context—not an immediate claim of compromise.
+            business context, not an immediate claim of compromise.
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">

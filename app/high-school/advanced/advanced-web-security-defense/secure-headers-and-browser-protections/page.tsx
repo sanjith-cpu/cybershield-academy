@@ -1496,7 +1496,7 @@ export default function SecureHeadersAndBrowserProtectionsPage() {
             protection categories, rollout stages, exceptions, monitoring
             questions, and evidence on this page. The lab teaches defensive
             policy design, compatibility, privacy, rollout, validation, and
-            rollback—not browser-policy bypass.
+            rollback, not browser-policy bypass.
           </p>
 
           <div className="mt-6 grid gap-5">

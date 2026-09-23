@@ -300,7 +300,7 @@ function JudgmentFlow() {
 
       <div className="mt-6 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
         <span className="font-bold">Defender rule:</span> suspicious links and
-        files should be judged from displayed evidence and context—not opened,
+        files should be judged from displayed evidence and context, not opened,
         downloaded, renamed, forwarded, uploaded, or tested.
       </div>
     </section>

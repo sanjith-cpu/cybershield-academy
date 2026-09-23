@@ -175,7 +175,7 @@ const quizQuestions = [
     ],
     answer: 0,
     explanation:
-      "Trust should come from verified ownership, purpose, and approved handling—not appearance.",
+      "Trust should come from verified ownership, purpose, and approved handling, not appearance.",
   },
 ];
 

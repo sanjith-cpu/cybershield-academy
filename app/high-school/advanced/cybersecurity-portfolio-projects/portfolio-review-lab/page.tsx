@@ -105,7 +105,7 @@ const ratingScale = [
       "The artifact contains useful work, but important evidence, reasoning, ownership, structure, limitations, or safety framing is incomplete.",
   },
   {
-    rating: "1 — Not Ready to Present",
+    rating: "1, not Ready to Present",
     meaning:
       "The artifact has a major correctness, unsupported-claim, safety, privacy, authorship, or communication problem that should be fixed before publication.",
   },
@@ -437,7 +437,7 @@ const quizQuestions = [
       "Which rating best fits an accurate artifact with strong reasoning but one missing owner and a small clarity issue?",
     choices: [
       "3 — Strong, Needs Minor Revision",
-      "1 — Not Ready to Present",
+      "1, not Ready to Present",
       "Automatically 4 — Portfolio Ready",
       "No rating can be given",
     ],
@@ -778,7 +778,7 @@ export default function PortfolioReviewLabPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Fix Content or Fix Presentation?"
+          title="Evidence Analysis 1: Fix Content or Fix Presentation?"
           question="The incident report looks polished, but one sentence states a root cause more confidently than the synthetic evidence supports. What should be revised first?"
           evidence={[
             "The timeline and formatting are clear.",
@@ -860,7 +860,7 @@ export default function PortfolioReviewLabPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Inconsistency or Different Decision?"
+          title="Evidence Analysis 2: Inconsistency or Different Decision?"
           question="A monitoring issue is Moderate residual risk in the risk assessment but High review priority in the cloud review. Is that automatically inconsistent?"
           evidence={[
             "Residual risk describes remaining exposure after controls.",
@@ -947,32 +947,32 @@ export default function PortfolioReviewLabPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Score four artifacts",
+                title: "Task 1: Score four artifacts",
                 detail:
                   "Choose four A19 artifacts and rate each from 1 to 4 across purpose, evidence, reasoning, clarity, communication, revision, safety, and presentation.",
               },
               {
-                title: "Task 2 — Find two cross-artifact issues",
+                title: "Task 2: Find two cross-artifact issues",
                 detail:
                   "Look for unexplained differences in names, owners, controls, priorities, confidence, terminology, or limitations.",
               },
               {
-                title: "Task 3 — Separate content from polish",
+                title: "Task 3: Separate content from polish",
                 detail:
                   "Label each finding as accuracy, evidence, reasoning, consistency, safety, communication, presentation, or visual polish.",
               },
               {
-                title: "Task 4 — Prioritize revisions",
+                title: "Task 4: Prioritize revisions",
                 detail:
                   "Place each finding into P1, P2, or P3 and explain why the order protects credibility and reviewer understanding.",
               },
               {
-                title: "Task 5 — Re-review after revision",
+                title: "Task 5: Re-review after revision",
                 detail:
                   "For the three highest-priority issues, describe the expected before-and-after evidence and decide whether the rating should change.",
               },
               {
-                title: "Task 6 — Make a readiness decision",
+                title: "Task 6: Make a readiness decision",
                 detail:
                   "Write a short final decision: ready, ready after minor revision, or not yet ready. Support it with evidence from the review.",
               },
@@ -991,7 +991,7 @@ export default function PortfolioReviewLabPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Limited Time Before a Formal Review"
+          title="Scenario Decision 1: Limited Time Before a Formal Review"
           scenario="The portfolio review identifies one unsupported incident-cause statement, one missing recovery limitation, three wording issues, and several small visual inconsistencies. There is time for only a few revisions."
           choices={[
             {
@@ -1022,7 +1022,7 @@ export default function PortfolioReviewLabPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Reviewer Wants More Realism"
+          title="Scenario Decision 2: Reviewer Wants More Realism"
           scenario="A reviewer suggests replacing synthetic evidence with screenshots and records from a real organization so the portfolio appears more advanced."
           choices={[
             {
@@ -1116,7 +1116,7 @@ export default function PortfolioReviewLabPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Advanced Cybersecurity Portfolio Review Pack"
+          title="Portfolio Prompt: Advanced Cybersecurity Portfolio Review Pack"
           prompt="Create an Advanced Cybersecurity Portfolio Review Pack for A19. Include an eight-dimension quality rubric, ratings for at least four artifacts, eight cross-artifact checks, a prioritized revision list using P1/P2/P3, before-and-after notes for at least three meaningful revisions, a final readiness assessment, a presentation-readiness section, an authorship and assistance statement, and a publication-safety confirmation."
           tips={[
             "Fix correctness, evidence, safety, and integrity issues before cosmetic polish.",

@@ -1276,7 +1276,7 @@ export default function FirewallStrategyAndRuleHygienePage() {
               ["Consolidate carefully", "Combine fictional duplicate or overlapping rules only when purpose, scope, ownership, evidence, and rollback align."],
               ["Correct effective policy", "Address fictional broad matches and shadowing through validated ordering and scope decisions."],
               ["Close temporary access", "Expire fictional migration, support, and emergency rules through authorized closure and business validation."],
-              ["Measure real improvement", "Track fewer unowned, broad, unsupported, expired, duplicate, shadowed, and unvalidated rules—not only total count."],
+              ["Measure real improvement", "Track fewer unowned, broad, unsupported, expired, duplicate, shadowed, and unvalidated rules, not only total count."],
             ].map(([title, detail]) => (
               <div
                 key={title}
@@ -1331,7 +1331,7 @@ export default function FirewallStrategyAndRuleHygienePage() {
             "Start from fictional mission and communication purpose rather than from a raw rule list.",
             "Separate request, approval, implementation, effective policy, usage, validation, and recertification evidence.",
             "Do not retire a fictional rule without dependency review, owner approval, rollback, business validation, and closure evidence.",
-            "Measure improved ownership, specificity, evidence, exception closure, and policy clarity—not only lower rule count.",
+            "Measure improved ownership, specificity, evidence, exception closure, and policy clarity, not only lower rule count.",
             "Keep the entire artifact completely fictional, defensive, non-operational, privacy-safe, evidence-aware, maintainable, and suitable for a public learning portfolio.",
           ]}
         />

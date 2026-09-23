@@ -45,7 +45,7 @@ const leaderQuestions = [
     why:
       "Impact helps leaders understand urgency and business significance.",
     strong:
-      "High — critical payroll operations could be interrupted for multiple business days.",
+      "High: critical payroll operations could be interrupted for multiple business days.",
     weak:
       "High because the score is red.",
   },
@@ -54,7 +54,7 @@ const leaderQuestions = [
     why:
       "Likelihood and uncertainty help distinguish severe-but-rare risks from frequent-but-limited ones.",
     strong:
-      "Medium — supplier controls are strong, but no practical alternate provider exists.",
+      "Medium: supplier controls are strong, but no practical alternate provider exists.",
     weak:
       "It might happen.",
   },
@@ -403,7 +403,7 @@ const principles = [
   {
     title: "Separate urgency from emotion",
     meaning:
-      "High urgency should come from impact, timing, exposure, or tolerance—not fear.",
+      "High urgency should come from impact, timing, exposure, or tolerance, not fear.",
     review:
       "What evidence makes this urgent now?",
   },
@@ -971,7 +971,7 @@ const takeaways = [
   "Residual risk should remain visible after treatment.",
   "Metrics support decisions but do not replace narrative context.",
   "Different audiences need different levels of technical detail.",
-  "Escalation should be based on impact, tolerance, urgency, ownership, or evidence—not fear.",
+  "Escalation should be based on impact, tolerance, urgency, ownership, or evidence, not fear.",
   "The Leadership Risk Brief prepares you for A15.10 Risk Decision Lab.",
 ];
 

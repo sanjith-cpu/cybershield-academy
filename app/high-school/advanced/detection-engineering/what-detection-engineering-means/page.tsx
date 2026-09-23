@@ -967,7 +967,7 @@ export default function WhatDetectionEngineeringMeansPage() {
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
             Learn why detection engineering begins with mission risks and
-            defender questions—not alert volume or product features—and how
+            defender questions, not alert volume or product features—and how
             professional defenders connect evidence, behavior hypotheses,
             conceptual logic, testing, tuning, documentation, ownership,
             measurement, and lifecycle improvement.

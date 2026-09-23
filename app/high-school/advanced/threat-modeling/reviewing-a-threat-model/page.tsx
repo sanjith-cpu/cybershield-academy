@@ -1274,7 +1274,7 @@ export default function ReviewingAThreatModelPage() {
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             A review should identify what is decision-ready, what is
             conditional, what is blocked, what must be corrected, and who owns
-            the next evidence—not simply label the model good or bad.
+            the next evidence, not simply label the model good or bad.
           </div>
         </SectionCard>
 

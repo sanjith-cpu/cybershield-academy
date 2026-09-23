@@ -1274,7 +1274,7 @@ export default function InputHandlingAndOutputSafetyPage() {
             Use only the fictional fields, output contexts, safe review cases,
             evidence records, and error examples on this page. The lab teaches
             contract design, privacy, authorization, output context, error
-            handling, logging, and safe validation—not exploitation.
+            handling, logging, and safe validation, not exploitation.
           </p>
           <div className="mt-6 grid gap-5">
             {labPhases.map((item) => (

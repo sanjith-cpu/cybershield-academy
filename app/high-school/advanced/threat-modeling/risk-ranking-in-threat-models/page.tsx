@@ -23,7 +23,7 @@ const previousLesson = `${modulePath}/threat-categories-conceptually`;
 const nextLesson = `${modulePath}/choosing-mitigations`;
 
 const objectives = [
-  "Explain fictional risk ranking as a structured decision process that compares evidence, impact, likelihood, exposure, control strength, uncertainty, mission context, and recovery—not as an objective prediction.",
+  "Explain fictional risk ranking as a structured decision process that compares evidence, impact, likelihood, exposure, control strength, uncertainty, mission context, and recovery, not as an objective prediction.",
   "Define consistent fictional ranking scales and criteria for impact, likelihood, exposure, control effectiveness, confidence, uncertainty, and residual risk.",
   "Evaluate fictional threat scenarios without confusing threat category, possibility, severity, actor intent, exploitability, or missing evidence.",
   "Document fictional ranking rationale, evidence, assumptions, unknowns, disagreements, owners, review triggers, and confidence so that priorities remain explainable and revisable.",
@@ -160,7 +160,7 @@ const rankingPrinciples = [
   {
     principle: "Separate category from severity",
     description:
-      "Identity, privacy, integrity, availability, governance, or resilience labels describe concern type—not importance.",
+      "Identity, privacy, integrity, availability, governance, or resilience labels describe concern type, not importance.",
     strongPractice:
       "Apply the same risk criteria across all relevant category families.",
     failure:
@@ -196,7 +196,7 @@ const rankingPrinciples = [
   {
     principle: "Consider mission and human context",
     description:
-      "Evaluate fictional user, service, privacy, safety, fairness, communication, recovery, and trust outcomes—not only technical effects.",
+      "Evaluate fictional user, service, privacy, safety, fairness, communication, recovery, and trust outcomes, not only technical effects.",
     strongPractice:
       "Use mission owners and affected-user perspectives in impact review.",
     failure:
@@ -527,7 +527,7 @@ const riskBands = [
     response:
       "Escalate to authorized leadership and owners, define near-term protective action, preserve evidence, and review residual risk frequently.",
     warning:
-      "Very High should be rare, evidence-aware, and justified—not used as a dramatic label.",
+      "Very High should be rare, evidence-aware, and justified, not used as a dramatic label.",
   },
 ];
 
@@ -857,7 +857,7 @@ const commonMistakes = [
     why:
       "A mathematical-looking score can hide subjective definitions and false precision.",
     correction:
-      "Publish criteria, show rationale, preserve evidence, and use numbers only as a support—not a substitute—for judgment.",
+      "Publish criteria, show rationale, preserve evidence, and use numbers only as a support, not a substitute—for judgment.",
   },
   {
     mistake: "Letting impact determine likelihood",
@@ -996,7 +996,7 @@ const labSteps = [
     output:
       "Prioritized risk plan and leadership summary.",
     quality:
-      "Priority considers mission timing, dependency, change, and uncertainty—not only the final band.",
+      "Priority considers mission timing, dependency, change, and uncertainty, not only the final band.",
   },
 ];
 
@@ -2200,14 +2200,14 @@ export default function RiskRankingInThreatModelsPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Risk ranking is a structured fictional decision process—not a prediction, proof, or guarantee.",
+            "Risk ranking is a structured fictional decision process, not a prediction, proof, or guarantee.",
             "Rank specific scenarios rather than entire systems, suppliers, roles, or categories.",
             "Impact, likelihood, exposure, control strength, uncertainty, confidence, priority, urgency, and intent answer different questions.",
             "Threat category does not determine severity.",
             "A listed control should reduce residual risk only when relevant evidence supports its design, implementation, operation, review, or resilience.",
             "Uncertainty should remain visible and can justify evidence work, provisional status, or decision blocking.",
             "Inherent risk reflects the fictional scenario before control effects; residual risk reflects what remains after supported controls and limitations.",
-            "Priority may depend on mission timing, active change, dependency, owner capacity, evidence readiness, and mitigation opportunity—not only the final band.",
+            "Priority may depend on mission timing, active change, dependency, owner capacity, evidence readiness, and mitigation opportunity, not only the final band.",
             "Risk rationales, disagreement, owners, review dates, triggers, and version history make rankings explainable and maintainable.",
             "Every CyberShield risk register and artifact must remain fully fictional, authorized, defensive, non-operational, privacy-safe, and incapable of exposing real systems or people.",
           ]}

@@ -300,7 +300,7 @@ function UpdateFlow() {
 
       <div className="mt-6 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
         <span className="font-bold">Defender rule:</span> use official update
-        settings—not pop-ups, attachments, random websites, or unverified tools.
+        settings, not pop-ups, attachments, random websites, or unverified tools.
       </div>
     </section>
   );

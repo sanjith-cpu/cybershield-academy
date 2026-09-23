@@ -900,7 +900,7 @@ export default function FinalPortfolioSubmissionPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Include Everything or Curate?"
+          title="Evidence Analysis 1: Include Everything or Curate?"
           question="A student has dozens of drafts, screenshots, notes, and intermediate tables from A20. What belongs in the final portfolio?"
           evidence={[
             "The portfolio must demonstrate reasoning across all major A20 domains.",
@@ -975,7 +975,7 @@ export default function FinalPortfolioSubmissionPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Preserve the Limitation"
+          title="Evidence Analysis 2: Preserve the Limitation"
           question="The final portfolio says Northbridge backups are current. What additional statement is needed for accurate recovery communication?"
           evidence={[
             "Current backup status is documented.",
@@ -1178,32 +1178,32 @@ export default function FinalPortfolioSubmissionPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Select the core artifacts",
+                title: "Task 1: Select the core artifacts",
                 detail:
                   "Choose the strongest version of the eight A20 artifacts and write a one-paragraph purpose statement for each.",
               },
               {
-                title: "Task 2 — Build the portfolio architecture",
+                title: "Task 2: Build the portfolio architecture",
                 detail:
                   "Arrange project overview, evidence foundation, architecture, monitoring/response, governance, executive communication, reflection, and appendix.",
               },
               {
-                title: "Task 3 — Create a traceability index",
+                title: "Task 3: Create a traceability index",
                 detail:
                   "Map at least five important conclusions across the evidence, finding, risk, decision, and executive artifacts that support them.",
               },
               {
-                title: "Task 4 — Add revision history",
+                title: "Task 4: Add revision history",
                 detail:
                   "Show at least four meaningful revisions and explain how each improved accuracy, bounded reasoning, privacy, ownership, or communication.",
               },
               {
-                title: "Task 5 — Add contribution and limitations",
+                title: "Task 5: Add contribution and limitations",
                 detail:
                   "Explain your role, review process, assistance, remaining uncertainty, fictional scope, and what the project does not prove.",
               },
               {
-                title: "Task 6 — Run publication-safety review",
+                title: "Task 6: Run publication-safety review",
                 detail:
                   "Check every artifact for real names, credentials, private data, confidential architecture, operational attack guidance, unsupported claims, and real-world findings.",
               },
@@ -1222,7 +1222,7 @@ export default function FinalPortfolioSubmissionPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Portfolio Contains Conflicting Status"
+          title="Scenario Decision 1: Portfolio Contains Conflicting Status"
           scenario="The technical incident record says the 09:11 privileged action remains unresolved, but the executive slide calls it unauthorized because the student thinks stronger language sounds more impressive."
           choices={[
             {
@@ -1253,7 +1253,7 @@ export default function FinalPortfolioSubmissionPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Real Screenshot Would Look Better"
+          title="Scenario Decision 2: Real Screenshot Would Look Better"
           scenario="A student has access to a real internal dashboard screenshot and thinks it would make the fictional Northbridge portfolio look more professional."
           choices={[
             {
@@ -1367,7 +1367,7 @@ export default function FinalPortfolioSubmissionPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Advanced Capstone Portfolio Submission"
+          title="Portfolio Prompt: Advanced Capstone Portfolio Submission"
           prompt="Assemble the final fictional Northbridge Advanced Capstone Portfolio Submission. Include a project overview; safety boundary; contribution summary; the strongest A20.1–A20.8 artifacts; a portfolio architecture that groups case framing, architecture, monitoring, response, cloud/identity, risk/privacy, executive communication, reflection, and appendix material; a traceability index for at least five major conclusions; stable artifact and finding IDs; meaningful revision history; limitations; unresolved questions; owner and checkpoint consistency; an executive summary; a five-minute presentation outline; and a publication-safety review confirming that no real credentials, private records, confidential architecture, operational attack guidance, unsupported claims, or real-world unresolved security findings are included."
           tips={[
             "Curate the strongest artifacts instead of including everything.",

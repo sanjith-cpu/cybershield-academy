@@ -845,7 +845,7 @@ const checklistItems = [
 ];
 
 const takeaways = [
-  "Network architecture review is about relationships, boundaries, dependencies, resilience, and ownership—not just device inventory.",
+  "Network architecture review is about relationships, boundaries, dependencies, resilience, and ownership, not just device inventory.",
   "Trust boundaries need clear control, evidence, and accountability.",
   "Management-plane separation supports least privilege and clearer administrative oversight.",
   "Centralized services can still create concentration risks that deserve resilience planning.",

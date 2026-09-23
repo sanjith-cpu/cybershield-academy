@@ -84,7 +84,7 @@ const workshopPhases = [
     purpose: "Map fictional interfaces, data movement, administrative relationships, and trust changes.",
     questions: "Where does information or authority enter, leave, change owners, cross environments, or depend on another service?",
     outputs: "Entry-point inventory, flow register, trust-boundary map, data-purpose table, source-health notes, and recovery flows.",
-    quality: "Each flow explains purpose, data, identity, state, validation, evidence, failure, and recovery—not only arrows.",
+    quality: "Each flow explains purpose, data, identity, state, validation, evidence, failure, and recovery, not only arrows.",
   },
   {
     phase: "5. Abuse cases and categories",
@@ -410,7 +410,7 @@ const risks = [
   {
     id: "RSK-01",
     scenario: "Stale supplier result changes current case state.",
-    impact: "High—case integrity, user decisions, communication, support load, evidence, and recovery.",
+    impact: "High: case integrity, user decisions, communication, support load, evidence, and recovery.",
     likelihood: "Moderate—one fictional delay and exercise support plausibility, but current frequency and controls remain incomplete.",
     controls: "Schema validation designed; source health operating; reconciliation, ordering, duplicate handling, and recovery evidence partial.",
     uncertainty: "Moderate to High.",
@@ -420,7 +420,7 @@ const risks = [
   {
     id: "RSK-02",
     scenario: "Free-text support note may cross supplier boundary.",
-    impact: "Moderate to High—depends on content, purpose, access, retention, and user expectation.",
+    impact: "Moderate to High: depends on content, purpose, access, retention, and user expectation.",
     likelihood: "Unknown—field exists in inventory, but current population is not established.",
     controls: "Minimization expected; approved purpose, schema enforcement, retention, and owner evidence incomplete.",
     uncertainty: "Decision-blocking for final residual ranking.",
@@ -450,7 +450,7 @@ const risks = [
   {
     id: "RSK-05",
     scenario: "Recovery returns application before dependencies are ready.",
-    impact: "High—stale business state, repeated actions, incorrect communication, and weak closure.",
+    impact: "High: stale business state, repeated actions, incorrect communication, and weak closure.",
     likelihood: "Moderate—supported by one fictional exercise.",
     controls: "Recovery plan and backups exist; dependency gates, reconciliation, communication, and emergency-access closure incomplete.",
     uncertainty: "Moderate.",

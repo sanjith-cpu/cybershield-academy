@@ -480,7 +480,7 @@ const labPhases = [
     "phase": "Phase 7: Design resilience and recovery",
     "tasks": "Define fictional safe degraded modes, dependencies, restore states, recovery order, communication, evidence, closure, and acceptance.",
     "deliverable": "Resilience, recovery, and continuity package.",
-    "gate": "The complete mission—not only the main application—can be recovered and validated.",
+    "gate": "The complete mission, not only the main application—can be recovered and validated.",
     "failure": "Recovery shares the same identity, evidence, or supplier failure domain."
   },
   {
@@ -693,7 +693,7 @@ const quizQuestions = [
       "One administrator controls the evidence platform."
     ],
     "answer": 1,
-    "explanation": "Visibility quality depends on trustworthy, proportionate, question-driven evidence—not volume alone."
+    "explanation": "Visibility quality depends on trustworthy, proportionate, question-driven evidence, not volume alone."
   },
   {
     "question": "When should fictional recovery be declared complete?",
@@ -1513,7 +1513,7 @@ export default function SecurityArchitectureDesignLabPage() {
             {
               label: "Choice C",
               response: "Remove identity controls and all logging.",
-              outcome: "Unsafe. The solution is an accessible, proportionate design—not elimination of protection or evidence.",
+              outcome: "Unsafe. The solution is an accessible, proportionate design, not elimination of protection or evidence.",
               tone: "risk",
             },
           ]}

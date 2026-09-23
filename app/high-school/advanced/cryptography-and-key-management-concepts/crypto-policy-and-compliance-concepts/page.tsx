@@ -1443,7 +1443,7 @@ export default function CryptoPolicyAndComplianceConceptsPage() {
             A certificate may be valid but belong to the wrong service. A key
             may be stored securely but authorized to too many workloads. A
             backup may be encrypted but not recoverable. Compliance asks whether
-            the actual policy outcome is satisfied—not whether one component
+            the actual policy outcome is satisfied, not whether one component
             looks technically healthy.
           </p>
 

@@ -287,7 +287,7 @@ const secretClasses = [
     lifecycle:
       "Reviewed after service changes, owner changes, exposure concerns, and scheduled rotation windows.",
     logs:
-      "Record reference name, result, owner, service, and status—not the credential value.",
+      "Record reference name, result, owner, service, and status, not the credential value.",
   },
   {
     className: "Supplier Integration Credential Class",
@@ -1050,7 +1050,7 @@ export default function SecretsAndConfigurationManagementPage() {
             "I understand that A10.7 teaches defensive secrets/configuration governance and does not teach how to discover, retrieve, test, use, steal, guess, or expose real credentials or secret material.",
             "I will use only invented metadata, reference labels, owners, lifecycle states, environment names, configuration states, and monitoring records.",
             "I will never put real passwords, API keys, private keys, certificates, session values, tokens, recovery codes, or other sensitive values into the lesson or portfolio.",
-            "I will treat suspected secret exposure as a reason for owner escalation, capability reduction, rotation/revocation concepts, dependency validation, and communication—not as permission to test the secret.",
+            "I will treat suspected secret exposure as a reason for owner escalation, capability reduction, rotation/revocation concepts, dependency validation, and communication, not as permission to test the secret.",
             "I will keep security-relevant configuration changes owner-approved, reviewed, validated, monitored, and reversible.",
             "I will keep development, test, staging, and production fictional secrets, identities, data, and configuration appropriately separated.",
           ]}
@@ -1970,7 +1970,7 @@ export default function SecretsAndConfigurationManagementPage() {
 
         <KeyTakeaways
           takeaways={[
-            "A strong secret inventory records metadata, purpose, ownership, environment, access scope, and lifecycle—not secret values.",
+            "A strong secret inventory records metadata, purpose, ownership, environment, access scope, and lifecycle, not secret values.",
             "Secrets should be purpose-limited, least-privileged, environment-separated, monitored, reviewable, rotatable, revocable, and retireable.",
             "Secret values should stay out of source code, general logs, screenshots, tickets, public documents, and portfolio artifacts.",
             "Suspected secret exposure is a defensive lifecycle event that calls for owner escalation and capability reduction rather than testing the value.",

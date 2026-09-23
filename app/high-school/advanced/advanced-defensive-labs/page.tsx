@@ -580,7 +580,7 @@ export default function AdvancedDefensiveLabsHomepage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              A18 is about making defensible decisions from mixed evidence—not forcing every case into the same answer pattern.
+              A18 is about making defensible decisions from mixed evidence, not forcing every case into the same answer pattern.
             </p>
           </div>
         </Section>
@@ -606,7 +606,7 @@ export default function AdvancedDefensiveLabsHomepage() {
 
         <Section
           eyebrow="Case Review Orientation"
-          title="A Five-Part Review Cycle — Not a Rigid Lesson Template"
+          title="A Five-Part Review Cycle, not a Rigid Lesson Template"
         >
           <p className="leading-8">
             These five phases are a module-level orientation. Some A18 lessons

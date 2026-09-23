@@ -876,7 +876,7 @@ export default function DetectionPlanProjectPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — High Severity, Moderate Confidence"
+          title="Evidence Analysis 1: High Severity, Moderate Confidence"
           question="A privileged-role change alert has High severity but only Moderate confidence. What is the strongest interpretation?"
           evidence={[
             "The role can change important fictional configuration, so potential impact is high.",
@@ -995,7 +995,7 @@ export default function DetectionPlanProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Missing Telemetry"
+          title="Evidence Analysis 2: Missing Telemetry"
           question="DET-NB-303 reports that an expected source is delayed. What does that evidence support?"
           evidence={[
             "The synthetic source-health heartbeat is outside its documented freshness target.",
@@ -1137,32 +1137,32 @@ export default function DetectionPlanProjectPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Define the question",
+                title: "Task 1: Define the question",
                 detail:
                   "For each chosen plan, write the exact defensive question the alert is supposed to help answer and name the linked risk.",
               },
               {
-                title: "Task 2 — Map evidence",
+                title: "Task 2: Map evidence",
                 detail:
                   "List the direct, corroborating, and context evidence used by the plan. Add one known evidence limitation.",
               },
               {
-                title: "Task 3 — Improve enrichment",
+                title: "Task 3: Improve enrichment",
                 detail:
                   "Identify one ownership, asset, approval, change, or lifecycle field that would make first-pass triage easier.",
               },
               {
-                title: "Task 4 — Separate ratings",
+                title: "Task 4: Separate ratings",
                 detail:
                   "Assign severity, confidence, and priority separately and explain why the three values may differ.",
               },
               {
-                title: "Task 5 — Create validation cases",
+                title: "Task 5: Create validation cases",
                 detail:
                   "Write one expected, one ambiguous, and one review-worthy synthetic scenario and describe the alert behavior you expect.",
               },
               {
-                title: "Task 6 — Define quality",
+                title: "Task 6: Define quality",
                 detail:
                   "Choose two metrics that would show whether the detection is helping defenders make better decisions.",
               },
@@ -1181,7 +1181,7 @@ export default function DetectionPlanProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Noisy but Valuable Alert"
+          title="Scenario Decision 1: Noisy but Valuable Alert"
           scenario="A fictional privileged-role alert fires often during approved maintenance because the first version lacks change-window and approval context."
           choices={[
             {
@@ -1212,7 +1212,7 @@ export default function DetectionPlanProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Source Health Degrades"
+          title="Scenario Decision 2: Source Health Degrades"
           scenario="A synthetic application source stops meeting its freshness expectation, and three fictional detections depend on that data for context."
           choices={[
             {
@@ -1300,7 +1300,7 @@ export default function DetectionPlanProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Detection Plan Project"
+          title="Portfolio Prompt: Detection Plan Project"
           prompt="Create a polished fictional Northbridge Detection Plan Project. Include three to six detection objectives mapped to A19.5 risks, protected assets, telemetry sources, high-level signal conditions, required context, severity and confidence, safe triage actions, escalation criteria, synthetic validation cases, quality metrics, tuning and rollback guidance, ownership, known evidence gaps, and a short publication-safety statement."
           tips={[
             "Start each detection with a security question and decision, not with a random log field.",

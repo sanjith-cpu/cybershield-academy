@@ -1193,7 +1193,7 @@ export default function TrustBoundariesAndSecurityZonesPage() {
             "Yes, because the supplier is approved.",
           ]}
           bestAnswer={0}
-          explanation="Effective separation depends on explicit identities, purposes, paths, data, controls, evidence, ownership, failure behavior, recovery closure, and validation—not visual zones alone."
+          explanation="Effective separation depends on explicit identities, purposes, paths, data, controls, evidence, ownership, failure behavior, recovery closure, and validation, not visual zones alone."
         />
 
         <SectionCard

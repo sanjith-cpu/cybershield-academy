@@ -2194,7 +2194,7 @@ export default function DetectionTuningAndContextPage() {
         <KeyTakeaways
           takeaways={[
             "Detection tuning should improve fictional precision and usefulness while preserving intended coverage and missed-condition awareness.",
-            "Tune root causes such as source defects, field meaning, timing, duplicates, missing context, peers, tests, and ownership—not only alert count.",
+            "Tune root causes such as source defects, field meaning, timing, duplicates, missing context, peers, tests, and ownership, not only alert count.",
             "Identity, asset, service, device, destination, time, change, maintenance, peer, authorization, source-health, and mission context should remain purpose-limited and current.",
             "Expected alerts may remain valuable and should not automatically be suppressed as false positives.",
             "Narrow exclusions require identity, service, destination, purpose, time, owner, evidence, expiration, testing, residual risk, rollback, and review triggers.",

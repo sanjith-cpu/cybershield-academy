@@ -507,7 +507,7 @@ const quiz = [
       "Blocking every action whenever any system fails."
     ],
     "answer": 1,
-    "explanation": "Defense in depth depends on coordinated outcomes, meaningful diversity, ownership, evidence, and safe failure—not tool count."
+    "explanation": "Defense in depth depends on coordinated outcomes, meaningful diversity, ownership, evidence, and safe failure, not tool count."
   },
   {
     "question": "Five fictional controls depend on the same identity service and administrator group. What is the main concern?",

@@ -1112,7 +1112,7 @@ export default function ThreatModelProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Authorization Boundary"
+          title="Evidence Analysis 1: Authorization Boundary"
           question="The security diagram shows an authenticated portal session reaching API-NB-14. Which conclusion is strongest?"
           evidence={[
             "The Identity Gateway authenticates the fictional user before the request reaches the application API.",
@@ -1198,7 +1198,7 @@ export default function ThreatModelProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Monitoring as a Dependency"
+          title="Evidence Analysis 2: Monitoring as a Dependency"
           question="MON-NB-3 is expected to receive identity, application, queue, and logging telemetry. What is the most defensible threat-model conclusion?"
           evidence={[
             "Monitoring evidence is used to support detection, investigation, accountability, and recovery validation.",
@@ -1406,32 +1406,32 @@ export default function ThreatModelProjectPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Scope",
+                title: "Task 1: Scope",
                 detail:
                   "Write a six-to-eight sentence scope statement naming the fictional service, users, assets, zones, dependencies, and explicit exclusions.",
               },
               {
-                title: "Task 2 — Boundaries",
+                title: "Task 2: Boundaries",
                 detail:
                   "Select four trust boundaries from the model and explain what should be re-verified when identity, authority, data, or responsibility crosses each one.",
               },
               {
-                title: "Task 3 — Threat statements",
+                title: "Task 3: Threat statements",
                 detail:
                   "Choose five THR-NB records and rewrite each in your own words while preserving the asset, condition, consequence, evidence, uncertainty, and defensive response.",
               },
               {
-                title: "Task 4 — Control map",
+                title: "Task 4: Control map",
                 detail:
                   "Classify the controls for those five records as prevent, limit, detect, recover, validate, or govern. A control may serve more than one role if you explain why.",
               },
               {
-                title: "Task 5 — Priority",
+                title: "Task 5: Priority",
                 detail:
                   "Choose the top three concerns and justify the order using impact, privilege, exposure, dependencies, control strength, uncertainty, and recovery readiness.",
               },
               {
-                title: "Task 6 — Ownership",
+                title: "Task 6: Ownership",
                 detail:
                   "Assign a fictional accountable role to each priority recommendation and define the evidence that would show the review action is complete.",
               },
@@ -1450,7 +1450,7 @@ export default function ThreatModelProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Privileged Role Assumption"
+          title="Scenario Decision 1: Privileged Role Assumption"
           scenario="The fictional admin console is restricted and uses stronger authentication, but the threat model cannot confirm how often privileged membership is reviewed."
           choices={[
             {
@@ -1481,7 +1481,7 @@ export default function ThreatModelProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Missing Telemetry"
+          title="Scenario Decision 2: Missing Telemetry"
           scenario="The fictional model expects identity and API logs to support detection, but one synthetic review note says source freshness is not yet documented."
           choices={[
             {
@@ -1572,7 +1572,7 @@ export default function ThreatModelProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Threat Model Project"
+          title="Portfolio Prompt: Threat Model Project"
           prompt="Create a polished fictional Northbridge Threat Model Project. Include scope, security objectives, a simplified system diagram or architecture summary, assets, actors, trust boundaries, dependencies, assumptions, at least six bounded threat statements, control mapping, a top-three priority section with rationale, defensive recommendations with owners and validation evidence, key unknowns, and a short revision note."
           tips={[
             "Use only fictional Northbridge systems, identities, records, roles, diagrams, and evidence.",

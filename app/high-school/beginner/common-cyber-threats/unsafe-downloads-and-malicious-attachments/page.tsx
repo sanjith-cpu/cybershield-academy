@@ -385,7 +385,7 @@ function FileSafetyBoard() {
       </h2>
       <p className="mt-3 text-slate-300">
         A file should be judged by its source, expectation, identity, and
-        security warnings—not by a familiar icon or filename alone.
+        security warnings, not by a familiar icon or filename alone.
       </p>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -508,7 +508,7 @@ export default function UnsafeDownloadsMaliciousAttachmentsPage() {
           <p className="leading-8">
             Suspicious files may use school-related names, copied icons, hidden
             extensions, urgent messages, or fake update language. Safe review
-            depends on verified source and context—not appearance alone.
+            depends on verified source and context, not appearance alone.
           </p>
         </SectionCard>
 

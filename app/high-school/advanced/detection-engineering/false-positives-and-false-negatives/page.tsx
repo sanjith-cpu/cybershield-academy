@@ -1093,7 +1093,7 @@ export default function FalsePositivesAndFalseNegativesPage() {
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             Detection quality is a tradeoff among useful alerts, missed
             conditions, evidence health, analyst effort, operational impact,
-            privacy, and residual risk—not a race toward zero alerts.
+            privacy, and residual risk, not a race toward zero alerts.
           </div>
         </SectionCard>
 
@@ -1997,7 +1997,7 @@ export default function FalsePositivesAndFalseNegativesPage() {
             "Use clear fictional outcome definitions before calculating or discussing quality.",
             "Treat expected alerts, unknown outcomes, and source-degraded cases as distinct from false positives.",
             "Review false positives and false negatives together so tuning does not create hidden coverage loss.",
-            "Use alert usefulness, coverage, missed-condition risk, evidence health, effort, impact, privacy, and residual risk—not alert volume alone.",
+            "Use alert usefulness, coverage, missed-condition risk, evidence health, effort, impact, privacy, and residual risk, not alert volume alone.",
             "Keep the entire artifact completely fictional, defensive, non-operational, privacy-safe, evidence-aware, maintainable, and suitable for a public learning portfolio.",
           ]}
         />

@@ -353,7 +353,7 @@ export default function EvidenceIntegrityAndChainOfCustodyPage() {
         </SectionCard>
 
         <KeyTakeaways takeaways={[
-          "Fictional evidence integrity is about traceability, accountability, and suitability for a specific conclusion—not whether an artifact looks convincing.",
+          "Fictional evidence integrity is about traceability, accountability, and suitability for a specific conclusion, not whether an artifact looks convincing.",
           "Every evidence item should have a clear identity, purpose, origin, owner, timing, source-health state, handling history, access model, limitation, and lifecycle state.",
           "Chain of custody documents responsibility, transfers, acknowledgement, purpose, and status across the evidence lifecycle.",
           "Incomplete provenance weakens confidence but does not automatically prove that evidence is false or altered.",

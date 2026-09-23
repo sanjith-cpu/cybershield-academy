@@ -1145,7 +1145,7 @@ export default function IdsIpsConceptsAndNetworkVisibilityPage() {
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             Detection quality depends on what evidence means, where it comes
             from, how current it is, which scope it covers, and how defenders
-            respond—not simply on severity labels or dashboard colors.
+            respond, not simply on severity labels or dashboard colors.
           </div>
         </SectionCard>
 

@@ -1083,7 +1083,7 @@ export default function PlaybooksAndRunbooksPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Documentation should make the safe path easier to follow—not make the analyst stop thinking.
+              Documentation should make the safe path easier to follow, not make the analyst stop thinking.
             </p>
           </div>
         </Section>

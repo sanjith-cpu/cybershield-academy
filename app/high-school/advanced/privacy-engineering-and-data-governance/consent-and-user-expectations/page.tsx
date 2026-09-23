@@ -940,7 +940,7 @@ export default function ConsentAndUserExpectationsPage() {
 
           <div className="mt-6 rounded-2xl border border-cyan-400/25 bg-cyan-400/10 p-6 text-cyan-50">
             <p className="text-xl font-black">
-              Good privacy design makes the system understandable and appropriate—not merely clickable.
+              Good privacy design makes the system understandable and appropriate, not merely clickable.
             </p>
           </div>
         </Section>

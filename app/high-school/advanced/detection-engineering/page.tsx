@@ -987,7 +987,7 @@ export default function DetectionEngineeringModulePage() {
           </h2>
           <p className="mt-4 max-w-4xl leading-8 text-slate-300">
             Start with A5.1 to learn why detection engineering begins with
-            mission risks and defender questions—not alert volume, product
+            mission risks and defender questions, not alert volume, product
             features, or copied rules.
           </p>
 

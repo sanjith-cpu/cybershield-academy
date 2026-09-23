@@ -2232,7 +2232,7 @@ export default function MappingAlertsToDefenderQuestionsPage() {
             "Source health changes confidence, question order, decision state, and closure requirements.",
             "Purpose-limited evidence requests reduce privacy exposure and analyst overload.",
             "Severity, confidence, priority, response, and outcome are separate decision dimensions.",
-            "Escalation and closure should depend on evidence, scope, impact, ownership, source health, residual risk, and lifecycle—not alert title or disappearance.",
+            "Escalation and closure should depend on evidence, scope, impact, ownership, source health, residual risk, and lifecycle, not alert title or disappearance.",
             "Question maps require versioning, metrics, decision-latency review, question-debt tracking, change triggers, and retirement.",
             "Every CyberShield alert-mapping artifact must remain fully fictional, authorized, defensive, non-operational, privacy-safe, and incapable of exposing real systems or people.",
           ]}

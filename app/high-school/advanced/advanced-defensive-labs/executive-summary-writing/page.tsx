@@ -608,7 +608,7 @@ const checklistItems = [
 const takeaways = [
   "Executive security writing is evidence translation for decisions, not simplification by deleting inconvenient facts.",
   "Technical, manager, and executive audiences need different levels of detail, but they should receive the same supported facts.",
-  "Materiality asks what changes for the organization, service, customer, obligation, risk, or decision—not merely what severity label appeared.",
+  "Materiality asks what changes for the organization, service, customer, obligation, risk, or decision, not merely what severity label appeared.",
   "Technical severity, operational impact, business impact, and future risk are related but distinct concepts.",
   "A concise summary should preserve decisive evidence anchors, uncertainty, confidence, ownership, recommendation, and next checkpoint.",
   "Bounded language is stronger than dramatic language because it tells leadership what is known, what is not known, and how sure the team is.",
@@ -1224,7 +1224,7 @@ export default function ExecutiveSummaryWritingPage() {
 
         <Section
           eyebrow="Evidence References"
-          title="Use Enough Evidence to Support the Decision — Not Enough to Rebuild the Log"
+          title="Use Enough Evidence to Support the Decision, not Enough to Rebuild the Log"
         >
           <p className="leading-8">
             Executive summaries can include concise evidence references when a

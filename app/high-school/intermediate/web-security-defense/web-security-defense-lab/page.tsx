@@ -1374,7 +1374,7 @@ export default function WebSecurityDefenseLabPage() {
             "A confirmed weakness does not automatically prove successful harmful use, while a blocked request does not eliminate the need to review every affected path.",
             "Strong findings separate facts, conclusions, alternatives, confidence, limitations, owners, remediation, and validation.",
             "Positive tests preserve legitimate workflows, while negative tests prove unsafe and unauthorized conditions are denied.",
-            "Monitoring, rollback, residual risk, evidence gaps, and owner approval are part of the control—not paperwork after the control.",
+            "Monitoring, rollback, residual risk, evidence gaps, and owner approval are part of the control, not paperwork after the control.",
             "A safe portfolio artifact demonstrates professional reasoning using fictional evidence without exposing real systems or people.",
           ]}
         />

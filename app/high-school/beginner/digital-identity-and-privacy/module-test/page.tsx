@@ -340,7 +340,7 @@ const questions: Question[] = [
     ],
     answer: 0,
     explanation:
-      "Serious privacy and safety concerns require platform safety tools, appropriate evidence, and trusted help—not retaliation or private investigation.",
+      "Serious privacy and safety concerns require platform safety tools, appropriate evidence, and trusted help, not retaliation or private investigation.",
   },
 ];
 

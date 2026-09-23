@@ -533,7 +533,7 @@ const takeaways = [
   "Competing hypotheses protect the case from confirmation bias when several explanations remain plausible.",
   "Containment should be proportional, owned, evidence-preserving, continuity-aware, reversible where appropriate, and connected to reassessment triggers.",
   "Source-health limitations must travel into response decisions because missing events can be weak evidence during delayed or blind periods.",
-  "Recovery requires explicit service, dependency, monitoring, identity, configuration, and residual-risk criteria—not just restored availability.",
+  "Recovery requires explicit service, dependency, monitoring, identity, configuration, and residual-risk criteria, not just restored availability.",
   "Decision history should preserve what was known at the time and why later evidence changed or confirmed the response.",
   "The entire A20 incident-response phase remains fictional, synthetic, defensive, non-operational, and publication-safe.",
 ];
@@ -803,7 +803,7 @@ export default function IncidentResponsePhasePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Incident or High-Priority Review?"
+          title="Evidence Analysis 1: Incident or High-Priority Review?"
           question="What is the strongest current treatment of the 09:11 privileged event?"
           evidence={[
             "The privileged action is confirmed by two synthetic sources.",
@@ -934,7 +934,7 @@ export default function IncidentResponsePhasePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Recovery or Closure?"
+          title="Evidence Analysis 2: Recovery or Closure?"
           question="Portal errors have returned to normal, but monitoring catch-up and task-level authorization review are still open. What is the strongest response state?"
           evidence={[
             "Portal health is normal again.",
@@ -1068,32 +1068,32 @@ export default function IncidentResponsePhasePage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Build the response timeline",
+                title: "Task 1: Build the response timeline",
                 detail:
                   "Record at least eight synthetic events with source, state, confidence, and response meaning.",
               },
               {
-                title: "Task 2 — Preserve competing hypotheses",
+                title: "Task 2: Preserve competing hypotheses",
                 detail:
                   "Write at least three plausible explanations with supporting evidence, weakening evidence, and next evidence needs.",
               },
               {
-                title: "Task 3 — Record response decisions",
+                title: "Task 3: Record response decisions",
                 detail:
                   "Document at least four decisions with evidence, owner, purpose, reversibility, and reassessment trigger.",
               },
               {
-                title: "Task 4 — Define containment boundaries",
+                title: "Task 4: Define containment boundaries",
                 detail:
                   "Explain what action could reduce immediate risk without unnecessarily disrupting the fictional service or destroying evidence.",
               },
               {
-                title: "Task 5 — Define recovery criteria",
+                title: "Task 5: Define recovery criteria",
                 detail:
                   "Create explicit service, dependency, monitoring, identity, configuration, business, and residual-risk checks.",
               },
               {
-                title: "Task 6 — Write three communications",
+                title: "Task 6: Write three communications",
                 detail:
                   "Produce technical, manager, and executive updates that preserve the same facts, uncertainty, decisions, and next checkpoint.",
               },
@@ -1112,7 +1112,7 @@ export default function IncidentResponsePhasePage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Whether to Restrict Privileged Access"
+          title="Scenario Decision 1: Whether to Restrict Privileged Access"
           scenario="The privileged event is confirmed and potentially high impact, but task authorization is still unresolved and no new related privileged activity is observed."
           choices={[
             {
@@ -1143,7 +1143,7 @@ export default function IncidentResponsePhasePage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Whether to Close the Case"
+          title="Scenario Decision 2: Whether to Close the Case"
           scenario="Portal and queue health are stable, the collector has caught up, but the exact authorization of the 09:11 privileged action and current full-restoration evidence remain open follow-up items."
           choices={[
             {
@@ -1241,7 +1241,7 @@ export default function IncidentResponsePhasePage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Incident Response Decision Record"
+          title="Portfolio Prompt: Incident Response Decision Record"
           prompt="Create a fictional Northbridge Incident Response Decision Record. Include case scope, affected services, at least eight timeline events, source references, source-health context, facts, interpretations, at least three competing hypotheses, supporting and weakening evidence, impact, priority, at least four response decisions, decision owners, containment rationale, reversibility, business-continuity considerations, evidence-preservation notes, reassessment triggers, recovery criteria for service, dependencies, monitoring, identity, configuration, business function, and residual risk, open questions, closure criteria, reopen criteria, and technical, manager, and executive communications that preserve the same underlying facts."
           tips={[
             "Preserve what was known at each decision point rather than rewriting history after later evidence appears.",

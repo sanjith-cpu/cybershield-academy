@@ -391,7 +391,7 @@ export default function EndpointArtifactConceptsPage() {
               ["Interpretation", "The session may be relevant to the workflow event because the times overlap and both involve Service S.", "Clearly labeled as interpretation with alternatives."],
               ["Attribution", "A specific fictional person physically performed the activity.", "Requires additional evidence beyond a shared endpoint or account association and may remain unresolved."],
               ["Intent", "The activity was deliberate or harmful.", "Requires evidence about purpose and context; endpoint artifacts alone usually cannot establish intent."],
-              ["Causation", "The endpoint state caused the service symptom.", "Requires relationship evidence, alternatives, and sufficient source quality—not timing alone."],
+              ["Causation", "The endpoint state caused the service symptom.", "Requires relationship evidence, alternatives, and sufficient source quality, not timing alone."],
               ["Impact", "The activity affected specific users, data, or services.", "Requires evidence from the affected workflow, service, data, or owner context."],
             ].map(([level, example, requirement], index) => (
               <article key={level} className="rounded-2xl border border-slate-700 bg-slate-950 p-5">

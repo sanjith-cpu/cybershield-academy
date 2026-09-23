@@ -1020,7 +1020,7 @@ export default function WebLogsAlertsAndDefensiveInvestigationPage() {
             application confirms authorization denials, the database confirms
             no export, the browser confirms an old bookmark, and the user
             confirms repeated refreshes. The alert is real, but the strongest
-            finding depends on all of the evidence—not the alert title alone.
+            finding depends on all of the evidence, not the alert title alone.
           </p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
@@ -1228,7 +1228,7 @@ export default function WebLogsAlertsAndDefensiveInvestigationPage() {
             "The alert should be deleted because no export occurred.",
           ]}
           bestAnswer={0}
-          explanation="The correlated evidence supports a denied, likely accidental pattern, a narrow interface weakness, and a noisy detection—not confirmed data theft or account compromise."
+          explanation="The correlated evidence supports a denied, likely accidental pattern, a narrow interface weakness, and a noisy detection, not confirmed data theft or account compromise."
         />
 
         <SectionCard

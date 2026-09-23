@@ -486,7 +486,7 @@ const takeaways = [
   "Minimization should reduce unnecessary data before other controls are used to protect it.",
   "Consent and user-facing notices must match actual system behavior.",
   "Retention should be tied to continuing purpose and supported by lifecycle evidence.",
-  "Privacy risk includes expectation, inference, lifecycle, access, sharing, and governance consequences—not only breaches.",
+  "Privacy risk includes expectation, inference, lifecycle, access, sharing, and governance consequences, not only breaches.",
   "Clear governance separates data ownership, control ownership, evidence ownership, remediation ownership, and risk ownership.",
   "Privacy by design turns privacy requirements into system behavior.",
   "Balanced decisions preserve legitimate security, privacy, usability, accessibility, operations, and business value.",

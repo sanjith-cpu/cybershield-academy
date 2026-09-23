@@ -431,9 +431,9 @@ const records = [
     exposure:
       "Heavy dependence on a small number of critical platform services.",
     impact:
-      "High — support workflows stop, users lose access, recovery effort increases.",
+      "High: support workflows stop, users lose access, recovery effort increases.",
     likelihood:
-      "Low-Medium — strong monitoring and redundancy exist, but dependency remains.",
+      "Low-Medium: strong monitoring and redundancy exist, but dependency remains.",
     evidence:
       "Current availability architecture + current recovery test + service monitoring",
     uncertainty:
@@ -452,9 +452,9 @@ const records = [
     exposure:
       "Broad trust relationships, incomplete ownership, aging platform, modernization incomplete.",
     impact:
-      "High — sensitive data exposure, operational disruption, investigation difficulty.",
+      "High: sensitive data exposure, operational disruption, investigation difficulty.",
     likelihood:
-      "Medium-High — multiple active gaps increase plausibility.",
+      "Medium-High: multiple active gaps increase plausibility.",
     evidence:
       "Current exception + partial inventory + current trust findings",
     uncertainty:
@@ -473,9 +473,9 @@ const records = [
     exposure:
       "Current certificate expires in 45 days.",
     impact:
-      "Medium-High — scheduling disruption and partner-service interruption.",
+      "Medium-High: scheduling disruption and partner-service interruption.",
     likelihood:
-      "Medium — renewal is approaching but sponsor and workflow are active.",
+      "Medium: renewal is approaching but sponsor and workflow are active.",
     evidence:
       "Current certificate + renewal ticket + current partner sponsor",
     uncertainty:
@@ -494,7 +494,7 @@ const records = [
     exposure:
       "Recovery depends on current backup data, keys, procedures, and platform availability.",
     impact:
-      "High — prolonged outage, potential data loss, major recovery cost.",
+      "High: prolonged outage, potential data loss, major recovery cost.",
     likelihood:
       "Low-Medium when current restore validation passes.",
     evidence:
@@ -515,9 +515,9 @@ const records = [
     exposure:
       "No practical alternate provider is available today.",
     impact:
-      "High — major business interruption until service or workaround is restored.",
+      "High: major business interruption until service or workaround is restored.",
     likelihood:
-      "Medium — supplier is stable but concentration remains.",
+      "Medium: supplier is stable but concentration remains.",
     evidence:
       "Current supplier review + contract + continuity plan",
     uncertainty:
@@ -536,9 +536,9 @@ const records = [
     exposure:
       "Temporary staging exists outside the primary application data store.",
     impact:
-      "Medium-High — sensitive duplicate data remains accessible longer than necessary.",
+      "Medium-High: sensitive duplicate data remains accessible longer than necessary.",
     likelihood:
-      "Low-Medium — automated cleanup exists but requires current evidence.",
+      "Low-Medium: automated cleanup exists but requires current evidence.",
     evidence:
       "Current retention policy + recent cleanup validation",
     uncertainty:

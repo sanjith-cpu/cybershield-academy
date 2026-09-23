@@ -135,7 +135,7 @@ const mitigationPrinciples = [
     description:
       "Choose fictional controls for the exact actor, asset, action, object, flow, boundary, state, precondition, and harmful outcome.",
     strongPractice:
-      "Address stale supplier results with state validation, correlation, delay handling, reconciliation, communication, and recovery—not a generic “integrity tool.”",
+      "Address stale supplier results with state validation, correlation, delay handling, reconciliation, communication, and recovery, not a generic “integrity tool.”",
     failure:
       "Category-based control lists may look complete while missing the actual scenario.",
   },
@@ -2112,7 +2112,7 @@ export default function ChoosingMitigationsPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Mitigations should address specific fictional scenarios and risk rationales—not categories or vague topics.",
+            "Mitigations should address specific fictional scenarios and risk rationales, not categories or vague topics.",
             "Root-condition and design changes can be stronger than surrounding an unnecessary exposure with more controls.",
             "Layered mitigation combines design, prevention, detection, response, recovery, privacy, governance, communication, and evidence.",
             "A listed or implemented control should not be treated as effective without operating, monitoring, review, failure, and recovery evidence.",

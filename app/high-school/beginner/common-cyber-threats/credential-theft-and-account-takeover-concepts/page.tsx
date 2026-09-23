@@ -470,7 +470,7 @@ export default function CredentialTheftAccountTakeoverConceptsPage() {
           <p className="leading-8">
             Account takeover may begin with one exposed credential, one approved
             prompt, one reused password, or one recovery change. Defenders review
-            the full account—not just the password—because sessions, devices,
+            the full account, not just the password—because sessions, devices,
             MFA, and recovery methods can all affect control.
           </p>
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-4 text-yellow-50">

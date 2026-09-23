@@ -545,7 +545,7 @@ const records = [
     owner:
       "Digital Learning Service Owner",
     concentration:
-      "Medium — important service but not shared across unrelated critical workflows",
+      "Medium: important service but not shared across unrelated critical workflows",
     fourthParty:
       "Material hosting dependency disclosed by supplier",
     continuity:
@@ -577,7 +577,7 @@ const records = [
     owner:
       "Identity Platform Owner",
     concentration:
-      "High — multiple critical services share one identity dependency",
+      "High: multiple critical services share one identity dependency",
     fourthParty:
       "Hosting and messaging dependencies disclosed",
     continuity:
@@ -641,7 +641,7 @@ const records = [
     owner:
       "Finance Operations Owner",
     concentration:
-      "High — no practical alternate payroll provider on short notice",
+      "High: no practical alternate payroll provider on short notice",
     fourthParty:
       "Banking and hosting dependencies disclosed",
     continuity:
@@ -1841,7 +1841,7 @@ export default function ThirdPartyRiskConceptsPage() {
             Lesson Safety Boundary
           </p>
           <h2 className="mt-2 text-2xl font-black">
-            Supplier risk review uses authorized governance evidence—not investigation of real vendors
+            Supplier risk review uses authorized governance evidence, not investigation of real vendors
           </h2>
           <p className="mt-3 leading-7">
             Do not scan, probe, test, exploit, or investigate real vendors,

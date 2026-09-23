@@ -468,7 +468,7 @@ const records = [
     scenario:
       "A security or operational failure could expose sensitive records or interrupt support services.",
     impact:
-      "High — privacy, service disruption, trust, and response cost",
+      "High: privacy, service disruption, trust, and response cost",
     likelihood:
       "Medium under current exposure and control conditions",
     controls:
@@ -494,7 +494,7 @@ const records = [
     scenario:
       "Broad legacy trust, unowned key relationships, or weak transport could expose data or disrupt reporting.",
     impact:
-      "High — sensitive data exposure, outage, difficult investigation, modernization delay",
+      "High: sensitive data exposure, outage, difficult investigation, modernization delay",
     likelihood:
       "Medium-High because several control and ownership gaps remain",
     controls:
@@ -520,7 +520,7 @@ const records = [
     scenario:
       "Certificate lifecycle failure or partner trust breakdown could interrupt service or weaken identity assurance.",
     impact:
-      "Medium-High — scheduling disruption and partner-service impact",
+      "Medium-High: scheduling disruption and partner-service impact",
     likelihood:
       "Medium because renewal is approaching but controls are active",
     controls:
@@ -546,7 +546,7 @@ const records = [
     scenario:
       "Recovery could fail if current backups, retained key versions, or recovery procedures are not usable when needed.",
     impact:
-      "High — prolonged outage, data loss, delayed business recovery",
+      "High: prolonged outage, data loss, delayed business recovery",
     likelihood:
       "Low-Medium when recovery testing is current",
     controls:
@@ -572,7 +572,7 @@ const records = [
     scenario:
       "Provider outage, control weakness, or business failure could interrupt the dependent service.",
     impact:
-      "High — business interruption and potential data/control impact",
+      "High: business interruption and potential data/control impact",
     likelihood:
       "Medium based on dependency and external control",
     controls:
@@ -598,7 +598,7 @@ const records = [
     scenario:
       "An export could be sent without proper business authorization or remain in temporary storage too long.",
     impact:
-      "High — sensitive data disclosure and governance failure",
+      "High: sensitive data disclosure and governance failure",
     likelihood:
       "Low-Medium under current controls",
     controls:

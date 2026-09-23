@@ -911,7 +911,7 @@ export default function CloudSecurityReviewProjectPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Backup or Recovery?"
+          title="Evidence Analysis 1: Backup or Recovery?"
           question="The architecture shows a managed backup service and a named recovery owner, but no recent synthetic restore result. What is the strongest conclusion?"
           evidence={[
             "The fictional backup service exists in the architecture.",
@@ -1012,7 +1012,7 @@ export default function CloudSecurityReviewProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Shared Responsibility"
+          title="Evidence Analysis 2: Shared Responsibility"
           question="Northbridge uses a managed identity service. Which statement best reflects shared responsibility?"
           evidence={[
             "The fictional provider operates the underlying managed identity platform.",
@@ -1128,32 +1128,32 @@ export default function CloudSecurityReviewProjectPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Responsibility map",
+                title: "Task 1: Responsibility map",
                 detail:
                   "Choose four cloud capabilities and explain the fictional provider responsibility, Northbridge responsibility, and evidence needed to review the customer side.",
               },
               {
-                title: "Task 2 — Identity review",
+                title: "Task 2: Identity review",
                 detail:
                   "Review privileged and workload identities. Identify purpose, owner, lifecycle trigger, evidence gap, and one improvement.",
               },
               {
-                title: "Task 3 — Data review",
+                title: "Task 3: Data review",
                 detail:
                   "Describe the protected storage asset, approved access, sharing rule, exception process, retention or recovery need, and one governance concern.",
               },
               {
-                title: "Task 4 — Visibility review",
+                title: "Task 4: Visibility review",
                 detail:
                   "List the important synthetic telemetry sources, explain what each supports, and identify how a missing source would change confidence.",
               },
               {
-                title: "Task 5 — Recovery review",
+                title: "Task 5: Recovery review",
                 detail:
                   "Explain why backup evidence differs from restoration evidence and define what a successful synthetic recovery record should contain.",
               },
               {
-                title: "Task 6 — Executive summary",
+                title: "Task 6: Executive summary",
                 detail:
                   "Write one short paragraph naming the top three findings, overall review confidence, and the most important owner decisions.",
               },
@@ -1172,7 +1172,7 @@ export default function CloudSecurityReviewProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — Missing Privileged Review Record"
+          title="Scenario Decision 1: Missing Privileged Review Record"
           scenario="The fictional cloud role inventory is well documented, but the latest recurring privileged-access review cannot be found in the supplied portfolio evidence."
           choices={[
             {
@@ -1203,7 +1203,7 @@ export default function CloudSecurityReviewProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Temporary Storage Exception"
+          title="Scenario Decision 2: Temporary Storage Exception"
           scenario="A fictional storage-sharing exception has an approved owner and rationale but no expiration or scheduled review date."
           choices={[
             {
@@ -1291,7 +1291,7 @@ export default function CloudSecurityReviewProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Cloud Security Review Project"
+          title="Portfolio Prompt: Cloud Security Review Project"
           prompt="Create a professional fictional Northbridge Cloud Security Review. Include scope, shared-responsibility summary, cloud asset inventory, identity review, data-protection review, trust-boundary review, logging and monitoring review, resilience and recovery review, configuration-governance review, six findings with evidence and confidence, top-three priorities, owner-based recommendations, validation evidence, one governed exception example, an executive summary, and a publication-safety statement."
           tips={[
             "Keep the project provider-neutral so the reasoning remains useful across cloud platforms.",

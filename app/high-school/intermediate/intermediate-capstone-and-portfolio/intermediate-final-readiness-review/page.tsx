@@ -319,7 +319,7 @@ const evidenceRecords = [
 ];
 const messageMatrix = [
   {
-    "message": "Priority 1 — Validation discipline",
+    "message": "Priority 1: Validation discipline",
     "opening": "Two fictional artifacts initially treat completed tickets or changes as validated outcomes.",
     "facts": "This gap could cause premature closure, inaccurate risk reduction, or unsupported capstone conclusions.",
     "action": "Add validation matrices to three artifacts and complete one mixed recovery scenario.",
@@ -327,7 +327,7 @@ const messageMatrix = [
     "cadence": "Complete before I17.8 and reassess after a delay."
   },
   {
-    "message": "Priority 2 — Inherited IAM access",
+    "message": "Priority 2: Inherited IAM access",
     "opening": "One fictional nested-group path and one effective-state check were missed.",
     "facts": "The learner understands direct access and business need but must strengthen complete path analysis.",
     "action": "Build two effective-access maps covering direct, inherited, nested, conditional, exception, supplier, and service-account paths.",
@@ -335,7 +335,7 @@ const messageMatrix = [
     "cadence": "Complete before the capstone identity decision."
   },
   {
-    "message": "Priority 3 — Communication consistency",
+    "message": "Priority 3: Communication consistency",
     "opening": "Three fictional audience drafts use different current residual-risk language.",
     "facts": "The structure is strong, but inconsistent facts could create conflicting decisions.",
     "action": "Create one timestamped approved fact set and revise analyst, leadership, and portfolio versions.",

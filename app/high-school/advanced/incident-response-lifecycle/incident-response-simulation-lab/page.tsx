@@ -1318,7 +1318,7 @@ export default function IncidentResponseSimulationLabPage() {
 
           <div className="mt-5 rounded-2xl border border-yellow-400/30 bg-yellow-400/10 p-5 text-yellow-50">
             The simulation is successful when participants can defend the
-            lifecycle of their decisions—not when they guess a hidden answer.
+            lifecycle of their decisions, not when they guess a hidden answer.
           </div>
         </SectionCard>
 

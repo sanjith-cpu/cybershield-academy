@@ -64,7 +64,7 @@ const questions = [
     ],
     answer: 0,
     explanation:
-      "Architecture review is fundamentally about dependencies, trust boundaries, ownership, resilience, and the effect of failures—not merely product count or internet exposure.",
+      "Architecture review is fundamentally about dependencies, trust boundaries, ownership, resilience, and the effect of failures, not merely product count or internet exposure.",
   },
   {
     question:
@@ -509,7 +509,7 @@ const takeaways = [
   "Incident decisions should preserve the evidence available at the time and change transparently when later evidence changes confidence.",
   "Detection tuning should improve quality at the real source of noise while preserving useful defensive coverage and rollback options.",
   "Risk decisions require clear statements, effective-control review, residual-risk understanding, authorized ownership, and review triggers.",
-  "Forensic timelines require provenance, time normalization, uncertainty, contradictions, and gaps—not just chronological sorting.",
+  "Forensic timelines require provenance, time normalization, uncertainty, contradictions, and gaps, not just chronological sorting.",
   "Executive summaries should communicate material business meaning and decision needs without exaggerating severity or hiding uncertainty.",
   "The A18 capstone connects evidence, findings, risks, decisions, ownership, priorities, and leadership communication into one defensible casebook.",
 ];

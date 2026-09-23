@@ -464,7 +464,7 @@ export default function ForensicReportingStandardsPage() {
           explanation="The strongest sentence states the supported account/session relationship while preserving shared-device, causation, and Degraded-source limitations."
         />
 
-        <SectionCard eyebrow="Audience Design" title="Different Audiences Need Different Detail—Not Different Facts">
+        <SectionCard eyebrow="Audience Design" title="Different Audiences Need Different Detail, not Different Facts">
           <div className="grid gap-5">
             {audiences.map((item) => (
               <article key={item.audience} className="rounded-2xl border border-slate-700 bg-slate-950 p-5">

@@ -1598,7 +1598,7 @@ export default function EmailSecurityControlsAndFilteringPage() {
         <KeyTakeaways
           takeaways={[
             "Email-security controls combine identity, reputation, content, link, attachment, policy, business, user, and post-delivery evidence.",
-            "Allow, warning, quarantine, reject, and block are control decisions—not complete proof of legitimacy, interaction, or impact.",
+            "Allow, warning, quarantine, reject, and block are control decisions, not complete proof of legitimacy, interaction, or impact.",
             "False positives and false negatives require different evidence, owners, tuning, validation, and monitoring.",
             "Broad allowlists can weaken several controls and create risk when trusted accounts or services are compromised.",
             "Strong tuning changes the narrowest condition and tests both required legitimate communication and unsafe examples.",

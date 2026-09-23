@@ -564,7 +564,7 @@ export default function AdvancedLabChallengePage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — What Does the Identity Evidence Actually Support?"
+          title="Evidence Analysis 1: What Does the Identity Evidence Actually Support?"
           question="Which capstone conclusion best integrates the High alert, approved maintenance, application audit, current identity ownership, and the telemetry gap?"
           evidence={[
             "DET-NB-7 opened as a High-priority unusual service-identity alert.",
@@ -580,7 +580,7 @@ export default function AdvancedLabChallengePage() {
             "Because the telemetry gap remains unresolved, no conclusions of any kind can be made about the identity evidence.",
           ]}
           bestAnswer={0}
-          explanation="The strongest answer integrates independent evidence without overclaiming. Maintenance and authorization materially weaken misuse, while the telemetry gap remains important because it limits evidence quality—not because it proves hidden activity."
+          explanation="The strongest answer integrates independent evidence without overclaiming. Maintenance and authorization materially weaken misuse, while the telemetry gap remains important because it limits evidence quality, not because it proves hidden activity."
         />
 
         <Section eyebrow="Cross-Case Analysis" title="Where the Earlier Artifacts Actually Converge">
@@ -661,7 +661,7 @@ export default function AdvancedLabChallengePage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Which Roadmap Is Defensible?"
+          title="Evidence Analysis 2: Which Roadmap Is Defensible?"
           question="Which improvement roadmap best follows the A18 evidence?"
           evidence={[
             "Monitoring resilience affects evidence collection, alerting, response confidence, and timeline reconstruction.",

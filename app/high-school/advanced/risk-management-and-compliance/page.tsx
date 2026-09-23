@@ -427,7 +427,7 @@ export default function RiskManagementAndComplianceModulePage() {
             Safety and Ethics Boundary
           </p>
           <h2 className="mt-3 text-3xl font-black tracking-tight text-white">
-            Risk analysis uses authorized evidence—not unsafe testing
+            Risk analysis uses authorized evidence, not unsafe testing
           </h2>
           <p className="mt-5 leading-8">
             Every A15 scenario is fictional and defensive. Students evaluate

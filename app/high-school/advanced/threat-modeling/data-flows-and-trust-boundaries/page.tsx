@@ -1945,7 +1945,7 @@ export default function DataFlowsAndTrustBoundariesPage() {
             "Build from the fictional A3.2 asset–actor–entry point register so every flow is connected to value, role, interface, purpose, and ownership.",
             "Label arrows with meaningful descriptions rather than generic words such as Data, Traffic, or API.",
             "Mark trust boundaries only where identity, authority, ownership, sensitivity, environment, technology, supplier, administration, network, or recovery assumptions change.",
-            "Include failure, retry, support, degraded, recovery, reconciliation, archival, deletion, and retirement paths—not only the successful path.",
+            "Include failure, retry, support, degraded, recovery, reconciliation, archival, deletion, and retirement paths, not only the successful path.",
             "Keep the entire artifact completely fictional, defensive, non-operational, privacy-safe, and suitable for a public learning portfolio.",
           ]}
         />
@@ -1992,7 +1992,7 @@ export default function DataFlowsAndTrustBoundariesPage() {
 
         <KeyTakeaways
           takeaways={[
-            "A data-flow diagram should identify actors, processes, stores, flows, boundaries, evidence, ownership, and lifecycle—not only components.",
+            "A data-flow diagram should identify actors, processes, stores, flows, boundaries, evidence, ownership, and lifecycle, not only components.",
             "A trust boundary exists where an important trust assumption changes, including identity, authority, ownership, sensitivity, environment, technology, supplier, administration, network, or recovery state.",
             "Every important flow needs source, destination, purpose, content, actor, identity, authority, state, validation, evidence, owner, failure, and review context.",
             "Validation and authorization solve different questions and should be modeled separately.",

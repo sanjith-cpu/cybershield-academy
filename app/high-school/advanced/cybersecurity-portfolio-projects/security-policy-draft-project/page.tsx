@@ -810,7 +810,7 @@ export default function SecurityPolicyDraftProjectPage() {
         />
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 1 — Policy or Procedure?"
+          title="Evidence Analysis 1: Policy or Procedure?"
           question="Which content belongs most naturally in a high-level security policy?"
           evidence={[
             "The organization wants a durable requirement for privileged-access governance.",
@@ -871,7 +871,7 @@ export default function SecurityPolicyDraftProjectPage() {
         </Section>
 
         <AnalyzeEvidenceCard
-          title="Evidence Analysis 2 — Unrealistic Absolute"
+          title="Evidence Analysis 2: Unrealistic Absolute"
           question="A draft says, 'Security logs must detect every attack immediately.' What is the strongest revision?"
           evidence={[
             "Detection depends on telemetry coverage, source health, context, and signal design.",
@@ -1015,32 +1015,32 @@ export default function SecurityPolicyDraftProjectPage() {
           <div className="mt-6 grid gap-5 md:grid-cols-2">
             {[
               {
-                title: "Task 1 — Define purpose and scope",
+                title: "Task 1: Define purpose and scope",
                 detail:
                   "Write one paragraph explaining why the fictional policy exists and which systems, users, services, and data it covers.",
               },
               {
-                title: "Task 2 — Choose three policy areas",
+                title: "Task 2: Choose three policy areas",
                 detail:
                   "Select three of the five Northbridge policy sections and refine each into four to six clear mandatory requirements.",
               },
               {
-                title: "Task 3 — Add responsibilities",
+                title: "Task 3: Add responsibilities",
                 detail:
                   "Identify the fictional roles accountable for ownership, approval, review, evidence, exception handling, and escalation.",
               },
               {
-                title: "Task 4 — Define evidence",
+                title: "Task 4: Define evidence",
                 detail:
                   "For each chosen requirement, identify one safe synthetic record or artifact that could demonstrate compliance.",
               },
               {
-                title: "Task 5 — Create one exception",
+                title: "Task 5: Create one exception",
                 detail:
                   "Draft a fictional exception with rationale, owner, residual risk, compensating controls, expiration, and closure criteria.",
               },
               {
-                title: "Task 6 — Perform a language review",
+                title: "Task 6: Perform a language review",
                 detail:
                   "Find vague words, impossible absolutes, technical details, or missing owners and revise them before finalizing the artifact.",
               },
@@ -1059,7 +1059,7 @@ export default function SecurityPolicyDraftProjectPage() {
         </Section>
 
         <ScenarioDecisionLab
-          title="Scenario Decision 1 — A Team Cannot Meet a Requirement Temporarily"
+          title="Scenario Decision 1: A Team Cannot Meet a Requirement Temporarily"
           scenario="A fictional legacy service cannot meet one new monitoring requirement until a scheduled migration is complete."
           choices={[
             {
@@ -1090,7 +1090,7 @@ export default function SecurityPolicyDraftProjectPage() {
         />
 
         <ScenarioDecisionLab
-          title="Scenario Decision 2 — Policy Contains a Product-Specific Command"
+          title="Scenario Decision 2: Policy Contains a Product-Specific Command"
           scenario="A fictional policy draft includes an exact command for configuring one security tool."
           choices={[
             {
@@ -1178,7 +1178,7 @@ export default function SecurityPolicyDraftProjectPage() {
         </Section>
 
         <PortfolioPrompt
-          title="Portfolio Prompt — Security Policy Draft Project"
+          title="Portfolio Prompt: Security Policy Draft Project"
           prompt="Create a professional fictional Northbridge Security Policy Draft. Include title, purpose, scope, definitions, roles and responsibilities, three to five policy areas, clear mandatory requirements, evidence expectations, a governed exception process, enforcement or escalation language, review cycle, traceability to fictional risks or detection needs, and a short publication-safety statement."
           tips={[
             "Keep the policy technology-neutral enough to remain useful if products change.",

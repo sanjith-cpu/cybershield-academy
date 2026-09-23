@@ -1188,7 +1188,7 @@ export default function CertificatesAndPKIConceptsPage() {
 
         <Section
           eyebrow="Certificate Trust vs. Authorization"
-          title="A Trusted Certificate Answers Who — Not What They May Do"
+          title="A Trusted Certificate Answers Who, not What They May Do"
         >
           <p className="leading-8">
             A valid certificate can help a relying system identify a service,

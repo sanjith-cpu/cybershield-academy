@@ -44,7 +44,7 @@ const lessons = [
     title: "Firewall Strategy and Rule Hygiene",
     slug: "firewall-strategy-and-rule-hygiene",
     summary:
-      "Study firewall policy as an owned lifecycle of purpose, source, destination, service, identity context, approval, evidence, exceptions, review, and retirement—not as an unexamined list of allow and deny statements.",
+      "Study firewall policy as an owned lifecycle of purpose, source, destination, service, identity context, approval, evidence, exceptions, review, and retirement, not as an unexamined list of allow and deny statements.",
     skills: [
       "Write conceptual least-privilege rule requirements",
       "Recognize broad, duplicate, stale, shadowed, temporary, and unowned policy risks",

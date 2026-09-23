@@ -639,7 +639,7 @@ export default function AssetDataBusinessImpactAnalysisPage() {
 
         <SectionCard
           eyebrow="Professional Hook"
-          title="The Most Important Asset May Be a Service, Person, Dependency, or Decision—not a Device"
+          title="The Most Important Asset May Be a Service, Person, Dependency, or Decision, not a Device"
         >
           <p className="leading-8">
             The fictional Northbridge organization depends on learning,
@@ -1283,7 +1283,7 @@ export default function AssetDataBusinessImpactAnalysisPage() {
 
         <KeyTakeaways
           takeaways={[
-            "Assets include services, data, people, suppliers, processes, facilities, reputation, and recovery capability—not only devices.",
+            "Assets include services, data, people, suppliers, processes, facilities, reputation, and recovery capability, not only devices.",
             "Business-impact analysis connects asset value, dependencies, consequences, recovery priorities, ownership, and evidence.",
             "RTO describes restoration time, while RPO describes acceptable data loss in time.",
             "Potential impact should remain separate from confirmed impact.",

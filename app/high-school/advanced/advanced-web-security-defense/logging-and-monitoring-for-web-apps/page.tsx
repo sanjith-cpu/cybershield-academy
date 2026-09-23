@@ -210,7 +210,7 @@ export default function LoggingAndMonitoringForWebAppsPage() {
         <ReadinessCheck
           title="Before You Start"
           items={[
-            "I understand that A10.8 teaches defensive, authorized web application monitoring—not surveillance, invasive tracking, credential capture, private-message collection, or monitoring people outside an approved environment.",
+            "I understand that A10.8 teaches defensive, authorized web application monitoring, not surveillance, invasive tracking, credential capture, private-message collection, or monitoring people outside an approved environment.",
             "I will use only fictional Northbridge logs, alerts, users, roles, applications, APIs, settings, service identities, suppliers, and monitoring sources.",
             "I will keep passwords, tokens, session values, secret values, recovery codes, private keys, full case notes, and unnecessary personal content out of monitoring examples.",
             "I will distinguish event, signal, alert, finding, monitoring gap, and incident candidate.",
@@ -633,7 +633,7 @@ export default function LoggingAndMonitoringForWebAppsPage() {
               "Create role-based monitoring access and purpose-based retention.",
               "Design escalation criteria using privilege, scope, confidence, impact, persistence, source health, and business criticality.",
               "Create one false-positive improvement and one monitoring-gap remediation.",
-              "Write a leadership summary explaining why monitoring quality depends on evidence health, privacy, and decision value—not volume alone.",
+              "Write a leadership summary explaining why monitoring quality depends on evidence health, privacy, and decision value, not volume alone.",
             ].map((item) => (
               <div key={item} className="rounded-2xl border border-purple-400/25 bg-purple-400/10 p-5 text-sm leading-7 text-purple-50">{item}</div>
             ))}
