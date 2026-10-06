@@ -37,6 +37,11 @@ const navLinks = [
     href: "/cyber-safety-starter",
     activePrefixes: ["/cyber-safety-starter"],
   },
+{
+  label: "CyberPatriot",
+  href: "/cyberpatriot",
+  activePrefixes: ["/cyberpatriot"],
+},
   {
     label: "Resources",
     href: "/resources",
