@@ -243,42 +243,62 @@ export default function CyberPatriotPage() {
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {trainingAreas.map((area, index) => (
-            <article
-              key={area.title}
-              className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg shadow-slate-950/20 transition hover:-translate-y-1 hover:border-cyan-400/60 hover:bg-slate-900"
-            >
-              <div className="flex items-center justify-between gap-4">
-                <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
-                  {area.tag}
-                </span>
-                <span className="text-sm font-black text-slate-600">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-              </div>
+          {trainingAreas.map((area, index) =>
+            index < 2 ? (
+              <Link
+                key={area.title}
+                href={area.route}
+                className="group flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg shadow-slate-950/20 transition hover:-translate-y-1 hover:border-cyan-400/60 hover:bg-slate-900"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+                    {area.tag}
+                  </span>
+                  <span className="text-sm font-black text-slate-600">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
 
-              <h3 className="mt-5 text-xl font-black text-white">
-                {area.title}
-              </h3>
+                <h3 className="mt-5 text-xl font-black text-white">
+                  {area.title}
+                </h3>
 
-              <p className="mt-3 flex-1 text-sm leading-7 text-slate-400">
-                {area.description}
-              </p>
+                <p className="mt-3 flex-1 text-sm leading-7 text-slate-400">
+                  {area.description}
+                </p>
 
-              {area.title === "Competition Strategy" ? (
-  <Link
-    href={area.route}
-    className="mt-6 rounded-xl border border-cyan-400/40 bg-cyan-400/10 px-4 py-3 text-center text-sm font-bold text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-400/20 hover:text-white"
-  >
-    Open Section →
-  </Link>
-) : (
-  <div className="mt-6 rounded-xl border border-slate-800 bg-slate-950/60 px-4 py-3 text-sm font-semibold text-slate-500">
-    Section coming next
-  </div>
-)}
-            </article>
-          ))}
+                <div className="mt-6 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm font-semibold text-cyan-200 transition group-hover:border-cyan-300/50">
+                  Open section →
+                </div>
+              </Link>
+            ) : (
+              <article
+                key={area.title}
+                className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-lg shadow-slate-950/20"
+              >
+                <div className="flex items-center justify-between gap-4">
+                  <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+                    {area.tag}
+                  </span>
+                  <span className="text-sm font-black text-slate-600">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+
+                <h3 className="mt-5 text-xl font-black text-white">
+                  {area.title}
+                </h3>
+
+                <p className="mt-3 flex-1 text-sm leading-7 text-slate-400">
+                  {area.description}
+                </p>
+
+                <div className="mt-6 rounded-xl border border-slate-800 bg-slate-950/60 px-4 py-3 text-sm font-semibold text-slate-500">
+                  Section coming next
+                </div>
+              </article>
+            )
+          )}
         </div>
       </section>
 
