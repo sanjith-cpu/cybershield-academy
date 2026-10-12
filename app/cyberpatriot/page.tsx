@@ -137,7 +137,7 @@ export default function CyberPatriotPage() {
             href="/"
             className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
           >
-            â† Home
+            ÃƒÂ¢Ã¢â‚¬Â Ã‚Â Home
           </Link>
 
           <Link
@@ -244,7 +244,7 @@ export default function CyberPatriotPage() {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {trainingAreas.map((area, index) =>
-            index < 6 ? (
+            index < 7 ? (
               <Link
                 key={area.title}
                 href={area.route}
@@ -268,8 +268,7 @@ export default function CyberPatriotPage() {
                 </p>
 
                 <div className="mt-6 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm font-semibold text-cyan-200 transition group-hover:border-cyan-300/50">
-                  Open section â†’
-                </div>
+                  Open section &rarr;</div>
               </Link>
             ) : (
               <article
@@ -416,7 +415,7 @@ export default function CyberPatriotPage() {
             href="/"
             className="rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
           >
-            â† Home
+            ÃƒÂ¢Ã¢â‚¬Â Ã‚Â Home
           </Link>
 
           <Link
