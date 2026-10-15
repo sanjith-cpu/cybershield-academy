@@ -63,7 +63,7 @@ const trainingAreas = [
     title: "Competition Checklists",
     description:
       "Use organized Windows, Windows Server, Linux, Cisco, forensics, and final-review checklists to reduce missed steps and keep team members consistent under time pressure.",
-    route: "/cyberpatriot/checklists",
+    route: "/cyberpatriot/competition-checklists",
     tag: "Checklists",
   },
   {
@@ -244,7 +244,7 @@ export default function CyberPatriotPage() {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {trainingAreas.map((area, index) =>
-            index < 8 ? (
+            index < 9 ? (
               <Link
                 key={area.title}
                 href={area.route}
