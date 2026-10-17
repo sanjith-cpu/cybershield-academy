@@ -244,7 +244,7 @@ export default function CyberPatriotPage() {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {trainingAreas.map((area, index) =>
-            index < 11 ? (
+            index < 12 ? (
               <Link
                 key={area.title}
                 href={area.route}
