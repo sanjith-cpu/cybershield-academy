@@ -430,7 +430,7 @@ export default function WindowsServerQuickReferencePage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_0.72fr] lg:items-end">
             <div className="max-w-4xl">
               <p className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
-                Command Center Â· Reference 02
+                Command Center &middot; Reference 02
               </p>
 
               <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">

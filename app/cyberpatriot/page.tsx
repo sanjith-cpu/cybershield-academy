@@ -293,7 +293,7 @@ export default function CyberPatriotPage() {
                 </p>
 
                 <div className="mt-6 rounded-xl border border-slate-800 bg-slate-950/60 px-4 py-3 text-sm font-semibold text-slate-500">
-                  Section coming next
+                  Section not yet available
                 </div>
               </article>
             )
@@ -402,9 +402,12 @@ export default function CyberPatriotPage() {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-700 bg-slate-950/70 px-5 py-3 text-center text-sm font-bold text-slate-300">
-              Competition Strategy coming next
-            </div>
+            <Link
+                  href="/cyberpatriot/competition-strategy"
+                  className="rounded-xl border border-slate-700 bg-slate-950/70 px-5 py-3 text-center text-sm font-bold text-slate-300 transition hover:border-cyan-400 hover:text-cyan-200"
+                >
+                  Open Competition Strategy &rarr;
+                </Link>
           </div>
         </div>
       </section>
