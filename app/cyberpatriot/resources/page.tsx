@@ -39,12 +39,39 @@ export default function CyberPatriotResourcesPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
+      {/* CyberPatriot compact section navigation */}
+      <section className="mx-auto max-w-7xl px-6 pt-5 lg:px-8 lg:pt-6">
+        <div className="flex flex-nowrap items-center gap-3 overflow-x-auto pb-1">
+          <Link
+            href="/cyberpatriot"
+            className="shrink-0 rounded-full border border-slate-700 bg-slate-950/70 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            &larr; CyberPatriot Hub
+          </Link>
 
-      <section className="mx-auto max-w-7xl px-6 pt-10 lg:px-8 lg:pt-12">
-        <Link href="/cyberpatriot" className="inline-flex rounded-full border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200">
-          &larr; CyberPatriot Hub
-        </Link>
+          <Link
+            href="/cyberpatriot/competition-day-guide"
+            className="shrink-0 rounded-full border border-slate-700 bg-slate-950/70 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            &larr; Competition Day Guide
+          </Link>
+
+          <div className="shrink-0 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-5 py-3 text-sm font-black text-cyan-200">
+            Resources
+          </div>
+
+          <Link
+            href="/cyberpatriot"
+            className="shrink-0 rounded-full border border-slate-700 bg-slate-950/70 px-5 py-3 text-sm font-bold text-slate-200 transition hover:border-cyan-400 hover:text-cyan-200"
+          >
+            CyberPatriot Hub &rarr;
+          </Link>
+        </div>
       </section>
+
+
+
+      
 
       <section className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-14">
         <div className="rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 p-8 shadow-2xl shadow-cyan-950/30 lg:p-12">
@@ -131,6 +158,50 @@ export default function CyberPatriotResourcesPage() {
         </div>
       </section>
 
+      
+      {/* CyberPatriot section navigation */}
+      <section className="mx-auto max-w-7xl px-6 pb-16 lg:px-8">
+        <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-5 lg:p-6">
+          <div className="mb-4 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-cyan-300">
+              Section 12 of 12
+            </p>
+          </div>
+
+          <div className="grid gap-3 md:grid-cols-[1fr_auto_1fr] md:items-stretch">
+            <Link
+              href="/cyberpatriot/competition-day-guide"
+              className="group rounded-2xl border border-slate-800 bg-slate-950/60 p-4 transition hover:border-cyan-400/40 hover:bg-slate-950"
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-slate-500">
+                &larr; Previous Section
+              </p>
+              <p className="mt-2 font-black text-white transition group-hover:text-cyan-200">
+                Competition Day Guide
+              </p>
+            </Link>
+
+            <Link
+              href="/cyberpatriot"
+              className="flex items-center justify-center rounded-2xl border border-slate-800 bg-slate-950/60 px-6 py-4 text-center text-sm font-bold text-slate-300 transition hover:border-cyan-400/40 hover:text-cyan-200"
+            >
+              CyberPatriot Hub
+            </Link>
+
+            <Link
+              href="/cyberpatriot"
+              className="group rounded-2xl border border-slate-800 bg-slate-950/60 p-4 text-left transition hover:border-cyan-400/40 hover:bg-slate-950 md:text-right"
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-slate-500">
+                Next Section &rarr;
+              </p>
+              <p className="mt-2 font-black text-white transition group-hover:text-cyan-200">
+                CyberPatriot Hub
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
       <Footer />
     </main>
   );
