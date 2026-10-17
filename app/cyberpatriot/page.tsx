@@ -77,7 +77,7 @@ const trainingAreas = [
     title: "Competition Day Guide",
     description:
       "Follow a clear timeline from setup and the opening minutes through the middle of the round, final hour, last 30 minutes, team communication, troubleshooting, and final verification.",
-    route: "/cyberpatriot/competition-day",
+    route: "/cyberpatriot/competition-day-guide",
     tag: "Game Day",
   },
   {
@@ -244,7 +244,7 @@ export default function CyberPatriotPage() {
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {trainingAreas.map((area, index) =>
-            index < 10 ? (
+            index < 11 ? (
               <Link
                 key={area.title}
                 href={area.route}
